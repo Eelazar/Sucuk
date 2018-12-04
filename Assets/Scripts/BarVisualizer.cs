@@ -12,6 +12,10 @@ public class BarVisualizer : MonoBehaviour {
     private float[] spectrum;
     private int spectrumRange;
 
+    //Smooth Stuff
+    private float velocity;
+    public float smoothTime;
+
 	void Start ()
     {
         spectrumRange = AudioSpectrumListener.spectrum.Length;
@@ -24,12 +28,16 @@ public class BarVisualizer : MonoBehaviour {
 	void Update ()
     {
         spectrum = AudioSpectrumListener.spectrum;
-
-	    for(int i = 0; i < spectrumRange; i++)
+        
+        for (int i = 0; i < spectrumRange; i++)
         {
-            cubeGOArray[i].transform.localScale = new Vector3(1, spectrum[i] * amplitude, 1);
-        }	
-	}
+            //cubeGOArray[i].transform.localScale = new Vector3(1, spectrum[i] * amplitude, 1);
+
+            float yPosition = Mathf.SmoothDamp(cubeGOArray[i].transform.localScale.y, spectrum[i] * amplitude, ref velocity, smoothTime);
+
+            cubeGOArray[i].transform.localScale = new Vector3(1, yPosition, 1);
+        }
+    }
 
     void SpawnVisualizer()
     {
