@@ -29,7 +29,7 @@ public class BarVisualizer : MonoBehaviour {
     {
         spectrum = AudioSpectrumListener.spectrum;
         
-        for (int i = 0; i < spectrumRange; i++)
+        for (int i = 0; i < spectrumRange - 1; i++)
         {
             //cubeGOArray[i].transform.localScale = new Vector3(1, spectrum[i] * amplitude, 1);
 
@@ -41,7 +41,7 @@ public class BarVisualizer : MonoBehaviour {
 
     void SpawnVisualizer()
     {
-        for (int i = 0; i < spectrumRange; i++)
+        for (int i = 0; i < spectrumRange -1; i++)
         {
             GameObject go = GameObject.Instantiate<GameObject>(cubePrefab);
             go.transform.position = this.transform.position;

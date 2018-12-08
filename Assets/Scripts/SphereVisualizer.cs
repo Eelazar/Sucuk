@@ -26,8 +26,8 @@ public class SphereVisualizer : MonoBehaviour {
 	void Start ()
     {
         spectrumRange = AudioSpectrumListener.spectrum.Length;
-        spectrum = new float[spectrumRange];
-	}
+        spectrum = new float[spectrumRange];      
+    }
 	
 	void Update ()
     {
@@ -47,4 +47,7 @@ public class SphereVisualizer : MonoBehaviour {
         halo.range = median + haloBaseRange;
 
 	}
+
+    
 }
+
