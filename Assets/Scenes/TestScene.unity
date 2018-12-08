@@ -332,6 +332,53 @@ MonoBehaviour:
   distance: 100
   amplitude: 4000
   smoothTime: 0.1
+--- !u!1 &204295860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 204295862}
+  - component: {fileID: 204295861}
+  m_Layer: 0
+  m_Name: Grid Visualizer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &204295861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 204295860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51793d1f206567c4da07f60d43d30eab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeGO: {fileID: 1794468134198288, guid: 298316e13f60c3f4a85ece300dfbd90f, type: 2}
+  lineM: {fileID: 2100000, guid: 4f6fb891d2ab7884bb1e2096f4345b25, type: 2}
+  spawnPosition: {x: -50, y: -300, z: -50}
+  gridSize: 16
+  frequency: 7
+  smoothTime: 0.1
+  amplitude: 30
+--- !u!4 &204295862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 204295860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &990763839
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +601,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ee437f3064b53d246a7697340f23b66c, type: 2}
+  - {fileID: 2100000, guid: 4f6fb891d2ab7884bb1e2096f4345b25, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
