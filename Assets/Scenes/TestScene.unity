@@ -601,45 +601,27 @@ MonoBehaviour:
   startPosition: {x: -70, y: 0, z: -60}
   endPosition: {x: 70, y: 0, z: -60}
   bpm: 128
-  beatsPerCycle: 2
+  beatsPerCycle: 1
   animCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0.12447928
-      outSlope: 0.12447928
-      tangentMode: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.6379372
-    - serializedVersion: 3
-      time: 0.2626779
-      value: 0.094670095
-      inSlope: 0.90625435
-      outSlope: 0.90625435
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.5666842
-      outWeight: 0.19739328
-    - serializedVersion: 3
-      time: 0.77002823
-      value: 0.9511712
-      inSlope: 0.37318927
-      outSlope: 0.37318927
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.22856079
-      outWeight: 0.4896972
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0.06468074
-      outSlope: 0.06468074
-      tangentMode: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
       weightedMode: 0
-      inWeight: 0.5820639
+      inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
