@@ -11,6 +11,8 @@ public class MeshGrid : MonoBehaviour {
     [SerializeField]
     private int ySize;
     [SerializeField]
+    private float nodeDistance;
+    [SerializeField]
     private float amplitude;
     [SerializeField]
     private float smoothTime;
@@ -95,7 +97,7 @@ public class MeshGrid : MonoBehaviour {
         {
             for (int x = 0; x <= xSize; x++, i++)
             {
-                vertices[i] = new Vector3(x, y);
+                vertices[i] = new Vector3(x * nodeDistance, y * nodeDistance);
             }
         }
 

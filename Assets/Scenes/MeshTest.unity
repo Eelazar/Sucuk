@@ -464,8 +464,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee68c568648cca4e8b037cf7b380c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xSize: 15
-  ySize: 10
+  xSize: 30
+  ySize: 20
+  nodeDistance: 0.4
   amplitude: 3
   smoothTime: 0.15
 --- !u!4 &1927449027
