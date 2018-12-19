@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -196,13 +196,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 533549888}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 150, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.68, y: 10.82, z: -28.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1580193078
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,6 +278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1582340795}
   - component: {fileID: 1582340794}
+  - component: {fileID: 1582340796}
   m_Layer: 0
   m_Name: Grid Visualizer
   m_TagString: Untagged
@@ -291,7 +292,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1582340793}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51793d1f206567c4da07f60d43d30eab, type: 3}
   m_Name: 
@@ -303,6 +304,7 @@ MonoBehaviour:
   frequency: 7
   smoothTime: 0.1
   amplitude: 30
+  randomize: 0
 --- !u!4 &1582340795
 Transform:
   m_ObjectHideFlags: 0
@@ -316,6 +318,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1582340796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1582340793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2520c9919f41caa438a6e3e8e565659a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trianglePrefab: {fileID: 1437457425640804, guid: 72f21dacd0e914a4abe784606ca6e84e,
+    type: 2}
+  materials:
+  - {fileID: 2100000, guid: ee437f3064b53d246a7697340f23b66c, type: 2}
+  - {fileID: 2100000, guid: 4f6fb891d2ab7884bb1e2096f4345b25, type: 2}
+  - {fileID: 2100000, guid: 684140ed02dcdd7459f20608dfce7749, type: 2}
+  gridX: 20
+  gridY: 15
+  distanceX: 1
+  distanceY: 1.6
+  amplitude: 7
+  smoothTime: 0.1
 --- !u!1 &1945937262
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,7 +379,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0b2d187ceb56bc34fbd443e8a2a40bf0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ddd9682ae953e8f41b85faa0467a2a0d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1

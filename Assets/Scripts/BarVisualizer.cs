@@ -64,7 +64,7 @@ public class BarVisualizer : MonoBehaviour {
                     break;
             }
             
-            go.transform.position = Vector3.forward * distance;
+            go.transform.position = new Vector3(go.transform.position.x, go.transform.position.y, distance);
             cubeGOArray[i] = go;
         }
     }
