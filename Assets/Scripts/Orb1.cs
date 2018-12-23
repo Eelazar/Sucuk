@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
-public class Orb : MonoBehaviour
+public class Orb1 : MonoBehaviour
 {
     [Header("Mesh Variables")]
     [Tooltip("Higher grid Size means more vertices")]
@@ -35,19 +35,101 @@ public class Orb : MonoBehaviour
     private Vector3[] normals;
     private Vector3[] originalVertices;
 
+
+
+
+    public int pointAmount;
+    private Vector3[] points;
+    public float force;
+
+    public float springForce = 20f;
+    public float damping = 5f;  
+    
+    Vector3[] vertexVelocities;
+
     private void Start()
     {
         Generate();
         CopyArray();
         DistributeSpectrumPointers();
+
+        vertexVelocities = new Vector3[originalVertices.Length];
+        points = PointsOnSphere(pointAmount);
     }
 
     private void Update()
     {
         eightPointSpectrum = AudioSpectrumListener.frequencyBand;
 
-        VisualizeRawEightPoint();
+        //VisualizeRawEightPoint();
+        VisualizeSmoothEightPoint();
     }
+    
+    private void VisualizeSmoothEightPoint()
+    {
+        for(int i = 0; i < points.Length; i++)
+        {
+            RaycastHit hit;
+            if(Physics.Raycast(points[i] * 10, -points[i], out hit, 11))
+            {
+                Vector3 point = hit.point;
+                point += hit.normal * 0.1F;
+
+                AddDeformingForce(point, eightPointSpectrum[spectrumPointers[i]] * force);
+            }            
+        }
+    }
+
+    public void AddDeformingForce(Vector3 point, float force)
+    {
+        point = transform.InverseTransformPoint(point);
+        for (int i = 0; i < vertices.Length; i++)
+        {
+            Vector3 pointToVertex = vertices[i] - point;
+            pointToVertex *= radius;
+            float attenuatedForce = force / (1f + pointToVertex.sqrMagnitude);
+            float velocity = attenuatedForce * Time.deltaTime;
+            vertexVelocities[i] += pointToVertex.normalized * velocity;
+        }
+
+        for (int i = 0; i < vertices.Length; i++)
+        {
+            Vector3 displacement = vertices[i] - originalVertices[i];
+            displacement *= radius;
+            vertexVelocities[i] -= displacement * springForce * Time.deltaTime;
+            vertexVelocities[i] *= 1f - damping * Time.deltaTime;
+            vertexVelocities[i] = vertexVelocities[i];
+            vertices[i] += vertexVelocities[i] * (Time.deltaTime / radius);
+        }
+        mesh.vertices = vertices;
+        mesh.RecalculateNormals();
+    }
+
+    Vector3[] PointsOnSphere(int n)
+    {
+        List<Vector3> upts = new List<Vector3>();
+        float inc = Mathf.PI * (3 - Mathf.Sqrt(5));
+        float off = 2.0f / n;
+        float x = 0;
+        float y = 0;
+        float z = 0;
+        float r = 0;
+        float phi = 0;
+
+        for (var k = 0; k < n; k++)
+        {
+            y = k * off - 1 + (off / 2);
+            r = Mathf.Sqrt(1 - y * y);
+            phi = k * inc;
+            x = Mathf.Cos(phi) * r;
+            z = Mathf.Sin(phi) * r;
+
+            upts.Add(new Vector3(x, y, z));
+        }
+        Vector3[] pts = upts.ToArray();
+        return pts;
+    }
+
 
     private void VisualizeRawEightPoint()
     {

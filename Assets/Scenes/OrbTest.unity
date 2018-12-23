@@ -391,6 +391,10 @@ MonoBehaviour:
   radius: 3
   amplitude: 1
   smoothDamp: 0.11
+  pointAmount: 8
+  force: 500
+  springForce: 10
+  damping: 5
 --- !u!4 &1375622615
 Transform:
   m_ObjectHideFlags: 0
