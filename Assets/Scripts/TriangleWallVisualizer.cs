@@ -24,6 +24,7 @@ public class TriangleWallVisualizer : MonoBehaviour {
     private float[] spectrum = new float[8];
     private GameObject[,] triangleArray;
     private int[] randomPointers = { 0, 1, 2, 3, 4, 5, 6, 7 };
+    private int[,] spectrumPointers;
     private Vector3 velocity;
     
     private float distanceX;
@@ -34,6 +35,8 @@ public class TriangleWallVisualizer : MonoBehaviour {
         distanceX = xConst * trianglePrefab.transform.localScale.x;
         distanceY = yConst * trianglePrefab.transform.localScale.x;
         Generate();
+
+        DistributeSpectrumPointers();
 	}
 	
 	void Update () 
@@ -80,38 +83,43 @@ public class TriangleWallVisualizer : MonoBehaviour {
 
     void Animate()
     {
-        int spectrumIndex = 0;
-
         for(int i = 0; i < gridX; i++)
         {
-            for(int j = 0; j < gridY; j++)
+            for (int j = 0; j < gridY; j++)
             {
-                if (spectrumIndex > 7)
-                {
-                    spectrumIndex = 0;
-                    RandomizeArrayPointers();
-                }
-
                 GameObject triangle = triangleArray[i, j];
-                Vector3 destination = new Vector3(transform.position.x + spectrum[randomPointers[spectrumIndex]] * amplitude, triangle.transform.position.y, triangle.transform.position.z);
+                Vector3 destination = new Vector3(transform.position.x + spectrum[spectrumPointers[i, j]] * amplitude, triangle.transform.position.y, triangle.transform.position.z);
 
                 triangle.transform.position = Vector3.SmoothDamp(triangle.transform.position, destination, ref velocity, smoothTime);
-
-                spectrumIndex++;
             }
         }
         
     }
 
-    void RandomizeArrayPointers()
+    void DistributeSpectrumPointers()
     {
+        spectrumPointers = new int[triangleArray.GetLength(0), triangleArray.GetLength(1)];
+
         System.Random r = new System.Random();
-        for (int i = randomPointers.Length; i > 0; i--)
+
+        int countdownIndex = 8;
+        for (int i = 0; i < spectrumPointers.GetLength(0); i++)
         {
-            int j = r.Next(i);
-            int k = randomPointers[j];
-            randomPointers[j] = randomPointers[i - 1];
-            randomPointers[i - 1] = k;
-        }
+            for(int j = 0; j < spectrumPointers.GetLength(1); j++)
+            {
+                if (countdownIndex <= 0)
+                {
+                    countdownIndex = 8;
+                }
+                int randomIndex = r.Next(countdownIndex);
+                int number = randomPointers[randomIndex];
+                randomPointers[randomIndex] = randomPointers[countdownIndex - 1];
+                randomPointers[countdownIndex - 1] = number;
+
+                spectrumPointers[i, j] = number;
+
+                countdownIndex--;
+            }
+        }        
     }
 }
