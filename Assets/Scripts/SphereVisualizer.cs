@@ -17,13 +17,15 @@ public class SphereVisualizer : MonoBehaviour {
     private float[] spectrum;
     private int spectrumRange;
     private float median;
+    private float kick;
+    private float mid;
 
     //Smooth Stuff
     private float velocity;
     public float smoothTime;
-    
-    
-	void Start ()
+
+
+    void Start ()
     {
         spectrumRange = AudioSpectrumListener.spectrum.Length;
         spectrum = new float[spectrumRange];      
@@ -31,16 +33,18 @@ public class SphereVisualizer : MonoBehaviour {
 	
 	void Update ()
     {
-        spectrum = AudioSpectrumListener.spectrum;
+        //spectrum = AudioSpectrumListener.spectrum;
 
-        median = 0;
-
-        median = Mathf.SmoothDamp(median, AudioSpectrumListener.frequencyBand[0], ref velocity, smoothTime);
-        
-        median *= scaleMultiplier;
-        median += scaleBase;
-        
-
+        //I'm generating RTCPValues in WWise based on the peak volume of certain tracks. 
+        //It's returning values from -48 to 0 currently because it's acting as a peak meter, which is probably not ideal.
+        //There are currently four values generated: Kick, Low, Mid and Hi, the .GetRTCPValue function returns them as a float in the "out" section.
+        int type = 1;
+        AkSoundEngine.GetRTPCValue("Kick", gameObject, 0, out kick, ref type);
+        AkSoundEngine.GetRTPCValue("Mid", gameObject, 0, out mid, ref type);
+        // median = Mathf.SmoothDamp(median, AudioSpectrumListener.frequencyBand[0], ref velocity, smoothTime);
+        median = (kick+mid/2) * scaleMultiplier;
+  
+        //median += scaleBase;
         transform.localScale = new Vector3(median, median, median);
 
         baseLight.range = median + lightBaseRange;
