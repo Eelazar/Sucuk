@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6C1BDD87-8609-4133-94D4-E602D0162B3C}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{6C1BDD87-8609-4133-94D4-E602D0162B3C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play" ID="{0B2D95EC-3489-4571-ADDC-B1B41DD8A5E6}">
+					<ChildrenList>
+						<Action Name="" ID="{B2E5EA2C-D94D-468C-84D9-8438D65A0EBB}" ShortID="852824236">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main" ID="{A35EFCBD-0B6A-426B-AA21-F8833A945BA7}" WorkUnitID="{22C8ACF3-30F8-48FA-9609-8E74E0F1CD53}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Start" ID="{20B00146-88DD-4B71-B972-E62740D96714}">
+					<ChildrenList>
+						<Action Name="" ID="{118A4030-9AD6-4138-8B36-42AE1A6C01C0}" ShortID="554765506">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Riptide" ID="{931202E1-193A-4652-8DFE-A0003000A3F0}" WorkUnitID="{22C8ACF3-30F8-48FA-9609-8E74E0F1CD53}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

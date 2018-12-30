@@ -1,0 +1,180 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f06a2f56203f364a95f2c994646a91a, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: fae7fe48ca5bce4791e3a4071046b059
+    m_lastTime: -8586555942211516341
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 6faef3859c315b48ac40ae404e146248
+    m_lastTime: -8586555114541404484
+    List:
+    - name: auxHi
+      guid: fb9a44b18ee5fc4c995fe861983f737b
+      id: 1217559036
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: auxHi
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\auxHi
+    - name: auxLow
+      guid: 470fa168dc52584c8d2cec70a9b71e17
+      id: 411780261
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: auxLow
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\auxLow
+    - name: auxMid
+      guid: ee389ea4f018594fb706be3804ca83ef
+      id: 1049182825
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: auxMid
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\auxMid
+    - name: Kick
+      guid: eae1f1fb840f9949863ecb7e37924b60
+      id: 2181839183
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Kick
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\Kick
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 8c9443e01b83094f875c5cda2d686dc8
+    m_lastTime: -8586555187102865949
+    List:
+    - name: Music
+      guid: e02feb776654314bb529d113527efbe2
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 7
+      Path: Default Work Unit\Music
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 87dd1b6c0986334194d4e602d0162b3c
+    m_lastTime: -8586555119725175792
+    List:
+    - name: Play
+      guid: ec952d0b89347145addcb1b41dd8a5e6
+      id: 1256202815
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play
+        ObjectType: 3
+      Path: Default Work Unit\Play
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Start
+      guid: 4601b020dd88714bb972e62740d96714
+      id: 1281810935
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Start
+        ObjectType: 3
+      Path: Default Work Unit\Start
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 349edf7e094b0748a706ae78fe55659e
+    m_lastTime: -8586554289290772881
+    List:
+    - name: Hi
+      guid: f4b2d61b2bd4194ba141c79053c24fa8
+      id: 1769415228
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Hi
+        ObjectType: 13
+      Path: Default Work Unit\Hi
+    - name: Kick
+      guid: 4f2b5168ce408e43b553cd18883fdc1d
+      id: 2181839183
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Kick
+        ObjectType: 13
+      Path: Default Work Unit\Kick
+    - name: Low
+      guid: c13a962215eb864194736813d8ab0bdb
+      id: 545371365
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Low
+        ObjectType: 13
+      Path: Default Work Unit\Low
+    - name: Mid
+      guid: d515af051485a64d8b9d67ca4fba1f1b
+      id: 1182670505
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mid
+        ObjectType: 13
+      Path: Default Work Unit\Mid
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: f7edd226412a334195eceacd717a2334
+    m_lastTime: -8586555942211596139
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: f4faeeea2dd2cf479ec88a3ad5125e83
+    m_lastTime: -8586555942211426592
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 2192ea1d0a59de45a949d9f30609f853
+    m_lastTime: -8586555942211356764
+    List: []
+  ExpandedItems:
+  - /Sucuk_WwiseProject
+  - /Sucuk_WwiseProject/Events
+  - /Sucuk_WwiseProject/Events/Default Work Unit
+  autoPopulateEnabled: 0
+  CurrentPluginConfig: 

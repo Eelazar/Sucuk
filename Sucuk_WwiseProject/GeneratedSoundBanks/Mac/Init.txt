@@ -1,0 +1,23 @@
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	411780261	auxLow			\Default Work Unit\Master Audio Bus\auxLow	
+	1049182825	auxMid			\Default Work Unit\Master Audio Bus\auxMid	
+	1217559036	auxHi			\Default Work Unit\Master Audio Bus\auxHi	
+	2181839183	Kick			\Default Work Unit\Master Audio Bus\Kick	
+
+Effect plug-ins	ID	Name	Type				Notes
+	325262283	Wwise Gain (Custom)	Wwise Gain			
+	522232283	Wwise Gain (Custom)	Wwise Gain			
+	642127548	Hi_Wwise_Meter	Wwise Meter			
+	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
+	1045629903	Wwise Gain (Custom)	Wwise Gain			
+	1867182737	Mid_Wwise_Meter	Wwise Meter			
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+	4290840853	Low_Wwise_Meter	Wwise Meter			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
