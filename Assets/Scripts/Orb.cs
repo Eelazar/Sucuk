@@ -23,13 +23,21 @@ public class Orb : MonoBehaviour
     [SerializeField]
     private float smoothDamp;
 
-    //Visualization Stuff
+    ////Visualization Stuff
+    //Classic
     private float[] eightPointSpectrum = new float[8];
     private Vector3 velocity;
     private int[] spectrumPointers;
     private int[] randomPointers = { 0, 1, 2, 3, 4, 5, 6, 7 };
 
-    //Mesh Stuff
+    //Wwise
+    private int type;
+    private float[] wwiseSpectrum = new float[4];
+
+    public float baseScale;
+    public float kickScaleMultiplier;
+
+    ////Mesh Stuff
     private Mesh mesh;
     private Vector3[] vertices;
     private Vector3[] normals;
@@ -39,14 +47,42 @@ public class Orb : MonoBehaviour
     {
         Generate();
         CopyArray();
-        DistributeSpectrumPointers();
+        DistributeSpectrumPointers(3);
     }
 
     private void Update()
     {
         eightPointSpectrum = AudioSpectrumListener.frequencyBand;
 
-        VisualizeRawEightPoint();
+        //VisualizeRawEightPoint();
+        VisualizeWwise();
+    }
+
+    private void VisualizeWwise()
+    {
+        //Get the values from Wwise
+        type = 1;
+        AkSoundEngine.GetRTPCValue("Low", gameObject, 0, out wwiseSpectrum[0], ref type);
+        AkSoundEngine.GetRTPCValue("Mid", gameObject, 0, out wwiseSpectrum[1], ref type);
+        AkSoundEngine.GetRTPCValue("Hi", gameObject, 0, out wwiseSpectrum[2], ref type);
+        AkSoundEngine.GetRTPCValue("Kick", gameObject, 0, out wwiseSpectrum[3], ref type);
+
+        //Normalizes the value to a value between 0 and 1
+        for(int i = 0; i < wwiseSpectrum.Length; i++)
+        {
+            wwiseSpectrum[i] += 48;
+            wwiseSpectrum[i] /= 48;
+        }
+        
+        //Move the vertices
+        for (int i = 0; i < vertices.Length; i++)
+        {
+            Vector3 direction = originalVertices[i].normalized;
+            Vector3 destination = Vector3.SmoothDamp(vertices[i], originalVertices[i] + (direction * (baseScale + (kickScaleMultiplier * wwiseSpectrum[3])) + (direction * (amplitude * wwiseSpectrum[spectrumPointers[i]]))), ref velocity, smoothDamp);
+            vertices[i] = destination;
+        }
+        mesh.vertices = vertices;
+        mesh.RecalculateNormals();
     }
 
     private void VisualizeRawEightPoint()
@@ -62,18 +98,18 @@ public class Orb : MonoBehaviour
         mesh.RecalculateNormals();
     }
 
-    private void DistributeSpectrumPointers()
+    private void DistributeSpectrumPointers(int spectrumSize)
     {
         spectrumPointers = new int[vertices.Length];
 
         System.Random r = new System.Random();
 
-        int countdownIndex = 8;
+        int countdownIndex = spectrumSize;
         for(int i = 0; i < spectrumPointers.Length; i++)
         {
             if(countdownIndex <= 0)
             {
-                countdownIndex = 8;
+                countdownIndex = spectrumSize;
             }
             int randomIndex = r.Next(countdownIndex);
             int number = randomPointers[randomIndex];

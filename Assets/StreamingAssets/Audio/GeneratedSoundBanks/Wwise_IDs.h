@@ -14,7 +14,6 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY = 1256202815U;
-        static const AkUniqueID START = 1281810935U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

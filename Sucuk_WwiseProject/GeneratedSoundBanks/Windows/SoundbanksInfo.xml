@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Raven\Documents\Sucuk\Sucuk_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Raven\Documents\Sucuk\Sucuk_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Raven\Documents\Sucuk\Sucuk_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Raven\Documents\Sucuk\Sucuk_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -22,7 +22,6 @@
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1256202815" Name="Play" ObjectPath="\Events\Default Work Unit\Play"/>
-				<Event Id="1281810935" Name="Start" ObjectPath="\Events\Default Work Unit\Start" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="170743702" Language="SFX">

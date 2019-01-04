@@ -1,6 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1256202815	Play			\Default Work Unit\Play	
-	1281810935	Start			\Default Work Unit\Start	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
@@ -12,7 +11,6 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	2181839183	Kick			\Default Work Unit\Master Audio Bus\Kick	
 
 Effect plug-ins	ID	Name	Type				Notes
-	27380699	Wwise Gain (Custom)	Wwise Gain			
 	325262283	Wwise Gain (Custom)	Wwise Gain			
 	522232283	Wwise Gain (Custom)	Wwise Gain			
 	642127548	Hi_Wwise_Meter	Wwise Meter			
@@ -24,6 +22,6 @@ Effect plug-ins	ID	Name	Type				Notes
 	4290840853	Low_Wwise_Meter	Wwise Meter			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	170743702	kick	C:\Users\Raven\Documents\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\kick_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Main\Lowrider Havoc\kick		43576380
-	345146910	lowrider havoc	C:\Users\Raven\Documents\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\lowrider havoc_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Main\Lowrider Havoc\lowrider havoc		43286972
+	170743702	kick	C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\kick_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Main\Lowrider Havoc\kick		43576380
+	345146910	lowrider havoc	C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\lowrider havoc_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Main\Lowrider Havoc\lowrider havoc		43286972
 
