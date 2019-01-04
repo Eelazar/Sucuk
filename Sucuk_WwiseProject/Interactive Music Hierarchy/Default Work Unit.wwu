@@ -99,15 +99,6 @@
 									<ReferenceList>
 										<Reference Name="Effect0">
 											<Custom>
-												<Effect Name="Wwise Gain (Custom)" ID="{AC9B2364-D237-4847-8EF7-AB7ACE482F85}" ShortID="27380699" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
-													<PropertyList>
-														<Property Name="FullBandGain" Type="Real32" Value="20"/>
-													</PropertyList>
-												</Effect>
-											</Custom>
-										</Reference>
-										<Reference Name="Effect1">
-											<Custom>
 												<Effect Name="Wwise Meter (Custom)" ID="{AE9FBA04-B8F6-4CE2-BC4B-45F373BB7F67}" ShortID="791675481" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">													<PluginData>
 	<GameParameter Name="Kick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}"/>
 </PluginData>

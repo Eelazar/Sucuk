@@ -17,20 +17,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Start" ID="{20B00146-88DD-4B71-B972-E62740D96714}">
-					<ChildrenList>
-						<Action Name="" ID="{118A4030-9AD6-4138-8B36-42AE1A6C01C0}" ShortID="554765506">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Riptide" ID="{931202E1-193A-4652-8DFE-A0003000A3F0}" WorkUnitID="{22C8ACF3-30F8-48FA-9609-8E74E0F1CD53}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
