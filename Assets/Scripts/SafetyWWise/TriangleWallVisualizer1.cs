@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriangleWallVisualizer : MonoBehaviour {
+public class TriangleWallVisualizer1 : MonoBehaviour {
 
     const float xConst = 0.01F;
     const float yConst = 0.016F;
@@ -26,11 +26,7 @@ public class TriangleWallVisualizer : MonoBehaviour {
     private int[] randomPointers = { 0, 1, 2, 3, 4, 5, 6, 7 };
     private int[,] spectrumPointers;
     private Vector3 velocity;
-
-    //Wwise
-    private int type;
-    private float[] wwiseSpectrum = new float[4];
-
+    
     private float distanceX;
     private float distanceY;
 
@@ -40,15 +36,14 @@ public class TriangleWallVisualizer : MonoBehaviour {
         distanceY = yConst * trianglePrefab.transform.localScale.x;
         Generate();
 
-        DistributeSpectrumPointers(4);
+        DistributeSpectrumPointers();
 	}
 	
 	void Update () 
 	{
         spectrum = AudioSpectrumListener.frequencyBand;
 
-        //Animate();
-        VisualizeWwise();
+        Animate();
 	}
 
     void Generate()
@@ -86,35 +81,6 @@ public class TriangleWallVisualizer : MonoBehaviour {
         }
     }
 
-    private void VisualizeWwise()
-    {
-        //Get the values from Wwise
-        type = 1;
-        AkSoundEngine.GetRTPCValue("Low", gameObject, 0, out wwiseSpectrum[0], ref type);
-        AkSoundEngine.GetRTPCValue("Mid", gameObject, 0, out wwiseSpectrum[1], ref type);
-        AkSoundEngine.GetRTPCValue("Hi", gameObject, 0, out wwiseSpectrum[2], ref type);
-        AkSoundEngine.GetRTPCValue("Kick", gameObject, 0, out wwiseSpectrum[3], ref type);
-
-        //Normalizes the value to a value between 0 and 1
-        for (int i = 0; i < wwiseSpectrum.Length; i++)
-        {
-            wwiseSpectrum[i] += 48;
-            wwiseSpectrum[i] /= 48;
-        }
-
-        //Move the vertices
-        for (int i = 0; i < gridX; i++)
-        {
-            for (int j = 0; j < gridY; j++)
-            {
-                GameObject triangle = triangleArray[i, j];
-                Vector3 destination = new Vector3(transform.position.x + wwiseSpectrum[spectrumPointers[i, j]] * amplitude, triangle.transform.position.y, triangle.transform.position.z);
-
-                triangle.transform.position = Vector3.SmoothDamp(triangle.transform.position, destination, ref velocity, smoothTime);
-            }
-        }
-    }
-
     void Animate()
     {
         for(int i = 0; i < gridX; i++)
@@ -130,20 +96,20 @@ public class TriangleWallVisualizer : MonoBehaviour {
         
     }
 
-    void DistributeSpectrumPointers(int spectrumSize)
+    void DistributeSpectrumPointers()
     {
         spectrumPointers = new int[triangleArray.GetLength(0), triangleArray.GetLength(1)];
 
         System.Random r = new System.Random();
 
-        int countdownIndex = spectrumSize;
+        int countdownIndex = 8;
         for (int i = 0; i < spectrumPointers.GetLength(0); i++)
         {
             for(int j = 0; j < spectrumPointers.GetLength(1); j++)
             {
                 if (countdownIndex <= 0)
                 {
-                    countdownIndex = spectrumSize;
+                    countdownIndex = 8;
                 }
                 int randomIndex = r.Next(countdownIndex);
                 int number = randomPointers[randomIndex];
