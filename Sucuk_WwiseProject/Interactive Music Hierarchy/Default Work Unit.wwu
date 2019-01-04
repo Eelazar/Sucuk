@@ -15,13 +15,13 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="auxHi" ID="{B1449AFB-E58E-4CFC-995F-E861983F737B}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+							<ObjectRef Name="band3" ID="{B1449AFB-E58E-4CFC-995F-E861983F737B}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 						</Reference>
 						<Reference Name="UserAuxSend1">
-							<ObjectRef Name="auxLow" ID="{68A10F47-52DC-4C58-8D2C-EC70A9B71E17}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+							<ObjectRef Name="band1" ID="{68A10F47-52DC-4C58-8D2C-EC70A9B71E17}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 						</Reference>
 						<Reference Name="UserAuxSend2">
-							<ObjectRef Name="auxMid" ID="{A49E38EE-18F0-4F59-B706-BE3804CA83EF}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+							<ObjectRef Name="band2" ID="{A49E38EE-18F0-4F59-B706-BE3804CA83EF}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -47,13 +47,13 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
 										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="auxHi" ID="{B1449AFB-E58E-4CFC-995F-E861983F737B}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+											<ObjectRef Name="band3" ID="{B1449AFB-E58E-4CFC-995F-E861983F737B}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
 										<Reference Name="UserAuxSend1">
-											<ObjectRef Name="auxLow" ID="{68A10F47-52DC-4C58-8D2C-EC70A9B71E17}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+											<ObjectRef Name="band1" ID="{68A10F47-52DC-4C58-8D2C-EC70A9B71E17}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
 										<Reference Name="UserAuxSend2">
-											<ObjectRef Name="auxMid" ID="{A49E38EE-18F0-4F59-B706-BE3804CA83EF}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+											<ObjectRef Name="band2" ID="{A49E38EE-18F0-4F59-B706-BE3804CA83EF}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
