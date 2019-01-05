@@ -22,6 +22,12 @@ public class Orb : MonoBehaviour
     [Range(0F, 0.2F)]
     [SerializeField]
     private float smoothDamp;
+    [Tooltip("Minimum size of the movements, before actual music values are added")]
+    [SerializeField]
+    private float baseScale;
+    [Tooltip("Multiplies the values from the kick for bigger pulses")]
+    [SerializeField]
+    private float kickScaleMultiplier;
 
     ////Visualization Stuff
     //Classic
@@ -34,8 +40,6 @@ public class Orb : MonoBehaviour
     private int type;
     private float[] wwiseSpectrum = new float[9];
 
-    public float baseScale;
-    public float kickScaleMultiplier;
 
     ////Mesh Stuff
     private Mesh mesh;
@@ -45,13 +49,17 @@ public class Orb : MonoBehaviour
 
     private void Start()
     {
+        //Generate the sphere, one vertice at a time
         Generate();
+        //Make a copy of the vertice array to create a reference for calculations
         CopyArray();
+        //Fill the random number array, used to point to spectrum values in a random but equal manner
         DistributeSpectrumPointers(8);
     }
 
     private void Update()
     {
+        //Not needed for Wwise integration
         eightPointSpectrum = AudioSpectrumListener.frequencyBand;
 
         //VisualizeRawEightPoint();
@@ -72,7 +80,7 @@ public class Orb : MonoBehaviour
         AkSoundEngine.GetRTPCValue("Fband8", gameObject, 0, out wwiseSpectrum[7], ref type);
         AkSoundEngine.GetRTPCValue("Mkick", gameObject, 0, out wwiseSpectrum[8], ref type);
 
-        //Normalizes the value to a value between 0 and 1
+        //Normalize the values to a float between 0 and 1
         for(int i = 0; i < wwiseSpectrum.Length; i++)
         {
             wwiseSpectrum[i] += 48;
