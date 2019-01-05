@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>G:\Projects\Orb\Sucuk\Sucuk_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>G:\Projects\Orb\Sucuk\Sucuk_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>G:\Projects\Orb\Sucuk\Sucuk_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>G:\Projects\Orb\Sucuk\Sucuk_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>

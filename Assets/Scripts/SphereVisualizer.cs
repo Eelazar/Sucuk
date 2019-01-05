@@ -19,6 +19,8 @@ public class SphereVisualizer : MonoBehaviour {
     private float median;
     private float kick;
     private float mid;
+    private float hi;
+    private float hi2;
 
     //Smooth Stuff
     private float velocity;
@@ -39,8 +41,10 @@ public class SphereVisualizer : MonoBehaviour {
         //It's returning values from -48 to 0 currently because it's acting as a peak meter, which is probably not ideal.
         //There are currently four values generated: Kick, Low, Mid and Hi, the .GetRTCPValue function returns them as a float in the "out" section.
         int type = 1;
-        AkSoundEngine.GetRTPCValue("Kick", gameObject, 0, out kick, ref type);
-        AkSoundEngine.GetRTPCValue("Mid", gameObject, 0, out mid, ref type);
+        AkSoundEngine.GetRTPCValue("Mkick", gameObject, 0, out kick, ref type);
+        AkSoundEngine.GetRTPCValue("Fband1", gameObject, 0, out mid, ref type);
+        AkSoundEngine.GetRTPCValue("Fband6", gameObject, 0, out hi, ref type);
+        AkSoundEngine.GetRTPCValue("Fband7", gameObject, 0, out hi2, ref type);
         // median = Mathf.SmoothDamp(median, AudioSpectrumListener.frequencyBand[0], ref velocity, smoothTime);
         median = (kick+mid/2) * scaleMultiplier;
   

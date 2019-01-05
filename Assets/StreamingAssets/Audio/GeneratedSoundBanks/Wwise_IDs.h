@@ -18,10 +18,15 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID HI = 1769415228U;
-        static const AkUniqueID KICK = 2181839183U;
-        static const AkUniqueID LOW = 545371365U;
-        static const AkUniqueID MID = 1182670505U;
+        static const AkUniqueID FBAND1 = 1495724413U;
+        static const AkUniqueID FBAND2 = 1495724414U;
+        static const AkUniqueID FBAND3 = 1495724415U;
+        static const AkUniqueID FBAND4 = 1495724408U;
+        static const AkUniqueID FBAND5 = 1495724409U;
+        static const AkUniqueID FBAND6 = 1495724410U;
+        static const AkUniqueID FBAND7 = 1495724411U;
+        static const AkUniqueID FBAND8 = 1495724404U;
+        static const AkUniqueID MKICK = 3683999712U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -37,10 +42,14 @@ namespace AK
 
     namespace AUX_BUSSES
     {
-        static const AkUniqueID AUXHI = 1217559036U;
-        static const AkUniqueID AUXLOW = 411780261U;
-        static const AkUniqueID AUXMID = 1049182825U;
-        static const AkUniqueID KICK = 2181839183U;
+        static const AkUniqueID BAND1 = 3193682177U;
+        static const AkUniqueID BAND2 = 3193682178U;
+        static const AkUniqueID BAND3 = 3193682179U;
+        static const AkUniqueID BAND4 = 3193682180U;
+        static const AkUniqueID BAND5 = 3193682181U;
+        static const AkUniqueID BAND6 = 3193682182U;
+        static const AkUniqueID BAND7 = 3193682183U;
+        static const AkUniqueID BAND8 = 3193682184U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

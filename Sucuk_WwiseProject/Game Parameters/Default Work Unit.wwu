@@ -3,7 +3,7 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{7EDF9E34-4B09-4807-A706-AE78FE55659E}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="band2" ID="{22963AC1-EB15-4186-9473-6813D8AB0BDB}">
+				<GameParameter Name="Fband2" ID="{22963AC1-EB15-4186-9473-6813D8AB0BDB}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="-48"/>
 						<Property Name="Max" Type="Real64" Value="0"/>
@@ -12,7 +12,7 @@
 						<Property Name="SlewRateUp" Type="Real64" Value="2"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="band3" ID="{05AF15D5-8514-4DA6-8B9D-67CA4FBA1F1B}">
+				<GameParameter Name="Fband3" ID="{05AF15D5-8514-4DA6-8B9D-67CA4FBA1F1B}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="-48"/>
 						<Property Name="Max" Type="Real64" Value="0"/>
@@ -21,7 +21,7 @@
 						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="band1" ID="{1BD6B2F4-D42B-4B19-A141-C79053C24FA8}">
+				<GameParameter Name="Fband1" ID="{1BD6B2F4-D42B-4B19-A141-C79053C24FA8}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="-48"/>
 						<Property Name="Max" Type="Real64" Value="0"/>
@@ -30,7 +30,7 @@
 						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="Kick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}">
+				<GameParameter Name="Mkick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="-48"/>
 						<Property Name="Max" Type="Real64" Value="0"/>
@@ -38,16 +38,7 @@
 						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="band4" ID="{84994725-6A9D-4830-8666-01C0A5C8F22E}">
-					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="-48"/>
-						<Property Name="Max" Type="Real64" Value="0"/>
-						<Property Name="Min" Type="Real64" Value="-48"/>
-						<Property Name="SlewRateDown" Type="Real64" Value="20"/>
-						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
-					</PropertyList>
-				</GameParameter>
-				<GameParameter Name="band5" ID="{E49370AB-8F05-45D5-BC59-39BAE17B78AF}">
+				<GameParameter Name="Fband4" ID="{84994725-6A9D-4830-8666-01C0A5C8F22E}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="-48"/>
 						<Property Name="Max" Type="Real64" Value="0"/>
@@ -56,7 +47,7 @@
 						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="band6" ID="{E91D48F9-24E9-4809-ACCE-D1D6633CB169}">
+				<GameParameter Name="Fband5" ID="{E49370AB-8F05-45D5-BC59-39BAE17B78AF}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="-48"/>
 						<Property Name="Max" Type="Real64" Value="0"/>
@@ -65,7 +56,7 @@
 						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="band7" ID="{09F025B7-A888-4703-ABB2-440674C9A0E4}">
+				<GameParameter Name="Fband6" ID="{E91D48F9-24E9-4809-ACCE-D1D6633CB169}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="-48"/>
 						<Property Name="Max" Type="Real64" Value="0"/>
@@ -74,7 +65,16 @@
 						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="band8" ID="{9367605E-9654-480F-B576-C62D8B6C340D}">
+				<GameParameter Name="Fband7" ID="{09F025B7-A888-4703-ABB2-440674C9A0E4}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="20"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Fband8" ID="{9367605E-9654-480F-B576-C62D8B6C340D}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="-48"/>
 						<Property Name="Max" Type="Real64" Value="0"/>

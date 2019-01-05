@@ -15,63 +15,107 @@ MonoBehaviour:
   - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: fae7fe48ca5bce4791e3a4071046b059
-    m_lastTime: -8586554101472839944
+    m_lastTime: -8586549897340464291
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6faef3859c315b48ac40ae404e146248
-    m_lastTime: -8586554101496149748
+    m_lastTime: -8586549017452535980
     List:
-    - name: auxHi
-      guid: fb9a44b18ee5fc4c995fe861983f737b
-      id: 1217559036
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-      - ElementName: auxHi
-        ObjectType: 1
-      Path: Default Work Unit\Master Audio Bus\auxHi
-    - name: auxLow
+    - name: band1
       guid: 470fa168dc52584c8d2cec70a9b71e17
-      id: 411780261
+      id: 3193682177
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Master Audio Bus
         ObjectType: 2
-      - ElementName: auxLow
+      - ElementName: band1
         ObjectType: 1
-      Path: Default Work Unit\Master Audio Bus\auxLow
-    - name: auxMid
+      Path: Default Work Unit\Master Audio Bus\band1
+    - name: band2
       guid: ee389ea4f018594fb706be3804ca83ef
-      id: 1049182825
+      id: 3193682178
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Master Audio Bus
         ObjectType: 2
-      - ElementName: auxMid
+      - ElementName: band2
         ObjectType: 1
-      Path: Default Work Unit\Master Audio Bus\auxMid
-    - name: Kick
-      guid: eae1f1fb840f9949863ecb7e37924b60
-      id: 2181839183
+      Path: Default Work Unit\Master Audio Bus\band2
+    - name: band3
+      guid: fb9a44b18ee5fc4c995fe861983f737b
+      id: 3193682179
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Master Audio Bus
         ObjectType: 2
-      - ElementName: Kick
+      - ElementName: band3
         ObjectType: 1
-      Path: Default Work Unit\Master Audio Bus\Kick
+      Path: Default Work Unit\Master Audio Bus\band3
+    - name: band4
+      guid: 2561a2e73744b940bba08a5fa877b3b2
+      id: 3193682180
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: band4
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\band4
+    - name: band5
+      guid: e936c99efebefe47b9e5f5dabef34be6
+      id: 3193682181
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: band5
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\band5
+    - name: band6
+      guid: 201eee81c1a4e841b1246540b6b6557d
+      id: 3193682182
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: band6
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\band6
+    - name: band7
+      guid: 51bdf9fe6af5554eae257bbe0aae063c
+      id: 3193682183
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: band7
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\band7
+    - name: band8
+      guid: 43c7e350a2ed5d45b7248e491f5577ca
+      id: 3193682184
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: band8
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\band8
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 8c9443e01b83094f875c5cda2d686dc8
-    m_lastTime: -8586554101472989556
+    m_lastTime: -8586549061624372736
     List:
     - name: Music
       guid: e02feb776654314bb529d113527efbe2
@@ -86,7 +130,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 87dd1b6c0986334194d4e602d0162b3c
-    m_lastTime: -8586549812929169849
+    m_lastTime: -8586549022618052196
     List:
     - name: Play
       guid: ec952d0b89347145addcb1b41dd8a5e6
@@ -104,61 +148,106 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 349edf7e094b0748a706ae78fe55659e
-    m_lastTime: -8586549811093250004
+    m_lastTime: -8586549039671899331
     List:
-    - name: Hi
+    - name: Fband1
       guid: f4b2d61b2bd4194ba141c79053c24fa8
-      id: 1769415228
+      id: 1495724413
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Hi
+      - ElementName: Fband1
         ObjectType: 13
-      Path: Default Work Unit\Hi
-    - name: Kick
-      guid: 4f2b5168ce408e43b553cd18883fdc1d
-      id: 2181839183
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Kick
-        ObjectType: 13
-      Path: Default Work Unit\Kick
-    - name: Low
+      Path: Default Work Unit\Fband1
+    - name: Fband2
       guid: c13a962215eb864194736813d8ab0bdb
-      id: 545371365
+      id: 1495724414
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Low
+      - ElementName: Fband2
         ObjectType: 13
-      Path: Default Work Unit\Low
-    - name: Mid
+      Path: Default Work Unit\Fband2
+    - name: Fband3
       guid: d515af051485a64d8b9d67ca4fba1f1b
-      id: 1182670505
+      id: 1495724415
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Mid
+      - ElementName: Fband3
         ObjectType: 13
-      Path: Default Work Unit\Mid
+      Path: Default Work Unit\Fband3
+    - name: Fband4
+      guid: 254799849d6a3048866601c0a5c8f22e
+      id: 1495724408
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fband4
+        ObjectType: 13
+      Path: Default Work Unit\Fband4
+    - name: Fband5
+      guid: ab7093e4058fd545bc5939bae17b78af
+      id: 1495724409
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fband5
+        ObjectType: 13
+      Path: Default Work Unit\Fband5
+    - name: Fband6
+      guid: f9481de9e9240948acced1d6633cb169
+      id: 1495724410
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fband6
+        ObjectType: 13
+      Path: Default Work Unit\Fband6
+    - name: Fband7
+      guid: b725f00988a80347abb2440674c9a0e4
+      id: 1495724411
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fband7
+        ObjectType: 13
+      Path: Default Work Unit\Fband7
+    - name: Fband8
+      guid: 5e60679354960f48b576c62d8b6c340d
+      id: 1495724404
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fband8
+        ObjectType: 13
+      Path: Default Work Unit\Fband8
+    - name: Mkick
+      guid: 4f2b5168ce408e43b553cd18883fdc1d
+      id: 3683999712
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mkick
+        ObjectType: 13
+      Path: Default Work Unit\Mkick
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: f7edd226412a334195eceacd717a2334
-    m_lastTime: -8586554101472959662
+    m_lastTime: -8586549897341034109
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: f4faeeea2dd2cf479ec88a3ad5125e83
-    m_lastTime: -8586554101472879842
+    m_lastTime: -8586549897340624236
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 2192ea1d0a59de45a949d9f30609f853
-    m_lastTime: -8586554101472859924
+    m_lastTime: -8586549897340564255
     List: []
   ExpandedItems:
   - /Sucuk_WwiseProject

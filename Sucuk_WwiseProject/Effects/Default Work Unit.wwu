@@ -3,8 +3,12 @@
 	<Effects>
 		<WorkUnit Name="Default Work Unit" ID="{77D4EA89-0D59-41E7-B379-AACF527DA29C}" PersistMode="Standalone">
 			<ChildrenList>
-				<Effect Name="Low_Wwise_Meter" ID="{71F43515-E5CB-4B20-A5B6-52A3DDE87228}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
-	<GameParameter Name="band1" ID="{1BD6B2F4-D42B-4B19-A141-C79053C24FA8}"/>
+				<Effect Name="Low_Wwise_Meter" ID="{71F43515-E5CB-4B20-A5B6-52A3DDE87228}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+					</PropertyList>
+					<PluginData>
+	<GameParameter Name="Fband1" ID="{1BD6B2F4-D42B-4B19-A141-C79053C24FA8}"/>
 </PluginData>
 				</Effect>
 				<Effect Name="Mid_Wwise_Meter" ID="{A35DA1BF-C515-40CE-BAB8-E47EE01F504B}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
@@ -12,7 +16,7 @@
 						<Property Name="ReleaseTime" Type="Real32" Value="0"/>
 					</PropertyList>
 					<PluginData>
-	<GameParameter Name="band2" ID="{22963AC1-EB15-4186-9473-6813D8AB0BDB}"/>
+	<GameParameter Name="Fband2" ID="{22963AC1-EB15-4186-9473-6813D8AB0BDB}"/>
 </PluginData>
 				</Effect>
 				<Effect Name="Hi_Wwise_Meter" ID="{8A535717-C29A-4A14-B18F-B1BC2C55B250}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
@@ -20,7 +24,7 @@
 						<Property Name="ReleaseTime" Type="Real32" Value="0"/>
 					</PropertyList>
 					<PluginData>
-	<GameParameter Name="band1" ID="{1BD6B2F4-D42B-4B19-A141-C79053C24FA8}"/>
+	<GameParameter Name="Fband3" ID="{05AF15D5-8514-4DA6-8B9D-67CA4FBA1F1B}"/>
 </PluginData>
 				</Effect>
 			</ChildrenList>
