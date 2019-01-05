@@ -15,13 +15,16 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="band3" ID="{B1449AFB-E58E-4CFC-995F-E861983F737B}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
-						</Reference>
-						<Reference Name="UserAuxSend1">
 							<ObjectRef Name="band1" ID="{68A10F47-52DC-4C58-8D2C-EC70A9B71E17}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 						</Reference>
-						<Reference Name="UserAuxSend2">
+						<Reference Name="UserAuxSend1">
 							<ObjectRef Name="band2" ID="{A49E38EE-18F0-4F59-B706-BE3804CA83EF}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+						</Reference>
+						<Reference Name="UserAuxSend2">
+							<ObjectRef Name="band3" ID="{B1449AFB-E58E-4CFC-995F-E861983F737B}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+						</Reference>
+						<Reference Name="UserAuxSend3">
+							<ObjectRef Name="band4" ID="{E7A26125-4437-40B9-BBA0-8A5FA877B3B2}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -36,9 +39,24 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="band5" ID="{9EC936E9-BEFE-47FE-B9E5-F5DABEF34BE6}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+								<Reference Name="UserAuxSend1">
+									<ObjectRef Name="band6" ID="{81EE1E20-A4C1-41E8-B124-6540B6B6557D}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+								<Reference Name="UserAuxSend2">
+									<ObjectRef Name="band7" ID="{FEF9BD51-F56A-4E55-AE25-7BBE0AAE063C}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+								<Reference Name="UserAuxSend3">
+									<ObjectRef Name="band8" ID="{50E3C743-EDA2-455D-B724-8E491F5577CA}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<MusicTrack Name="lowrider havoc" ID="{204E741E-50E3-4BE1-95AC-B7429F0EFA12}" ShortID="609039945">
+									<PropertyList>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
@@ -47,13 +65,16 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
 										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="band3" ID="{B1449AFB-E58E-4CFC-995F-E861983F737B}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+											<ObjectRef Name="band5" ID="{9EC936E9-BEFE-47FE-B9E5-F5DABEF34BE6}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
 										<Reference Name="UserAuxSend1">
-											<ObjectRef Name="band1" ID="{68A10F47-52DC-4C58-8D2C-EC70A9B71E17}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+											<ObjectRef Name="band6" ID="{81EE1E20-A4C1-41E8-B124-6540B6B6557D}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
 										<Reference Name="UserAuxSend2">
-											<ObjectRef Name="band2" ID="{A49E38EE-18F0-4F59-B706-BE3804CA83EF}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+											<ObjectRef Name="band7" ID="{FEF9BD51-F56A-4E55-AE25-7BBE0AAE063C}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+										</Reference>
+										<Reference Name="UserAuxSend3">
+											<ObjectRef Name="band8" ID="{50E3C743-EDA2-455D-B724-8E491F5577CA}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -94,22 +115,22 @@
 										</Property>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Effect0">
 											<Custom>
-												<Effect Name="Wwise Meter (Custom)" ID="{AE9FBA04-B8F6-4CE2-BC4B-45F373BB7F67}" ShortID="791675481" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">													<PluginData>
-	<GameParameter Name="Kick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}"/>
+												<Effect Name="Wwise Meter (Custom)" ID="{AE9FBA04-B8F6-4CE2-BC4B-45F373BB7F67}" ShortID="791675481" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Mkick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}"/>
 </PluginData>
 												</Effect>
 											</Custom>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
-										</Reference>
-										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="Kick" ID="{FBF1E1EA-0F84-4999-863E-CB7E37924B60}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>

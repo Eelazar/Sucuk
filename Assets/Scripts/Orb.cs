@@ -32,7 +32,7 @@ public class Orb : MonoBehaviour
 
     //Wwise
     private int type;
-    private float[] wwiseSpectrum = new float[4];
+    private float[] wwiseSpectrum = new float[9];
 
     public float baseScale;
     public float kickScaleMultiplier;
@@ -47,7 +47,7 @@ public class Orb : MonoBehaviour
     {
         Generate();
         CopyArray();
-        DistributeSpectrumPointers(3);
+        DistributeSpectrumPointers(8);
     }
 
     private void Update()
@@ -62,10 +62,15 @@ public class Orb : MonoBehaviour
     {
         //Get the values from Wwise
         type = 1;
-        AkSoundEngine.GetRTPCValue("Low", gameObject, 0, out wwiseSpectrum[0], ref type);
-        AkSoundEngine.GetRTPCValue("Mid", gameObject, 0, out wwiseSpectrum[1], ref type);
-        AkSoundEngine.GetRTPCValue("Hi", gameObject, 0, out wwiseSpectrum[2], ref type);
-        AkSoundEngine.GetRTPCValue("Kick", gameObject, 0, out wwiseSpectrum[3], ref type);
+        AkSoundEngine.GetRTPCValue("Fband1", gameObject, 0, out wwiseSpectrum[0], ref type);
+        AkSoundEngine.GetRTPCValue("Fband2", gameObject, 0, out wwiseSpectrum[1], ref type);
+        AkSoundEngine.GetRTPCValue("Fband3", gameObject, 0, out wwiseSpectrum[2], ref type);
+        AkSoundEngine.GetRTPCValue("Fband4", gameObject, 0, out wwiseSpectrum[3], ref type);
+        AkSoundEngine.GetRTPCValue("Fband5", gameObject, 0, out wwiseSpectrum[4], ref type);
+        AkSoundEngine.GetRTPCValue("Fband6", gameObject, 0, out wwiseSpectrum[5], ref type);
+        AkSoundEngine.GetRTPCValue("Fband7", gameObject, 0, out wwiseSpectrum[6], ref type);
+        AkSoundEngine.GetRTPCValue("Fband8", gameObject, 0, out wwiseSpectrum[7], ref type);
+        AkSoundEngine.GetRTPCValue("Mkick", gameObject, 0, out wwiseSpectrum[8], ref type);
 
         //Normalizes the value to a value between 0 and 1
         for(int i = 0; i < wwiseSpectrum.Length; i++)
@@ -78,7 +83,7 @@ public class Orb : MonoBehaviour
         for (int i = 0; i < vertices.Length; i++)
         {
             Vector3 direction = originalVertices[i].normalized;
-            Vector3 destination = Vector3.SmoothDamp(vertices[i], originalVertices[i] + (direction * (baseScale + (kickScaleMultiplier * wwiseSpectrum[3])) + (direction * (amplitude * wwiseSpectrum[spectrumPointers[i]]))), ref velocity, smoothDamp);
+            Vector3 destination = Vector3.SmoothDamp(vertices[i], originalVertices[i] + (direction * (baseScale + (kickScaleMultiplier * wwiseSpectrum[8])) + (direction * (amplitude * wwiseSpectrum[spectrumPointers[i]]))), ref velocity, smoothDamp);
             vertices[i] = destination;
         }
         mesh.vertices = vertices;

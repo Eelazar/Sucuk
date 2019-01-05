@@ -2,19 +2,39 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	411780261	auxLow			\Default Work Unit\Master Audio Bus\auxLow	
-	1049182825	auxMid			\Default Work Unit\Master Audio Bus\auxMid	
-	1217559036	auxHi			\Default Work Unit\Master Audio Bus\auxHi	
-	2181839183	Kick			\Default Work Unit\Master Audio Bus\Kick	
+	3193682177	band1			\Default Work Unit\Master Audio Bus\band1	
+	3193682178	band2			\Default Work Unit\Master Audio Bus\band2	
+	3193682179	band3			\Default Work Unit\Master Audio Bus\band3	
+	3193682180	band4			\Default Work Unit\Master Audio Bus\band4	
+	3193682181	band5			\Default Work Unit\Master Audio Bus\band5	
+	3193682182	band6			\Default Work Unit\Master Audio Bus\band6	
+	3193682183	band7			\Default Work Unit\Master Audio Bus\band7	
+	3193682184	band8			\Default Work Unit\Master Audio Bus\band8	
 
 Effect plug-ins	ID	Name	Type				Notes
-	325262283	Wwise Gain (Custom)	Wwise Gain			
+	265304150	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	383417239	Wwise Gain (Custom)	Wwise Gain			
+	386537753	Wwise Meter (Custom)	Wwise Meter			
+	388055600	Wwise Meter (Custom)	Wwise Meter			
+	489728334	Wwise Meter (Custom)	Wwise Meter			
+	495016035	Wwise Gain (Custom)	Wwise Gain			
 	522232283	Wwise Gain (Custom)	Wwise Gain			
+	527204324	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	528962426	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	635390376	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
 	642127548	Hi_Wwise_Meter	Wwise Meter			
-	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
+	716750209	Wwise Gain (Custom)	Wwise Gain			
+	725216927	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	747761636	Wwise Gain (Custom)	Wwise Gain			
+	765259849	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	777136055	Wwise Meter (Custom)	Wwise Meter			
+	812833242	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	850384799	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	901709110	Wwise Meter (Custom)	Wwise Meter			
+	986862505	Wwise Gain (Custom)	Wwise Gain			
 	1045629903	Wwise Gain (Custom)	Wwise Gain			
+	1068766507	Wwise Gain (Custom)	Wwise Gain			
 	1867182737	Mid_Wwise_Meter	Wwise Meter			
-	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
 	4290840853	Low_Wwise_Meter	Wwise Meter			
 
 Audio Devices	ID	Name	Type				Notes
