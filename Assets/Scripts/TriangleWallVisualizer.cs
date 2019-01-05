@@ -23,13 +23,13 @@ public class TriangleWallVisualizer : MonoBehaviour {
     //Private
     private float[] spectrum = new float[8];
     private GameObject[,] triangleArray;
-    private int[] randomPointers = { 0, 1, 2, 3, 4, 5, 6, 7 };
+    private int[] randomPointers = { 0, 1, 2, 3, 4, 5, 6, 7, 8};
     private int[,] spectrumPointers;
     private Vector3 velocity;
 
     //Wwise
     private int type;
-    private float[] wwiseSpectrum = new float[4];
+    private float[] wwiseSpectrum = new float[9];
 
     private float distanceX;
     private float distanceY;
@@ -40,7 +40,7 @@ public class TriangleWallVisualizer : MonoBehaviour {
         distanceY = yConst * trianglePrefab.transform.localScale.x;
         Generate();
 
-        DistributeSpectrumPointers(4);
+        DistributeSpectrumPointers(9);
 	}
 	
 	void Update () 
@@ -90,10 +90,15 @@ public class TriangleWallVisualizer : MonoBehaviour {
     {
         //Get the values from Wwise
         type = 1;
-        AkSoundEngine.GetRTPCValue("Low", gameObject, 0, out wwiseSpectrum[0], ref type);
-        AkSoundEngine.GetRTPCValue("Mid", gameObject, 0, out wwiseSpectrum[1], ref type);
-        AkSoundEngine.GetRTPCValue("Hi", gameObject, 0, out wwiseSpectrum[2], ref type);
-        AkSoundEngine.GetRTPCValue("Kick", gameObject, 0, out wwiseSpectrum[3], ref type);
+        AkSoundEngine.GetRTPCValue("Fband1", gameObject, 0, out wwiseSpectrum[0], ref type);
+        AkSoundEngine.GetRTPCValue("Fband2", gameObject, 0, out wwiseSpectrum[1], ref type);
+        AkSoundEngine.GetRTPCValue("Fband3", gameObject, 0, out wwiseSpectrum[2], ref type);
+        AkSoundEngine.GetRTPCValue("Fband4", gameObject, 0, out wwiseSpectrum[3], ref type);
+        AkSoundEngine.GetRTPCValue("Fband5", gameObject, 0, out wwiseSpectrum[4], ref type);
+        AkSoundEngine.GetRTPCValue("Fband6", gameObject, 0, out wwiseSpectrum[5], ref type);
+        AkSoundEngine.GetRTPCValue("Fband7", gameObject, 0, out wwiseSpectrum[6], ref type);
+        AkSoundEngine.GetRTPCValue("Fband8", gameObject, 0, out wwiseSpectrum[7], ref type);
+        AkSoundEngine.GetRTPCValue("Mkick", gameObject, 0, out wwiseSpectrum[8], ref type);
 
         //Normalizes the value to a value between 0 and 1
         for (int i = 0; i < wwiseSpectrum.Length; i++)
