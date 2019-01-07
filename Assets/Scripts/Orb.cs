@@ -3,9 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
+[RequireComponent(typeof(MeshFilter), typeof(MeshRenderer), typeof(SphereCollider))]
 public class Orb : MonoBehaviour
 {
+    #region Editor Variables
     [Header("Mesh Variables")]
     [Tooltip("Higher grid Size means more vertices")]
     [SerializeField]
@@ -28,44 +29,114 @@ public class Orb : MonoBehaviour
     [Tooltip("Multiplies the values from the kick for bigger pulses")]
     [SerializeField]
     private float kickScaleMultiplier;
+    #endregion Editor Variables
 
-    ////Visualization Stuff
+    #region Private Mesh Variables
+    private Mesh mesh;
+    private Vector3[] vertices;
+    private Vector3[] normals;
+    private Vector3[] originalVertices;
+    #endregion Private Mesh Variables
+
+    #region Private Visualization Variables
     //Classic
     private float[] eightPointSpectrum = new float[8];
     private Vector3 velocity;
     private int[] spectrumPointers;
     private int[] randomPointers = { 0, 1, 2, 3, 4, 5, 6, 7 };
-
     //Wwise
     private int type;
     private float[] wwiseSpectrum = new float[9];
+    #endregion Private Visualization Variables
 
-
-    ////Mesh Stuff
-    private Mesh mesh;
-    private Vector3[] vertices;
-    private Vector3[] normals;
-    private Vector3[] originalVertices;
+    #region Private Orbling Processing Variables
+    //Collider
+    private SphereCollider trigger;
+    //TrackID
+    private string[] percussionTracks = new string[] { "", "" };
+    private string[] bassTracks = new string[] { "", "" };
+    private string[] leadTracks = new string[] { "", "" };
+    #endregion Private Orbling Processing Variables
 
     private void Start()
     {
-        //Generate the sphere, one vertice at a time
         Generate();
-        //Make a copy of the vertice array to create a reference for calculations
         CopyArray();
-        //Fill the random number array, used to point to spectrum values in a random but equal manner
         DistributeSpectrumPointers(8);
+
+        trigger = transform.GetComponent<SphereCollider>();
+        trigger.isTrigger = true;
     }
 
     private void Update()
     {
-        //Not needed for Wwise integration
-        eightPointSpectrum = AudioSpectrumListener.frequencyBand;
-
-        //VisualizeRawEightPoint();
         VisualizeWwise();
+
+        trigger.radius = Vector3.Distance(vertices[0], transform.position);
     }
 
+    #region Orbling Stuff
+
+    private void OnTriggerEnter(Collider collider)
+    {
+        if (collider.GetComponent<Orbling>())
+        {
+            ProcessOrbling(collider.GetComponent<Orbling>());
+        }
+    }
+
+    /// <summary>
+    /// Triggers the necessary events in Wwise according to the Orbling type, and deletes it afterwards
+    /// </summary>
+    /// <param name="o">The Orbling instance to be processed</param>
+    private void ProcessOrbling(Orbling o)
+    {
+        if(o.soundType == Orbling.SoundType.Bass)
+        {
+            ShiftTrack(0, o.soundType);
+        }
+        else
+        {
+            ShiftTrack(0, o.soundType);
+        }
+
+        Destroy(o.gameObject);
+    }
+
+    /// <summary>
+    /// Switches the current track out
+    /// </summary>
+    /// <param name="shiftMode">0 = Replace with track, 1 = Add track</param>
+    /// <param name="trackType">The type of track that will be switched</param>
+    private void ShiftTrack(int shiftMode, Orbling.SoundType trackType)
+    {
+        if(shiftMode == 0)
+        {
+            switch (trackType)
+            {
+                case Orbling.SoundType.Percussion:
+                    break;
+                case Orbling.SoundType.Bass:
+                    break;
+                case Orbling.SoundType.Lead:
+                    break;
+                default:
+                    break;
+            }
+        }
+        else if(shiftMode == 1)
+        {
+
+        }
+    }
+
+    #endregion Orbling Stuff
+
+    #region Visualization Stuff
+
+    /// <summary>
+    /// Gets the spectrum values from Wwise and moves the vertices of the sphere accordingly
+    /// </summary>
     private void VisualizeWwise()
     {
         //Get the values from Wwise
@@ -98,31 +169,22 @@ public class Orb : MonoBehaviour
         mesh.RecalculateNormals();
     }
 
-    private void VisualizeRawEightPoint()
-    {
-        for(int i = 0; i < vertices.Length; i++)
-        {
-
-            Vector3 direction = originalVertices[i].normalized;
-            Vector3 destination = Vector3.SmoothDamp(vertices[i], originalVertices[i] + (direction * (eightPointSpectrum[spectrumPointers[i]] * amplitude)), ref velocity, smoothDamp);
-            vertices[i] = destination;
-        }
-        mesh.vertices = vertices;
-        mesh.RecalculateNormals();
-    }
-
-    private void DistributeSpectrumPointers(int spectrumSize)
+    /// <summary>
+    /// Fills the SpectrumPointers array with random ints in an equal manner (Sequence repeats after every number in given range was returned once) 
+    /// </summary>
+    /// <param name="range">The range of the random numbers generated, in this case equal to the spectrum size</param>
+    private void DistributeSpectrumPointers(int range)
     {
         spectrumPointers = new int[vertices.Length];
 
         System.Random r = new System.Random();
 
-        int countdownIndex = spectrumSize;
+        int countdownIndex = range;
         for(int i = 0; i < spectrumPointers.Length; i++)
         {
             if(countdownIndex <= 0)
             {
-                countdownIndex = spectrumSize;
+                countdownIndex = range;
             }
             int randomIndex = r.Next(countdownIndex);
             int number = randomPointers[randomIndex];
@@ -135,9 +197,11 @@ public class Orb : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Copies the position of all the vertices into a fixed array to conserve the original values for calculations
+    /// </summary>
     private void CopyArray()
     {
-        //Copies the position of all the vertices into a static array to conserve the original values
         originalVertices = new Vector3[vertices.Length];
 
         if (vertices.Length == originalVertices.Length)
@@ -151,7 +215,13 @@ public class Orb : MonoBehaviour
         else Debug.Log("Array sizes do not match");
     }
 
-    #region MeshStuff
+    #endregion Visualization Stuff
+
+    #region Mesh Stuff
+
+    /// <summary>
+    /// Generate the sphere, one vertice at a time
+    /// </summary>
     private void Generate()
     {
         GetComponent<MeshFilter>().mesh = mesh = new Mesh();
@@ -328,5 +398,6 @@ public class Orb : MonoBehaviour
         triangles[i + 5] = v11;
         return i + 6;
     }
-    #endregion MeshStuff
+
+    #endregion Mesh Stuff
 }
