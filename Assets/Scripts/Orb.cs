@@ -31,14 +31,15 @@ public class Orb : MonoBehaviour
     private float kickScaleMultiplier;
     #endregion Editor Variables
 
-    #region Private Mesh Variables
+    #region Private Variables
+    #region Mesh Variables
     private Mesh mesh;
     private Vector3[] vertices;
     private Vector3[] normals;
     private Vector3[] originalVertices;
-    #endregion Private Mesh Variables
+    #endregion Mesh Variables
 
-    #region Private Visualization Variables
+    #region Visualization Variables
     //Classic
     private float[] eightPointSpectrum = new float[8];
     private Vector3 velocity;
@@ -47,16 +48,18 @@ public class Orb : MonoBehaviour
     //Wwise
     private int type;
     private float[] wwiseSpectrum = new float[9];
-    #endregion Private Visualization Variables
+    #endregion Visualization Variables
 
-    #region Private Orbling Processing Variables
+    #region Orbling Processing Variables
     //Collider
     private SphereCollider trigger;
     //TrackID
     private string[] percussionTracks = new string[] { "", "" };
     private string[] bassTracks = new string[] { "", "" };
     private string[] leadTracks = new string[] { "", "" };
-    #endregion Private Orbling Processing Variables
+    #endregion Orbling Processing Variables
+
+    #endregion Private Variables
 
     private void Start()
     {
