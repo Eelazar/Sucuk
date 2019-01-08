@@ -71,6 +71,8 @@ public class Orb : MonoBehaviour
 
         trigger = transform.GetComponent<SphereCollider>();
         trigger.isTrigger = true;
+
+        TurnOffAllTracks();
     }
 
     private void Update()
@@ -176,6 +178,22 @@ public class Orb : MonoBehaviour
 
             return track;
         }     
+    }
+
+    /// <summary>
+    /// Switches off every track, lists need to be manually added to trackListList
+    /// </summary>
+    private void TurnOffAllTracks()
+    {
+        List<List<string>> trackListList = new List<List<string>> { percussionTracks, bassTracks, leadTracks };
+
+        foreach(List<string> l in trackListList)
+        {
+            foreach(string s in l)
+            {
+                AkSoundEngine.SetState(s, "off");
+            }
+        }
     }
 
     #endregion Orbling Stuff
