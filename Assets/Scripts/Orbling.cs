@@ -6,8 +6,8 @@ using UnityEngine;
 public class Orbling : MonoBehaviour {
 
     [SerializeField]
-    public SoundType soundType;
+    public TrackType trackType;
 
-    public enum SoundType { Percussion, Bass, Lead }
+    public enum TrackType { Percussion, Bass, Lead }
 
 }
