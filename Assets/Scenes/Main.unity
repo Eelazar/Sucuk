@@ -336,7 +336,7 @@ ReflectionProbe:
   m_Enabled: 1
   serializedVersion: 2
   m_Type: 0
-  m_Mode: 1
+  m_Mode: 0
   m_RefreshMode: 1
   m_TimeSlicingMode: 2
   m_Resolution: 1024
@@ -2119,7 +2119,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: cc00aad6aae2228458b2891af8f2324d, type: 2}
   gridX: 12
   gridY: 25
-  amplitude: 35
+  amplitude: -20
   smoothTime: 0.2
 --- !u!4 &1201181382
 Transform:
@@ -2387,7 +2387,7 @@ ReflectionProbe:
   m_Enabled: 1
   serializedVersion: 2
   m_Type: 0
-  m_Mode: 1
+  m_Mode: 0
   m_RefreshMode: 1
   m_TimeSlicingMode: 2
   m_Resolution: 1024
@@ -2451,7 +2451,7 @@ ReflectionProbe:
   m_Enabled: 1
   serializedVersion: 2
   m_Type: 0
-  m_Mode: 1
+  m_Mode: 0
   m_RefreshMode: 1
   m_TimeSlicingMode: 2
   m_Resolution: 1024
