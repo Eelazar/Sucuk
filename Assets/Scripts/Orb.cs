@@ -53,6 +53,7 @@ public class Orb : MonoBehaviour
     private string[] percussionTracks = new string[] { "", "" };
     private string[] bassTracks = new string[] { "", "" };
     private string[] leadTracks = new string[] { "", "" };
+    private string[] currentBassTracks = new string[1];
     #endregion Orbling Processing Variables
 
     #endregion Private Variables
@@ -109,6 +110,7 @@ public class Orb : MonoBehaviour
     /// <param name="trackType">The type of track that will be switched</param>
     private void ShiftTrack(int shiftMode, Orbling.SoundType trackType)
     {
+        //No shiftmode just switch
         if(shiftMode == 0)
         {
             switch (trackType)
@@ -125,7 +127,19 @@ public class Orb : MonoBehaviour
         }
         else if(shiftMode == 1)
         {
-
+            switch (trackType)
+            {
+                case Orbling.SoundType.Percussion:
+                    break;
+                case Orbling.SoundType.Bass:
+                    AkSoundEngine.SetState(currentBassTracks[0], "off");
+                    AkSoundEngine.SetState(bassTracks[0], "on");
+                    break;
+                case Orbling.SoundType.Lead:
+                    break;
+                default:
+                    break;
+            }
         }
     }
 
