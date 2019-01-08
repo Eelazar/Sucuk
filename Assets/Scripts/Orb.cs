@@ -50,10 +50,15 @@ public class Orb : MonoBehaviour
     //Collider
     private SphereCollider trigger;
     //TrackID
-    private string[] percussionTracks = new string[] { "", "" };
-    private string[] bassTracks = new string[] { "", "" };
-    private string[] leadTracks = new string[] { "", "" };
+    private List<string> percussionTracks = new List<string> { "", "" };
+    private List<string> bassTracks = new List<string> { "", "" };
+    private List<string> leadTracks = new List<string> { "", "" };
+    private string[] currentPercussionTracks = new string[1];
     private string[] currentBassTracks = new string[1];
+    private string[] currentLeadTracks = new string[1];
+    private int bassTrackCounter;
+    private int percussionTrackCounter;
+    private int leadTrackCounter;
     #endregion Orbling Processing Variables
 
     #endregion Private Variables
@@ -91,56 +96,86 @@ public class Orb : MonoBehaviour
     /// <param name="o">The Orbling instance to be processed</param>
     private void ProcessOrbling(Orbling o)
     {
-        if(o.soundType == Orbling.SoundType.Bass)
+        switch (o.trackType)
         {
-            ShiftTrack(0, o.soundType);
-        }
-        else
-        {
-            ShiftTrack(1, o.soundType);
+            case Orbling.TrackType.Percussion:
+                AkSoundEngine.SetState(currentPercussionTracks[percussionTrackCounter], "off");
+                IncreaseTrackCounter(percussionTrackCounter, currentPercussionTracks.Length);
+                AkSoundEngine.SetState(GetRandomTrack(percussionTracks, currentPercussionTracks, percussionTrackCounter), "on");
+                break;
+            case Orbling.TrackType.Bass:
+                AkSoundEngine.SetState(currentBassTracks[bassTrackCounter], "off");
+                IncreaseTrackCounter(bassTrackCounter, currentBassTracks.Length);
+                AkSoundEngine.SetState(GetRandomTrack(bassTracks, currentBassTracks, bassTrackCounter), "on");
+                break;
+            case Orbling.TrackType.Lead:
+                AkSoundEngine.SetState(currentLeadTracks[leadTrackCounter], "off");
+                IncreaseTrackCounter(leadTrackCounter, currentLeadTracks.Length);
+                AkSoundEngine.SetState(GetRandomTrack(leadTracks, currentLeadTracks, leadTrackCounter), "on");
+                break;
+            default:
+                break;
         }
 
         Destroy(o.gameObject);
     }
 
     /// <summary>
-    /// Switches the current track out
+    /// Either increases the track counter, or resets it if it has reached the end of the current track list size
     /// </summary>
-    /// <param name="shiftMode">0 = Replace with track, 1 = Add track</param>
-    /// <param name="trackType">The type of track that will be switched</param>
-    private void ShiftTrack(int shiftMode, Orbling.SoundType trackType)
+    /// <param name="trackCounter">The track counter to be increased</param>
+    /// <param name="arrayLength">The length of the corresponding current track list</param>
+    private void IncreaseTrackCounter(int trackCounter, int arrayLength)
     {
-        //No shiftmode just switch
-        if(shiftMode == 0)
+        if(trackCounter >= arrayLength)
         {
-            switch (trackType)
-            {
-                case Orbling.SoundType.Percussion:
-                    break;
-                case Orbling.SoundType.Bass:
-                    break;
-                case Orbling.SoundType.Lead:
-                    break;
-                default:
-                    break;
-            }
+            trackCounter = 0;
         }
-        else if(shiftMode == 1)
+        else
         {
-            switch (trackType)
-            {
-                case Orbling.SoundType.Percussion:
-                    break;
-                case Orbling.SoundType.Bass:
-                    AkSoundEngine.SetState(currentBassTracks[0], "off");
-                    AkSoundEngine.SetState(bassTracks[0], "on");
-                    break;
-                case Orbling.SoundType.Lead:
-                    break;
-                default:
-                    break;
-            }
+            trackCounter++;
         }
+    }
+
+    /// <summary>
+    /// Gets a random track that is not already playing
+    /// </summary>
+    /// <param name="trackList">The track list from which to pick a random track</param>
+    /// <param name="currentTrackList">The corresponding list of currently playing tracks to exclude</param>
+    /// <param name="trackCounter">The corresponding track counter</param>
+    /// <returns></returns>
+    private string GetRandomTrack(List<string> trackList, string[] currentTrackList, int trackCounter)
+    {
+        string track;
+        
+        //If there is no track currently playing
+        if(currentTrackList[trackCounter] == null)
+        {
+            //Get a random track from the list
+            track = trackList[UnityEngine.Random.Range(0, trackList.Count)];
+            //Remove the chosen track from the list
+            trackList.Remove(track);
+            //Set the chosen track as the current track
+            currentTrackList[trackCounter] = track;
+
+            return track;
+        }
+        //If there IS a track currently playing 
+        else
+        {
+            //Save the track that is playing
+            string trackToSwitch = currentTrackList[trackCounter];
+            //Get a random track for the list
+            track = trackList[UnityEngine.Random.Range(0, trackList.Count)];
+            //Remove the chosen track from the list
+            trackList.Remove(track);
+            //Add the track that is playing back to the list
+            trackList.Add(trackToSwitch);
+            //Set the chosen track as the current track
+            currentTrackList[trackCounter] = track;
+
+            return track;
+        }     
     }
 
     #endregion Orbling Stuff
