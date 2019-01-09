@@ -50,9 +50,9 @@ public class Orb : MonoBehaviour
     //Collider
     private SphereCollider trigger;
     //TrackID
-    private List<string> percussionTracks = new List<string> { "", "" };
-    private List<string> bassTracks = new List<string> { "", "" };
-    private List<string> leadTracks = new List<string> { "", "" };
+    private List<string> percussionTracks = new List<string> { "intro_perc01", "intro_perc02", "intro_perc03" };
+    private List<string> bassTracks = new List<string> { "intro_bass01", "intro_bass02", "intro_bass03", "intro_bass04", "intro_bass05", "intro_bass06" };
+    private List<string> leadTracks = new List<string> { "intro_lead01", "intro_lead02", "intro_lead03", "intro_lead04", "intro_lead05" };
     private string[] currentPercussionTracks = new string[1];
     private string[] currentBassTracks = new string[1];
     private string[] currentLeadTracks = new string[1];

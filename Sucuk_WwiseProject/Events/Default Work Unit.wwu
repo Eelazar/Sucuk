@@ -5,7 +5,21 @@
 			<ChildrenList>
 				<Event Name="Play" ID="{0B2D95EC-3489-4571-ADDC-B1B41DD8A5E6}">
 					<ChildrenList>
-						<Action Name="" ID="{B2E5EA2C-D94D-468C-84D9-8438D65A0EBB}" ShortID="852824236">
+						<Action Name="" ID="{3C5D095A-A924-4A1A-B977-0D8A274385A8}" ShortID="493816323">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Old" ID="{6E1F087E-C91A-4149-BBE1-3925F2B1FB67}" WorkUnitID="{22C8ACF3-30F8-48FA-9609-8E74E0F1CD53}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayDynamic" ID="{77FF657C-5255-44DF-A990-4144287FB8AD}">
+					<ChildrenList>
+						<Action Name="" ID="{88ED85B9-1A80-45A9-B163-4BDA60A056A1}" ShortID="929126749">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>

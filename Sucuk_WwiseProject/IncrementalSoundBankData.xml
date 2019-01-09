@@ -3,26 +3,28 @@
 	<Platform GUID="{59052A65-B123-4394-BCCE-A22B4630E108}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="3779830517" Timestamp="1546705145"/>
-				<File Name="Music" Hash="2105494413" Timestamp="1546705145"/>
+				<File Name="Dynamic" Hash="2212883495" Timestamp="1547041831"/>
+				<File Name="Init" Hash="2119256356" Timestamp="1547040131"/>
+				<File Name="Music" Hash="780355636" Timestamp="1547041830"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2373751967" Timestamp="1546705145"/>
+				<File Name="" Hash="1495744518" Timestamp="1547041831"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{DB634F44-FCF3-4FF3-B854-65709F896FC1}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="2671405711" Timestamp="1546705146"/>
-				<File Name="Music" Hash="2105494413" Timestamp="1546705146"/>
+				<File Name="Dynamic" Hash="2212883495" Timestamp="1547041831"/>
+				<File Name="Init" Hash="73661450" Timestamp="1547040133"/>
+				<File Name="Music" Hash="780355636" Timestamp="1547041831"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3283670993" Timestamp="1546705146"/>
+				<File Name="" Hash="770834548" Timestamp="1547041831"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
