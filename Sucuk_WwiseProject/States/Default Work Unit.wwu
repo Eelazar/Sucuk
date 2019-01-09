@@ -1,6 +1,405 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{26D2EDF7-2A41-4133-95EC-EACD717A2334}" SchemaVersion="89">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{26D2EDF7-2A41-4133-95EC-EACD717A2334}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{26D2EDF7-2A41-4133-95EC-EACD717A2334}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="intro_bass01" ID="{4E77D1EB-CF08-4A49-9FC4-39446DCD6140}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{5ADEB182-4476-4430-8D7D-B0FB59BB6808}"/>
+						<State Name="on" ID="{CDE1D24A-B96D-407E-8406-F00C76216FB7}"/>
+						<State Name="off" ID="{7DCF7CD6-7F14-41F3-9703-0B80080F93CC}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{7DCF7CD6-7F14-41F3-9703-0B80080F93CC}"/>
+							<EndState Name="on" ID="{CDE1D24A-B96D-407E-8406-F00C76216FB7}"/>
+							<Time>0.1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="intro_bass02" ID="{6DA00382-77BD-47C9-84E8-D3CD3B0DE964}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{77763C91-0BC2-4CE0-8B17-EF53D06F1C92}"/>
+						<State Name="on" ID="{8052081C-08E9-4D6C-800C-41AB83FF6F1A}"/>
+						<State Name="off" ID="{0075E776-8E1C-4229-A02D-C0FD7086C717}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{0075E776-8E1C-4229-A02D-C0FD7086C717}"/>
+							<EndState Name="on" ID="{8052081C-08E9-4D6C-800C-41AB83FF6F1A}"/>
+							<Time>0.1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="intro_bass03" ID="{42A0F4D5-C926-4C91-94A1-C4120937894A}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{8AC18858-484A-4A58-AB59-301D336D23C3}"/>
+						<State Name="on" ID="{8629359C-847C-4D58-A65B-A9B99F4E0668}"/>
+						<State Name="off" ID="{CD032B51-D724-4055-A849-3C2AF249177C}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{CD032B51-D724-4055-A849-3C2AF249177C}"/>
+							<EndState Name="on" ID="{8629359C-847C-4D58-A65B-A9B99F4E0668}"/>
+							<Time>0.1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="intro_bass04" ID="{7714A423-C956-4010-AAA9-7F8C9E478D68}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{FBD71632-6EDC-4B57-B1C4-80F3CFC82780}"/>
+						<State Name="on" ID="{AF42E253-3D9A-4263-9A5D-9DED1E79F73E}"/>
+						<State Name="off" ID="{869D69C9-4F42-41F0-9874-47EC002358F4}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{869D69C9-4F42-41F0-9874-47EC002358F4}"/>
+							<EndState Name="on" ID="{AF42E253-3D9A-4263-9A5D-9DED1E79F73E}"/>
+							<Time>0.1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="intro_bass05" ID="{7873128C-9B21-4B70-8BA7-6C1DD22EE612}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{A43AD714-F244-46D7-8658-E707C8DA0D5D}"/>
+						<State Name="on" ID="{38E91A80-57FA-49D9-A9E3-BFB2D4F575A9}"/>
+						<State Name="off" ID="{DD3B32D5-6326-4A53-9B3E-BC3EBF5A6C25}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{DD3B32D5-6326-4A53-9B3E-BC3EBF5A6C25}"/>
+							<EndState Name="on" ID="{38E91A80-57FA-49D9-A9E3-BFB2D4F575A9}"/>
+							<Time>0.1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="intro_perc01" ID="{E790B101-358A-4F87-A50D-540B70033AFA}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{BAC86694-D28F-42A1-890A-56E201D7B2B3}"/>
+						<State Name="on" ID="{25FC8ACB-019E-4E2F-AC74-0F75C7CB2D42}"/>
+						<State Name="off" ID="{F5D275A1-4A19-4B07-9BD5-1C5C513753B5}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{F5D275A1-4A19-4B07-9BD5-1C5C513753B5}"/>
+							<EndState Name="on" ID="{25FC8ACB-019E-4E2F-AC74-0F75C7CB2D42}"/>
+							<Time>0.1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="clap01" ID="{A63343B2-2ED5-4275-BF6C-76C88A473A10}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{1481D64E-F17F-4FA0-8167-ACFCA996681D}"/>
+						<State Name="on" ID="{3786800E-A8F8-4160-A3BB-738C77CB7E19}"/>
+						<State Name="off" ID="{11BE64B6-3012-49EA-BC5D-D8C623CDE1AF}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{11BE64B6-3012-49EA-BC5D-D8C623CDE1AF}"/>
+							<EndState Name="on" ID="{3786800E-A8F8-4160-A3BB-738C77CB7E19}"/>
+							<Time>0.1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="intro_perc02" ID="{69ACE989-9F31-49A1-AFA8-676D98622E21}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{ACE5AEB0-B10A-46EF-8677-C34A4E2A192F}"/>
+						<State Name="on" ID="{D92D5D47-F566-4B79-A2F2-14F06A065A57}"/>
+						<State Name="off" ID="{FDC692BB-85F1-4618-A7AF-11062E55A1FE}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{FDC692BB-85F1-4618-A7AF-11062E55A1FE}"/>
+							<EndState Name="on" ID="{D92D5D47-F566-4B79-A2F2-14F06A065A57}"/>
+							<Time>0.1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="intro_stabs01" ID="{94D15554-F704-4763-B728-AFC3D04078CC}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{275EA90A-DF2C-4088-A9D7-451F114C9C54}"/>
+						<State Name="on" ID="{DED4292C-2161-4FE5-9BE2-433F68F12B08}"/>
+						<State Name="off" ID="{40F31D53-7D30-46D5-95A1-0DC383722DAB}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{40F31D53-7D30-46D5-95A1-0DC383722DAB}"/>
+							<EndState Name="on" ID="{DED4292C-2161-4FE5-9BE2-433F68F12B08}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="mid_bass01" ID="{84683072-C052-45C9-8342-A4DCE4CB1108}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{A5825E70-17FA-4D80-AEAF-B07536270CAE}"/>
+						<State Name="on" ID="{7B391D80-B4C3-49E1-9871-F8FA531BE003}"/>
+						<State Name="off" ID="{D658EBCD-8837-47A7-8E38-862800D92F66}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{D658EBCD-8837-47A7-8E38-862800D92F66}"/>
+							<EndState Name="on" ID="{7B391D80-B4C3-49E1-9871-F8FA531BE003}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="mid_lead01" ID="{E419DC78-0EB1-42F2-B540-CA83B143E1AC}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{924F74EB-EE1F-45E8-A9ED-A541B7016A43}"/>
+						<State Name="on" ID="{4CC00490-FC15-446A-9321-DB57AA4BED5B}"/>
+						<State Name="off" ID="{A35C8373-DDB9-469B-90B5-2E39B269C1ED}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{A35C8373-DDB9-469B-90B5-2E39B269C1ED}"/>
+							<EndState Name="on" ID="{4CC00490-FC15-446A-9321-DB57AA4BED5B}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="intro_lead01" ID="{AB740EDF-011A-4481-9591-B67073F444C2}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{4DBA2ABA-C8DF-40C8-A8C3-DEBC3C2C444D}"/>
+						<State Name="on" ID="{F8FF0754-3B01-405C-847A-CB9E1AB1A63D}"/>
+						<State Name="off" ID="{A9AA8FF9-8D7B-412C-B7BD-FB131E7CB877}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{A9AA8FF9-8D7B-412C-B7BD-FB131E7CB877}"/>
+							<EndState Name="on" ID="{F8FF0754-3B01-405C-847A-CB9E1AB1A63D}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="mid_lead02" ID="{3F7B42F5-D7E9-48DC-BA16-570DE8C39164}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{95D61473-4A1E-4B0E-8E78-116B9162D771}"/>
+						<State Name="on" ID="{96EEF4E2-F597-47C8-B410-6110BB71D425}"/>
+						<State Name="off" ID="{163F287C-F1AC-4F2B-81BA-8385C36987A2}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{163F287C-F1AC-4F2B-81BA-8385C36987A2}"/>
+							<EndState Name="on" ID="{96EEF4E2-F597-47C8-B410-6110BB71D425}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="mid_lead03" ID="{67C1D2F9-615E-47CA-846E-8D8F8CA86A35}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{1CA3E0BF-58FA-46AE-B86C-19FB77A404F0}"/>
+						<State Name="on" ID="{79EFA23E-168E-47D4-825D-F5D9C0CB6300}"/>
+						<State Name="off" ID="{298E36DE-0E78-495D-A51E-74B56DE04C39}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{298E36DE-0E78-495D-A51E-74B56DE04C39}"/>
+							<EndState Name="on" ID="{79EFA23E-168E-47D4-825D-F5D9C0CB6300}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="intro_lead04" ID="{B966CAAB-F709-47A6-9D82-51E583748F15}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{F6BD6B79-5282-469B-99EB-51DC0488F7B4}"/>
+						<State Name="on" ID="{9E6A03CD-5F7D-4DD5-84AF-70BF290B6443}"/>
+						<State Name="off" ID="{D0FFC397-0BC0-46CD-BF0A-2F1223175548}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{D0FFC397-0BC0-46CD-BF0A-2F1223175548}"/>
+							<EndState Name="on" ID="{9E6A03CD-5F7D-4DD5-84AF-70BF290B6443}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="mid_lead04" ID="{74F0ED19-6AD1-4F86-A26F-C790E03490A4}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{89575BD9-FCAB-41DE-8B6A-E59BC23EE6C6}"/>
+						<State Name="on" ID="{2B5CDB20-D082-45FC-B714-5444FE0B7287}"/>
+						<State Name="off" ID="{30E53535-CC1B-4F79-A279-EFF4B88DF1CA}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{30E53535-CC1B-4F79-A279-EFF4B88DF1CA}"/>
+							<EndState Name="on" ID="{2B5CDB20-D082-45FC-B714-5444FE0B7287}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="intro_bass06" ID="{BF1D6A22-42ED-4277-A343-F21C127357F2}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{7195BBE6-C8DF-4551-87FC-972E5709C944}"/>
+						<State Name="on" ID="{058D7D43-A8E3-49D5-980B-AB51420C14B7}"/>
+						<State Name="off" ID="{42809EA3-643C-417E-BF46-2E2871901B57}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{42809EA3-643C-417E-BF46-2E2871901B57}"/>
+							<EndState Name="on" ID="{058D7D43-A8E3-49D5-980B-AB51420C14B7}"/>
+							<Time>0.1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="intro_lead02" ID="{F54DA151-7BC8-4168-9BB0-DDD3EB2EB739}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{FDA5EDE4-AC4C-4FD2-A0AD-6D070C1CC74A}"/>
+						<State Name="on" ID="{CDA288A1-A23C-4517-AA2B-892DC40D5E41}"/>
+						<State Name="off" ID="{0217B23C-954D-470D-8569-B9ED17B0C9AC}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{0217B23C-954D-470D-8569-B9ED17B0C9AC}"/>
+							<EndState Name="on" ID="{CDA288A1-A23C-4517-AA2B-892DC40D5E41}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="intro_lead03" ID="{96CF41B1-4154-4AEB-98AA-3099764BFAEF}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{EEA769AB-C0EE-4658-83CA-54FA5B135270}"/>
+						<State Name="on" ID="{C2AE8A61-3F3A-4177-B47D-33BFB5AD76D0}"/>
+						<State Name="off" ID="{EEA15160-0C5B-4BE4-AF61-1ECB0BA232A2}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{EEA15160-0C5B-4BE4-AF61-1ECB0BA232A2}"/>
+							<EndState Name="on" ID="{C2AE8A61-3F3A-4177-B47D-33BFB5AD76D0}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="intro_lead05" ID="{25F20E6D-E132-4AA5-A166-3C8E0BBF5472}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{5A22FBEA-CA92-40F6-8565-BDEA9447F477}"/>
+						<State Name="on" ID="{DB1D8116-BE7C-4BDE-9D6A-7E500E67459F}"/>
+						<State Name="off" ID="{E9F12786-07D7-4F5C-BBF8-C0800E683C84}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{E9F12786-07D7-4F5C-BBF8-C0800E683C84}"/>
+							<EndState Name="on" ID="{DB1D8116-BE7C-4BDE-9D6A-7E500E67459F}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="intro_lead06" ID="{AB16A367-44D3-49A9-9B4C-93A5006E1AEB}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{DBAC7AC3-AB13-4869-855A-D28D8713D90E}"/>
+						<State Name="on" ID="{0A846942-0593-4EAA-8D41-C58594C19633}"/>
+						<State Name="off" ID="{771A70D3-EF53-4724-8D4D-24087DBAE990}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{771A70D3-EF53-4724-8D4D-24087DBAE990}"/>
+							<EndState Name="on" ID="{0A846942-0593-4EAA-8D41-C58594C19633}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="intro_perc03" ID="{07B58CBD-497C-4D9C-A77F-9CDAF39F5647}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{27FCA91C-BEF7-4F75-A5E1-515E46C36321}"/>
+						<State Name="on" ID="{A1F2922B-11F8-42AA-A88E-A5C05F7500B6}"/>
+						<State Name="off" ID="{9C52FAA5-0CC8-4EC9-8423-90C34743F063}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{9C52FAA5-0CC8-4EC9-8423-90C34743F063}"/>
+							<EndState Name="on" ID="{A1F2922B-11F8-42AA-A88E-A5C05F7500B6}"/>
+							<Time>0.1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

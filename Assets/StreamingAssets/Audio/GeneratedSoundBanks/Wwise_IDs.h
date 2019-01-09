@@ -14,7 +14,254 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY = 1256202815U;
+        static const AkUniqueID PLAYDYNAMIC = 2328709346U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace CLAP01
+        {
+            static const AkUniqueID GROUP = 3585583026U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace CLAP01
+
+        namespace INTRO_BASS01
+        {
+            static const AkUniqueID GROUP = 2979466380U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_BASS01
+
+        namespace INTRO_BASS02
+        {
+            static const AkUniqueID GROUP = 2979466383U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_BASS02
+
+        namespace INTRO_BASS03
+        {
+            static const AkUniqueID GROUP = 2979466382U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_BASS03
+
+        namespace INTRO_BASS04
+        {
+            static const AkUniqueID GROUP = 2979466377U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_BASS04
+
+        namespace INTRO_BASS05
+        {
+            static const AkUniqueID GROUP = 2979466376U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_BASS05
+
+        namespace INTRO_BASS06
+        {
+            static const AkUniqueID GROUP = 2979466379U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_BASS06
+
+        namespace INTRO_LEAD01
+        {
+            static const AkUniqueID GROUP = 3898274495U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_LEAD01
+
+        namespace INTRO_LEAD02
+        {
+            static const AkUniqueID GROUP = 3898274492U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_LEAD02
+
+        namespace INTRO_LEAD03
+        {
+            static const AkUniqueID GROUP = 3898274493U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_LEAD03
+
+        namespace INTRO_LEAD04
+        {
+            static const AkUniqueID GROUP = 3898274490U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_LEAD04
+
+        namespace INTRO_LEAD05
+        {
+            static const AkUniqueID GROUP = 3898274491U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_LEAD05
+
+        namespace INTRO_LEAD06
+        {
+            static const AkUniqueID GROUP = 3898274488U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_LEAD06
+
+        namespace INTRO_PERC01
+        {
+            static const AkUniqueID GROUP = 1451274673U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_PERC01
+
+        namespace INTRO_PERC02
+        {
+            static const AkUniqueID GROUP = 1451274674U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_PERC02
+
+        namespace INTRO_PERC03
+        {
+            static const AkUniqueID GROUP = 1451274675U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_PERC03
+
+        namespace INTRO_STABS01
+        {
+            static const AkUniqueID GROUP = 3384278750U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_STABS01
+
+        namespace MID_BASS01
+        {
+            static const AkUniqueID GROUP = 2513884940U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace MID_BASS01
+
+        namespace MID_LEAD01
+        {
+            static const AkUniqueID GROUP = 3432693055U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace MID_LEAD01
+
+        namespace MID_LEAD02
+        {
+            static const AkUniqueID GROUP = 3432693052U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace MID_LEAD02
+
+        namespace MID_LEAD03
+        {
+            static const AkUniqueID GROUP = 3432693053U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace MID_LEAD03
+
+        namespace MID_LEAD04
+        {
+            static const AkUniqueID GROUP = 3432693050U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace MID_LEAD04
+
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {
@@ -32,6 +279,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID DYNAMIC = 2223635772U;
         static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BANKS
 
