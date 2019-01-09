@@ -4,35 +4,41 @@ using UnityEngine;
 
 public class TriangleWallVisualizer : MonoBehaviour {
 
+    //Constants that provides the ideal distance so that the objects are correctly spaced
     const float xConst = 0.01F;
     const float yConst = 0.016F;
 
+    #region Editor Variables
+    [Tooltip("The prefab that will be instantiated for each triangle")]
     [SerializeField]
     private GameObject trianglePrefab;
+    [Tooltip("The materials used on the triangles, will be randomly selected")]
     [SerializeField]
     private Material[] materials;
+    [Tooltip("The amount of triangles to be spawned horizontally")]
     [SerializeField]
     private int gridX;
+    [Tooltip("The amount of triangles to be spawned vertically")]
     [SerializeField]
-    private int gridY;    
+    private int gridY;
+    [Tooltip("Higher amplitude means bigger movements")]
     [SerializeField]
     private float amplitude;
+    [Tooltip("Higher values means smoother, but also more restricted movement")]
+    [Range(0F, 0.2F)]
     [SerializeField]
     private float smoothTime;
+    #endregion Editor Variables
 
-    //Private
-    private float[] spectrum = new float[8];
+    #region Private Variables
     private GameObject[,] triangleArray;
     private int[] randomPointers = { 0, 1, 2, 3, 4, 5, 6, 7, 8};
     private int[,] spectrumPointers;
     private Vector3 velocity;
 
-    //Wwise
-    private int type;
-    private float[] wwiseSpectrum = new float[9];
-
     private float distanceX;
     private float distanceY;
+    #endregion Private Variables
 
     void Start () 
 	{
@@ -45,9 +51,6 @@ public class TriangleWallVisualizer : MonoBehaviour {
 	
 	void Update () 
 	{
-        spectrum = AudioSpectrumListener.frequencyBand;
-
-        //Animate();
         VisualizeWwise();
 	}
 
@@ -88,52 +91,18 @@ public class TriangleWallVisualizer : MonoBehaviour {
 
     private void VisualizeWwise()
     {
-        //Get the values from Wwise
-        type = 1;
-        AkSoundEngine.GetRTPCValue("Fband1", gameObject, 0, out wwiseSpectrum[0], ref type);
-        AkSoundEngine.GetRTPCValue("Fband2", gameObject, 0, out wwiseSpectrum[1], ref type);
-        AkSoundEngine.GetRTPCValue("Fband3", gameObject, 0, out wwiseSpectrum[2], ref type);
-        AkSoundEngine.GetRTPCValue("Fband4", gameObject, 0, out wwiseSpectrum[3], ref type);
-        AkSoundEngine.GetRTPCValue("Fband5", gameObject, 0, out wwiseSpectrum[4], ref type);
-        AkSoundEngine.GetRTPCValue("Fband6", gameObject, 0, out wwiseSpectrum[5], ref type);
-        AkSoundEngine.GetRTPCValue("Fband7", gameObject, 0, out wwiseSpectrum[6], ref type);
-        AkSoundEngine.GetRTPCValue("Fband8", gameObject, 0, out wwiseSpectrum[7], ref type);
-        AkSoundEngine.GetRTPCValue("Mkick", gameObject, 0, out wwiseSpectrum[8], ref type);
-
-        //Normalizes the value to a value between 0 and 1
-        for (int i = 0; i < wwiseSpectrum.Length; i++)
-        {
-            wwiseSpectrum[i] += 48;
-            wwiseSpectrum[i] /= 48;
-        }
-
         //Move the vertices
         for (int i = 0; i < gridX; i++)
         {
             for (int j = 0; j < gridY; j++)
             {
                 GameObject triangle = triangleArray[i, j];
-                Vector3 destination = new Vector3(transform.position.x + wwiseSpectrum[spectrumPointers[i, j]] * amplitude, triangle.transform.position.y, triangle.transform.position.z);
+                Vector3 destination = new Vector3(transform.position.x + WwiseListener.spectrum[spectrumPointers[i, j]] * amplitude, triangle.transform.position.y, triangle.transform.position.z);
 
                 triangle.transform.position = Vector3.SmoothDamp(triangle.transform.position, destination, ref velocity, smoothTime);
             }
         }
-    }
-
-    void Animate()
-    {
-        for(int i = 0; i < gridX; i++)
-        {
-            for (int j = 0; j < gridY; j++)
-            {
-                GameObject triangle = triangleArray[i, j];
-                Vector3 destination = new Vector3(transform.position.x + spectrum[spectrumPointers[i, j]] * amplitude, triangle.transform.position.y, triangle.transform.position.z);
-
-                triangle.transform.position = Vector3.SmoothDamp(triangle.transform.position, destination, ref velocity, smoothTime);
-            }
-        }
-        
-    }
+    }    
 
     void DistributeSpectrumPointers(int spectrumSize)
     {
