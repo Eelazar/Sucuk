@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>G:\Projects\Orb\Sucuk\Sucuk_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>G:\Projects\Orb\Sucuk\Sucuk_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>G:\Projects\Orb\Sucuk\Sucuk_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>G:\Projects\Orb\Sucuk\Sucuk_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
