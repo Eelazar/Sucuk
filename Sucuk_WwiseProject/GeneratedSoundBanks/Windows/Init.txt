@@ -29,7 +29,7 @@ State	ID	Name	State Group			Notes
 	0	None	intro_perc02			
 	930712164	off	intro_perc02			
 	1651971902	on	intro_perc02			
-	748895195	None	intro_perc03			
+	0	None	intro_perc03			
 	930712164	off	intro_perc03			
 	1651971902	on	intro_perc03			
 	0	None	mid_bass01			
@@ -41,7 +41,7 @@ State	ID	Name	State Group			Notes
 	0	None	intro_bass04			
 	930712164	off	intro_bass04			
 	1651971902	on	intro_bass04			
-	748895195	None	intro_bass06			
+	0	None	intro_bass06			
 	930712164	off	intro_bass06			
 	1651971902	on	intro_bass06			
 	0	None	intro_bass01			
@@ -71,19 +71,19 @@ State	ID	Name	State Group			Notes
 	0	None	clap01			
 	930712164	off	clap01			
 	1651971902	on	clap01			
-	748895195	None	intro_lead06			
+	0	None	intro_lead06			
 	930712164	off	intro_lead06			
 	1651971902	on	intro_lead06			
 	0	None	intro_lead04			
 	930712164	off	intro_lead04			
 	1651971902	on	intro_lead04			
-	748895195	None	intro_lead05			
+	0	None	intro_lead05			
 	930712164	off	intro_lead05			
 	1651971902	on	intro_lead05			
-	748895195	None	intro_lead02			
+	0	None	intro_lead02			
 	930712164	off	intro_lead02			
 	1651971902	on	intro_lead02			
-	748895195	None	intro_lead03			
+	0	None	intro_lead03			
 	930712164	off	intro_lead03			
 	1651971902	on	intro_lead03			
 	0	None	intro_lead01			
