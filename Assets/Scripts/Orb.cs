@@ -3,10 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(MeshFilter), typeof(MeshRenderer), typeof(SphereCollider))]
+[RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
 public class Orb : MonoBehaviour
 {
-    #region Editor Variables
     [Header("Mesh Variables")]
     [Tooltip("Higher grid Size means more vertices")]
     [SerializeField]
@@ -29,209 +28,101 @@ public class Orb : MonoBehaviour
     [Tooltip("Multiplies the values from the kick for bigger pulses")]
     [SerializeField]
     private float kickScaleMultiplier;
-    #endregion Editor Variables
 
-    #region Private Variables
-    #region Mesh Variables
+    ////Visualization Stuff
+    //Classic
+    private float[] eightPointSpectrum = new float[8];
+    private Vector3 velocity;
+    private int[] spectrumPointers;
+    private int[] randomPointers = { 0, 1, 2, 3, 4, 5, 6, 7 };
+
+    //Wwise
+    private int type;
+    private float[] wwiseSpectrum = new float[9];
+
+
+    ////Mesh Stuff
     private Mesh mesh;
     private Vector3[] vertices;
     private Vector3[] normals;
     private Vector3[] originalVertices;
-    #endregion Mesh Variables
-
-    #region Visualization Variables
-    //Wwise
-    private Vector3 velocity;
-    private int[] spectrumPointers;
-    private int[] randomPointers = { 0, 1, 2, 3, 4, 5, 6, 7 };
-    #endregion Visualization Variables
-
-    #region Orbling Processing Variables
-    //Collider
-    private SphereCollider trigger;
-    //TrackID
-    private List<string> percussionTracks = new List<string> { "intro_perc01", "intro_perc02", "intro_perc03" };
-    private List<string> bassTracks = new List<string> { "intro_bass01", "intro_bass02", "intro_bass03", "intro_bass04", "intro_bass05", "intro_bass06" };
-    private List<string> leadTracks = new List<string> { "intro_lead01", "intro_lead02", "intro_lead03", "intro_lead04", "intro_lead05" };
-    private string[] currentPercussionTracks = new string[1];
-    private string[] currentBassTracks = new string[1];
-    private string[] currentLeadTracks = new string[1];
-    private int bassTrackCounter;
-    private int percussionTrackCounter;
-    private int leadTrackCounter;
-    #endregion Orbling Processing Variables
-
-    #endregion Private Variables
 
     private void Start()
     {
+        //Generate the sphere, one vertice at a time
         Generate();
+        //Make a copy of the vertice array to create a reference for calculations
         CopyArray();
+        //Fill the random number array, used to point to spectrum values in a random but equal manner
         DistributeSpectrumPointers(8);
-
-        trigger = transform.GetComponent<SphereCollider>();
-        trigger.isTrigger = true;
-
-        TurnOffAllTracks();
     }
 
     private void Update()
     {
+        //Not needed for Wwise integration
+        eightPointSpectrum = AudioSpectrumListener.frequencyBand;
+
+        //VisualizeRawEightPoint();
         VisualizeWwise();
-
-        trigger.radius = Vector3.Distance(vertices[0], transform.position);
     }
 
-    #region Orbling Stuff
-
-    private void OnTriggerEnter(Collider collider)
-    {
-        if (collider.GetComponent<Orbling>())
-        {
-            ProcessOrbling(collider.GetComponent<Orbling>());
-        }
-    }
-
-    /// <summary>
-    /// Triggers the necessary events in Wwise according to the Orbling type, and deletes it afterwards
-    /// </summary>
-    /// <param name="o">The Orbling instance to be processed</param>
-    private void ProcessOrbling(Orbling o)
-    {
-        switch (o.trackType)
-        {
-            case Orbling.TrackType.Percussion:
-                AkSoundEngine.SetState(currentPercussionTracks[percussionTrackCounter], "off");
-                IncreaseTrackCounter(percussionTrackCounter, currentPercussionTracks.Length);
-                AkSoundEngine.SetState(GetRandomTrack(percussionTracks, currentPercussionTracks, percussionTrackCounter), "on");
-                break;
-            case Orbling.TrackType.Bass:
-                AkSoundEngine.SetState(currentBassTracks[bassTrackCounter], "off");
-                IncreaseTrackCounter(bassTrackCounter, currentBassTracks.Length);
-                AkSoundEngine.SetState(GetRandomTrack(bassTracks, currentBassTracks, bassTrackCounter), "on");
-                break;
-            case Orbling.TrackType.Lead:
-                AkSoundEngine.SetState(currentLeadTracks[leadTrackCounter], "off");
-                IncreaseTrackCounter(leadTrackCounter, currentLeadTracks.Length);
-                AkSoundEngine.SetState(GetRandomTrack(leadTracks, currentLeadTracks, leadTrackCounter), "on");
-                break;
-            default:
-                break;
-        }
-
-        Destroy(o.gameObject);
-    }
-
-    /// <summary>
-    /// Either increases the track counter, or resets it if it has reached the end of the current track list size
-    /// </summary>
-    /// <param name="trackCounter">The track counter to be increased</param>
-    /// <param name="arrayLength">The length of the corresponding current track list</param>
-    private void IncreaseTrackCounter(int trackCounter, int arrayLength)
-    {
-        if(trackCounter >= arrayLength)
-        {
-            trackCounter = 0;
-        }
-        else
-        {
-            trackCounter++;
-        }
-    }
-
-    /// <summary>
-    /// Gets a random track that is not already playing
-    /// </summary>
-    /// <param name="trackList">The track list from which to pick a random track</param>
-    /// <param name="currentTrackList">The corresponding list of currently playing tracks to exclude</param>
-    /// <param name="trackCounter">The corresponding track counter</param>
-    /// <returns></returns>
-    private string GetRandomTrack(List<string> trackList, string[] currentTrackList, int trackCounter)
-    {
-        string track;
-        
-        //If there is no track currently playing
-        if(currentTrackList[trackCounter] == null)
-        {
-            //Get a random track from the list
-            track = trackList[UnityEngine.Random.Range(0, trackList.Count)];
-            //Remove the chosen track from the list
-            trackList.Remove(track);
-            //Set the chosen track as the current track
-            currentTrackList[trackCounter] = track;
-
-            return track;
-        }
-        //If there IS a track currently playing 
-        else
-        {
-            //Save the track that is playing
-            string trackToSwitch = currentTrackList[trackCounter];
-            //Get a random track for the list
-            track = trackList[UnityEngine.Random.Range(0, trackList.Count)];
-            //Remove the chosen track from the list
-            trackList.Remove(track);
-            //Add the track that is playing back to the list
-            trackList.Add(trackToSwitch);
-            //Set the chosen track as the current track
-            currentTrackList[trackCounter] = track;
-
-            return track;
-        }     
-    }
-
-    /// <summary>
-    /// Switches off every track, lists need to be manually added to trackListList
-    /// </summary>
-    private void TurnOffAllTracks()
-    {
-        List<List<string>> trackListList = new List<List<string>> { percussionTracks, bassTracks, leadTracks };
-
-        foreach(List<string> l in trackListList)
-        {
-            foreach(string s in l)
-            {
-                AkSoundEngine.SetState(s, "off");
-            }
-        }
-    }
-
-    #endregion Orbling Stuff
-
-    #region Visualization Stuff
-
-    /// <summary>
-    /// Gets the spectrum values from Wwise and moves the vertices of the sphere accordingly
-    /// </summary>
     private void VisualizeWwise()
     {
+        //Get the values from Wwise
+        type = 1;
+        AkSoundEngine.GetRTPCValue("Fband1", gameObject, 0, out wwiseSpectrum[0], ref type);
+        AkSoundEngine.GetRTPCValue("Fband2", gameObject, 0, out wwiseSpectrum[1], ref type);
+        AkSoundEngine.GetRTPCValue("Fband3", gameObject, 0, out wwiseSpectrum[2], ref type);
+        AkSoundEngine.GetRTPCValue("Fband4", gameObject, 0, out wwiseSpectrum[3], ref type);
+        AkSoundEngine.GetRTPCValue("Fband5", gameObject, 0, out wwiseSpectrum[4], ref type);
+        AkSoundEngine.GetRTPCValue("Fband6", gameObject, 0, out wwiseSpectrum[5], ref type);
+        AkSoundEngine.GetRTPCValue("Fband7", gameObject, 0, out wwiseSpectrum[6], ref type);
+        AkSoundEngine.GetRTPCValue("Fband8", gameObject, 0, out wwiseSpectrum[7], ref type);
+        AkSoundEngine.GetRTPCValue("Mkick", gameObject, 0, out wwiseSpectrum[8], ref type);
+
+        //Normalize the values to a float between 0 and 1
+        for(int i = 0; i < wwiseSpectrum.Length; i++)
+        {
+            wwiseSpectrum[i] += 48;
+            wwiseSpectrum[i] /= 48;
+        }
+        
         //Move the vertices
         for (int i = 0; i < vertices.Length; i++)
         {
             Vector3 direction = originalVertices[i].normalized;
-            Vector3 destination = Vector3.SmoothDamp(vertices[i], originalVertices[i] + (direction * (baseScale + (kickScaleMultiplier * WwiseListener.spectrum[8])) + (direction * (amplitude * WwiseListener.spectrum[spectrumPointers[i]]))), ref velocity, smoothDamp);
+            Vector3 destination = Vector3.SmoothDamp(vertices[i], originalVertices[i] + (direction * (baseScale + (kickScaleMultiplier * wwiseSpectrum[8])) + (direction * (amplitude * wwiseSpectrum[spectrumPointers[i]]))), ref velocity, smoothDamp);
             vertices[i] = destination;
         }
         mesh.vertices = vertices;
         mesh.RecalculateNormals();
     }
 
-    /// <summary>
-    /// Fills the SpectrumPointers array with random ints in an equal manner (Sequence repeats after every number in given range was returned once) 
-    /// </summary>
-    /// <param name="range">The range of the random numbers generated, in this case equal to the spectrum size</param>
-    private void DistributeSpectrumPointers(int range)
+    private void VisualizeRawEightPoint()
+    {
+        for(int i = 0; i < vertices.Length; i++)
+        {
+
+            Vector3 direction = originalVertices[i].normalized;
+            Vector3 destination = Vector3.SmoothDamp(vertices[i], originalVertices[i] + (direction * (eightPointSpectrum[spectrumPointers[i]] * amplitude)), ref velocity, smoothDamp);
+            vertices[i] = destination;
+        }
+        mesh.vertices = vertices;
+        mesh.RecalculateNormals();
+    }
+
+    private void DistributeSpectrumPointers(int spectrumSize)
     {
         spectrumPointers = new int[vertices.Length];
 
         System.Random r = new System.Random();
 
-        int countdownIndex = range;
+        int countdownIndex = spectrumSize;
         for(int i = 0; i < spectrumPointers.Length; i++)
         {
             if(countdownIndex <= 0)
             {
-                countdownIndex = range;
+                countdownIndex = spectrumSize;
             }
             int randomIndex = r.Next(countdownIndex);
             int number = randomPointers[randomIndex];
@@ -244,11 +135,9 @@ public class Orb : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Copies the position of all the vertices into a fixed array to conserve the original values for calculations
-    /// </summary>
     private void CopyArray()
     {
+        //Copies the position of all the vertices into a static array to conserve the original values
         originalVertices = new Vector3[vertices.Length];
 
         if (vertices.Length == originalVertices.Length)
@@ -262,13 +151,7 @@ public class Orb : MonoBehaviour
         else Debug.Log("Array sizes do not match");
     }
 
-    #endregion Visualization Stuff
-
-    #region Mesh Stuff
-
-    /// <summary>
-    /// Generate the sphere, one vertice at a time
-    /// </summary>
+    #region MeshStuff
     private void Generate()
     {
         GetComponent<MeshFilter>().mesh = mesh = new Mesh();
@@ -445,6 +328,5 @@ public class Orb : MonoBehaviour
         triangles[i + 5] = v11;
         return i + 6;
     }
-
-    #endregion Mesh Stuff
+    #endregion MeshStuff
 }
