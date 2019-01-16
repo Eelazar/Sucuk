@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Hologram
-  m_Shader: {fileID: 4800000, guid: 8d258cef10b5d1243b7b4d9f2b6cc913, type: 3}
+  m_Name: Waves
+  m_Shader: {fileID: 4800000, guid: 398d4b8f417c3504aa5e1514786e2e50, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -55,10 +55,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _Amp: 0.331
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Freq: 1.77
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -66,13 +68,13 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RimPower: 3.18
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _Speed: 9.4
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _RimColor: {r: 0.7169812, g: 0, b: 0.4664621, a: 0}
+    - _Tint: {r: 0, g: 0, b: 0, a: 1}
