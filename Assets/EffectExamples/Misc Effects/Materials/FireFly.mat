@@ -98,7 +98,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _Specular: 0
     - _SpecularHighlights: 1
-    - _Speed: 1
+    - _Speed: 10.8
     - _SpeenPower: 0.1
     - _Spin: 8.4
     - _SrcBlend: 1
