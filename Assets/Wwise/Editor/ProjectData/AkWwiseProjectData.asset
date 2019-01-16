@@ -1,0 +1,894 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f06a2f56203f364a95f2c994646a91a, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: fae7fe48ca5bce4791e3a4071046b059
+    m_lastTime: -8586545590629599172
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 6faef3859c315b48ac40ae404e146248
+    m_lastTime: -8586545590657838864
+    List:
+    - name: band1
+      guid: 470fa168dc52584c8d2cec70a9b71e17
+      id: 3193682177
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: band1
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\band1
+    - name: band2
+      guid: ee389ea4f018594fb706be3804ca83ef
+      id: 3193682178
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: band2
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\band2
+    - name: band3
+      guid: fb9a44b18ee5fc4c995fe861983f737b
+      id: 3193682179
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: band3
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\band3
+    - name: band4
+      guid: 2561a2e73744b940bba08a5fa877b3b2
+      id: 3193682180
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: band4
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\band4
+    - name: band5
+      guid: e936c99efebefe47b9e5f5dabef34be6
+      id: 3193682181
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: band5
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\band5
+    - name: band6
+      guid: 201eee81c1a4e841b1246540b6b6557d
+      id: 3193682182
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: band6
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\band6
+    - name: band7
+      guid: 51bdf9fe6af5554eae257bbe0aae063c
+      id: 3193682183
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: band7
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\band7
+    - name: band8
+      guid: 43c7e350a2ed5d45b7248e491f5577ca
+      id: 3193682184
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: band8
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\band8
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 8c9443e01b83094f875c5cda2d686dc8
+    m_lastTime: -8586545554890210466
+    List:
+    - name: Dynamic
+      guid: e28314431cab634eb05ba7385ab18169
+      id: 2223635772
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dynamic
+        ObjectType: 7
+      Path: Default Work Unit\Dynamic
+    - name: Music
+      guid: e02feb776654314bb529d113527efbe2
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 7
+      Path: Default Work Unit\Music
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 87dd1b6c0986334194d4e602d0162b3c
+    m_lastTime: -8586545554901676503
+    List:
+    - name: Play
+      guid: ec952d0b89347145addcb1b41dd8a5e6
+      id: 1256202815
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play
+        ObjectType: 3
+      Path: Default Work Unit\Play
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: PlayDynamic
+      guid: 7c65ff775552df44a9904144287fb8ad
+      id: 2328709346
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlayDynamic
+        ObjectType: 3
+      Path: Default Work Unit\PlayDynamic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 349edf7e094b0748a706ae78fe55659e
+    m_lastTime: -8586545590673321479
+    List:
+    - name: Fband1
+      guid: f4b2d61b2bd4194ba141c79053c24fa8
+      id: 1495724413
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fband1
+        ObjectType: 13
+      Path: Default Work Unit\Fband1
+    - name: Fband2
+      guid: c13a962215eb864194736813d8ab0bdb
+      id: 1495724414
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fband2
+        ObjectType: 13
+      Path: Default Work Unit\Fband2
+    - name: Fband3
+      guid: d515af051485a64d8b9d67ca4fba1f1b
+      id: 1495724415
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fband3
+        ObjectType: 13
+      Path: Default Work Unit\Fband3
+    - name: Fband4
+      guid: 254799849d6a3048866601c0a5c8f22e
+      id: 1495724408
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fband4
+        ObjectType: 13
+      Path: Default Work Unit\Fband4
+    - name: Fband5
+      guid: ab7093e4058fd545bc5939bae17b78af
+      id: 1495724409
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fband5
+        ObjectType: 13
+      Path: Default Work Unit\Fband5
+    - name: Fband6
+      guid: f9481de9e9240948acced1d6633cb169
+      id: 1495724410
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fband6
+        ObjectType: 13
+      Path: Default Work Unit\Fband6
+    - name: Fband7
+      guid: b725f00988a80347abb2440674c9a0e4
+      id: 1495724411
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fband7
+        ObjectType: 13
+      Path: Default Work Unit\Fband7
+    - name: Fband8
+      guid: 5e60679354960f48b576c62d8b6c340d
+      id: 1495724404
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fband8
+        ObjectType: 13
+      Path: Default Work Unit\Fband8
+    - name: Mkick
+      guid: 4f2b5168ce408e43b553cd18883fdc1d
+      id: 3683999712
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mkick
+        ObjectType: 13
+      Path: Default Work Unit\Mkick
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: f7edd226412a334195eceacd717a2334
+    m_lastTime: -8586545554890163936
+    List:
+    - name: clap01
+      guid: b24333a6d52e7542bf6c76c88a473a10
+      id: 3585583026
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: clap01
+        ObjectType: 9
+      Path: Default Work Unit\clap01
+      values:
+      - name: None
+        guid: 4ed681147ff1a04f8167acfca996681d
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: b664be111230ea49bc5dd8c623cde1af
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 0e808637f8a86041a3bb738c77cb7e19
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_bass01
+      guid: ebd1774e08cf494a9fc439446dcd6140
+      id: 2979466380
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_bass01
+        ObjectType: 9
+      Path: Default Work Unit\intro_bass01
+      values:
+      - name: None
+        guid: 82b1de5a764430448d7db0fb59bb6808
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: d67ccf7d147ff34197030b80080f93cc
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 4ad2e1cd6db97e408406f00c76216fb7
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_bass02
+      guid: 8203a06dbd77c94784e8d3cd3b0de964
+      id: 2979466383
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_bass02
+        ObjectType: 9
+      Path: Default Work Unit\intro_bass02
+      values:
+      - name: None
+        guid: 913c7677c20be04c8b17ef53d06f1c92
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 76e775001c8e2942a02dc0fd7086c717
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 1c085280e9086c4d800c41ab83ff6f1a
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_bass03
+      guid: d5f4a04226c9914c94a1c4120937894a
+      id: 2979466382
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_bass03
+        ObjectType: 9
+      Path: Default Work Unit\intro_bass03
+      values:
+      - name: None
+        guid: 5888c18a4a48584aab59301d336d23c3
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 512b03cd24d75540a8493c2af249177c
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 9c3529867c84584da65ba9b99f4e0668
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_bass04
+      guid: 23a4147756c91040aaa97f8c9e478d68
+      id: 2979466377
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_bass04
+        ObjectType: 9
+      Path: Default Work Unit\intro_bass04
+      values:
+      - name: None
+        guid: 3216d7fbdc6e574bb1c480f3cfc82780
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: c9699d86424ff041987447ec002358f4
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 53e242af9a3d63429a5d9ded1e79f73e
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_bass05
+      guid: 8c127378219b704b8ba76c1dd22ee612
+      id: 2979466376
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_bass05
+        ObjectType: 9
+      Path: Default Work Unit\intro_bass05
+      values:
+      - name: None
+        guid: 14d73aa444f2d7468658e707c8da0d5d
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: d5323bdd2663534a9b3ebc3ebf5a6c25
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 801ae938fa57d949a9e3bfb2d4f575a9
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_bass06
+      guid: 226a1dbfed427742a343f21c127357f2
+      id: 2979466379
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_bass06
+        ObjectType: 9
+      Path: Default Work Unit\intro_bass06
+      values:
+      - name: None
+        guid: e6bb9571dfc8514587fc972e5709c944
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: a39e80423c647e41bf462e2871901b57
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 437d8d05e3a8d549980bab51420c14b7
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_lead01
+      guid: df0e74ab1a0181449591b67073f444c2
+      id: 3898274495
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_lead01
+        ObjectType: 9
+      Path: Default Work Unit\intro_lead01
+      values:
+      - name: None
+        guid: ba2aba4ddfc8c840a8c3debc3c2c444d
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: f98faaa97b8d2c41b7bdfb131e7cb877
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 5407fff8013b5c40847acb9e1ab1a63d
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_lead02
+      guid: 51a14df5c87b68419bb0ddd3eb2eb739
+      id: 3898274492
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_lead02
+        ObjectType: 9
+      Path: Default Work Unit\intro_lead02
+      values:
+      - name: None
+        guid: e4eda5fd4cacd24fa0ad6d070c1cc74a
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 3cb217024d950d478569b9ed17b0c9ac
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: a188a2cd3ca21745aa2b892dc40d5e41
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_lead03
+      guid: b141cf965441eb4a98aa3099764bfaef
+      id: 3898274493
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_lead03
+        ObjectType: 9
+      Path: Default Work Unit\intro_lead03
+      values:
+      - name: None
+        guid: ab69a7eeeec0584683ca54fa5b135270
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 6051a1ee5b0ce44baf611ecb0ba232a2
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 618aaec23a3f7741b47d33bfb5ad76d0
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_lead04
+      guid: abca66b909f7a6479d8251e583748f15
+      id: 3898274490
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_lead04
+        ObjectType: 9
+      Path: Default Work Unit\intro_lead04
+      values:
+      - name: None
+        guid: 796bbdf682529b4699eb51dc0488f7b4
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 97c3ffd0c00bcd46bf0a2f1223175548
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: cd036a9e7d5fd54d84af70bf290b6443
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_lead05
+      guid: 6d0ef22532e1a54aa1663c8e0bbf5472
+      id: 3898274491
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_lead05
+        ObjectType: 9
+      Path: Default Work Unit\intro_lead05
+      values:
+      - name: None
+        guid: eafb225a92caf6408565bdea9447f477
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 8627f1e9d7075c4fbbf8c0800e683c84
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 16811ddb7cbede4b9d6a7e500e67459f
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_lead06
+      guid: 67a316abd344a9499b4c93a5006e1aeb
+      id: 3898274488
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_lead06
+        ObjectType: 9
+      Path: Default Work Unit\intro_lead06
+      values:
+      - name: None
+        guid: c37aacdb13ab6948855ad28d8713d90e
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: d3701a7753ef24478d4d24087dbae990
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 4269840a9305aa4e8d41c58594c19633
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_perc01
+      guid: 01b190e78a35874fa50d540b70033afa
+      id: 1451274673
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_perc01
+        ObjectType: 9
+      Path: Default Work Unit\intro_perc01
+      values:
+      - name: None
+        guid: 9466c8ba8fd2a142890a56e201d7b2b3
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: a175d2f5194a074b9bd51c5c513753b5
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: cb8afc259e012f4eac740f75c7cb2d42
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_perc02
+      guid: 89e9ac69319fa149afa8676d98622e21
+      id: 1451274674
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_perc02
+        ObjectType: 9
+      Path: Default Work Unit\intro_perc02
+      values:
+      - name: None
+        guid: b0aee5ac0ab1ef468677c34a4e2a192f
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: bb92c6fdf1851846a7af11062e55a1fe
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 475d2dd966f5794ba2f214f06a065a57
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_perc03
+      guid: bd8cb5077c499c4da77f9cdaf39f5647
+      id: 1451274675
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_perc03
+        ObjectType: 9
+      Path: Default Work Unit\intro_perc03
+      values:
+      - name: None
+        guid: 1ca9fc27f7be754fa5e1515e46c36321
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: a5fa529cc80cc94e842390c34743f063
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 2b92f2a1f811aa42a88ea5c05f7500b6
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_stabs01
+      guid: 5455d19404f76347b728afc3d04078cc
+      id: 3384278750
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_stabs01
+        ObjectType: 9
+      Path: Default Work Unit\intro_stabs01
+      values:
+      - name: None
+        guid: 0aa95e272cdf8840a9d7451f114c9c54
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 531df340307dd54695a10dc383722dab
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 2c29d4de6121e54f9be2433f68f12b08
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: mid_bass01
+      guid: 7230688452c0c9458342a4dce4cb1108
+      id: 2513884940
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: mid_bass01
+        ObjectType: 9
+      Path: Default Work Unit\mid_bass01
+      values:
+      - name: None
+        guid: 705e82a5fa17804daeafb07536270cae
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: cdeb58d63788a7478e38862800d92f66
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 801d397bc3b4e1499871f8fa531be003
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: mid_lead01
+      guid: 78dc19e4b10ef242b540ca83b143e1ac
+      id: 3432693055
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: mid_lead01
+        ObjectType: 9
+      Path: Default Work Unit\mid_lead01
+      values:
+      - name: None
+        guid: eb744f921feee845a9eda541b7016a43
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 73835ca3b9dd9b4690b52e39b269c1ed
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 9004c04c15fc6a449321db57aa4bed5b
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: mid_lead02
+      guid: f5427b3fe9d7dc48ba16570de8c39164
+      id: 3432693052
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: mid_lead02
+        ObjectType: 9
+      Path: Default Work Unit\mid_lead02
+      values:
+      - name: None
+        guid: 7314d6951e4a0e4b8e78116b9162d771
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 7c283f16acf12b4f81ba8385c36987a2
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: e2f4ee9697f5c847b4106110bb71d425
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: mid_lead03
+      guid: f9d2c1675e61ca47846e8d8f8ca86a35
+      id: 3432693053
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: mid_lead03
+        ObjectType: 9
+      Path: Default Work Unit\mid_lead03
+      values:
+      - name: None
+        guid: bfe0a31cfa58ae46b86c19fb77a404f0
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: de368e29780e5d49a51e74b56de04c39
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 3ea2ef798e16d447825df5d9c0cb6300
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: mid_lead04
+      guid: 19edf074d16a864fa26fc790e03490a4
+      id: 3432693050
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: mid_lead04
+        ObjectType: 9
+      Path: Default Work Unit\mid_lead04
+      values:
+      - name: None
+        guid: d95b5789abfcde418b6ae59bc23ee6c6
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 3535e5301bcc794fa279eff4b88df1ca
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 20db5c2b82d0fc45b7145444fe0b7287
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: f4faeeea2dd2cf479ec88a3ad5125e83
+    m_lastTime: -8586545590629609147
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 2192ea1d0a59de45a949d9f30609f853
+    m_lastTime: -8586545590629599172
+    List: []
+  ExpandedItems:
+  - /Sucuk_WwiseProject
+  - /Sucuk_WwiseProject/Events
+  - /Sucuk_WwiseProject/Events/Default Work Unit
+  autoPopulateEnabled: 0
+  CurrentPluginConfig: 
