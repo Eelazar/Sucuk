@@ -1706,6 +1706,18 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
 						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Wwise Meter (Custom)" ID="{5E3854FA-F58C-48ED-9711-67C605D6D86C}" ShortID="1034190354" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+									<PropertyList>
+										<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+									</PropertyList>
+									<PluginData>
+	<GameParameter Name="Mkick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}"/>
+</PluginData>
+								</Effect>
+							</Custom>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 						</Reference>
@@ -1870,6 +1882,124 @@
 								</MusicCue>
 							</CueList>
 						</MusicSegment>
+						<MusicSegment Name="synthmas" ID="{23A97A50-EA99-4AC4-B63D-6ECD78E59237}" ShortID="933835934">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="179025.986394558"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="super synthmas" ID="{C4E1FD64-B8DB-482D-93BD-D9A882717262}" ShortID="589269113">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="band5" ID="{9EC936E9-BEFE-47FE-B9E5-F5DABEF34BE6}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+										</Reference>
+										<Reference Name="UserAuxSend1">
+											<ObjectRef Name="band6" ID="{81EE1E20-A4C1-41E8-B124-6540B6B6557D}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+										</Reference>
+										<Reference Name="UserAuxSend2">
+											<ObjectRef Name="band7" ID="{FEF9BD51-F56A-4E55-AE25-7BBE0AAE063C}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+										</Reference>
+										<Reference Name="UserAuxSend3">
+											<ObjectRef Name="band8" ID="{50E3C743-EDA2-455D-B724-8E491F5577CA}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="super synthmas" ID="{B3CBE23E-7AA9-434C-839F-0C7173D3C997}" ShortID="532509670">
+											<Language>SFX</Language>
+											<AudioFile>super synthmas.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{E30F351F-3CBD-4C00-8CC7-7F1021AEF961}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{0FA84C44-90EB-45BA-BFD1-29764C2D20A0}">
+											<ClipList>
+												<MusicClip Name="super synthmas" ID="{5A21DFCB-AE56-4CED-B0BE-D9DD0ECA3771}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="178051.950113379"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="super synthmas" ID="{B3CBE23E-7AA9-434C-839F-0C7173D3C997}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="sweet sytnh_kick" ID="{E44E5D5F-6F4E-432B-A150-CA43829829B7}" ShortID="939653257">
+									<PropertyList>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sweet sytnh_kick" ID="{08C26B87-99D8-4780-9728-6D047BEF91DE}" ShortID="354021680">
+											<Language>SFX</Language>
+											<AudioFile>sweet sytnh_kick.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{BBCB7A6F-E3E5-4AF9-8EDC-098FBE16BB3B}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{93A007FE-6E4D-4348-886D-F87FF3A33920}">
+											<ClipList>
+												<MusicClip Name="sweet sytnh_kick" ID="{54DD1FB7-AACA-408D-99E3-4D31F574374B}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="179025.986394558"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="sweet sytnh_kick" ID="{08C26B87-99D8-4780-9728-6D047BEF91DE}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{699C0871-989B-4F7D-89CF-FC7222B47860}"/>
+								<MusicCue Name="Exit Cue" ID="{682A6DFC-CB08-443F-BCEA-4C7AD66677D2}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="177793.045834361"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{7C30F825-F1AA-43E1-89AC-83F401FA12AB}">
@@ -1887,12 +2017,12 @@
 					<Playlist>
 						<MusicPlaylistItem Name="" ID="{A6F78DE2-893B-4219-9A19-4280B53F79C8}" ShortID="586530398">
 							<ChildrenList>
-								<MusicPlaylistItem Name="" ID="{3A8EEAD8-C888-4499-B36A-D5958FF05838}" ShortID="661630266">
+								<MusicPlaylistItem Name="" ID="{AC630AD4-EACB-4B62-8F74-A309501B3005}" ShortID="146273032">
 									<PropertyList>
 										<Property Name="LoopCount" Type="int16" Value="0"/>
 										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 									</PropertyList>
-									<SegmentRef Name="Lowrider Havoc" ID="{7A418A27-E562-4C3C-A94C-7AC6C14EA930}"/>
+									<SegmentRef Name="synthmas" ID="{23A97A50-EA99-4AC4-B63D-6ECD78E59237}"/>
 								</MusicPlaylistItem>
 							</ChildrenList>
 						</MusicPlaylistItem>

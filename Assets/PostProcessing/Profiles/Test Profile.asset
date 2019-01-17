@@ -102,7 +102,7 @@ MonoBehaviour:
       bloom:
         intensity: 0.3
         threshold: 0.7
-        softKnee: 0.5
+        softKnee: 0.488
         radius: 4
         antiFlicker: 1
       lensDirt:
