@@ -134,6 +134,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	971329114	Wwise Meter (Custom)	Wwise Meter			
 	986862505	Wwise Gain (Custom)	Wwise Gain			
 	1001885985	Wwise Meter (Custom)	Wwise Meter			
+	1034190354	Wwise Meter (Custom)	Wwise Meter			
 	1045629903	Wwise Gain (Custom)	Wwise Gain			
 	1068766507	Wwise Gain (Custom)	Wwise Gain			
 	1867182737	Mid_Wwise_Meter	Wwise Meter			
@@ -145,6 +146,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	170743702	kick	C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\kick_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Old\Lowrider Havoc\kick		43576380
 	308242865	I kick02	C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\I kick02_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Main\Intro\I kick02		2646064
 	345146910	lowrider havoc	C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\lowrider havoc_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Old\Lowrider Havoc\lowrider havoc		43286972
+	354021680	sweet sytnh_kick	C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\sweet sytnh_kick_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Old\synthmas\sweet sytnh_kick		31580248
 	361696692	I percussion02	C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\I percussion02_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Main\Intro\I percussion02		2646064
 	371007276	I lead 03	C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\I lead 03_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Main\Intro\I lead 03		2646064
 	390932693	I bass06	C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\I bass06_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Main\Intro\I bass06		2646064
@@ -152,6 +154,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	481539932	I lead05	C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\I lead06_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Main\Intro\I lead05		2646064
 	507265792	I bass03	C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\I bass03_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Main\Intro\I bass03		2646064
 	525610512	I perc03	C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\I perc03_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Main\Intro\I perc03		2646064
+	532509670	super synthmas	C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\super synthmas_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Old\synthmas\super synthmas		31408428
 	597074928	I bass01	C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\I bass01_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Main\Intro\I bass01		2646064
 	632708088	I noise01	C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\I noise01_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Main\Intro\I noise01		2646064
 	664490160	I bass04	C:\Users\mauri\Documents\Unity\Sucuk\Sucuk_WwiseProject\.cache\Mac\SFX\I bass04_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Main\Intro\I bass04		2646064

@@ -30,8 +30,8 @@ public class WwiseListener : MonoBehaviour {
         //Normalizes the value to a value between 0 and 1
         for (int i = 0; i < spectrum.Length; i++)
         {
-            spectrum[i] += 48;
-            spectrum[i] /= 48;
+            spectrum[i] += 48F;
+            spectrum[i] /= 48F;
         }
     }
 }

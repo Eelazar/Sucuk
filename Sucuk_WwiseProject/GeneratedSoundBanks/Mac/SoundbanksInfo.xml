@@ -45,6 +45,10 @@
 					<ShortName>lowrider havoc.wav</ShortName>
 					<Path>SFX\lowrider havoc_8956FC97.wem</Path>
 				</File>
+				<File Id="354021680" Language="SFX">
+					<ShortName>sweet sytnh_kick.wav</ShortName>
+					<Path>SFX\sweet sytnh_kick_8956FC97.wem</Path>
+				</File>
 				<File Id="361696692" Language="SFX">
 					<ShortName>I percussion02.wav</ShortName>
 					<Path>SFX\I percussion02_8956FC97.wem</Path>
@@ -72,6 +76,10 @@
 				<File Id="525610512" Language="SFX">
 					<ShortName>I perc03.wav</ShortName>
 					<Path>SFX\I perc03_8956FC97.wem</Path>
+				</File>
+				<File Id="532509670" Language="SFX">
+					<ShortName>super synthmas.wav</ShortName>
+					<Path>SFX\super synthmas_8956FC97.wem</Path>
 				</File>
 				<File Id="597074928" Language="SFX">
 					<ShortName>I bass01.wav</ShortName>
@@ -132,6 +140,10 @@
 					<ShortName>lowrider havoc.wav</ShortName>
 					<Path>SFX\lowrider havoc_8956FC97.wem</Path>
 				</File>
+				<File Id="354021680" Language="SFX">
+					<ShortName>sweet sytnh_kick.wav</ShortName>
+					<Path>SFX\sweet sytnh_kick_8956FC97.wem</Path>
+				</File>
 				<File Id="361696692" Language="SFX">
 					<ShortName>I percussion02.wav</ShortName>
 					<Path>SFX\I percussion02_8956FC97.wem</Path>
@@ -159,6 +171,10 @@
 				<File Id="525610512" Language="SFX">
 					<ShortName>I perc03.wav</ShortName>
 					<Path>SFX\I perc03_8956FC97.wem</Path>
+				</File>
+				<File Id="532509670" Language="SFX">
+					<ShortName>super synthmas.wav</ShortName>
+					<Path>SFX\super synthmas_8956FC97.wem</Path>
 				</File>
 				<File Id="597074928" Language="SFX">
 					<ShortName>I bass01.wav</ShortName>
