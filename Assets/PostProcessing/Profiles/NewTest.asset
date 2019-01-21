@@ -100,10 +100,10 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 16.85
+        intensity: 0.85
         threshold: 2.74
-        softKnee: 0.806
-        radius: 1.77
+        softKnee: 0.85
+        radius: 4
         antiFlicker: 1
       lensDirt:
         texture: {fileID: 0}
@@ -120,23 +120,23 @@ MonoBehaviour:
         neutralWhiteLevel: 5.3
         neutralWhiteClip: 10
       basic:
-        postExposure: 0.1
-        temperature: 0
-        tint: 16.2
-        hueShift: 135
-        saturation: 1.516
-        contrast: 0.749
+        postExposure: 0.2
+        temperature: 23
+        tint: 13
+        hueShift: 24
+        saturation: 1.67
+        contrast: 1
       channelMixer:
-        red: {x: 1.25, y: 0.44, z: 0}
+        red: {x: 1, y: 0, z: 0}
         green: {x: 0, y: 1, z: 0}
         blue: {x: 0, y: 0, z: 1}
         currentEditingChannel: 0
       colorWheels:
         mode: 1
         log:
-          slope: {r: 1, g: 0.69780684, b: 0.9060569, a: 0.46835443}
-          power: {r: 1, g: 0.9781366, b: 0.94328535, a: -0.4177215}
-          offset: {r: 0.99432796, g: 1, b: 0.9886567, a: 0.06329114}
+          slope: {r: 0.81529504, g: 1, b: 0.37738526, a: 0}
+          power: {r: 1, g: 1, b: 1, a: 0}
+          offset: {r: 0.8543113, g: 0.83801204, b: 1, a: 0}
         linear:
           lift: {r: 1, g: 1, b: 1, a: 0}
           gamma: {r: 1, g: 1, b: 1, a: 0}
@@ -308,7 +308,7 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       spectralTexture: {fileID: 0}
-      intensity: 0.133
+      intensity: 0.1
   grain:
     m_Enabled: 1
     m_Settings:
