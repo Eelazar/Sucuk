@@ -83,9 +83,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BaseHue: 0
-    - _Brightness: 1.05
-    - _BrightnessOffs: 4.64
+    - _BaseHue: 0.786
+    - _Brightness: 3.14
+    - _BrightnessOffs: 6
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _CutoffSpeed: 0.7
@@ -97,13 +97,13 @@ Material:
     - _GlossyReflections: 1
     - _HueRandomness: 0
     - _HueShift: 0.036
-    - _Metallic: 0.41
+    - _Metallic: 0
     - _Mode: 0
     - _NormalScale: 1.6
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Saturation: 0.902
-    - _Smoothness: 0.614
+    - _Saturation: 0.877
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SpeedToIntensity: 0.39
@@ -113,6 +113,6 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Albedo: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
+    - _Albedo: {r: 1, g: 0.21835127, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

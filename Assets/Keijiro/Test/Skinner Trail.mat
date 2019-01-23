@@ -47,21 +47,21 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BaseHue: 0.742
-    - _Brightness: 1.23
-    - _BrightnessOffs: 3.37
-    - _CutoffSpeed: 0
+    - _BaseHue: 0
+    - _Brightness: 3.46
+    - _BrightnessOffs: 4.74
+    - _CutoffSpeed: 0.5
     - _EmissionProb: 0
-    - _HueRandomness: 0
-    - _HueShift: 0
-    - _Metallic: 0
-    - _Saturation: 0.21
-    - _Smoothness: 0.708
-    - _SpeedToIntensity: 9.25
+    - _HueRandomness: 0.31
+    - _HueShift: 0.61
+    - _Metallic: 0.113
+    - _Saturation: 0.956
+    - _Smoothness: 0.341
+    - _SpeedToIntensity: -0.39
     - _SpeedToLightMax: 5
     - _SpeedToLightMin: 1
     - _SpeedToWidthMax: 3
     - _SpeedToWidthMin: 0
     - _Width: 0.05
     m_Colors:
-    - _Albedo: {r: 1, g: 1, b: 1, a: 1}
+    - _Albedo: {r: 0.4669811, g: 1, b: 0.8208994, a: 1}
