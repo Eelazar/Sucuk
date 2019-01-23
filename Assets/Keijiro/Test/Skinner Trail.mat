@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Skinner Trail
+  m_Shader: {fileID: 4800000, guid: f373ef08fa398b34cb94ff13a62ef134, type: 3}
+  m_ShaderKeywords: _EMISSION
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BasisBuffer:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OrthnormBuffer:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PositionBuffer:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PreviousOrthnormBuffer:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PreviousPositionBuffer:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _VelocityBuffer:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _VelocityTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BaseHue: 0.742
+    - _Brightness: 1.23
+    - _BrightnessOffs: 3.37
+    - _CutoffSpeed: 0
+    - _EmissionProb: 0
+    - _HueRandomness: 0
+    - _HueShift: 0
+    - _Metallic: 0
+    - _Saturation: 0.21
+    - _Smoothness: 0.708
+    - _SpeedToIntensity: 9.25
+    - _SpeedToLightMax: 5
+    - _SpeedToLightMin: 1
+    - _SpeedToWidthMax: 3
+    - _SpeedToWidthMin: 0
+    - _Width: 0.05
+    m_Colors:
+    - _Albedo: {r: 1, g: 1, b: 1, a: 1}
