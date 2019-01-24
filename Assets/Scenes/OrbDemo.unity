@@ -24615,9 +24615,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubePrefab: {fileID: 1514311319799380, guid: 410ecc716e9380d43b7a0cc97a8f4c7b, type: 2}
-  distance: 15
-  amplitude: 2
-  smoothTime: 0.2
+  n: 400
+  amplitude: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.0052490234
+      value: 0.28137207
+      inSlope: 0.12447928
+      outSlope: 0.12447928
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.6379372
+    - serializedVersion: 3
+      time: 0.27842435
+      value: 0.49727115
+      inSlope: 1.6086065
+      outSlope: 1.6086065
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.5666842
+      outWeight: 0.24309811
+    - serializedVersion: 3
+      time: 0.59943396
+      value: 0.90788233
+      inSlope: 0.84779936
+      outSlope: 0.84779936
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.558888
+      outWeight: 0.4896972
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.06468074
+      outSlope: 0.06468074
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.5820639
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  randomRange: 0.08
+  baseScale: 0.03
+  smoothTime: 0.1
+  shape: 1
+  distanceCircle: 10
+  distanceLine: 0.5
 --- !u!4 &2106467294
 Transform:
   m_ObjectHideFlags: 0
