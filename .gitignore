@@ -35,3 +35,15 @@ sysinfo.txt
 *.apk
 *.unitypackage
 Assets/Wwise/Resources/Soundbank/77EB2FE0-5466-4B31-B529-D113527EFBE2.asset
+Sucuk_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml
+Sucuk_WwiseProject/GeneratedSoundBanks/Windows/PluginInfo.xml
+Sucuk_WwiseProject/GeneratedSoundBanks/Windows/Music.txt
+Sucuk_WwiseProject/GeneratedSoundBanks/Windows/Music.bnk
+Sucuk_WwiseProject/GeneratedSoundBanks/Windows/Dynamic.txt
+Sucuk_WwiseProject/GeneratedSoundBanks/Windows/Dynamic.bnk
+Sucuk_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml
+Sucuk_WwiseProject/GeneratedSoundBanks/Mac/PluginInfo.xml
+Sucuk_WwiseProject/GeneratedSoundBanks/Mac/Music.txt
+Sucuk_WwiseProject/GeneratedSoundBanks/Mac/Music.bnk
+Sucuk_WwiseProject/GeneratedSoundBanks/Mac/Dynamic.txt
+Sucuk_WwiseProject/GeneratedSoundBanks/Mac/Dynamic.bnk
