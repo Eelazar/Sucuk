@@ -34,7 +34,7 @@ public class BarVisualizer : MonoBehaviour {
     private Shape shape;
     [Tooltip("The order of the frequencies")]
     [SerializeField]
-    private int[] spectrumOrder = new int[] { 0, 1, 2, 3, 4, 5, 6, 7 };
+    private int[] spectrumOrder = new int[] { 7, 6, 5, 4, 3, 2, 1, 0 };
 
     [Header("Circle Visualizer")]
     [Tooltip("The radius of the circle")]
