@@ -5,7 +5,6 @@ using UnityEngine;
 public class WwiseListener : MonoBehaviour {
 
     public static float[] spectrum = new float[9];
-
     private int type;
 
 	void Start () 

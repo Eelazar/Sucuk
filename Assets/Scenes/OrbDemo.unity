@@ -9459,6 +9459,96 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &95404513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 95404515}
+  - component: {fileID: 95404514}
+  m_Layer: 0
+  m_Name: Grid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &95404514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 95404513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac71460df3592c1418d14eeb7de61727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeGO: {fileID: 1794468134198288, guid: 298316e13f60c3f4a85ece300dfbd90f, type: 2}
+  lineM: {fileID: 2100000, guid: 4f6fb891d2ab7884bb1e2096f4345b25, type: 2}
+  spawnPosition: {x: -50, y: -30, z: -35}
+  gridSize: 20
+  frequency: 5
+  amplitude: 10
+  lerpDuration: 1.5
+  movementCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.12447928
+      outSlope: 0.12447928
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.6379372
+    - serializedVersion: 3
+      time: 0.2626779
+      value: 0.094670095
+      inSlope: 0.90625435
+      outSlope: 0.90625435
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.5666842
+      outWeight: 0.19739328
+    - serializedVersion: 3
+      time: 0.77002823
+      value: 0.9511712
+      inSlope: 0.37318927
+      outSlope: 0.37318927
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.22856079
+      outWeight: 0.4896972
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.06468074
+      outSlope: 0.06468074
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.5820639
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  perlinSeed: 0
+--- !u!4 &95404515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 95404513}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &388926339
 GameObject:
   m_ObjectHideFlags: 0
@@ -14400,8 +14490,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85b4143dd7df6de47a1d8c8458d6e45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloomIntensity: 1.42
+  bloomIntensity: 0.02
   profile: {fileID: 11400000, guid: d0363df716b75b74a93e3adb7b77ad1e, type: 2}
+  smoothTime: 0.1
 --- !u!4 &900880852
 Transform:
   m_ObjectHideFlags: 0
@@ -24658,7 +24749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cubePrefab: {fileID: 1514311319799380, guid: 410ecc716e9380d43b7a0cc97a8f4c7b, type: 2}
   n: 400
-  amplitude: 1
+  amplitude: 8
   curve:
     serializedVersion: 2
     m_Curve:
@@ -24701,7 +24792,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  randomRange: 0.08
+  randomRange: 1
   baseScale: 0.03
   smoothTime: 0.1
   shape: 1

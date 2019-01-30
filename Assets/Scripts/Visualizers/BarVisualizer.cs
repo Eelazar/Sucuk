@@ -32,6 +32,9 @@ public class BarVisualizer : MonoBehaviour {
     [Tooltip("The shape of the visualizer")]
     [SerializeField]
     private Shape shape;
+    [Tooltip("The order of the frequencies")]
+    [SerializeField]
+    private int[] spectrumOrder = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8 };
 
     [Header("Circle Visualizer")]
     [Tooltip("The radius of the circle")]
@@ -179,7 +182,7 @@ public class BarVisualizer : MonoBehaviour {
         {
             //cubeGOArray[i].transform.localScale = new Vector3(1, spectrum[i] * amplitude, 1);
 
-            float yPosition = Mathf.SmoothDamp(cubeGOArray[i].transform.localScale.y, extendedSpectrum[i] * amplitude, ref velocity, smoothTime);
+            float yPosition = Mathf.SmoothDamp(cubeGOArray[i].transform.localScale.y, extendedSpectrum[spectrumOrder[i]] * amplitude, ref velocity, smoothTime);
 
             Vector3 scale = cubeGOArray[i].transform.localScale;
             cubeGOArray[i].transform.localScale = new Vector3(scale.x, yPosition + Random.Range(-randomRange, randomRange) + baseScale, scale.z);

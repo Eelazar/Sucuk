@@ -49,19 +49,30 @@ public class Orb : MonoBehaviour
     #region Orbling Processing Variables
     //Collider
     private SphereCollider trigger;
-    //TrackID
-    private List<string> percussionTracks = new List<string> { "intro_perc01", "intro_perc02", "intro_perc03" };
-    private List<string> bassTracks = new List<string> { "intro_bass01", "intro_bass02", "intro_bass03", "intro_bass04", "intro_bass05", "intro_bass06" };
-    private List<string> leadTracks = new List<string> { "intro_lead01", "intro_lead02", "intro_lead03", "intro_lead04", "intro_lead05" };
+
+    //Track Management
+    [HideInInspector]
+    public List<string> percussionTracks = new List<string>();
+    [HideInInspector]
+    public List<string> bassTracks = new List<string>();
+    [HideInInspector]
+    public List<string> leadTracks = new List<string>();
+
     private string[] currentPercussionTracks = new string[1];
     private string[] currentBassTracks = new string[1];
     private string[] currentLeadTracks = new string[1];
+
     private int bassTrackCounter;
     private int percussionTrackCounter;
     private int leadTrackCounter;
     #endregion Orbling Processing Variables
 
     #endregion Private Variables
+
+    private void Awake()
+    {
+        TurnOffAllTracks();
+    }
 
     private void Start()
     {
@@ -71,8 +82,6 @@ public class Orb : MonoBehaviour
 
         trigger = transform.GetComponent<SphereCollider>();
         trigger.isTrigger = true;
-
-        TurnOffAllTracks();
     }
 
     private void Update()
@@ -193,6 +202,75 @@ public class Orb : MonoBehaviour
             {
                 AkSoundEngine.SetState(s, "off");
             }
+        }
+    }
+
+    /// <summary>
+    /// Clears all the "currently playing tracks" arrays
+    /// </summary>
+    private void ClearTrackArrays()
+    {
+        Array.Clear(currentBassTracks, 0, currentBassTracks.Length);
+        Array.Clear(currentPercussionTracks, 0, currentPercussionTracks.Length);
+        Array.Clear(currentLeadTracks, 0, currentLeadTracks.Length);
+    }
+
+    /// <summary>
+    /// Replaces the tracklist and clears everything when the segment ist switched
+    /// </summary>
+    /// <param name="segment">The name of the segment that is being switched to</param>
+    public void SwitchSegment(string segment)
+    {
+        switch (segment)
+        {
+            case "Intro":
+                bassTracks = TrackRegistry.bassTracksIntro;
+                percussionTracks = TrackRegistry.percussionTracksIntro;
+                leadTracks = TrackRegistry.leadTracksIntro;
+
+                TurnOffAllTracks();
+                ClearTrackArrays();
+                break;
+
+            case "Breakdown 1":
+                bassTracks = TrackRegistry.bassTracksBreakdown1;
+                percussionTracks = TrackRegistry.percussionTracksBreakdown1;
+                leadTracks = TrackRegistry.leadTracksBreakdown1;
+
+                TurnOffAllTracks();
+                ClearTrackArrays();
+                break;
+
+            case "Drop 1":
+                bassTracks = TrackRegistry.bassTracksDrop1;
+                percussionTracks = TrackRegistry.percussionTracksDrop1;
+                leadTracks = TrackRegistry.leadTracksDrop1;
+
+                TurnOffAllTracks();
+                ClearTrackArrays();
+                break;
+
+            case "Breakdown 2":
+                bassTracks = TrackRegistry.bassTracksBreakdown2;
+                percussionTracks = TrackRegistry.percussionTracksBreakdown2;
+                leadTracks = TrackRegistry.leadTracksBreakdown2;
+
+                TurnOffAllTracks();
+                ClearTrackArrays();
+                break;
+
+            case "Drop 2":
+                bassTracks = TrackRegistry.bassTracksDrop2;
+                percussionTracks = TrackRegistry.percussionTracksDrop2;
+                leadTracks = TrackRegistry.leadTracksDrop2;
+
+                TurnOffAllTracks();
+                ClearTrackArrays();
+                break;
+
+            default:
+                Debug.Log("Current segment not recognized");
+                break;
         }
     }
 
