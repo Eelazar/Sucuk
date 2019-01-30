@@ -34,7 +34,7 @@ public class BarVisualizer : MonoBehaviour {
     private Shape shape;
     [Tooltip("The order of the frequencies")]
     [SerializeField]
-    private int[] spectrumOrder = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8 };
+    private int[] spectrumOrder = new int[] { 0, 1, 2, 3, 4, 5, 6, 7 };
 
     [Header("Circle Visualizer")]
     [Tooltip("The radius of the circle")]
@@ -161,6 +161,11 @@ public class BarVisualizer : MonoBehaviour {
         int counter = 0;
 
         //For each spectrum value we have
+
+        /////////
+        ///////!!!!!!! Why the fuck is this 8 and why doesnt it work when its 9?????!!!!!
+        ////////////
+
         for (int i = 0; i < 8; i++)
         {
             //Go through the corresponding extended values
@@ -168,7 +173,7 @@ public class BarVisualizer : MonoBehaviour {
             {
                 //Multiply the spectrum value with the according percentage
                 float multiplier = multipliers[counter + j];
-                extendedSpectrum[counter + j] = curve.Evaluate(spectrum[i] * multiplier);
+                extendedSpectrum[counter + j] = curve.Evaluate(spectrum[spectrumOrder[i]] * multiplier);
             }
 
             //Increase the counter when one set of extended values is done
@@ -182,7 +187,7 @@ public class BarVisualizer : MonoBehaviour {
         {
             //cubeGOArray[i].transform.localScale = new Vector3(1, spectrum[i] * amplitude, 1);
 
-            float yPosition = Mathf.SmoothDamp(cubeGOArray[i].transform.localScale.y, extendedSpectrum[spectrumOrder[i]] * amplitude, ref velocity, smoothTime);
+            float yPosition = Mathf.SmoothDamp(cubeGOArray[i].transform.localScale.y, extendedSpectrum[i] * amplitude, ref velocity, smoothTime);
 
             Vector3 scale = cubeGOArray[i].transform.localScale;
             cubeGOArray[i].transform.localScale = new Vector3(scale.x, yPosition + Random.Range(-randomRange, randomRange) + baseScale, scale.z);
