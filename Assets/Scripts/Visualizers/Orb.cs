@@ -85,7 +85,7 @@ public class Orb : MonoBehaviour
     {
         VisualizeWwise();
 
-        trigger.radius = Vector3.Distance(vertices[0], transform.position);
+        trigger.radius = Vector3.Distance(vertices[0], Vector3.zero);
     }
 
     #region Orbling Stuff
