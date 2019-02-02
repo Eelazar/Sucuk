@@ -48,15 +48,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BaseHue: 0.766
-    - _Brightness: 6
+    - _Brightness: 2.42
     - _BrightnessOffs: 0
     - _CutoffSpeed: 0.5
     - _EmissionProb: 0
     - _HueRandomness: 0
     - _HueShift: 0.2
     - _Metallic: 0.671
-    - _Saturation: 1
+    - _Saturation: 0.807
     - _Smoothness: 0.436
     - _SpeedToIntensity: 1
     m_Colors:
-    - _Albedo: {r: 1, g: 1, b: 1, a: 1}
+    - _Albedo: {r: 0.8301887, g: 0.41117835, b: 0.44328037, a: 1}
