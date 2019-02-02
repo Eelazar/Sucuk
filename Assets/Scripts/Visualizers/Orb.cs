@@ -69,11 +69,6 @@ public class Orb : MonoBehaviour
 
     #endregion Private Variables
 
-    private void Awake()
-    {
-        TurnOffAllTracks();
-    }
-
     private void Start()
     {
         Generate();
@@ -82,6 +77,8 @@ public class Orb : MonoBehaviour
 
         trigger = transform.GetComponent<SphereCollider>();
         trigger.isTrigger = true;
+
+        TurnOffAllTracks();
     }
 
     private void Update()

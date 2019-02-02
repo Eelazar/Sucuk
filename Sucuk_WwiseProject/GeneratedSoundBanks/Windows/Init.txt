@@ -1,8 +1,60 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	862629338	d1_chords04			\Default Work Unit\d1_chords04	
+	862629340	d1_chords02			\Default Work Unit\d1_chords02	
+	862629341	d1_chords03			\Default Work Unit\d1_chords03	
+	862629343	d1_chords01			\Default Work Unit\d1_chords01	
+	900058763	d2_chords04			\Default Work Unit\d2_chords04	
+	900058764	d2_chords03			\Default Work Unit\d2_chords03	
+	900058765	d2_chords02			\Default Work Unit\d2_chords02	
+	900058766	d2_chords01			\Default Work Unit\d2_chords01	
+	1005609936	d1_lead05			\Default Work Unit\d1_lead05	
+	1005609937	d1_lead04			\Default Work Unit\d1_lead04	
+	1005609938	d1_lead07			\Default Work Unit\d1_lead07	
+	1005609939	d1_lead06			\Default Work Unit\d1_lead06	
+	1005609940	d1_lead01			\Default Work Unit\d1_lead01	
+	1005609942	d1_lead03			\Default Work Unit\d1_lead03	
+	1005609943	d1_lead02			\Default Work Unit\d1_lead02	
+	1005609949	d1_lead08			\Default Work Unit\d1_lead08	
+	1105457251	d1_perc04			\Default Work Unit\d1_perc04	
+	1105457252	d1_perc03			\Default Work Unit\d1_perc03	
+	1105457253	d1_perc02			\Default Work Unit\d1_perc02	
+	1105457254	d1_perc01			\Default Work Unit\d1_perc01	
 	1451274673	intro_perc01			\Default Work Unit\intro_perc01	
 	1451274674	intro_perc02			\Default Work Unit\intro_perc02	
 	1451274675	intro_perc03			\Default Work Unit\intro_perc03	
-	2513884940	mid_bass01			\Default Work Unit\mid_bass01	
+	1451274676	intro_perc04			\Default Work Unit\intro_perc04	
+	1853549913	intro_chords04			\Default Work Unit\intro_chords04	
+	1853549916	intro_chords01			\Default Work Unit\intro_chords01	
+	1853549918	intro_chords03			\Default Work Unit\intro_chords03	
+	1853549919	intro_chords02			\Default Work Unit\intro_chords02	
+	1899079024	d1_bass06			\Default Work Unit\d1_bass06	
+	1899079025	d1_bass07			\Default Work Unit\d1_bass07	
+	1899079026	d1_bass04			\Default Work Unit\d1_bass04	
+	1899079027	d1_bass05			\Default Work Unit\d1_bass05	
+	1899079028	d1_bass02			\Default Work Unit\d1_bass02	
+	1899079029	d1_bass03			\Default Work Unit\d1_bass03	
+	1899079031	d1_bass01			\Default Work Unit\d1_bass01	
+	1899079038	d1_bass08			\Default Work Unit\d1_bass08	
+	1985634353	d2_lead01			\Default Work Unit\d2_lead01	
+	1985634354	d2_lead02			\Default Work Unit\d2_lead02	
+	1985634355	d2_lead03			\Default Work Unit\d2_lead03	
+	1985634356	d2_lead04			\Default Work Unit\d2_lead04	
+	1985634357	d2_lead05			\Default Work Unit\d2_lead05	
+	1985634358	d2_lead06			\Default Work Unit\d2_lead06	
+	1985634359	d2_lead07			\Default Work Unit\d2_lead07	
+	1985634360	d2_lead08			\Default Work Unit\d2_lead08	
+	1988365731	d2_bass08			\Default Work Unit\d2_bass08	
+	1988365736	d2_bass03			\Default Work Unit\d2_bass03	
+	1988365737	d2_bass02			\Default Work Unit\d2_bass02	
+	1988365738	d2_bass01			\Default Work Unit\d2_bass01	
+	1988365740	d2_bass07			\Default Work Unit\d2_bass07	
+	1988365741	d2_bass06			\Default Work Unit\d2_bass06	
+	1988365742	d2_bass05			\Default Work Unit\d2_bass05	
+	1988365743	d2_bass04			\Default Work Unit\d2_bass04	
+	2328970224	d2_perc02			\Default Work Unit\d2_perc02	
+	2328970225	d2_perc03			\Default Work Unit\d2_perc03	
+	2328970227	d2_perc01			\Default Work Unit\d2_perc01	
+	2328970230	d2_perc04			\Default Work Unit\d2_perc04	
 	2979466376	intro_bass05			\Default Work Unit\intro_bass05	
 	2979466377	intro_bass04			\Default Work Unit\intro_bass04	
 	2979466379	intro_bass06			\Default Work Unit\intro_bass06	
@@ -10,10 +62,6 @@ State Group	ID	Name			Wwise Object Path	Notes
 	2979466382	intro_bass03			\Default Work Unit\intro_bass03	
 	2979466383	intro_bass02			\Default Work Unit\intro_bass02	
 	3384278750	intro_stabs01			\Default Work Unit\intro_stabs01	
-	3432693050	mid_lead04			\Default Work Unit\mid_lead04	
-	3432693052	mid_lead02			\Default Work Unit\mid_lead02	
-	3432693053	mid_lead03			\Default Work Unit\mid_lead03	
-	3432693055	mid_lead01			\Default Work Unit\mid_lead01	
 	3585583026	clap01			\Default Work Unit\clap01	
 	3898274488	intro_lead06			\Default Work Unit\intro_lead06	
 	3898274490	intro_lead04			\Default Work Unit\intro_lead04	
@@ -23,6 +71,66 @@ State Group	ID	Name			Wwise Object Path	Notes
 	3898274495	intro_lead01			\Default Work Unit\intro_lead01	
 
 State	ID	Name	State Group			Notes
+	0	None	d1_chords04			
+	930712164	off	d1_chords04			
+	1651971902	on	d1_chords04			
+	0	None	d1_chords02			
+	930712164	off	d1_chords02			
+	1651971902	on	d1_chords02			
+	0	None	d1_chords03			
+	930712164	off	d1_chords03			
+	1651971902	on	d1_chords03			
+	0	None	d1_chords01			
+	930712164	off	d1_chords01			
+	1651971902	on	d1_chords01			
+	0	None	d2_chords04			
+	930712164	off	d2_chords04			
+	1651971902	on	d2_chords04			
+	0	None	d2_chords03			
+	930712164	off	d2_chords03			
+	1651971902	on	d2_chords03			
+	0	None	d2_chords02			
+	930712164	off	d2_chords02			
+	1651971902	on	d2_chords02			
+	0	None	d2_chords01			
+	930712164	off	d2_chords01			
+	1651971902	on	d2_chords01			
+	0	None	d1_lead05			
+	930712164	off	d1_lead05			
+	1651971902	on	d1_lead05			
+	0	None	d1_lead04			
+	930712164	off	d1_lead04			
+	1651971902	on	d1_lead04			
+	0	None	d1_lead07			
+	930712164	off	d1_lead07			
+	1651971902	on	d1_lead07			
+	0	None	d1_lead06			
+	930712164	off	d1_lead06			
+	1651971902	on	d1_lead06			
+	0	None	d1_lead01			
+	930712164	off	d1_lead01			
+	1651971902	on	d1_lead01			
+	0	None	d1_lead03			
+	930712164	off	d1_lead03			
+	1651971902	on	d1_lead03			
+	0	None	d1_lead02			
+	930712164	off	d1_lead02			
+	1651971902	on	d1_lead02			
+	0	None	d1_lead08			
+	930712164	off	d1_lead08			
+	1651971902	on	d1_lead08			
+	0	None	d1_perc04			
+	930712164	off	d1_perc04			
+	1651971902	on	d1_perc04			
+	0	None	d1_perc03			
+	930712164	off	d1_perc03			
+	1651971902	on	d1_perc03			
+	0	None	d1_perc02			
+	930712164	off	d1_perc02			
+	1651971902	on	d1_perc02			
+	0	None	d1_perc01			
+	930712164	off	d1_perc01			
+	1651971902	on	d1_perc01			
 	0	None	intro_perc01			
 	930712164	off	intro_perc01			
 	1651971902	on	intro_perc01			
@@ -32,9 +140,105 @@ State	ID	Name	State Group			Notes
 	0	None	intro_perc03			
 	930712164	off	intro_perc03			
 	1651971902	on	intro_perc03			
-	0	None	mid_bass01			
-	930712164	off	mid_bass01			
-	1651971902	on	mid_bass01			
+	0	None	intro_perc04			
+	930712164	off	intro_perc04			
+	1651971902	on	intro_perc04			
+	0	None	intro_chords04			
+	930712164	off	intro_chords04			
+	1651971902	on	intro_chords04			
+	0	None	intro_chords01			
+	930712164	off	intro_chords01			
+	1651971902	on	intro_chords01			
+	0	None	intro_chords03			
+	930712164	off	intro_chords03			
+	1651971902	on	intro_chords03			
+	0	None	intro_chords02			
+	930712164	off	intro_chords02			
+	1651971902	on	intro_chords02			
+	0	None	d1_bass06			
+	930712164	off	d1_bass06			
+	1651971902	on	d1_bass06			
+	0	None	d1_bass07			
+	930712164	off	d1_bass07			
+	1651971902	on	d1_bass07			
+	0	None	d1_bass04			
+	930712164	off	d1_bass04			
+	1651971902	on	d1_bass04			
+	0	None	d1_bass05			
+	930712164	off	d1_bass05			
+	1651971902	on	d1_bass05			
+	0	None	d1_bass02			
+	930712164	off	d1_bass02			
+	1651971902	on	d1_bass02			
+	0	None	d1_bass03			
+	930712164	off	d1_bass03			
+	1651971902	on	d1_bass03			
+	0	None	d1_bass01			
+	930712164	off	d1_bass01			
+	1651971902	on	d1_bass01			
+	0	None	d1_bass08			
+	930712164	off	d1_bass08			
+	1651971902	on	d1_bass08			
+	0	None	d2_lead01			
+	930712164	off	d2_lead01			
+	1651971902	on	d2_lead01			
+	0	None	d2_lead02			
+	930712164	off	d2_lead02			
+	1651971902	on	d2_lead02			
+	0	None	d2_lead03			
+	930712164	off	d2_lead03			
+	1651971902	on	d2_lead03			
+	0	None	d2_lead04			
+	930712164	off	d2_lead04			
+	1651971902	on	d2_lead04			
+	0	None	d2_lead05			
+	930712164	off	d2_lead05			
+	1651971902	on	d2_lead05			
+	0	None	d2_lead06			
+	930712164	off	d2_lead06			
+	1651971902	on	d2_lead06			
+	0	None	d2_lead07			
+	930712164	off	d2_lead07			
+	1651971902	on	d2_lead07			
+	0	None	d2_lead08			
+	930712164	off	d2_lead08			
+	1651971902	on	d2_lead08			
+	0	None	d2_bass08			
+	930712164	off	d2_bass08			
+	1651971902	on	d2_bass08			
+	0	None	d2_bass03			
+	930712164	off	d2_bass03			
+	1651971902	on	d2_bass03			
+	0	None	d2_bass02			
+	930712164	off	d2_bass02			
+	1651971902	on	d2_bass02			
+	0	None	d2_bass01			
+	930712164	off	d2_bass01			
+	1651971902	on	d2_bass01			
+	0	None	d2_bass07			
+	930712164	off	d2_bass07			
+	1651971902	on	d2_bass07			
+	0	None	d2_bass06			
+	930712164	off	d2_bass06			
+	1651971902	on	d2_bass06			
+	0	None	d2_bass05			
+	930712164	off	d2_bass05			
+	1651971902	on	d2_bass05			
+	0	None	d2_bass04			
+	930712164	off	d2_bass04			
+	1651971902	on	d2_bass04			
+	0	None	d2_perc02			
+	930712164	off	d2_perc02			
+	1651971902	on	d2_perc02			
+	0	None	d2_perc03			
+	930712164	off	d2_perc03			
+	1651971902	on	d2_perc03			
+	0	None	d2_perc01			
+	930712164	off	d2_perc01			
+	1651971902	on	d2_perc01			
+	0	None	d2_perc04			
+	930712164	off	d2_perc04			
+	1651971902	on	d2_perc04			
 	0	None	intro_bass05			
 	930712164	off	intro_bass05			
 	1651971902	on	intro_bass05			
@@ -56,18 +260,6 @@ State	ID	Name	State Group			Notes
 	0	None	intro_stabs01			
 	930712164	off	intro_stabs01			
 	1651971902	on	intro_stabs01			
-	0	None	mid_lead04			
-	930712164	off	mid_lead04			
-	1651971902	on	mid_lead04			
-	0	None	mid_lead02			
-	930712164	off	mid_lead02			
-	1651971902	on	mid_lead02			
-	0	None	mid_lead03			
-	930712164	off	mid_lead03			
-	1651971902	on	mid_lead03			
-	0	None	mid_lead01			
-	930712164	off	mid_lead01			
-	1651971902	on	mid_lead01			
 	0	None	clap01			
 	930712164	off	clap01			
 	1651971902	on	clap01			
@@ -90,10 +282,14 @@ State	ID	Name	State Group			Notes
 	930712164	off	intro_lead01			
 	1651971902	on	intro_lead01			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2820609596	br01			\Default Work Unit\br01	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2726606664	drums			\Default Work Unit\Master Audio Bus\drums	
 	3193682177	band1			\Default Work Unit\Master Audio Bus\band1	
 	3193682178	band2			\Default Work Unit\Master Audio Bus\band2	
 	3193682179	band3			\Default Work Unit\Master Audio Bus\band3	
@@ -102,6 +298,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	3193682182	band6			\Default Work Unit\Master Audio Bus\band6	
 	3193682183	band7			\Default Work Unit\Master Audio Bus\band7	
 	3193682184	band8			\Default Work Unit\Master Audio Bus\band8	
+	3657263530	verb			\Default Work Unit\Master Audio Bus\verb	
 
 Effect plug-ins	ID	Name	Type				Notes
 	265304150	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
@@ -124,9 +321,12 @@ Effect plug-ins	ID	Name	Type				Notes
 	850384799	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
 	901709110	Wwise Meter (Custom)	Wwise Meter			
 	986862505	Wwise Gain (Custom)	Wwise Gain			
+	1038392421	Wwise Stereo Delay (Custom)	Wwise Stereo Delay			
 	1045629903	Wwise Gain (Custom)	Wwise Gain			
 	1068766507	Wwise Gain (Custom)	Wwise Gain			
 	1867182737	Mid_Wwise_Meter	Wwise Meter			
+	3013737263	Bass_Remover_1	Wwise Parametric EQ			
+	3216246379	Space_Dreaming	Wwise RoomVerb			
 	4290840853	Low_Wwise_Meter	Wwise Meter			
 
 Audio Devices	ID	Name	Type				Notes

@@ -29,13 +29,45 @@
 					<ShortName>I lead_mid05.wav</ShortName>
 					<Path>SFX\I lead_mid05_8956FC97.wem</Path>
 				</File>
+				<File Id="38674118" Language="SFX">
+					<ShortName>D bass04.wav</ShortName>
+					<Path>SFX\D bass04_8956FC97.wem</Path>
+				</File>
 				<File Id="55785395" Language="SFX">
 					<ShortName>I lead01.wav</ShortName>
 					<Path>SFX\I lead01_8956FC97.wem</Path>
 				</File>
+				<File Id="58894831" Language="SFX">
+					<ShortName>D lead02.wav</ShortName>
+					<Path>SFX\D lead02_8956FC97.wem</Path>
+				</File>
+				<File Id="62677213" Language="SFX">
+					<ShortName>D chord04.wav</ShortName>
+					<Path>SFX\D chord04_8956FC97.wem</Path>
+				</File>
+				<File Id="66501713" Language="SFX">
+					<ShortName>D chord02.wav</ShortName>
+					<Path>SFX\D chord02_8956FC97.wem</Path>
+				</File>
+				<File Id="102784985" Language="SFX">
+					<ShortName>Breakdown01.wav</ShortName>
+					<Path>SFX\Breakdown01_8956FC97.wem</Path>
+				</File>
+				<File Id="107189637" Language="SFX">
+					<ShortName>D sweet sytnh.wav</ShortName>
+					<Path>SFX\D sweet sytnh_8956FC97.wem</Path>
+				</File>
 				<File Id="170743702" Language="SFX">
 					<ShortName>kick.wav</ShortName>
 					<Path>SFX\kick_8956FC97.wem</Path>
+				</File>
+				<File Id="226369275" Language="SFX">
+					<ShortName>D lead03.wav</ShortName>
+					<Path>SFX\D lead03_8956FC97.wem</Path>
+				</File>
+				<File Id="268527172" Language="SFX">
+					<ShortName>D bass02.wav</ShortName>
+					<Path>SFX\D bass02_8956FC97.wem</Path>
 				</File>
 				<File Id="308242865" Language="SFX">
 					<ShortName>I kick02.wav</ShortName>
@@ -53,6 +85,10 @@
 					<ShortName>I percussion02.wav</ShortName>
 					<Path>SFX\I percussion02_8956FC97.wem</Path>
 				</File>
+				<File Id="369386558" Language="SFX">
+					<ShortName>B chord02.wav</ShortName>
+					<Path>SFX\B chord02_8956FC97.wem</Path>
+				</File>
 				<File Id="371007276" Language="SFX">
 					<ShortName>I lead 03.wav</ShortName>
 					<Path>SFX\I lead 03_8956FC97.wem</Path>
@@ -64,6 +100,18 @@
 				<File Id="396915713" Language="SFX">
 					<ShortName>I bass02.wav</ShortName>
 					<Path>SFX\I bass02_8956FC97.wem</Path>
+				</File>
+				<File Id="397130002" Language="SFX">
+					<ShortName>D bass03.wav</ShortName>
+					<Path>SFX\D bass03_8956FC97.wem</Path>
+				</File>
+				<File Id="415689279" Language="SFX">
+					<ShortName>B chord01.wav</ShortName>
+					<Path>SFX\B chord01_8956FC97.wem</Path>
+				</File>
+				<File Id="446602838" Language="SFX">
+					<ShortName>I sweetsynthChords02.wav</ShortName>
+					<Path>SFX\I sweetsynthChords02_8956FC97.wem</Path>
 				</File>
 				<File Id="481539932" Language="SFX">
 					<ShortName>I lead06.wav</ShortName>
@@ -80,6 +128,10 @@
 				<File Id="532509670" Language="SFX">
 					<ShortName>super synthmas.wav</ShortName>
 					<Path>SFX\super synthmas_8956FC97.wem</Path>
+				</File>
+				<File Id="552681318" Language="SFX">
+					<ShortName>D lead05.wav</ShortName>
+					<Path>SFX\D lead05_8956FC97.wem</Path>
 				</File>
 				<File Id="597074928" Language="SFX">
 					<ShortName>I bass01.wav</ShortName>
@@ -104,6 +156,26 @@
 				<File Id="773399468" Language="SFX">
 					<ShortName>I bass05.wav</ShortName>
 					<Path>SFX\I bass05_8956FC97.wem</Path>
+				</File>
+				<File Id="842707796" Language="SFX">
+					<ShortName>D perc01.wav</ShortName>
+					<Path>SFX\D perc01_8956FC97.wem</Path>
+				</File>
+				<File Id="854636483" Language="SFX">
+					<ShortName>D kick01.wav</ShortName>
+					<Path>SFX\D kick01_8956FC97.wem</Path>
+				</File>
+				<File Id="901398784" Language="SFX">
+					<ShortName>break01.wav</ShortName>
+					<Path>SFX\break01_8956FC97.wem</Path>
+				</File>
+				<File Id="963836717" Language="SFX">
+					<ShortName>D bass01.wav</ShortName>
+					<Path>SFX\D bass01_8956FC97.wem</Path>
+				</File>
+				<File Id="1064897874" Language="SFX">
+					<ShortName>impact01.wav</ShortName>
+					<Path>SFX\impact01_8956FC97.wem</Path>
 				</File>
 				<File Id="1066131730" Language="SFX">
 					<ShortName>I noise02.wav</ShortName>
@@ -124,13 +196,45 @@
 					<ShortName>I lead_mid05.wav</ShortName>
 					<Path>SFX\I lead_mid05_8956FC97.wem</Path>
 				</File>
+				<File Id="38674118" Language="SFX">
+					<ShortName>D bass04.wav</ShortName>
+					<Path>SFX\D bass04_8956FC97.wem</Path>
+				</File>
 				<File Id="55785395" Language="SFX">
 					<ShortName>I lead01.wav</ShortName>
 					<Path>SFX\I lead01_8956FC97.wem</Path>
 				</File>
+				<File Id="58894831" Language="SFX">
+					<ShortName>D lead02.wav</ShortName>
+					<Path>SFX\D lead02_8956FC97.wem</Path>
+				</File>
+				<File Id="62677213" Language="SFX">
+					<ShortName>D chord04.wav</ShortName>
+					<Path>SFX\D chord04_8956FC97.wem</Path>
+				</File>
+				<File Id="66501713" Language="SFX">
+					<ShortName>D chord02.wav</ShortName>
+					<Path>SFX\D chord02_8956FC97.wem</Path>
+				</File>
+				<File Id="102784985" Language="SFX">
+					<ShortName>Breakdown01.wav</ShortName>
+					<Path>SFX\Breakdown01_8956FC97.wem</Path>
+				</File>
+				<File Id="107189637" Language="SFX">
+					<ShortName>D sweet sytnh.wav</ShortName>
+					<Path>SFX\D sweet sytnh_8956FC97.wem</Path>
+				</File>
 				<File Id="170743702" Language="SFX">
 					<ShortName>kick.wav</ShortName>
 					<Path>SFX\kick_8956FC97.wem</Path>
+				</File>
+				<File Id="226369275" Language="SFX">
+					<ShortName>D lead03.wav</ShortName>
+					<Path>SFX\D lead03_8956FC97.wem</Path>
+				</File>
+				<File Id="268527172" Language="SFX">
+					<ShortName>D bass02.wav</ShortName>
+					<Path>SFX\D bass02_8956FC97.wem</Path>
 				</File>
 				<File Id="308242865" Language="SFX">
 					<ShortName>I kick02.wav</ShortName>
@@ -148,6 +252,10 @@
 					<ShortName>I percussion02.wav</ShortName>
 					<Path>SFX\I percussion02_8956FC97.wem</Path>
 				</File>
+				<File Id="369386558" Language="SFX">
+					<ShortName>B chord02.wav</ShortName>
+					<Path>SFX\B chord02_8956FC97.wem</Path>
+				</File>
 				<File Id="371007276" Language="SFX">
 					<ShortName>I lead 03.wav</ShortName>
 					<Path>SFX\I lead 03_8956FC97.wem</Path>
@@ -159,6 +267,18 @@
 				<File Id="396915713" Language="SFX">
 					<ShortName>I bass02.wav</ShortName>
 					<Path>SFX\I bass02_8956FC97.wem</Path>
+				</File>
+				<File Id="397130002" Language="SFX">
+					<ShortName>D bass03.wav</ShortName>
+					<Path>SFX\D bass03_8956FC97.wem</Path>
+				</File>
+				<File Id="415689279" Language="SFX">
+					<ShortName>B chord01.wav</ShortName>
+					<Path>SFX\B chord01_8956FC97.wem</Path>
+				</File>
+				<File Id="446602838" Language="SFX">
+					<ShortName>I sweetsynthChords02.wav</ShortName>
+					<Path>SFX\I sweetsynthChords02_8956FC97.wem</Path>
 				</File>
 				<File Id="481539932" Language="SFX">
 					<ShortName>I lead06.wav</ShortName>
@@ -175,6 +295,10 @@
 				<File Id="532509670" Language="SFX">
 					<ShortName>super synthmas.wav</ShortName>
 					<Path>SFX\super synthmas_8956FC97.wem</Path>
+				</File>
+				<File Id="552681318" Language="SFX">
+					<ShortName>D lead05.wav</ShortName>
+					<Path>SFX\D lead05_8956FC97.wem</Path>
 				</File>
 				<File Id="597074928" Language="SFX">
 					<ShortName>I bass01.wav</ShortName>
@@ -199,6 +323,26 @@
 				<File Id="773399468" Language="SFX">
 					<ShortName>I bass05.wav</ShortName>
 					<Path>SFX\I bass05_8956FC97.wem</Path>
+				</File>
+				<File Id="842707796" Language="SFX">
+					<ShortName>D perc01.wav</ShortName>
+					<Path>SFX\D perc01_8956FC97.wem</Path>
+				</File>
+				<File Id="854636483" Language="SFX">
+					<ShortName>D kick01.wav</ShortName>
+					<Path>SFX\D kick01_8956FC97.wem</Path>
+				</File>
+				<File Id="901398784" Language="SFX">
+					<ShortName>break01.wav</ShortName>
+					<Path>SFX\break01_8956FC97.wem</Path>
+				</File>
+				<File Id="963836717" Language="SFX">
+					<ShortName>D bass01.wav</ShortName>
+					<Path>SFX\D bass01_8956FC97.wem</Path>
+				</File>
+				<File Id="1064897874" Language="SFX">
+					<ShortName>impact01.wav</ShortName>
+					<Path>SFX\impact01_8956FC97.wem</Path>
 				</File>
 				<File Id="1066131730" Language="SFX">
 					<ShortName>I noise02.wav</ShortName>
