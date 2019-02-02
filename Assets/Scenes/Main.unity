@@ -782,6 +782,7 @@ MonoBehaviour:
   baseScale: 0
   smoothTime: 0.1
   shape: 0
+  spectrumOrder: 0700000006000000050000000400000003000000020000000100000000000000
   distanceCircle: 0
   distanceLine: 0
 --- !u!4 &354202270
@@ -2643,6 +2644,9 @@ MonoBehaviour:
   smoothDamp: 0.05
   baseScale: 12
   kickScaleMultiplier: 5
+  percussionTracks: []
+  bassTracks: []
+  leadTracks: []
 --- !u!135 &1269231299
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -776,6 +776,7 @@
 								<MusicTrack Name="I kick02" ID="{6CE6F039-829B-456C-AA3F-F9E9B4BF149F}" ShortID="729344943">
 									<PropertyList>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Effect0">
@@ -804,6 +805,9 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="drums" ID="{CA827889-43FC-43B8-B98E-ECB72ECBBB2D}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3852,6 +3856,7 @@
 								</MusicCue>
 							</CueList>
 						</MusicSegment>
+<<<<<<< HEAD
 						<MusicSegment Name="breakdown02" ID="{66BC64E6-0618-4F66-9D13-11D54293AEC9}" ShortID="317338472">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -5692,6 +5697,8 @@
 								</MusicCue>
 							</CueList>
 						</MusicSegment>
+=======
+>>>>>>> master
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{8FB2288C-9172-455E-A439-2ABB74B019C6}">
@@ -5756,7 +5763,6 @@
 							<ChildrenList>
 								<MusicPlaylistItem Name="" ID="{4CFCF8A0-635A-4E72-97C3-EB45447D5F0B}" ShortID="601597050">
 									<PropertyList>
-										<Property Name="LoopCount" Type="int16" Value="0"/>
 										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 									</PropertyList>
 									<SegmentRef Name="Intro" ID="{74ACF8B4-F6F8-47C0-96EA-3C4C836310DA}"/>

@@ -30,6 +30,534 @@ namespace AK
             } // namespace STATE
         } // namespace CLAP01
 
+        namespace D1_BASS01
+        {
+            static const AkUniqueID GROUP = 1899079031U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_BASS01
+
+        namespace D1_BASS02
+        {
+            static const AkUniqueID GROUP = 1899079028U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_BASS02
+
+        namespace D1_BASS03
+        {
+            static const AkUniqueID GROUP = 1899079029U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_BASS03
+
+        namespace D1_BASS04
+        {
+            static const AkUniqueID GROUP = 1899079026U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_BASS04
+
+        namespace D1_BASS05
+        {
+            static const AkUniqueID GROUP = 1899079027U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_BASS05
+
+        namespace D1_BASS06
+        {
+            static const AkUniqueID GROUP = 1899079024U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_BASS06
+
+        namespace D1_BASS07
+        {
+            static const AkUniqueID GROUP = 1899079025U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_BASS07
+
+        namespace D1_BASS08
+        {
+            static const AkUniqueID GROUP = 1899079038U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_BASS08
+
+        namespace D1_CHORDS01
+        {
+            static const AkUniqueID GROUP = 862629343U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_CHORDS01
+
+        namespace D1_CHORDS02
+        {
+            static const AkUniqueID GROUP = 862629340U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_CHORDS02
+
+        namespace D1_CHORDS03
+        {
+            static const AkUniqueID GROUP = 862629341U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_CHORDS03
+
+        namespace D1_CHORDS04
+        {
+            static const AkUniqueID GROUP = 862629338U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_CHORDS04
+
+        namespace D1_LEAD01
+        {
+            static const AkUniqueID GROUP = 1005609940U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_LEAD01
+
+        namespace D1_LEAD02
+        {
+            static const AkUniqueID GROUP = 1005609943U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_LEAD02
+
+        namespace D1_LEAD03
+        {
+            static const AkUniqueID GROUP = 1005609942U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_LEAD03
+
+        namespace D1_LEAD04
+        {
+            static const AkUniqueID GROUP = 1005609937U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_LEAD04
+
+        namespace D1_LEAD05
+        {
+            static const AkUniqueID GROUP = 1005609936U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_LEAD05
+
+        namespace D1_LEAD06
+        {
+            static const AkUniqueID GROUP = 1005609939U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_LEAD06
+
+        namespace D1_LEAD07
+        {
+            static const AkUniqueID GROUP = 1005609938U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_LEAD07
+
+        namespace D1_LEAD08
+        {
+            static const AkUniqueID GROUP = 1005609949U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_LEAD08
+
+        namespace D1_PERC01
+        {
+            static const AkUniqueID GROUP = 1105457254U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_PERC01
+
+        namespace D1_PERC02
+        {
+            static const AkUniqueID GROUP = 1105457253U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_PERC02
+
+        namespace D1_PERC03
+        {
+            static const AkUniqueID GROUP = 1105457252U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_PERC03
+
+        namespace D1_PERC04
+        {
+            static const AkUniqueID GROUP = 1105457251U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_PERC04
+
+        namespace D2_BASS01
+        {
+            static const AkUniqueID GROUP = 1988365738U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_BASS01
+
+        namespace D2_BASS02
+        {
+            static const AkUniqueID GROUP = 1988365737U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_BASS02
+
+        namespace D2_BASS03
+        {
+            static const AkUniqueID GROUP = 1988365736U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_BASS03
+
+        namespace D2_BASS04
+        {
+            static const AkUniqueID GROUP = 1988365743U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_BASS04
+
+        namespace D2_BASS05
+        {
+            static const AkUniqueID GROUP = 1988365742U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_BASS05
+
+        namespace D2_BASS06
+        {
+            static const AkUniqueID GROUP = 1988365741U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_BASS06
+
+        namespace D2_BASS07
+        {
+            static const AkUniqueID GROUP = 1988365740U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_BASS07
+
+        namespace D2_BASS08
+        {
+            static const AkUniqueID GROUP = 1988365731U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_BASS08
+
+        namespace D2_CHORDS01
+        {
+            static const AkUniqueID GROUP = 900058766U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_CHORDS01
+
+        namespace D2_CHORDS02
+        {
+            static const AkUniqueID GROUP = 900058765U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_CHORDS02
+
+        namespace D2_CHORDS03
+        {
+            static const AkUniqueID GROUP = 900058764U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_CHORDS03
+
+        namespace D2_CHORDS04
+        {
+            static const AkUniqueID GROUP = 900058763U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_CHORDS04
+
+        namespace D2_LEAD01
+        {
+            static const AkUniqueID GROUP = 1985634353U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_LEAD01
+
+        namespace D2_LEAD02
+        {
+            static const AkUniqueID GROUP = 1985634354U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_LEAD02
+
+        namespace D2_LEAD03
+        {
+            static const AkUniqueID GROUP = 1985634355U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_LEAD03
+
+        namespace D2_LEAD04
+        {
+            static const AkUniqueID GROUP = 1985634356U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_LEAD04
+
+        namespace D2_LEAD05
+        {
+            static const AkUniqueID GROUP = 1985634357U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_LEAD05
+
+        namespace D2_LEAD06
+        {
+            static const AkUniqueID GROUP = 1985634358U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_LEAD06
+
+        namespace D2_LEAD07
+        {
+            static const AkUniqueID GROUP = 1985634359U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_LEAD07
+
+        namespace D2_LEAD08
+        {
+            static const AkUniqueID GROUP = 1985634360U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_LEAD08
+
+        namespace D2_PERC01
+        {
+            static const AkUniqueID GROUP = 2328970227U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_PERC01
+
+        namespace D2_PERC02
+        {
+            static const AkUniqueID GROUP = 2328970224U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_PERC02
+
+        namespace D2_PERC03
+        {
+            static const AkUniqueID GROUP = 2328970225U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_PERC03
+
+        namespace D2_PERC04
+        {
+            static const AkUniqueID GROUP = 2328970230U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_PERC04
+
         namespace INTRO_BASS01
         {
             static const AkUniqueID GROUP = 2979466380U;
@@ -95,6 +623,50 @@ namespace AK
                 static const AkUniqueID ON = 1651971902U;
             } // namespace STATE
         } // namespace INTRO_BASS06
+
+        namespace INTRO_CHORDS01
+        {
+            static const AkUniqueID GROUP = 1853549916U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_CHORDS01
+
+        namespace INTRO_CHORDS02
+        {
+            static const AkUniqueID GROUP = 1853549919U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_CHORDS02
+
+        namespace INTRO_CHORDS03
+        {
+            static const AkUniqueID GROUP = 1853549918U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_CHORDS03
+
+        namespace INTRO_CHORDS04
+        {
+            static const AkUniqueID GROUP = 1853549913U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_CHORDS04
 
         namespace INTRO_LEAD01
         {
@@ -195,6 +767,17 @@ namespace AK
             } // namespace STATE
         } // namespace INTRO_PERC03
 
+        namespace INTRO_PERC04
+        {
+            static const AkUniqueID GROUP = 1451274676U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace INTRO_PERC04
+
         namespace INTRO_STABS01
         {
             static const AkUniqueID GROUP = 3384278750U;
@@ -206,65 +789,11 @@ namespace AK
             } // namespace STATE
         } // namespace INTRO_STABS01
 
-        namespace MID_BASS01
-        {
-            static const AkUniqueID GROUP = 2513884940U;
-
-            namespace STATE
-            {
-                static const AkUniqueID OFF = 930712164U;
-                static const AkUniqueID ON = 1651971902U;
-            } // namespace STATE
-        } // namespace MID_BASS01
-
-        namespace MID_LEAD01
-        {
-            static const AkUniqueID GROUP = 3432693055U;
-
-            namespace STATE
-            {
-                static const AkUniqueID OFF = 930712164U;
-                static const AkUniqueID ON = 1651971902U;
-            } // namespace STATE
-        } // namespace MID_LEAD01
-
-        namespace MID_LEAD02
-        {
-            static const AkUniqueID GROUP = 3432693052U;
-
-            namespace STATE
-            {
-                static const AkUniqueID OFF = 930712164U;
-                static const AkUniqueID ON = 1651971902U;
-            } // namespace STATE
-        } // namespace MID_LEAD02
-
-        namespace MID_LEAD03
-        {
-            static const AkUniqueID GROUP = 3432693053U;
-
-            namespace STATE
-            {
-                static const AkUniqueID OFF = 930712164U;
-                static const AkUniqueID ON = 1651971902U;
-            } // namespace STATE
-        } // namespace MID_LEAD03
-
-        namespace MID_LEAD04
-        {
-            static const AkUniqueID GROUP = 3432693050U;
-
-            namespace STATE
-            {
-                static const AkUniqueID OFF = 930712164U;
-                static const AkUniqueID ON = 1651971902U;
-            } // namespace STATE
-        } // namespace MID_LEAD04
-
     } // namespace STATES
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID BR01 = 2820609596U;
         static const AkUniqueID FBAND1 = 1495724413U;
         static const AkUniqueID FBAND2 = 1495724414U;
         static const AkUniqueID FBAND3 = 1495724415U;
@@ -298,6 +827,8 @@ namespace AK
         static const AkUniqueID BAND6 = 3193682182U;
         static const AkUniqueID BAND7 = 3193682183U;
         static const AkUniqueID BAND8 = 3193682184U;
+        static const AkUniqueID DRUMS = 2726606664U;
+        static const AkUniqueID VERB = 3657263530U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
