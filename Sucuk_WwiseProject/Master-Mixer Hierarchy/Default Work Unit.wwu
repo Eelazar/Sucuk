@@ -288,64 +288,6 @@
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
-						<AuxBus Name="verb" ID="{C2B03A2D-54DE-409A-9242-0AA730DDC662}">
-							<PropertyList>
-								<Property Name="BusVolume" Type="Real64">
-									<RTPCList>
-										<RTPC Name="" ID="{FD786F08-7EFB-49FF-B866-2F1D73140F1A}" ShortID="1025231673">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="br01" ID="{6DAA7532-22C4-4AA5-BA79-BFFDC64A722B}" WorkUnitID="{7EDF9E34-4B09-4807-A706-AE78FE55659E}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{345E1469-41A0-423D-8CF3-B10FDE1EF2C7}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-200</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>100</XPos>
-														<YPos>0</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="Wwise Stereo Delay (Custom)" ID="{B44E9545-5693-4604-B651-59D535AACDA8}" ShortID="1038392421" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
-											<PropertyList>
-												<Property Name="DryLevel" Type="Real32" Value="-1"/>
-												<Property Name="EnableFeedback" Type="bool" Value="True"/>
-												<Property Name="LeftDelayTime" Type="Real32" Value="0.2"/>
-												<Property Name="LeftInputType" Type="int32" Value="1"/>
-												<Property Name="RightDelayTime" Type="Real32" Value="2"/>
-												<Property Name="RightInputType" Type="int32" Value="3"/>
-												<Property Name="WetLevel" Type="Real32" Value="3"/>
-											</PropertyList>
-										</Effect>
-									</Custom>
-								</Reference>
-								<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-									<ObjectRef Name="Space_Dreaming" ID="{4FF7C4B2-37B0-4DFF-8E8A-1420102AE2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-								</Reference>
-							</ReferenceList>
-						</AuxBus>
-						<AuxBus Name="drums" ID="{CA827889-43FC-43B8-B98E-ECB72ECBBB2D}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-							</PropertyList>
-						</AuxBus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>
