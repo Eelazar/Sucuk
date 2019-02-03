@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 33148842476162518}
   - component: {fileID: 23633847559890406}
   - component: {fileID: 135441057203901898}
+  - component: {fileID: 135525536057764696}
   - component: {fileID: 54834014815380506}
   - component: {fileID: 114053151730778670}
   - component: {fileID: 114049469939761142}
@@ -166,7 +167,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1485504350233284}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 73.78, y: 6.42, z: -41.44}
+  m_LocalPosition: {x: -112.098595, y: 8.8, z: -22.442455}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_Children:
   - {fileID: 4310237844270496}
@@ -345,6 +346,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackType: 0
+  selfDestructTime: 10
+  grabPinch: {fileID: 11400000, guid: 38fd3e8f6fd6ac9488cf838a69f69250, type: 2}
+  inputSource: 0
+  owner: {fileID: 0}
+  activated: 0
 --- !u!114 &114209493750524858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -444,7 +450,7 @@ MonoBehaviour:
   handFollowTransform: {fileID: 0}
   handFollowTransformPosition: 1
   handFollowTransformRotation: 1
-  highlightOnHover: 1
+  highlightOnHover: 0
   hideHighlight: []
 --- !u!114 &114755748106001448
 MonoBehaviour:
@@ -605,6 +611,18 @@ SphereCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1168939813880396}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &135525536057764696
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485504350233284}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1

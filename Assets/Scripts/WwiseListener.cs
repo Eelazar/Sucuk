@@ -6,8 +6,10 @@ public class WwiseListener : MonoBehaviour {
 
     public static float[] spectrum = new float[9];
     private int type;
+    public float[] editorSpectrum = new float[9];
 
-	void Start () 
+
+    void Start () 
 	{
 		
 	}
@@ -32,5 +34,7 @@ public class WwiseListener : MonoBehaviour {
             spectrum[i] += 48F;
             spectrum[i] /= 48F;
         }
+
+        editorSpectrum = spectrum;
     }
 }

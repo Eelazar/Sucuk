@@ -120,6 +120,9 @@ public class PerlinGrid : MonoBehaviour {
                 }
                  //Assign the node to the node array
                 nodeArray[i, j] = node;
+
+                //Parent it to the spawner
+                node.transform.parent = transform;
             }
         }
         

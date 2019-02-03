@@ -15,7 +15,7 @@ MonoBehaviour:
   - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: fae7fe48ca5bce4791e3a4071046b059
-    m_lastTime: -8586537112418519650
+    m_lastTime: -8586524649219272012
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -115,7 +115,7 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 8c9443e01b83094f875c5cda2d686dc8
-    m_lastTime: -8586537112418988474
+    m_lastTime: -8586524649219601112
     List:
     - name: Dynamic
       guid: e28314431cab634eb05ba7385ab18169
@@ -139,7 +139,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 87dd1b6c0986334194d4e602d0162b3c
-    m_lastTime: -8586537112476426423
+    m_lastTime: -8586524649307045071
     List:
     - name: Play
       guid: ec952d0b89347145addcb1b41dd8a5e6
@@ -169,7 +169,7 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 349edf7e094b0748a706ae78fe55659e
-    m_lastTime: -8586524007467190190
+    m_lastTime: -8586523983067934773
     List:
     - name: Fband1
       guid: f4b2d61b2bd4194ba141c79053c24fa8
@@ -256,7 +256,7 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: f7edd226412a334195eceacd717a2334
-    m_lastTime: -8586524566917438757
+    m_lastTime: -8586524020278104341
     List:
     - name: clap01
       guid: b24333a6d52e7542bf6c76c88a473a10
@@ -2306,23 +2306,15 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: f4faeeea2dd2cf479ec88a3ad5125e83
-    m_lastTime: -8586537112418549846
+    m_lastTime: -8586524649219321854
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 2192ea1d0a59de45a949d9f30609f853
-    m_lastTime: -8586537112418539857
+    m_lastTime: -8586524649219281974
     List: []
   ExpandedItems:
   - /Sucuk_WwiseProject
-  - /Sucuk_WwiseProject/Auxiliary Busses
-  - /Sucuk_WwiseProject/Auxiliary Busses/Default Work Unit
-  - /Sucuk_WwiseProject/Auxiliary Busses/Default Work Unit/Master Audio Bus
-  - /Sucuk_WwiseProject/Events
-  - /Sucuk_WwiseProject/Events/Default Work Unit
-  - /Sucuk_WwiseProject/SoundBanks
-  - /Sucuk_WwiseProject/SoundBanks/Default Work Unit
-  - /Sucuk_WwiseProject/States
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
