@@ -8,7 +8,7 @@ public static class TrackRegistry {
     public static List<GameObject> bassOrblings = new List<GameObject>();
     public static List<GameObject> leadOrblings = new List<GameObject>();
 
-    public static float[] destructionTimestamps = new float[] { 54F, 63F, 80F };
+    public static float[] destructionTimestamps = new float[] { 15F, 63F, 80F };
 
     public static int segment;
     

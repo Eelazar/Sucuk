@@ -32,7 +32,7 @@ public class OrblingSpawner : MonoBehaviour {
 	
 	void Update () 
 	{
-		if(occupied == false && spawnTimestamp >= Time.time)
+		if(occupied == false && spawnTimestamp <= Time.time)
         {
             SpawnOrbling();
         }
@@ -52,7 +52,7 @@ public class OrblingSpawner : MonoBehaviour {
         switch (trackType)
         {
             case OrblingType.Percussion:
-                orblingChild = GameObject.Instantiate<GameObject>(orblingPrefab);
+                orblingChild = GameObject.Instantiate<GameObject>(orblingPrefab, transform.position, transform.rotation);
                 orblingChild.GetComponent<Orbling>().owner = this.gameObject;
                 TrackRegistry.percussionOrblings.Add(orblingChild);
 
@@ -60,7 +60,7 @@ public class OrblingSpawner : MonoBehaviour {
 
                 break;
             case OrblingType.Bass:
-                orblingChild = GameObject.Instantiate<GameObject>(orblingPrefab);
+                orblingChild = GameObject.Instantiate<GameObject>(orblingPrefab, transform.position, transform.rotation);
                 orblingChild.GetComponent<Orbling>().owner = this.gameObject;
                 TrackRegistry.percussionOrblings.Add(orblingChild);
 
@@ -68,7 +68,7 @@ public class OrblingSpawner : MonoBehaviour {
 
                 break;
             case OrblingType.Lead:
-                orblingChild = GameObject.Instantiate<GameObject>(orblingPrefab);
+                orblingChild = GameObject.Instantiate<GameObject>(orblingPrefab, transform.position, transform.rotation);
                 orblingChild.GetComponent<Orbling>().owner = this.gameObject;
                 TrackRegistry.percussionOrblings.Add(orblingChild);
 
@@ -92,6 +92,6 @@ public class OrblingSpawner : MonoBehaviour {
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawSphere(transform.position, 6F);
+        Gizmos.DrawWireSphere(transform.position, 3F);
     }
 }

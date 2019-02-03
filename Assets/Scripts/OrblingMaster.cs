@@ -3,33 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class OrblingMaster : MonoBehaviour {
-
-    [SerializeField]
-    private GameObject[] spawners;
+    
     [SerializeField]
     private float minDestroyDelay;
     [SerializeField]
     private float maxDestroyDelay;
 
+    private OrblingSpawner[] spawners;
     private int breakdownCounter;
 
 	void Start () 
 	{
-		
+        spawners = GetComponentsInChildren<OrblingSpawner>();
 	}
 	
-	void Update () 
+	void LateUpdate () 
 	{
-		if(Time.timeSinceLevelLoad >= TrackRegistry.destructionTimestamps[breakdownCounter])
+        if (breakdownCounter < TrackRegistry.destructionTimestamps.Length)
         {
-            foreach(GameObject go in spawners)
+            if (Time.timeSinceLevelLoad >= TrackRegistry.destructionTimestamps[breakdownCounter])
             {
-                go.GetComponent<OrblingSpawner>().Clear();
+                foreach (OrblingSpawner spawner in spawners)
+                {
+                    spawner.Clear();
+                }
+
+                DeleteOrblings();
+
+                breakdownCounter++;
             }
-
-            DeleteOrblings();
-
-            breakdownCounter++;
         }
 	}
 
@@ -37,15 +39,15 @@ public class OrblingMaster : MonoBehaviour {
     {
         foreach(GameObject go in TrackRegistry.percussionOrblings)
         {
-            Destroy(go, Random.Range(minDestroyDelay, maxDestroyDelay));
+            go.GetComponent<Orbling>().DeleteOrbling();
         }
         foreach (GameObject go in TrackRegistry.bassOrblings)
         {
-            Destroy(go, Random.Range(minDestroyDelay, maxDestroyDelay));
+            go.GetComponent<Orbling>().DeleteOrbling();
         }
         foreach (GameObject go in TrackRegistry.leadOrblings)
         {
-            Destroy(go, Random.Range(minDestroyDelay, maxDestroyDelay));
+            go.GetComponent<Orbling>().DeleteOrbling();
         }
 
         TrackRegistry.percussionOrblings.Clear();

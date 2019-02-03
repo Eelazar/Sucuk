@@ -45,11 +45,6 @@ public class Orbling : MonoBehaviour {
         if(activated == true)
         {
             transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-
-            if (Time.time >= destroyTimestamp)
-            {
-                Destroy(gameObject);
-            }
         }    
         
     }
@@ -58,17 +53,26 @@ public class Orbling : MonoBehaviour {
     {
         if (activated == true && Time.time >= destroyTimestamp)
         {
-            Destroy(gameObject);
+            DeleteOrbling();
         }
     }
 
     private void OnTriggerPressedOrReleased(SteamVR_Action_In action_In)
-    {        
-        if(transform.GetComponent<Interactable>().wasHovering)
+    {
+        if (transform != null)
         {
-            activated = true;
-            activatedTrigger = true;
+            if (transform.GetComponent<Interactable>().wasHovering)
+            {
+                activated = true;
+                activatedTrigger = true;
+            }
         }
+    }
+
+    public void DeleteOrbling()
+    {
+        grabPinch.RemoveOnChangeListener(OnTriggerPressedOrReleased, inputSource);
+        Destroy(gameObject);
     }
 
 }

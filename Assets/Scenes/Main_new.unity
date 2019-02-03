@@ -1224,15 +1224,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4801629524340520, guid: 080173f11de56664383186925ac3322b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -82.82491
+      value: -73.87
       objectReference: {fileID: 0}
     - target: {fileID: 4801629524340520, guid: 080173f11de56664383186925ac3322b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -27.8
+      value: -5.81
       objectReference: {fileID: 0}
     - target: {fileID: 4801629524340520, guid: 080173f11de56664383186925ac3322b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 115.32785
+      value: 63.12
       objectReference: {fileID: 0}
     - target: {fileID: 4801629524340520, guid: 080173f11de56664383186925ac3322b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -21742,6 +21742,49 @@ Transform:
   m_Father: {fileID: 500633861}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &733644324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 733644326}
+  - component: {fileID: 733644325}
+  m_Layer: 0
+  m_Name: Spawners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &733644325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 733644324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a21ea002e78fc24e9990f466aae8e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDestroyDelay: 0
+  maxDestroyDelay: 0
+--- !u!4 &733644326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 733644324}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1371783043}
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &734923556
 GameObject:
   m_ObjectHideFlags: 0
@@ -22840,6 +22883,7 @@ GameObject:
   - component: {fileID: 936770200}
   - component: {fileID: 936770199}
   - component: {fileID: 936770198}
+  - component: {fileID: 936770195}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -22847,6 +22891,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &936770195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 936770194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d8dd0e20996de499de50fb0cf2771c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  editorSpectrum:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
 --- !u!4 &936770197
 Transform:
   m_ObjectHideFlags: 0
@@ -34216,6 +34281,53 @@ Transform:
   m_Father: {fileID: 1670523607}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1371783042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1371783043}
+  - component: {fileID: 1371783044}
+  m_Layer: 0
+  m_Name: Kick Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1371783043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1371783042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -86.56, y: -5.58, z: 46.21}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 733644326}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1371783044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1371783042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97fee1ee39dca3b45a2d548d2d97f1b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackType: 0
+  orblingPrefab: {fileID: 1485504350233284, guid: 080173f11de56664383186925ac3322b,
+    type: 2}
+  spawnTime: 5
+  respawnTime: 1
+  minDestroyDelay: 0
+  maxDestroyDelay: 1
 --- !u!1 &1385338174
 GameObject:
   m_ObjectHideFlags: 0
