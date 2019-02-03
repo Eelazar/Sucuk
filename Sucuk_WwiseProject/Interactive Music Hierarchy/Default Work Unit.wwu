@@ -546,6 +546,27 @@
 											<AudioFile>I kick02.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo MusicSyncType="3">
+												<StateGroupRef Name="I_kick02" ID="{013B3042-1772-41B8-A7EA-79D78070150C}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="on" ID="{55E459F4-C38E-48DC-9CAD-42DD82BE643D}"/>
+												<State Name="" ID="{9D84E33B-8750-4142-B3D4-C2375D7A49C2}" ShortID="555763517"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="off" ID="{58804460-21C1-4F21-AE1D-5E685A75B768}"/>
+												<State Name="" ID="{0ED538A6-E978-412F-A02C-D6B483A5AD00}" ShortID="830803913">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-96"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<TransitionList>
 										<MusicTransition Name="Root" ID="{ED394F66-9C5F-4CB0-A36E-6A35D6F75FAD}">
 											<PropertyList>
@@ -1512,21 +1533,21 @@
 									<StateInfo>
 										<StateGroupList>
 											<StateGroupInfo MusicSyncType="3">
-												<StateGroupRef Name="d1_bass03" ID="{29052534-2875-4B04-9118-2D6A3A6225EA}"/>
+												<StateGroupRef Name="intro_bass03" ID="{42A0F4D5-C926-4C91-94A1-C4120937894A}"/>
 											</StateGroupInfo>
 										</StateGroupList>
 										<CustomStateList>
 											<CustomState>
-												<StateRef Name="off" ID="{0CC6B7E5-CD70-4D56-8097-AD702999390C}"/>
-												<State Name="" ID="{B9C14A45-4461-4F65-ABB1-E74A4C9C500D}" ShortID="1017020768">
+												<StateRef Name="off" ID="{CD032B51-D724-4055-A849-3C2AF249177C}"/>
+												<State Name="" ID="{436EF8D7-B67B-41AF-B509-F1829BC6DF8B}" ShortID="960270097">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="-96"/>
 													</PropertyList>
 												</State>
 											</CustomState>
 											<CustomState>
-												<StateRef Name="on" ID="{A0122082-388F-4D81-B491-3A17CA3B453F}"/>
-												<State Name="" ID="{95C1D952-B51B-417F-AA85-09ADD7BB13AF}" ShortID="428411534">
+												<StateRef Name="on" ID="{8629359C-847C-4D58-A65B-A9B99F4E0668}"/>
+												<State Name="" ID="{C13E9911-2983-452A-A128-4830EE27CA35}" ShortID="589524981">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64" Value="96"/>
 													</PropertyList>
@@ -1604,6 +1625,31 @@
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo MusicSyncType="3">
+												<StateGroupRef Name="I_kick01" ID="{1773A931-03A1-4B2A-B0E5-80F7F771971E}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="off" ID="{CE11CE3B-1DD4-412A-AE9D-F118E81D5A11}"/>
+												<State Name="" ID="{4CD3B49F-58BD-4137-BF42-0C7A550BEC18}" ShortID="1026950469">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-96"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="on" ID="{77FBC60A-08F0-4BC3-8D37-C8E78AE4F4B8}"/>
+												<State Name="" ID="{E352657A-2A8D-49DC-801C-C3432A54D0CD}" ShortID="230194646">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="96"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<TransitionList>
 										<MusicTransition Name="Root" ID="{A7DA5578-3DCA-48F1-8C88-5B4D1D1810DD}">
 											<PropertyList>
@@ -1709,23 +1755,23 @@
 									<StateInfo>
 										<StateGroupList>
 											<StateGroupInfo MusicSyncType="3">
-												<StateGroupRef Name="d2_chords02" ID="{C3EE7CB6-EE5C-4DD3-BF49-8574B6C94901}"/>
+												<StateGroupRef Name="intro_chords02" ID="{ED8EBCEE-701C-46F4-A0B4-06839E89058B}"/>
 											</StateGroupInfo>
 										</StateGroupList>
 										<CustomStateList>
 											<CustomState>
-												<StateRef Name="off" ID="{B53F7147-3FA0-4A83-9BD9-E6CE2F315B95}"/>
-												<State Name="" ID="{5BB64128-68A8-4CAB-89D7-6EE58D0FF68E}" ShortID="468661298">
+												<StateRef Name="on" ID="{065600ED-F64E-476D-B4A4-E2849269E677}"/>
+												<State Name="" ID="{B72A44D2-5194-48BF-9943-455D019B9764}" ShortID="589141178">
 													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-96"/>
+														<Property Name="Volume" Type="Real64" Value="96"/>
 													</PropertyList>
 												</State>
 											</CustomState>
 											<CustomState>
-												<StateRef Name="on" ID="{BF723277-D8A9-4F77-806F-AB9C2AD5B0DA}"/>
-												<State Name="" ID="{806F556A-DA0F-4558-85A1-9F6AE0CA9F4B}" ShortID="534468414">
+												<StateRef Name="off" ID="{2892E9F6-BD5A-4DDB-AD92-23AD6E35012C}"/>
+												<State Name="" ID="{36CCEB8D-2EEC-4A53-8AF3-986DCA014BD0}" ShortID="151706841">
 													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="96"/>
+														<Property Name="Volume" Type="Real64" Value="-96"/>
 													</PropertyList>
 												</State>
 											</CustomState>
@@ -2562,7 +2608,7 @@
 										</MusicTrackSequence>
 									</SequenceList>
 								</MusicTrack>
-								<MusicTrack Name="D chord01" ID="{67EFA1E4-3007-4A03-9BFE-566484E95860}" ShortID="871454092">
+								<MusicTrack Name="D lead01" ID="{67EFA1E4-3007-4A03-9BFE-566484E95860}" ShortID="871454092">
 									<PropertyList>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
