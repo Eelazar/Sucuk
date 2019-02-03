@@ -17,14 +17,6 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
 						</Reference>
-						<Reference Name="Effect0">
-							<Custom>
-								<Effect Name="Wwise Meter (Custom)" ID="{D210211A-FC5F-4D8A-AAAB-BA594C64C241}" ShortID="1063049305" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">									<PluginData>
-	<GameParameter Name="Fband4" ID="{84994725-6A9D-4830-8666-01C0A5C8F22E}"/>
-</PluginData>
-								</Effect>
-							</Custom>
-						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 						</Reference>
@@ -45,8 +37,6 @@
 						<MusicSegment Name="Intro" ID="{74ACF8B4-F6F8-47C0-96EA-3C4C836310DA}" ShortID="931504011">
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="20625.0113378685"/>
-								<Property Name="OverrideEffect" Type="bool" Value="True"/>
-								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -69,7 +59,11 @@
 									<ReferenceList>
 										<Reference Name="Effect0">
 											<Custom>
-												<Effect Name="Wwise Meter (Custom)" ID="{0F6E417B-2C7F-4C89-B1A8-E72AEA182FCE}" ShortID="619096408" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">													<PluginData>
+												<Effect Name="Wwise Meter (Custom)" ID="{0F6E417B-2C7F-4C89-B1A8-E72AEA182FCE}" ShortID="619096408" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
 	<GameParameter Name="Fband2" ID="{22963AC1-EB15-4186-9473-6813D8AB0BDB}"/>
 </PluginData>
 												</Effect>
@@ -249,7 +243,11 @@
 									<ReferenceList>
 										<Reference Name="Effect0">
 											<Custom>
-												<Effect Name="Wwise Meter (Custom)" ID="{AADD75FB-A5DD-4BA6-8501-CAAE6306E7FA}" ShortID="351852599" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">													<PluginData>
+												<Effect Name="Wwise Meter (Custom)" ID="{AADD75FB-A5DD-4BA6-8501-CAAE6306E7FA}" ShortID="351852599" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
 	<GameParameter Name="Fband2" ID="{22963AC1-EB15-4186-9473-6813D8AB0BDB}"/>
 </PluginData>
 												</Effect>
@@ -1445,23 +1443,10 @@
 						<MusicSegment Name="breakdown1" ID="{B886DE52-2C03-4A9A-B555-567CA84B4ABB}" ShortID="915146456">
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="124679.095718479"/>
-								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
-								</Reference>
-								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="Wwise Meter (Custom)" ID="{3158F518-0B6B-4D65-A2AB-D4B6D7FE3399}" ShortID="453040166" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
-											<PropertyList>
-												<Property Name="ReleaseTime" Type="Real32" Value="0"/>
-											</PropertyList>
-											<PluginData>
-	<GameParameter Name="br01" ID="{6DAA7532-22C4-4AA5-BA79-BFFDC64A722B}"/>
-</PluginData>
-										</Effect>
-									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
@@ -1470,9 +1455,22 @@
 							<ChildrenList>
 								<MusicTrack Name="Breakdown01" ID="{3C140049-761A-41FF-8A12-A7E7F17C4AC2}" ShortID="684326943">
 									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{06668AAF-4975-49D9-A3D8-AA1D883E766D}" ShortID="360411670" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Mkick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
@@ -1760,6 +1758,18 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{7234E0E9-E10D-456B-864F-CA7C38D13E1A}" ShortID="110850873" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Fband2" ID="{22963AC1-EB15-4186-9473-6813D8AB0BDB}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
@@ -1884,8 +1894,24 @@
 									<ReferenceList>
 										<Reference Name="Effect0">
 											<Custom>
-												<Effect Name="Wwise Meter (Custom)" ID="{8485EF57-2C2C-426E-87C3-745C871398E2}" ShortID="730840025" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">													<PluginData>
-	<GameParameter Name="Fband4" ID="{84994725-6A9D-4830-8666-01C0A5C8F22E}"/>
+												<Effect Name="Wwise Meter (Custom)" ID="{8485EF57-2C2C-426E-87C3-745C871398E2}" ShortID="730840025" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Mkick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{49769300-F312-4329-B440-2ADF5DA007CF}" ShortID="936544783" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Fband1" ID="{1BD6B2F4-D42B-4B19-A141-C79053C24FA8}"/>
 </PluginData>
 												</Effect>
 											</Custom>
@@ -2117,6 +2143,18 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{7B574D13-EEF4-49C3-879F-623733FF7465}" ShortID="846594" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Fband3" ID="{05AF15D5-8514-4DA6-8B9D-67CA4FBA1F1B}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
@@ -2378,6 +2416,18 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{381567CC-0A33-442E-95C2-0C19DC9743B8}" ShortID="9389060" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Fband2" ID="{22963AC1-EB15-4186-9473-6813D8AB0BDB}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
@@ -2505,6 +2555,18 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{B58C9AD9-AEA6-4EDF-BC38-1A69F22B68AA}" ShortID="314508267" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Fband2" ID="{22963AC1-EB15-4186-9473-6813D8AB0BDB}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
@@ -2632,6 +2694,18 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{3AD339E7-9196-4EFD-BEC6-1A89374676DD}" ShortID="409674628" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Fband2" ID="{22963AC1-EB15-4186-9473-6813D8AB0BDB}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
@@ -2902,6 +2976,14 @@
 												</Effect>
 											</Custom>
 										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{D97FC2D5-C6FC-4D97-AE10-9BA91ADE929D}" ShortID="909244501" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">													<PluginData>
+	<GameParameter Name="Fband4" ID="{84994725-6A9D-4830-8666-01C0A5C8F22E}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
@@ -3042,6 +3124,14 @@
 												</Effect>
 											</Custom>
 										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{E2C0D100-320B-4C17-860E-AAC711FB267C}" ShortID="934533641" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">													<PluginData>
+	<GameParameter Name="Fband4" ID="{84994725-6A9D-4830-8666-01C0A5C8F22E}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
@@ -3178,6 +3268,18 @@
 														<Property Name="OnOffBand2" Type="bool" Value="False"/>
 														<Property Name="OnOffBand3" Type="bool" Value="False"/>
 													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{F8BD6CFE-E029-436D-849D-9135BA1FA81B}" ShortID="636584924" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Fband3" ID="{05AF15D5-8514-4DA6-8B9D-67CA4FBA1F1B}"/>
+</PluginData>
 												</Effect>
 											</Custom>
 										</Reference>
@@ -3471,7 +3573,7 @@
 						</MusicSegment>
 						<MusicSegment Name="break01" ID="{F6C19AFF-B25E-480A-8239-2FAEAB459AB0}" ShortID="188366094">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="18867.1875"/>
+								<Property Name="EndPosition" Type="Real64" Value="19687.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -3562,6 +3664,140 @@
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
 													<AudioSourceRef Name="impact01" ID="{95F21069-60D6-47BC-9FDA-B08224ADEC5D}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="I kick02" ID="{F4B46BAD-DCA6-4257-BC96-2945DB976DFB}" ShortID="804843538">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{6787B95B-6717-4C9C-BC37-20DCFFA77D29}" ShortID="627453991" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Mkick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{08EAF5E2-A792-4A16-A7E0-7889E91977AB}" ShortID="241940563" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Fband1" ID="{1BD6B2F4-D42B-4B19-A141-C79053C24FA8}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect2">
+											<Custom>
+												<Effect Name="Wwise Gain (Custom)" ID="{7D53EA7B-BC67-4CAA-AECF-3727426A0416}" ShortID="360382969" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+													<PropertyList>
+														<Property Name="FullBandGain" Type="Real32" Value="-96.3"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="I kick02" ID="{40F47864-E4D4-4687-879D-B387E08A8BC3}" ShortID="547799702">
+											<Language>SFX</Language>
+											<AudioFile>I kick02.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="308242865"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{0C7FC6F0-3748-4791-BFF4-B0D0F6EB31D0}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{D31970BF-414E-4B09-BD9A-01F12A6C055A}">
+											<ClipList>
+												<MusicClip Name="I kick02" ID="{DE0A8449-87FD-4B0C-BD8C-874093501D6D}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="9843.75"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="4687.5"/>
+													</PropertyList>
+													<AudioSourceRef Name="I kick02" ID="{40F47864-E4D4-4687-879D-B387E08A8BC3}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{7C09B0D5-3DAA-48A5-86DF-0485563BEDB6}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>9.84375</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{BA68C58A-2657-413D-A7E3-5C45DD81F6AF}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>9.84375</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{6B3132A5-F89A-47BC-B91C-9347B721BE54}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>9.84375</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
@@ -3665,7 +3901,11 @@
 									<ReferenceList>
 										<Reference Name="Effect0">
 											<Custom>
-												<Effect Name="Wwise Meter (Custom)" ID="{910DDA4A-25BD-47E8-8419-6C0EF6706764}" ShortID="383131542" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">													<PluginData>
+												<Effect Name="Wwise Meter (Custom)" ID="{910DDA4A-25BD-47E8-8419-6C0EF6706764}" ShortID="383131542" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
 	<GameParameter Name="Fband2" ID="{22963AC1-EB15-4186-9473-6813D8AB0BDB}"/>
 </PluginData>
 												</Effect>
@@ -4012,7 +4252,11 @@
 									<ReferenceList>
 										<Reference Name="Effect0">
 											<Custom>
-												<Effect Name="Wwise Meter (Custom)" ID="{75CD1B28-B4F4-47BF-A03A-558E93F5ED5F}" ShortID="60290592" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">													<PluginData>
+												<Effect Name="Wwise Meter (Custom)" ID="{75CD1B28-B4F4-47BF-A03A-558E93F5ED5F}" ShortID="60290592" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
 	<GameParameter Name="Fband3" ID="{05AF15D5-8514-4DA6-8B9D-67CA4FBA1F1B}"/>
 </PluginData>
 												</Effect>
@@ -5903,7 +6147,6 @@
 							<ChildrenList>
 								<MusicPlaylistItem Name="" ID="{4CFCF8A0-635A-4E72-97C3-EB45447D5F0B}" ShortID="601597050">
 									<PropertyList>
-										<Property Name="LoopCount" Type="int16" Value="4"/>
 										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 									</PropertyList>
 									<SegmentRef Name="Intro" ID="{74ACF8B4-F6F8-47C0-96EA-3C4C836310DA}"/>

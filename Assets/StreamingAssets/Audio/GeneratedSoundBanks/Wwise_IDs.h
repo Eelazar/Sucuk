@@ -162,6 +162,39 @@ namespace AK
             } // namespace STATE
         } // namespace D1_CHORDS04
 
+        namespace D1_KICK01
+        {
+            static const AkUniqueID GROUP = 3139302724U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_KICK01
+
+        namespace D1_KICK02
+        {
+            static const AkUniqueID GROUP = 3139302727U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_KICK02
+
+        namespace D1_KICK03
+        {
+            static const AkUniqueID GROUP = 3139302726U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D1_KICK03
+
         namespace D1_LEAD01
         {
             static const AkUniqueID GROUP = 1005609940U;
@@ -793,7 +826,6 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID BR01 = 2820609596U;
         static const AkUniqueID FBAND1 = 1495724413U;
         static const AkUniqueID FBAND2 = 1495724414U;
         static const AkUniqueID FBAND3 = 1495724415U;
@@ -827,8 +859,6 @@ namespace AK
         static const AkUniqueID BAND6 = 3193682182U;
         static const AkUniqueID BAND7 = 3193682183U;
         static const AkUniqueID BAND8 = 3193682184U;
-        static const AkUniqueID DRUMS = 2726606664U;
-        static const AkUniqueID VERB = 3657263530U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

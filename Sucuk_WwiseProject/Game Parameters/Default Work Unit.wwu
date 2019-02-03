@@ -83,7 +83,6 @@
 						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="br01" ID="{6DAA7532-22C4-4AA5-BA79-BFFDC64A722B}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

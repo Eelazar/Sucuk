@@ -21,7 +21,7 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6faef3859c315b48ac40ae404e146248
-    m_lastTime: -8586537112463782002
+    m_lastTime: -8586524007466840293
     List:
     - name: band1
       guid: 470fa168dc52584c8d2cec70a9b71e17
@@ -169,7 +169,7 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 349edf7e094b0748a706ae78fe55659e
-    m_lastTime: -8586537112476346636
+    m_lastTime: -8586524007467190190
     List:
     - name: Fband1
       guid: f4b2d61b2bd4194ba141c79053c24fa8
@@ -256,7 +256,7 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: f7edd226412a334195eceacd717a2334
-    m_lastTime: -8586537112418958547
+    m_lastTime: -8586524566917438757
     List:
     - name: clap01
       guid: b24333a6d52e7542bf6c76c88a473a10
@@ -282,6 +282,1434 @@ MonoBehaviour:
           ObjectType: 8
       - name: on
         guid: 0e808637f8a86041a3bb738c77cb7e19
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_bass01
+      guid: 7230688452c0c9458342a4dce4cb1108
+      id: 1899079031
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_bass01
+        ObjectType: 9
+      Path: Default Work Unit\d1_bass01
+      values:
+      - name: None
+        guid: 705e82a5fa17804daeafb07536270cae
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: cdeb58d63788a7478e38862800d92f66
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 801d397bc3b4e1499871f8fa531be003
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_bass02
+      guid: 6612bc6a4a5b75408f90dfe98e90ed19
+      id: 1899079028
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_bass02
+        ObjectType: 9
+      Path: Default Work Unit\d1_bass02
+      values:
+      - name: None
+        guid: 0f02321b9582354e9d135179179946ff
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: d9c6ba2c8646b5438aa2a4a450e21052
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: dac5749c2ab72b4189c483fdbd1f8150
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_bass03
+      guid: 342505297528044b91182d6a3a6225ea
+      id: 1899079029
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_bass03
+        ObjectType: 9
+      Path: Default Work Unit\d1_bass03
+      values:
+      - name: None
+        guid: b276c3d634e1554ca2663da0bef4bf80
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: e5b7c60c70cd564d8097ad702999390c
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 822012a08f38814db4913a17ca3b453f
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_bass04
+      guid: 189fa5885d05d747afc29638c88ed26d
+      id: 1899079026
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_bass04
+        ObjectType: 9
+      Path: Default Work Unit\d1_bass04
+      values:
+      - name: None
+        guid: 05ae3169d85f624faae89d3398d30091
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: d777a15400cdfe41982f83eb91d0fd4d
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: faf4bf0a37d47149b0c36f8b55743904
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_bass05
+      guid: 95dece317df5d246987492b718579a30
+      id: 1899079027
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_bass05
+        ObjectType: 9
+      Path: Default Work Unit\d1_bass05
+      values:
+      - name: None
+        guid: c12ad8db59ca3b43ba4f396687ba0bf7
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 64845d0eafcac345a800b12073438507
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 908ca63e9620cf45958be30242ee75d9
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_bass06
+      guid: 637975b8adc14e4f8c8d94adf06e0e66
+      id: 1899079024
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_bass06
+        ObjectType: 9
+      Path: Default Work Unit\d1_bass06
+      values:
+      - name: None
+        guid: a48ce893a24e054e84e6165b224aac84
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: d3930cf2fe8bb44393989f156ce27903
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: cb21f579d1b00f40840abee4555e757c
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_bass07
+      guid: c38c3cd0e44e204abbf5d6fb2cf47797
+      id: 1899079025
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_bass07
+        ObjectType: 9
+      Path: Default Work Unit\d1_bass07
+      values:
+      - name: None
+        guid: 09904af64e296f4b9775b32a0c93d4dd
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: d146b30cc0e6914e9f385c1570ddead2
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 9e097eb6486ff14e86ee9377ddf3c992
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_bass08
+      guid: f5bd75dcdd23054bb290ae6c8f76617d
+      id: 1899079038
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_bass08
+        ObjectType: 9
+      Path: Default Work Unit\d1_bass08
+      values:
+      - name: None
+        guid: 19ca35436523124eb404f2120ab26f0b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 61fe9a9d3a90b44aa1b1fe2b7ec7c2f7
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: c6acbe69dc56c9499c00b8869c852342
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_chords01
+      guid: ff894e1e78604543a150f74d77c59cf8
+      id: 862629343
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_chords01
+        ObjectType: 9
+      Path: Default Work Unit\d1_chords01
+      values:
+      - name: None
+        guid: 1173330882294a4fbaca13590ebf893f
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 5598fa9d60a9dc488ae64731763ca0f8
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: eb97625dc350a648adb1a5a15d3d293b
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_chords02
+      guid: 206c8a38c74bd449a8f7d0bc971582d7
+      id: 862629340
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_chords02
+        ObjectType: 9
+      Path: Default Work Unit\d1_chords02
+      values:
+      - name: None
+        guid: 94d795112df91f469f91b030400ae23a
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 2ba11b2ee6b56d4381eb02e37a2dde15
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 5086b2e03f7b0846a40db0687c3a6850
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_chords03
+      guid: 5b9c525b4e054e41aa141d45de44f6fc
+      id: 862629341
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_chords03
+        ObjectType: 9
+      Path: Default Work Unit\d1_chords03
+      values:
+      - name: None
+        guid: 99dd0bb45a7fb54eb3d8606baf711108
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: e6e65cfec342334799a3e56ddee1a894
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 38ea9a745205e949af1d791fb975af0c
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_chords04
+      guid: 0dc53696183cc840a6731e3197bb4a7d
+      id: 862629338
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_chords04
+        ObjectType: 9
+      Path: Default Work Unit\d1_chords04
+      values:
+      - name: None
+        guid: e1b8c9388f0ced4f8f3374cccbef1ab7
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 062c0363b5302b479c0da51009c4aa81
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 01bb85f2ac2eaa4594c066c09d2fa47c
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_kick01
+      guid: b789c25af7074648b9359cab59ec6e53
+      id: 3139302724
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_kick01
+        ObjectType: 9
+      Path: Default Work Unit\d1_kick01
+      values:
+      - name: None
+        guid: 800c774c8ca8974e9773719d7e0b9eef
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 5d15e8001e3b4b4ebb117e5918c26a74
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: beef77508295ea4cbc5485dd34365d7e
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_kick02
+      guid: 7d2e14128a2dbc439a5d4df89fa2aaa5
+      id: 3139302727
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_kick02
+        ObjectType: 9
+      Path: Default Work Unit\d1_kick02
+      values:
+      - name: None
+        guid: 350050d23f931240807f5f88d59a5b0e
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 8e300faeeca341408279ce5f1e530b58
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: e8b8d79b432bb244843ea1180384dbd3
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_kick03
+      guid: 9e95aaf06a5efd46836421406587d100
+      id: 3139302726
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_kick03
+        ObjectType: 9
+      Path: Default Work Unit\d1_kick03
+      values:
+      - name: None
+        guid: 8f0a0abb61f42844a57195328d5f9522
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 23d018e89cbf124dac3e033bea1cd6b1
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: d80ad4ca6304844786027bfb1c169551
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_lead01
+      guid: 78dc19e4b10ef242b540ca83b143e1ac
+      id: 1005609940
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_lead01
+        ObjectType: 9
+      Path: Default Work Unit\d1_lead01
+      values:
+      - name: None
+        guid: eb744f921feee845a9eda541b7016a43
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 73835ca3b9dd9b4690b52e39b269c1ed
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 9004c04c15fc6a449321db57aa4bed5b
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_lead02
+      guid: f5427b3fe9d7dc48ba16570de8c39164
+      id: 1005609943
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_lead02
+        ObjectType: 9
+      Path: Default Work Unit\d1_lead02
+      values:
+      - name: None
+        guid: 7314d6951e4a0e4b8e78116b9162d771
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 7c283f16acf12b4f81ba8385c36987a2
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: e2f4ee9697f5c847b4106110bb71d425
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_lead03
+      guid: f9d2c1675e61ca47846e8d8f8ca86a35
+      id: 1005609942
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_lead03
+        ObjectType: 9
+      Path: Default Work Unit\d1_lead03
+      values:
+      - name: None
+        guid: bfe0a31cfa58ae46b86c19fb77a404f0
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: de368e29780e5d49a51e74b56de04c39
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 3ea2ef798e16d447825df5d9c0cb6300
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_lead04
+      guid: 19edf074d16a864fa26fc790e03490a4
+      id: 1005609937
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_lead04
+        ObjectType: 9
+      Path: Default Work Unit\d1_lead04
+      values:
+      - name: None
+        guid: d95b5789abfcde418b6ae59bc23ee6c6
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 3535e5301bcc794fa279eff4b88df1ca
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 20db5c2b82d0fc45b7145444fe0b7287
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_lead05
+      guid: 92c6920331e3354a9d2072aad94074f8
+      id: 1005609936
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_lead05
+        ObjectType: 9
+      Path: Default Work Unit\d1_lead05
+      values:
+      - name: None
+        guid: bb15e64a1474fa489a207d6607abb3a4
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: e12c449fd6785b4c85c7f1f2cf5b699b
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: f6a5878f70ac4943a5df3bf6f4883a18
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_lead06
+      guid: 97699a6325dece438409dc57d1c1fd8d
+      id: 1005609939
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_lead06
+        ObjectType: 9
+      Path: Default Work Unit\d1_lead06
+      values:
+      - name: None
+        guid: 4baa6620dba8cd43b69f1b815cf6b715
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: a9ae6211e901f8489e02db9c40747461
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 35917d57b366204b8a548460b67a00af
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_lead07
+      guid: 4f74c306a364a44f9ea9946c00ff139b
+      id: 1005609938
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_lead07
+        ObjectType: 9
+      Path: Default Work Unit\d1_lead07
+      values:
+      - name: None
+        guid: 6c89c5fb7ef5e2409600a9c3b149d223
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 23fd72b71b5d7144b3488ce61cb2c635
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 59b496f8fe8096488bb95a3cbbba3d97
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_lead08
+      guid: c44c87487bdb2642b87f89df6ff84815
+      id: 1005609949
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_lead08
+        ObjectType: 9
+      Path: Default Work Unit\d1_lead08
+      values:
+      - name: None
+        guid: 540c1e0efd43c0409adfb4cf683cd8d3
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: fe385ecf2ee89147b1079936e889ce8e
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: d0baea8e5cb7f04f89a6a47a9bceec2f
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_perc01
+      guid: 9609a11f700a3a409d167764d340abae
+      id: 1105457254
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_perc01
+        ObjectType: 9
+      Path: Default Work Unit\d1_perc01
+      values:
+      - name: None
+        guid: 2e8a6c40f6494f4a88d15067431e43ce
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 9b439771da04cd40ae7f770514c6e1f7
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 50b7677c1c6fa44bac67bd65b442230e
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_perc02
+      guid: 6f76360857dfe142bb5c89cda01ad764
+      id: 1105457253
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_perc02
+        ObjectType: 9
+      Path: Default Work Unit\d1_perc02
+      values:
+      - name: None
+        guid: 5512c505c1f50540b8380203bf64f1fa
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: de73c3fc10fb3844b23bcd3aa9f856c1
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 4c82ab82be82944e939c356757de0242
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_perc03
+      guid: dc18521066e221458c219323f0f9eece
+      id: 1105457252
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_perc03
+        ObjectType: 9
+      Path: Default Work Unit\d1_perc03
+      values:
+      - name: None
+        guid: d4d82f37fc90c8439d500f5db623e806
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: a3fa934098195349978618793b2f57e8
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 7ad8eb87b0259a4b99f128d85de4666b
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d1_perc04
+      guid: 6cdf2a6a01038843832f7d3f4c3df641
+      id: 1105457251
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d1_perc04
+        ObjectType: 9
+      Path: Default Work Unit\d1_perc04
+      values:
+      - name: None
+        guid: 06c5c2c4ab6e2f4493a50cbc5cf0b9d5
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 800bfa378b8e7f4f83f83cbbe727e6db
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: ffe508841b142941b1c1523ba0f4146c
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_bass01
+      guid: f379b1ead4cab441b42fa83d75791ec4
+      id: 1988365738
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_bass01
+        ObjectType: 9
+      Path: Default Work Unit\d2_bass01
+      values:
+      - name: None
+        guid: 08e66d6108a45e4285371dd1dc411794
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: b46aceecdec7fc4a9180222cbc27b2ec
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: a92f608c2be05145a34b432420a0cbcf
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_bass02
+      guid: 5f15cc18b76bbc43b10f949d4792c315
+      id: 1988365737
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_bass02
+        ObjectType: 9
+      Path: Default Work Unit\d2_bass02
+      values:
+      - name: None
+        guid: a6e0d5461dc4ea49839869a341af3eca
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 3379105777bd3f4cbd53abf810486649
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 33b946ff7bc5b04f8d280e0080a3d579
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_bass03
+      guid: c69f80863f791d4a8a0e6d0142519107
+      id: 1988365736
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_bass03
+        ObjectType: 9
+      Path: Default Work Unit\d2_bass03
+      values:
+      - name: None
+        guid: 31c3ed59bef36044908d9388b20ed623
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 4c427233fcfabf41b7aa3a1381082536
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 6b8f65716cea9441a51a899b879a6c1c
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_bass04
+      guid: 1c38541cadde944b8efa14fc79e9e065
+      id: 1988365743
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_bass04
+        ObjectType: 9
+      Path: Default Work Unit\d2_bass04
+      values:
+      - name: None
+        guid: e436458c706d1d409fbfda74ef75b5ef
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 27e583d454d08b4db36b2509eb734a30
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 0f829987c7857f40bf624261f78802fc
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_bass05
+      guid: 609b2daaa05d1340b09d8c014d6d4fd9
+      id: 1988365742
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_bass05
+        ObjectType: 9
+      Path: Default Work Unit\d2_bass05
+      values:
+      - name: None
+        guid: 46dffccc7123d14cb23fd7da0262faff
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 2c2551017ae81c43b493bca805ab07a8
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: c7021dad89ee3f40abd797b7fbe67dc5
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_bass06
+      guid: bebcccb6a0983649a699f7383a3ed5e4
+      id: 1988365741
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_bass06
+        ObjectType: 9
+      Path: Default Work Unit\d2_bass06
+      values:
+      - name: None
+        guid: 4668de8022ec7541886bb1c704712477
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 6263ec5a3b58ea438425bc69c82505ca
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: a05187bbe90d3b4ea051d7b8b4acd611
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_bass07
+      guid: b720dcbfde360c448bc68615cea817e1
+      id: 1988365740
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_bass07
+        ObjectType: 9
+      Path: Default Work Unit\d2_bass07
+      values:
+      - name: None
+        guid: 8d9fc2791182964b8a31d33d6c0ce1f4
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 97520dfdc8f69345a8e5af417012d817
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: cd9f89c97d7b0444949e85fef420ab74
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_bass08
+      guid: 07d87609255789408d9ab89575b69ef7
+      id: 1988365731
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_bass08
+        ObjectType: 9
+      Path: Default Work Unit\d2_bass08
+      values:
+      - name: None
+        guid: 1bbcf8d20290194ea491381000e87394
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 55f34743eef9be438fd4d327a9e9613c
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: f496ff99998c534b819547f00ece3573
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_chords01
+      guid: 6caed033575c1543ae489977013d2aa5
+      id: 900058766
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_chords01
+        ObjectType: 9
+      Path: Default Work Unit\d2_chords01
+      values:
+      - name: None
+        guid: f6f76ee178d69f43afe4910dac783d73
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 4d7c60ddffb872498bbd16dbbdecb0e7
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: fee2779ef26f6640ab4b73a291af352a
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_chords02
+      guid: b67ceec35ceed34dbf498574b6c94901
+      id: 900058765
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_chords02
+        ObjectType: 9
+      Path: Default Work Unit\d2_chords02
+      values:
+      - name: None
+        guid: 6203bae326d3c14faf36884c5c4a90c6
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 47713fb5a03f834a9bd9e6ce2f315b95
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 773272bfa9d8774f806fab9c2ad5b0da
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_chords03
+      guid: 71f35f764ccc824ea801ee69e0bf19f8
+      id: 900058764
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_chords03
+        ObjectType: 9
+      Path: Default Work Unit\d2_chords03
+      values:
+      - name: None
+        guid: d4e2ebd784577049940a76986f7a6674
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: d54623aab479f84faddc12229dbf07b6
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 56e3a9434e201a488ceef0f3c365a9ba
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_chords04
+      guid: 1f55cbb219f6924286f818966b6910c1
+      id: 900058763
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_chords04
+        ObjectType: 9
+      Path: Default Work Unit\d2_chords04
+      values:
+      - name: None
+        guid: b4c05065844ef340a6c2d67df5a18d3e
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: e44a624fcc19cf4599c4e16b6029e9f9
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 6c795f753206ad4bb7db143cda1aaaf7
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_lead01
+      guid: 5c7e83bbd7183d459bf2b3f2f82e7bbf
+      id: 1985634353
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_lead01
+        ObjectType: 9
+      Path: Default Work Unit\d2_lead01
+      values:
+      - name: None
+        guid: 4e2fc0452eaf73479b009e03acd4666a
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: eb4393895def554894d04cfaa42a934f
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: b9af191c9700ba4eb5c57bb57e13d915
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_lead02
+      guid: 01f76e6470c88d4c914b8928bf418fde
+      id: 1985634354
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_lead02
+        ObjectType: 9
+      Path: Default Work Unit\d2_lead02
+      values:
+      - name: None
+        guid: 76884dbaa73a1e4db43701e2a6ab55dd
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 412bf32ac541ff45b7acdf2acbb4285f
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 702607c6ee519b418288061d13f2fcd3
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_lead03
+      guid: feb39c71d085574da78d4be5021329b9
+      id: 1985634355
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_lead03
+        ObjectType: 9
+      Path: Default Work Unit\d2_lead03
+      values:
+      - name: None
+        guid: 2485144a80e5ff49b1d7657ff4f4deab
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: e0a39669cdfcd248bd6197f442df7fd3
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 4705277f3814914e8e63583a15a55bb6
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_lead04
+      guid: 72acd3f799b4af4281e9e683d7169f43
+      id: 1985634356
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_lead04
+        ObjectType: 9
+      Path: Default Work Unit\d2_lead04
+      values:
+      - name: None
+        guid: 407b8bd2c7bf2c4bb047b8cd659fc0e4
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: a1e0894f02301844a2ad4483376ed45a
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 16030912f198fc44b290dc6f0b62256d
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_lead05
+      guid: c4e318e78708584aad75153254a25673
+      id: 1985634357
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_lead05
+        ObjectType: 9
+      Path: Default Work Unit\d2_lead05
+      values:
+      - name: None
+        guid: 09b43a2a440ef24880f80459f941f2ac
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 4946d05d1c099a4889b51ef283ee013c
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 44ab7819dd01944282a8098c5d7d847f
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_lead06
+      guid: 6e5997b60701d0458ec6981f8c77f7bd
+      id: 1985634358
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_lead06
+        ObjectType: 9
+      Path: Default Work Unit\d2_lead06
+      values:
+      - name: None
+        guid: 8e83d8a08cf40640a07c9cde130fcbd9
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: a275ccb268a4a94b9d2ae7c4520f026c
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: d6f00f2ab72aa14daedf16835475959f
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_lead07
+      guid: d3450d3a20c1754ab3d66bf93a343095
+      id: 1985634359
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_lead07
+        ObjectType: 9
+      Path: Default Work Unit\d2_lead07
+      values:
+      - name: None
+        guid: bde41ac9f494144eb23f107cc71c2acf
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 77f82b1e8f3b384c947a0dec6d9d7f4f
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 02b13e854749204c8c26a3d830ee9573
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_lead08
+      guid: 3c2dffe8bea45343a5f7b235e1ffdd6d
+      id: 1985634360
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_lead08
+        ObjectType: 9
+      Path: Default Work Unit\d2_lead08
+      values:
+      - name: None
+        guid: 53508361f9dc334ebb394c8d69663ece
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 8a7bade4aac04c44b89bf2049e7ff68f
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: c4dc8478ad7c8545896d08dbc1e9774e
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_perc01
+      guid: f2a766fd5d598040bc9f9923c1ec3bae
+      id: 2328970227
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_perc01
+        ObjectType: 9
+      Path: Default Work Unit\d2_perc01
+      values:
+      - name: None
+        guid: e13e5cf92aaf1842b868fe4e2a5bb410
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: af333e7783eb2148b8208db3f93593f5
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 377c44300be45d43be8bf64acacc372e
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_perc02
+      guid: 806b412cc7bd244da81820f8469350a8
+      id: 2328970224
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_perc02
+        ObjectType: 9
+      Path: Default Work Unit\d2_perc02
+      values:
+      - name: None
+        guid: f05b4c26a8ca9743b93259069760c814
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: e672b1bb43926d48ba4ab6b5f42fc50e
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: d2e4c13842bc2a469f5569696155e48e
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_perc03
+      guid: a0f4dd8c463ffa4382d74fac17452cc5
+      id: 2328970225
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_perc03
+        ObjectType: 9
+      Path: Default Work Unit\d2_perc03
+      values:
+      - name: None
+        guid: 25f5fd992aa959448e84b24740f234e9
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: f40541fd428d274cbcdad1faf8de5231
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 5aaac8a48f4eb44b89caaaaac48cad81
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_perc04
+      guid: 937ff7dcddaa4342aa4131669af37ec8
+      id: 2328970230
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_perc04
+        ObjectType: 9
+      Path: Default Work Unit\d2_perc04
+      values:
+      - name: None
+        guid: cc52abc40ce128489167e787892858c8
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 12e24673b1bff5458e6789521ec33d55
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 1e332a26b42fed4cbe1b27de53b142df
         id: 1651971902
         PathAndIcons:
         - ElementName: on
@@ -450,6 +1878,118 @@ MonoBehaviour:
           ObjectType: 8
       - name: on
         guid: 437d8d05e3a8d549980bab51420c14b7
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_chords01
+      guid: 0e63b65d975e6946821d4d1761449430
+      id: 1853549916
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_chords01
+        ObjectType: 9
+      Path: Default Work Unit\intro_chords01
+      values:
+      - name: None
+        guid: 05b70f2af5dd3b47a2d813506d56bdc5
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: b91e979df276af45a641d57f6a3855e2
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 57dcc007c3c493429ce4de11e3ac79c7
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_chords02
+      guid: eebc8eed1c70f446a0b406839e89058b
+      id: 1853549919
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_chords02
+        ObjectType: 9
+      Path: Default Work Unit\intro_chords02
+      values:
+      - name: None
+        guid: 1fca0ef13a80af4b8e8ffdf28a8e724c
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: f6e992285abddb4dad9223ad6e35012c
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: ed0056064ef66d47b4a4e2849269e677
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_chords03
+      guid: 94398afb92d38e46a5a240826e052ee6
+      id: 1853549918
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_chords03
+        ObjectType: 9
+      Path: Default Work Unit\intro_chords03
+      values:
+      - name: None
+        guid: 76224e4763867d459b6563d7425d0b7b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 52a0b155a22ec644bfc6342e2bd30d15
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 33cbc2cd8e7c5d4d9432eca0f3eb39a8
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: intro_chords04
+      guid: b649fac3a6294c4f96f04c626686afc0
+      id: 1853549913
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_chords04
+        ObjectType: 9
+      Path: Default Work Unit\intro_chords04
+      values:
+      - name: None
+        guid: 306057a594a2574d98418519fb749338
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: ce73f027a802994da5de17e5aa61fcd9
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 162f13e3321e9a4eb12695a2772c1d36
         id: 1651971902
         PathAndIcons:
         - ElementName: on
@@ -706,6 +2246,34 @@ MonoBehaviour:
         PathAndIcons:
         - ElementName: on
           ObjectType: 8
+    - name: intro_perc04
+      guid: a116ae65febccb4ba9f45742fb981de3
+      id: 1451274676
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: intro_perc04
+        ObjectType: 9
+      Path: Default Work Unit\intro_perc04
+      values:
+      - name: None
+        guid: 325fdfe4dd960b4bba4c5ff7aafc1e14
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 477e5ccc9b5936428ae96e189b0a4ec3
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: a277c2397f2f9c45b5c08bb15f52bbec
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
     - name: intro_stabs01
       guid: 5455d19404f76347b728afc3d04078cc
       id: 3384278750
@@ -734,146 +2302,6 @@ MonoBehaviour:
         PathAndIcons:
         - ElementName: on
           ObjectType: 8
-    - name: mid_bass01
-      guid: 7230688452c0c9458342a4dce4cb1108
-      id: 2513884940
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: mid_bass01
-        ObjectType: 9
-      Path: Default Work Unit\mid_bass01
-      values:
-      - name: None
-        guid: 705e82a5fa17804daeafb07536270cae
-        id: 748895195
-        PathAndIcons:
-        - ElementName: None
-          ObjectType: 8
-      - name: off
-        guid: cdeb58d63788a7478e38862800d92f66
-        id: 930712164
-        PathAndIcons:
-        - ElementName: off
-          ObjectType: 8
-      - name: on
-        guid: 801d397bc3b4e1499871f8fa531be003
-        id: 1651971902
-        PathAndIcons:
-        - ElementName: on
-          ObjectType: 8
-    - name: mid_lead01
-      guid: 78dc19e4b10ef242b540ca83b143e1ac
-      id: 3432693055
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: mid_lead01
-        ObjectType: 9
-      Path: Default Work Unit\mid_lead01
-      values:
-      - name: None
-        guid: eb744f921feee845a9eda541b7016a43
-        id: 748895195
-        PathAndIcons:
-        - ElementName: None
-          ObjectType: 8
-      - name: off
-        guid: 73835ca3b9dd9b4690b52e39b269c1ed
-        id: 930712164
-        PathAndIcons:
-        - ElementName: off
-          ObjectType: 8
-      - name: on
-        guid: 9004c04c15fc6a449321db57aa4bed5b
-        id: 1651971902
-        PathAndIcons:
-        - ElementName: on
-          ObjectType: 8
-    - name: mid_lead02
-      guid: f5427b3fe9d7dc48ba16570de8c39164
-      id: 3432693052
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: mid_lead02
-        ObjectType: 9
-      Path: Default Work Unit\mid_lead02
-      values:
-      - name: None
-        guid: 7314d6951e4a0e4b8e78116b9162d771
-        id: 748895195
-        PathAndIcons:
-        - ElementName: None
-          ObjectType: 8
-      - name: off
-        guid: 7c283f16acf12b4f81ba8385c36987a2
-        id: 930712164
-        PathAndIcons:
-        - ElementName: off
-          ObjectType: 8
-      - name: on
-        guid: e2f4ee9697f5c847b4106110bb71d425
-        id: 1651971902
-        PathAndIcons:
-        - ElementName: on
-          ObjectType: 8
-    - name: mid_lead03
-      guid: f9d2c1675e61ca47846e8d8f8ca86a35
-      id: 3432693053
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: mid_lead03
-        ObjectType: 9
-      Path: Default Work Unit\mid_lead03
-      values:
-      - name: None
-        guid: bfe0a31cfa58ae46b86c19fb77a404f0
-        id: 748895195
-        PathAndIcons:
-        - ElementName: None
-          ObjectType: 8
-      - name: off
-        guid: de368e29780e5d49a51e74b56de04c39
-        id: 930712164
-        PathAndIcons:
-        - ElementName: off
-          ObjectType: 8
-      - name: on
-        guid: 3ea2ef798e16d447825df5d9c0cb6300
-        id: 1651971902
-        PathAndIcons:
-        - ElementName: on
-          ObjectType: 8
-    - name: mid_lead04
-      guid: 19edf074d16a864fa26fc790e03490a4
-      id: 3432693050
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: mid_lead04
-        ObjectType: 9
-      Path: Default Work Unit\mid_lead04
-      values:
-      - name: None
-        guid: d95b5789abfcde418b6ae59bc23ee6c6
-        id: 748895195
-        PathAndIcons:
-        - ElementName: None
-          ObjectType: 8
-      - name: off
-        guid: 3535e5301bcc794fa279eff4b88df1ca
-        id: 930712164
-        PathAndIcons:
-        - ElementName: off
-          ObjectType: 8
-      - name: on
-        guid: 20db5c2b82d0fc45b7145444fe0b7287
-        id: 1651971902
-        PathAndIcons:
-        - ElementName: on
-          ObjectType: 8
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -888,7 +2316,13 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Sucuk_WwiseProject
+  - /Sucuk_WwiseProject/Auxiliary Busses
+  - /Sucuk_WwiseProject/Auxiliary Busses/Default Work Unit
+  - /Sucuk_WwiseProject/Auxiliary Busses/Default Work Unit/Master Audio Bus
   - /Sucuk_WwiseProject/Events
   - /Sucuk_WwiseProject/Events/Default Work Unit
-  autoPopulateEnabled: 0
+  - /Sucuk_WwiseProject/SoundBanks
+  - /Sucuk_WwiseProject/SoundBanks/Default Work Unit
+  - /Sucuk_WwiseProject/States
+  autoPopulateEnabled: 1
   CurrentPluginConfig: 
