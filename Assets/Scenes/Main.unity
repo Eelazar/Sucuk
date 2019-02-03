@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0549372, g: 0.10594925, b: 0.11066537, a: 1}
+  m_IndirectSpecularColor: {r: 0.16788375, g: 0.21073635, b: 0.28994125, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2644,9 +2644,6 @@ MonoBehaviour:
   smoothDamp: 0.05
   baseScale: 12
   kickScaleMultiplier: 5
-  percussionTracks: []
-  bassTracks: []
-  leadTracks: []
 --- !u!135 &1269231299
 SphereCollider:
   m_ObjectHideFlags: 0
