@@ -38,7 +38,7 @@ public class VisualizerMaster : MonoBehaviour
     [SerializeField]
     private float[] maxAngles;
     [SerializeField]
-    private float[][] spotAnglesTimestamps;
+    private MultiDimensionalFloat[] spotAnglesTimestamps;
     [Space]
     [SerializeField]
     private float[] intensityM;
@@ -47,7 +47,8 @@ public class VisualizerMaster : MonoBehaviour
     [SerializeField]
     private float[] maxIntensity;
     [SerializeField]
-    private float[][] intensityTimestamps;
+    private MultiDimensionalFloat[] intensityTimestamps;
+    [Space]
     [SerializeField]
     private float smoothSpotAnglesM;
     [SerializeField]
@@ -96,13 +97,13 @@ public class VisualizerMaster : MonoBehaviour
         spectrum = WwiseListener.spectrum;
 
         //Post-processing
-        if (Time.time >= startTime + bloomTimestamps[bloomCounter])
+        if (bloomCounter < bloomTimestamps.Length && Time.time >= startTime + bloomTimestamps[bloomCounter])
         {
             bloomSwitch = !bloomSwitch;
             bloomCounter++;
         }
         //Materials
-        if (Time.time >= startTime + rimPowerTimestamps[rimPowerCounter])
+        if (rimPowerCounter < rimPowerTimestamps.Length && Time.time >= startTime + rimPowerTimestamps[rimPowerCounter])
         {
             rimPowerSwitch = !rimPowerSwitch;
             rimPowerCounter++;
@@ -110,12 +111,12 @@ public class VisualizerMaster : MonoBehaviour
         //Lights
         for (int i = 0; i < lights.Length; i++)
         {
-            if (Time.time >= startTime + spotAnglesTimestamps[i][spotAnglesCounters[i]])
+            if (spotAnglesCounters[i] < spotAnglesTimestamps[i].nested.Length && Time.time >= startTime + spotAnglesTimestamps[i].nested[spotAnglesCounters[i]])
             {
                 spotAnglesSwitch = !spotAnglesSwitch;
                 spotAnglesCounters[i]++;
             }
-            if (Time.time >= startTime + intensityTimestamps[i][intensityCounters[i]])
+            if (intensityCounters[i] < intensityTimestamps[i].nested.Length && Time.time >= startTime + intensityTimestamps[i].nested[intensityCounters[i]])
             {
                 intensitySwitch = !intensitySwitch;
                 intensityCounters[i]++;
@@ -156,4 +157,10 @@ public class VisualizerMaster : MonoBehaviour
 
 
     }
+}
+
+[System.Serializable]
+public class MultiDimensionalFloat
+{
+    public float[] nested;
 }
