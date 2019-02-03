@@ -21,6 +21,14 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Harp" ID="{D840C5D6-6455-4FF7-99D6-0505DD84F406}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Default Work Unit" ID="{6C1BDD87-8609-4133-94D4-E602D0162B3C}" WorkUnitID="{6C1BDD87-8609-4133-94D4-E602D0162B3C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

@@ -31,6 +31,174 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="HarpE" ID="{4F0560E1-534C-4DCE-A2F6-5EE5530DF927}">
+					<ChildrenList>
+						<Action Name="" ID="{2E67CF96-C1CA-473D-9F83-04D686A3625D}" ShortID="535952373">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp E" ID="{57439879-49B9-41F1-B7BD-DC892D1123FB}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpD" ID="{A0BA23EA-FA3E-4E21-A0A1-370D57D4339E}">
+					<ChildrenList>
+						<Action Name="" ID="{0E2347E8-941A-4987-BFEB-FD97E80A4B80}" ShortID="259745357">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp D" ID="{3186EF26-DB73-44B9-997E-8AA862B960C0}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpD2" ID="{35D9F6D1-D10C-4278-8BFF-73FA05BECBDA}">
+					<ChildrenList>
+						<Action Name="" ID="{5C411031-8095-4BC7-8D9C-9F85EC389681}" ShortID="750271724">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp D2" ID="{32CE649D-55CE-430C-995E-D6DFE94225E0}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpF" ID="{17CC9BC5-08F8-4277-BBBA-6BA1B56D994A}">
+					<ChildrenList>
+						<Action Name="" ID="{43D43E2A-6CBD-4453-9B84-A8242BF3D4E3}" ShortID="401868568">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp F#" ID="{AF66971D-164A-4CDE-B498-63BA4C5AA2B3}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpB" ID="{1AC1AEC3-C360-4B69-ADEF-F2F8EBDF1510}">
+					<ChildrenList>
+						<Action Name="" ID="{584B60C4-5BB6-4E0E-8297-76375C307805}" ShortID="7816819">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp B" ID="{F9932F5E-4066-49EB-954A-67223FC704EC}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpA" ID="{FA85F0FD-C057-4585-ADF9-F952A168E225}">
+					<ChildrenList>
+						<Action Name="" ID="{8A48F6B5-F73E-43E8-BB06-70AB4585DB85}" ShortID="305298411">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp A" ID="{6D944DD2-C67F-43AC-B79E-61E90B5C81B6}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpD2_stop" ID="{01E41115-AD10-4C00-B5D0-2D66D1DB17F0}">
+					<ChildrenList>
+						<Action Name="" ID="{389ED516-F0FC-40E0-8C15-33372FBC73B9}" ShortID="832492806">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp D2" ID="{32CE649D-55CE-430C-995E-D6DFE94225E0}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpA_stop" ID="{3AECFEB3-3F68-45EC-8BE0-9473AE292F1E}">
+					<ChildrenList>
+						<Action Name="" ID="{DF9CDDA3-7AC5-4A53-A0C6-6650E93A3B6F}" ShortID="911294318">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp A" ID="{6D944DD2-C67F-43AC-B79E-61E90B5C81B6}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpD_stop" ID="{03E166BF-02AD-4817-BCAF-848D552C9F36}">
+					<ChildrenList>
+						<Action Name="" ID="{8F689834-8E04-4328-8528-4FA12D6CCBD6}" ShortID="109228164">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp D" ID="{3186EF26-DB73-44B9-997E-8AA862B960C0}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpE_stop" ID="{33A25278-42D6-4D3F-BF50-02CF312880A7}">
+					<ChildrenList>
+						<Action Name="" ID="{2848E5D1-CD24-4BB6-8877-7A0DCBCFCA07}" ShortID="258120269">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp E" ID="{57439879-49B9-41F1-B7BD-DC892D1123FB}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpB_stop" ID="{836638FA-FFAD-4675-95A6-1B4BCB4CFA1D}">
+					<ChildrenList>
+						<Action Name="" ID="{64BFEF3D-EBAB-42F6-8EF3-F6E62D7B110F}" ShortID="479776977">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp B" ID="{F9932F5E-4066-49EB-954A-67223FC704EC}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpF_stop" ID="{4A5CD243-F2E5-48D4-8601-949A1F936735}">
+					<ChildrenList>
+						<Action Name="" ID="{AF4AADA9-52D9-4968-9884-157191610E6E}" ShortID="680401326">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp F#" ID="{AF66971D-164A-4CDE-B498-63BA4C5AA2B3}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

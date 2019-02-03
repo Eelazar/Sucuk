@@ -11,6 +11,26 @@
 						<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 							<ObjectRef Name="Bass_Remover_1" ID="{D313DB05-6B33-4C1F-8C2F-F989052E8120}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
+						<Reference Name="Effect1">
+							<Custom>
+								<Effect Name="Wwise Compressor (Custom)" ID="{00FAD9C6-6EF9-4A00-93C0-787DD91EB2D5}" ShortID="297299734" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<PropertyList>
+										<Property Name="OutputGain" Type="Real32" Value="1"/>
+										<Property Name="Ratio" Type="Real32" Value="1"/>
+										<Property Name="Threshold" Type="Real32" Value="-12"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+						<Reference Name="Effect2">
+							<Custom>
+								<Effect Name="Wwise Peak Limiter (Custom)" ID="{F9EB15B6-F655-414E-AD7C-23247F682127}" ShortID="430961838" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+									<PropertyList>
+										<Property Name="OutputGain" Type="Real32" Value="-0.5"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AuxBus Name="band5" ID="{9EC936E9-BEFE-47FE-B9E5-F5DABEF34BE6}">
@@ -285,6 +305,20 @@
 											</PropertyList>
 										</Effect>
 									</Custom>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
+						<AuxBus Name="verb" ID="{3E550F7B-D3F9-4D52-80C7-2190DD9E39F0}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
