@@ -13,23 +13,30 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID HARPA = 1628890127U;
+        static const AkUniqueID HARPA_PLAY = 2234699720U;
+        static const AkUniqueID HARPA_STOP = 317402682U;
+        static const AkUniqueID HARPB = 1628890124U;
+        static const AkUniqueID HARPB_PLAY = 2166538093U;
+        static const AkUniqueID HARPB_STOP = 3283835323U;
+        static const AkUniqueID HARPD = 1628890122U;
+        static const AkUniqueID HARPD_PLAY = 917836371U;
+        static const AkUniqueID HARPD_STOP = 47855161U;
+        static const AkUniqueID HARPD2 = 3775462284U;
+        static const AkUniqueID HARPD2_PLAY = 1871652333U;
+        static const AkUniqueID HARPD2_STOP = 2988949563U;
+        static const AkUniqueID HARPE = 1628890123U;
+        static const AkUniqueID HARPE_PLAY = 4127566364U;
+        static const AkUniqueID HARPE_STOP = 2839797382U;
+        static const AkUniqueID HARPF = 1628890120U;
+        static const AkUniqueID HARPF_PLAY = 512677489U;
+        static const AkUniqueID HARPF_STOP = 1805669159U;
         static const AkUniqueID PLAY = 1256202815U;
         static const AkUniqueID PLAYDYNAMIC = 2328709346U;
     } // namespace EVENTS
 
     namespace STATES
     {
-        namespace CLAP01
-        {
-            static const AkUniqueID GROUP = 3585583026U;
-
-            namespace STATE
-            {
-                static const AkUniqueID OFF = 930712164U;
-                static const AkUniqueID ON = 1651971902U;
-            } // namespace STATE
-        } // namespace CLAP01
-
         namespace D1_BASS01
         {
             static const AkUniqueID GROUP = 1899079031U;
@@ -459,6 +466,50 @@ namespace AK
             } // namespace STATE
         } // namespace D2_CHORDS04
 
+        namespace D2_CHORDS05
+        {
+            static const AkUniqueID GROUP = 900058762U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_CHORDS05
+
+        namespace D2_CHORDS06
+        {
+            static const AkUniqueID GROUP = 900058761U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_CHORDS06
+
+        namespace D2_KICK01
+        {
+            static const AkUniqueID GROUP = 283315861U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_KICK01
+
+        namespace D2_KICK02
+        {
+            static const AkUniqueID GROUP = 283315862U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace D2_KICK02
+
         namespace D2_LEAD01
         {
             static const AkUniqueID GROUP = 1985634353U;
@@ -590,6 +641,28 @@ namespace AK
                 static const AkUniqueID ON = 1651971902U;
             } // namespace STATE
         } // namespace D2_PERC04
+
+        namespace I_KICK01
+        {
+            static const AkUniqueID GROUP = 3961493934U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace I_KICK01
+
+        namespace I_KICK02
+        {
+            static const AkUniqueID GROUP = 3961493933U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace I_KICK02
 
         namespace INTRO_BASS01
         {
@@ -834,6 +907,7 @@ namespace AK
         static const AkUniqueID FBAND6 = 1495724410U;
         static const AkUniqueID FBAND7 = 1495724411U;
         static const AkUniqueID FBAND8 = 1495724404U;
+        static const AkUniqueID LD2EADON = 2276291026U;
         static const AkUniqueID MKICK = 3683999712U;
     } // namespace GAME_PARAMETERS
 
@@ -841,6 +915,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID DYNAMIC = 2223635772U;
+        static const AkUniqueID HARP = 3599861402U;
         static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BANKS
 
@@ -859,6 +934,7 @@ namespace AK
         static const AkUniqueID BAND6 = 3193682182U;
         static const AkUniqueID BAND7 = 3193682183U;
         static const AkUniqueID BAND8 = 3193682184U;
+        static const AkUniqueID VERB = 3657263530U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

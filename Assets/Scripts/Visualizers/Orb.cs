@@ -223,9 +223,9 @@ public class Orb : MonoBehaviour
                 break;
 
             case "Breakdown 1":
-                TrackRegistry.bassTracks = TrackRegistry.bassTracksBreakdown1;
-                TrackRegistry.percussionTracks = TrackRegistry.percussionTracksBreakdown1;
-                TrackRegistry.leadTracks = TrackRegistry.leadTracksBreakdown1;
+                //TrackRegistry.bassTracks = TrackRegistry.bassTracksBreakdown1;
+                //TrackRegistry.percussionTracks = TrackRegistry.percussionTracksBreakdown1;
+                //TrackRegistry.leadTracks = TrackRegistry.leadTracksBreakdown1;
 
                 TurnOffAllTracks();
                 ClearTrackArrays();
@@ -241,9 +241,9 @@ public class Orb : MonoBehaviour
                 break;
 
             case "Breakdown 2":
-                TrackRegistry.bassTracks = TrackRegistry.bassTracksBreakdown2;
-                TrackRegistry.percussionTracks = TrackRegistry.percussionTracksBreakdown2;
-                TrackRegistry.leadTracks = TrackRegistry.leadTracksBreakdown2;
+                //TrackRegistry.bassTracks = TrackRegistry.bassTracksBreakdown2;
+                //TrackRegistry.percussionTracks = TrackRegistry.percussionTracksBreakdown2;
+                //TrackRegistry.leadTracks = TrackRegistry.leadTracksBreakdown2;
 
                 TurnOffAllTracks();
                 ClearTrackArrays();

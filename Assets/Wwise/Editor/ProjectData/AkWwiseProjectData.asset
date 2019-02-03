@@ -21,7 +21,7 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6faef3859c315b48ac40ae404e146248
-    m_lastTime: -8586524007466840293
+    m_lastTime: -8586523831838386354
     List:
     - name: band1
       guid: 470fa168dc52584c8d2cec70a9b71e17
@@ -111,11 +111,22 @@ MonoBehaviour:
       - ElementName: band8
         ObjectType: 1
       Path: Default Work Unit\Master Audio Bus\band8
+    - name: verb
+      guid: 7b0f553ef9d3524d80c72190dd9e39f0
+      id: 3657263530
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: verb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\verb
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 8c9443e01b83094f875c5cda2d686dc8
-    m_lastTime: -8586524649219601112
+    m_lastTime: -8586523831830659102
     List:
     - name: Dynamic
       guid: e28314431cab634eb05ba7385ab18169
@@ -126,6 +137,15 @@ MonoBehaviour:
       - ElementName: Dynamic
         ObjectType: 7
       Path: Default Work Unit\Dynamic
+    - name: Harp
+      guid: d6c540d85564f74f99d60505dd84f406
+      id: 3599861402
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Harp
+        ObjectType: 7
+      Path: Default Work Unit\Harp
     - name: Music
       guid: e02feb776654314bb529d113527efbe2
       id: 3991942870
@@ -139,8 +159,152 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 87dd1b6c0986334194d4e602d0162b3c
-    m_lastTime: -8586524649307045071
+    m_lastTime: -8586523831838645985
     List:
+    - name: HarpA
+      guid: fdf085fa57c08545adf9f952a168e225
+      id: 1628890127
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpA
+        ObjectType: 3
+      Path: Default Work Unit\HarpA
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpA_stop
+      guid: b3feec3a683fec458be09473ae292f1e
+      id: 317402682
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpA_stop
+        ObjectType: 3
+      Path: Default Work Unit\HarpA_stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpB
+      guid: c3aec11a60c3694badeff2f8ebdf1510
+      id: 1628890124
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpB
+        ObjectType: 3
+      Path: Default Work Unit\HarpB
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpB_stop
+      guid: fa386683adff754695a61b4bcb4cfa1d
+      id: 3283835323
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpB_stop
+        ObjectType: 3
+      Path: Default Work Unit\HarpB_stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpD
+      guid: ea23baa03efa214ea0a1370d57d4339e
+      id: 1628890122
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpD
+        ObjectType: 3
+      Path: Default Work Unit\HarpD
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpD_stop
+      guid: bf66e103ad021748bcaf848d552c9f36
+      id: 47855161
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpD_stop
+        ObjectType: 3
+      Path: Default Work Unit\HarpD_stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpD2
+      guid: d1f6d9350cd178428bff73fa05becbda
+      id: 3775462284
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpD2
+        ObjectType: 3
+      Path: Default Work Unit\HarpD2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpD2_stop
+      guid: 1511e40110ad004cb5d02d66d1db17f0
+      id: 2988949563
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpD2_stop
+        ObjectType: 3
+      Path: Default Work Unit\HarpD2_stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpE
+      guid: e160054f4c53ce4da2f65ee5530df927
+      id: 1628890123
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpE
+        ObjectType: 3
+      Path: Default Work Unit\HarpE
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpE_stop
+      guid: 7852a233d6423f4dbf5002cf312880a7
+      id: 2839797382
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpE_stop
+        ObjectType: 3
+      Path: Default Work Unit\HarpE_stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpF
+      guid: c59bcc17f8087742bbba6ba1b56d994a
+      id: 1628890120
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpF
+        ObjectType: 3
+      Path: Default Work Unit\HarpF
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpF_stop
+      guid: 43d25c4ae5f2d4488601949a1f936735
+      id: 1805669159
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpF_stop
+        ObjectType: 3
+      Path: Default Work Unit\HarpF_stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play
       guid: ec952d0b89347145addcb1b41dd8a5e6
       id: 1256202815
@@ -169,7 +333,7 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 349edf7e094b0748a706ae78fe55659e
-    m_lastTime: -8586523983067934773
+    m_lastTime: -8586523831838546229
     List:
     - name: Fband1
       guid: f4b2d61b2bd4194ba141c79053c24fa8
@@ -243,6 +407,15 @@ MonoBehaviour:
       - ElementName: Fband8
         ObjectType: 13
       Path: Default Work Unit\Fband8
+    - name: lD2eadOn
+      guid: a197f7895932c84396f08e06990334bb
+      id: 2276291026
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: lD2eadOn
+        ObjectType: 13
+      Path: Default Work Unit\lD2eadOn
     - name: Mkick
       guid: 4f2b5168ce408e43b553cd18883fdc1d
       id: 3683999712
@@ -256,36 +429,8 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: f7edd226412a334195eceacd717a2334
-    m_lastTime: -8586524020278104341
+    m_lastTime: -8586523831830629476
     List:
-    - name: clap01
-      guid: b24333a6d52e7542bf6c76c88a473a10
-      id: 3585583026
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: clap01
-        ObjectType: 9
-      Path: Default Work Unit\clap01
-      values:
-      - name: None
-        guid: 4ed681147ff1a04f8167acfca996681d
-        id: 748895195
-        PathAndIcons:
-        - ElementName: None
-          ObjectType: 8
-      - name: off
-        guid: b664be111230ea49bc5dd8c623cde1af
-        id: 930712164
-        PathAndIcons:
-        - ElementName: off
-          ObjectType: 8
-      - name: on
-        guid: 0e808637f8a86041a3bb738c77cb7e19
-        id: 1651971902
-        PathAndIcons:
-        - ElementName: on
-          ObjectType: 8
     - name: d1_bass01
       guid: 7230688452c0c9458342a4dce4cb1108
       id: 1899079031
@@ -1378,6 +1523,118 @@ MonoBehaviour:
         PathAndIcons:
         - ElementName: on
           ObjectType: 8
+    - name: d2_chords05
+      guid: a1c7ae240a185340b41b1c6f728b314d
+      id: 900058762
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_chords05
+        ObjectType: 9
+      Path: Default Work Unit\d2_chords05
+      values:
+      - name: None
+        guid: 9900887b98f32345a453563f80ee063f
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 64fc0194306749449797ae42db7a4939
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 50445ef2ee55fa40994ac25f0d9a95b9
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: d2_chords06
+      guid: 9894425d607f4d409bab7a8e6e77598f
+      id: 900058761
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: d2_chords06
+        ObjectType: 9
+      Path: Default Work Unit\d2_chords06
+      values:
+      - name: None
+        guid: b5c3bb25d843de4a97959f5f6d4b4d8a
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 062fa02eda01c14e8812d4dbdf10ccc2
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 0f77860f7561dc4b8c9389f40342b7a0
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: D2_kick01
+      guid: 7c5d2e6d2e96aa488afa839307e59035
+      id: 283315861
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: D2_kick01
+        ObjectType: 9
+      Path: Default Work Unit\D2_kick01
+      values:
+      - name: None
+        guid: 6550d391c2ea9a4ab3e209d678f5878b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: cc16f16e7d8e8e4098712489ef655324
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: d4afb1a7abdc944ea444a461cb123ee4
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: D2_kick02
+      guid: b3e3bee0199a174b846e7440d6fc97c5
+      id: 283315862
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: D2_kick02
+        ObjectType: 9
+      Path: Default Work Unit\D2_kick02
+      values:
+      - name: None
+        guid: c554141e3f66ea45a6b5dd7de8ae9f80
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 36f09d5ffbb00e439ab5896c35bc43a7
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 324ab4153af67049bf7ffb89b914590c
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
     - name: d2_lead01
       guid: 5c7e83bbd7183d459bf2b3f2f82e7bbf
       id: 1985634353
@@ -1710,6 +1967,62 @@ MonoBehaviour:
           ObjectType: 8
       - name: on
         guid: 1e332a26b42fed4cbe1b27de53b142df
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: I_kick01
+      guid: 31a97317a1032a4bb0e580f7f771971e
+      id: 3961493934
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: I_kick01
+        ObjectType: 9
+      Path: Default Work Unit\I_kick01
+      values:
+      - name: None
+        guid: 845a78a75c86cf44b60ba08c3a5b90fa
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 3bce11ced41d2a41ae9df118e81d5a11
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: 0ac6fb77f008c34b8d37c8e78ae4f4b8
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: on
+          ObjectType: 8
+    - name: I_kick02
+      guid: 42303b017217b841a7ea79d78070150c
+      id: 3961493933
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: I_kick02
+        ObjectType: 9
+      Path: Default Work Unit\I_kick02
+      values:
+      - name: None
+        guid: 39d541f4deeace4faa1fda0de07d5751
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: off
+        guid: 60448058c121214fae1d5e685a75b768
+        id: 930712164
+        PathAndIcons:
+        - ElementName: off
+          ObjectType: 8
+      - name: on
+        guid: f459e4558ec3dc489cad42dd82be643d
         id: 1651971902
         PathAndIcons:
         - ElementName: on

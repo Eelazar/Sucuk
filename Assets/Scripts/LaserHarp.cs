@@ -15,15 +15,31 @@ public class LaserHarp : MonoBehaviour {
 
     private GameObject[] strings;
     private Vector3[] stringDirections;
+    private Vector3[] stringEnds;
+    private bool[] notes = new bool[5];
+    private bool[] noteSwitches = new bool[5];
 
-	void Start () 
+    void Start () 
 	{
         CreateHarp();
-	}
+
+        AkSoundEngine.PostEvent("HarpD_play", gameObject);
+        AkSoundEngine.PostEvent("HarpE_play", gameObject);
+        AkSoundEngine.PostEvent("HarpF_play", gameObject);
+        AkSoundEngine.PostEvent("HarpA_play", gameObject);
+        AkSoundEngine.PostEvent("HarpB_play", gameObject);
+
+        AkSoundEngine.PostEvent("HarpD_stop", gameObject);
+        AkSoundEngine.PostEvent("HarpE_stop", gameObject);
+        AkSoundEngine.PostEvent("HarpF_stop", gameObject);
+        AkSoundEngine.PostEvent("HarpA_stop", gameObject);
+        AkSoundEngine.PostEvent("HarpB_stop", gameObject);
+    }
 	
 	void Update () 
 	{
         CheckStrings();
+        PlaySounds();
 	}
 
     /// <summary>
@@ -33,6 +49,7 @@ public class LaserHarp : MonoBehaviour {
     {
         strings = new GameObject[stringAmount];
         stringDirections = new Vector3[stringAmount];
+        stringEnds = new Vector3[stringAmount];
         //Calculate the distance between strings
         float distance = arcWidth / stringAmount;
 
@@ -53,6 +70,8 @@ public class LaserHarp : MonoBehaviour {
             Vector3 target = new Vector3(x, arcHeight, 0);
             //Add the position of the parent object
             target += transform.position;
+            //Save the target position for later
+            stringEnds[i] = target;
             //Calculate the direction of the rotation
             Vector3 targetDirection = target - go.transform.position;
             targetDirection.Normalize();
@@ -75,10 +94,90 @@ public class LaserHarp : MonoBehaviour {
         for(int i = 0; i < strings.Length; i++)
         {
             float length = Vector3.Distance(strings[i].transform.position, strings[i].GetComponent<LineRenderer>().GetPosition(1));
-            if (Physics.Raycast(strings[i].transform.position, stringDirections[i], length))
+            RaycastHit hit;
+            if (Physics.Raycast(strings[i].transform.position, stringDirections[i], out hit, length))
             {
-                Debug.Log("Hit at string " + i);
+                notes[i] = true;
+                strings[i].GetComponent<LineRenderer>().SetPosition(1, hit.point);
             }
+            else
+            {
+                notes[i] = false;
+                strings[i].GetComponent<LineRenderer>().SetPosition(1, stringEnds[i]);
+            }
+        }
+    }
+
+    void PlaySounds()
+    {
+        if(notes[0] == true)
+        {
+            if(noteSwitches[0] == false)
+            {
+                AkSoundEngine.PostEvent("HarpD", gameObject);
+                noteSwitches[0] = true;
+            }            
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("HarpD_stop", gameObject);
+            noteSwitches[0] = false;
+        }
+
+        if (notes[1] == true)
+        {
+            if (noteSwitches[1] == false)
+            {
+                AkSoundEngine.PostEvent("HarpE", gameObject);
+                noteSwitches[1] = true;
+            }
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("HarpE_stop", gameObject);
+            noteSwitches[1] = false;
+        }
+
+        if (notes[2] == true)
+        {
+            if (noteSwitches[2] == false)
+            {
+                AkSoundEngine.PostEvent("HarpF", gameObject);
+                noteSwitches[2] = true;
+            }
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("HarpF_stop", gameObject);
+            noteSwitches[2] = false;
+        }
+
+        if (notes[3] == true)
+        {
+            if (noteSwitches[3] == false)
+            {
+                AkSoundEngine.PostEvent("HarpA", gameObject);
+                noteSwitches[3] = true;
+            }
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("HarpA_stop", gameObject);
+            noteSwitches[3] = false;
+        }
+
+        if (notes[4] == true)
+        {
+            if (noteSwitches[4] == false)
+            {
+                AkSoundEngine.PostEvent("HarpB", gameObject);
+                noteSwitches[4] = true;
+            }
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("HarpB", gameObject);
+            noteSwitches[4] = false;
         }
     }
 }
