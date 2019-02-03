@@ -35,7 +35,8 @@
 					<ChildrenList>
 						<Action Name="" ID="{2E67CF96-C1CA-473D-9F83-04D686A3625D}" ShortID="535952373">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -49,7 +50,8 @@
 					<ChildrenList>
 						<Action Name="" ID="{0E2347E8-941A-4987-BFEB-FD97E80A4B80}" ShortID="259745357">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -63,7 +65,8 @@
 					<ChildrenList>
 						<Action Name="" ID="{5C411031-8095-4BC7-8D9C-9F85EC389681}" ShortID="750271724">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -77,7 +80,8 @@
 					<ChildrenList>
 						<Action Name="" ID="{43D43E2A-6CBD-4453-9B84-A8242BF3D4E3}" ShortID="401868568">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -91,7 +95,8 @@
 					<ChildrenList>
 						<Action Name="" ID="{584B60C4-5BB6-4E0E-8297-76375C307805}" ShortID="7816819">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -105,7 +110,8 @@
 					<ChildrenList>
 						<Action Name="" ID="{8A48F6B5-F73E-43E8-BB06-70AB4585DB85}" ShortID="305298411">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -119,7 +125,8 @@
 					<ChildrenList>
 						<Action Name="" ID="{389ED516-F0FC-40E0-8C15-33372FBC73B9}" ShortID="832492806">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -133,7 +140,8 @@
 					<ChildrenList>
 						<Action Name="" ID="{DF9CDDA3-7AC5-4A53-A0C6-6650E93A3B6F}" ShortID="911294318">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -147,7 +155,8 @@
 					<ChildrenList>
 						<Action Name="" ID="{8F689834-8E04-4328-8528-4FA12D6CCBD6}" ShortID="109228164">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -161,7 +170,8 @@
 					<ChildrenList>
 						<Action Name="" ID="{2848E5D1-CD24-4BB6-8877-7A0DCBCFCA07}" ShortID="258120269">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -175,7 +185,8 @@
 					<ChildrenList>
 						<Action Name="" ID="{64BFEF3D-EBAB-42F6-8EF3-F6E62D7B110F}" ShortID="479776977">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -189,11 +200,102 @@
 					<ChildrenList>
 						<Action Name="" ID="{AF4AADA9-52D9-4968-9884-157191610E6E}" ShortID="680401326">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Harp F#" ID="{AF66971D-164A-4CDE-B498-63BA4C5AA2B3}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpD2_play" ID="{BFF5236B-5301-4327-8183-E00D74E34BDB}">
+					<ChildrenList>
+						<Action Name="" ID="{F18F7C2F-D036-49C1-9570-0F924B5686CF}" ShortID="800280644">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp D2" ID="{32CE649D-55CE-430C-995E-D6DFE94225E0}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpF_play" ID="{B249C973-97B7-4CB6-9BEE-069314DE78E8}">
+					<ChildrenList>
+						<Action Name="" ID="{E7891246-F8FC-414C-B78A-CECAFBDB7804}" ShortID="154526370">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp F#" ID="{AF66971D-164A-4CDE-B498-63BA4C5AA2B3}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpA_play" ID="{5A7A01AC-DA3E-486B-9BEB-61F89A244D03}">
+					<ChildrenList>
+						<Action Name="" ID="{37DA20EF-35C3-4332-BE99-128584EBCEA3}" ShortID="364074944">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp A" ID="{6D944DD2-C67F-43AC-B79E-61E90B5C81B6}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpB_play" ID="{59166595-A122-40AA-A63E-E9ABF9AA0FED}">
+					<ChildrenList>
+						<Action Name="" ID="{BB8CEFC7-8F8B-47AD-B1E2-CACD01F5828E}" ShortID="81502908">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp B" ID="{F9932F5E-4066-49EB-954A-67223FC704EC}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpE_play" ID="{ED645F1C-30C1-4937-8F9F-F6EDBF9348F8}">
+					<ChildrenList>
+						<Action Name="" ID="{49239F52-55A0-4E9F-B74D-D94AA91EB195}" ShortID="484691017">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp E" ID="{57439879-49B9-41F1-B7BD-DC892D1123FB}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpD_play" ID="{CBE802C1-B74D-4F28-8020-1F12B0E354BD}">
+					<ChildrenList>
+						<Action Name="" ID="{9417201F-903B-42D8-AC86-D19F4DD5A52B}" ShortID="752540509">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp D" ID="{3186EF26-DB73-44B9-997E-8AA862B960C0}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
