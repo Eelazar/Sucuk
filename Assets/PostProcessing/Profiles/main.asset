@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a3bdb2cd68f901469e7cc149151eb49, type: 3}
-  m_Name: NewTest
+  m_Name: main
   m_EditorClassIdentifier: 
   debugViews:
     m_Enabled: 1
@@ -100,10 +100,10 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 1
-        threshold: 2
-        softKnee: 0.727
-        radius: 3.52
+        intensity: 2
+        threshold: 2.5
+        softKnee: 0.457
+        radius: 2.56
         antiFlicker: 1
       lensDirt:
         texture: {fileID: 0}
@@ -112,19 +112,19 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       tonemapping:
-        tonemapper: 1
-        neutralBlackIn: 0.1
-        neutralWhiteIn: 9.73
-        neutralBlackOut: 0.0503
-        neutralWhiteOut: 10
-        neutralWhiteLevel: 5.3
+        tonemapper: 2
+        neutralBlackIn: 0.075
+        neutralWhiteIn: 9.6
+        neutralBlackOut: 0.046
+        neutralWhiteOut: 10.1
+        neutralWhiteLevel: 9.8
         neutralWhiteClip: 10
       basic:
-        postExposure: 0.2
-        temperature: 23
-        tint: 13
-        hueShift: 36
-        saturation: 1.67
+        postExposure: 1
+        temperature: 0
+        tint: 0
+        hueShift: 0
+        saturation: 1
         contrast: 1
       channelMixer:
         red: {x: 1, y: 0, z: 0}
@@ -134,9 +134,9 @@ MonoBehaviour:
       colorWheels:
         mode: 1
         log:
-          slope: {r: 0.81529504, g: 1, b: 0.37738526, a: 0}
-          power: {r: 1, g: 1, b: 1, a: 0}
-          offset: {r: 0.8543113, g: 0.83801204, b: 1, a: 0}
+          slope: {r: 1, g: 0.9996228, b: 0.9765371, a: 0}
+          power: {r: 1, g: 0.9957316, b: 0.9829284, a: 0.13114753}
+          offset: {r: 0.94281054, g: 0.95166415, b: 1, a: 0}
         linear:
           lift: {r: 1, g: 1, b: 1, a: 0}
           gamma: {r: 1, g: 1, b: 1, a: 0}
@@ -305,19 +305,19 @@ MonoBehaviour:
       lut: {fileID: 0}
       contribution: 1
   chromaticAberration:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       spectralTexture: {fileID: 0}
       intensity: 0.1
   grain:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       colored: 1
       intensity: 0.153
       size: 0.4
       luminanceContribution: 0.814
   vignette:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       mode: 0
       color: {r: 0, g: 0, b: 0, a: 1}
