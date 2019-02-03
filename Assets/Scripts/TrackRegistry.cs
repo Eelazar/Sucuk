@@ -4,6 +4,20 @@ using UnityEngine;
 
 public static class TrackRegistry {
 
+    public static List<GameObject> percussionOrblings = new List<GameObject>();
+    public static List<GameObject> bassOrblings = new List<GameObject>();
+    public static List<GameObject> leadOrblings = new List<GameObject>();
+
+    public static float[] percussionTimestamps = new float[] { 54F, 63F, 80F };
+    public static float[] bassTimestamps = new float[] { 54F, 63F, 80F };
+    public static float[] leadTimestamps = new float[] { 54F, 63F, 80F };
+
+    public static int segment;
+    
+    public static List<string> percussionTracks = new List<string>();
+    public static List<string> bassTracks = new List<string>();
+    public static List<string> leadTracks = new List<string>();
+
     public static List<string> percussionTracksIntro = new List<string> { "intro_perc01", "intro_perc02", "intro_perc03" };
     public static List<string> bassTracksIntro = new List<string> { "intro_bass01", "intro_bass02", "intro_bass03", "intro_bass04", "intro_bass05", "intro_bass06" };
     public static List<string> leadTracksIntro = new List<string> { "intro_lead01", "intro_lead02", "intro_lead03", "intro_lead04", "intro_lead05" };

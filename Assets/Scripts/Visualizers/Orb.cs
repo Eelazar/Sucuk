@@ -51,13 +51,6 @@ public class Orb : MonoBehaviour
     private SphereCollider trigger;
 
     //Track Management
-    [HideInInspector]
-    public List<string> percussionTracks = new List<string>();
-    [HideInInspector]
-    public List<string> bassTracks = new List<string>();
-    [HideInInspector]
-    public List<string> leadTracks = new List<string>();
-
     private string[] currentPercussionTracks = new string[1];
     private string[] currentBassTracks = new string[1];
     private string[] currentLeadTracks = new string[1];
@@ -69,11 +62,6 @@ public class Orb : MonoBehaviour
 
     #endregion Private Variables
 
-    private void Awake()
-    {
-        TurnOffAllTracks();
-    }
-
     private void Start()
     {
         Generate();
@@ -82,13 +70,15 @@ public class Orb : MonoBehaviour
 
         trigger = transform.GetComponent<SphereCollider>();
         trigger.isTrigger = true;
+
+        TurnOffAllTracks();
     }
 
     private void Update()
     {
         VisualizeWwise();
 
-        trigger.radius = Vector3.Distance(vertices[0], transform.position);
+        trigger.radius = Vector3.Distance(vertices[0], Vector3.zero);
     }
 
     #region Orbling Stuff
@@ -112,17 +102,17 @@ public class Orb : MonoBehaviour
             case Orbling.TrackType.Percussion:
                 AkSoundEngine.SetState(currentPercussionTracks[percussionTrackCounter], "off");
                 IncreaseTrackCounter(percussionTrackCounter, currentPercussionTracks.Length);
-                AkSoundEngine.SetState(GetRandomTrack(percussionTracks, currentPercussionTracks, percussionTrackCounter), "on");
+                AkSoundEngine.SetState(GetRandomTrack(TrackRegistry.percussionTracks, currentPercussionTracks, percussionTrackCounter), "on");
                 break;
             case Orbling.TrackType.Bass:
                 AkSoundEngine.SetState(currentBassTracks[bassTrackCounter], "off");
                 IncreaseTrackCounter(bassTrackCounter, currentBassTracks.Length);
-                AkSoundEngine.SetState(GetRandomTrack(bassTracks, currentBassTracks, bassTrackCounter), "on");
+                AkSoundEngine.SetState(GetRandomTrack(TrackRegistry.bassTracks, currentBassTracks, bassTrackCounter), "on");
                 break;
             case Orbling.TrackType.Lead:
                 AkSoundEngine.SetState(currentLeadTracks[leadTrackCounter], "off");
                 IncreaseTrackCounter(leadTrackCounter, currentLeadTracks.Length);
-                AkSoundEngine.SetState(GetRandomTrack(leadTracks, currentLeadTracks, leadTrackCounter), "on");
+                AkSoundEngine.SetState(GetRandomTrack(TrackRegistry.leadTracks, currentLeadTracks, leadTrackCounter), "on");
                 break;
             default:
                 break;
@@ -194,7 +184,7 @@ public class Orb : MonoBehaviour
     /// </summary>
     private void TurnOffAllTracks()
     {
-        List<List<string>> trackListList = new List<List<string>> { percussionTracks, bassTracks, leadTracks };
+        List<List<string>> trackListList = new List<List<string>> { TrackRegistry.percussionTracks, TrackRegistry.bassTracks, TrackRegistry.leadTracks };
 
         foreach(List<string> l in trackListList)
         {
@@ -224,45 +214,45 @@ public class Orb : MonoBehaviour
         switch (segment)
         {
             case "Intro":
-                bassTracks = TrackRegistry.bassTracksIntro;
-                percussionTracks = TrackRegistry.percussionTracksIntro;
-                leadTracks = TrackRegistry.leadTracksIntro;
+                TrackRegistry.bassTracks = TrackRegistry.bassTracksIntro;
+                TrackRegistry.percussionTracks = TrackRegistry.percussionTracksIntro;
+                TrackRegistry.leadTracks = TrackRegistry.leadTracksIntro;
 
                 TurnOffAllTracks();
                 ClearTrackArrays();
                 break;
 
             case "Breakdown 1":
-                bassTracks = TrackRegistry.bassTracksBreakdown1;
-                percussionTracks = TrackRegistry.percussionTracksBreakdown1;
-                leadTracks = TrackRegistry.leadTracksBreakdown1;
+                TrackRegistry.bassTracks = TrackRegistry.bassTracksBreakdown1;
+                TrackRegistry.percussionTracks = TrackRegistry.percussionTracksBreakdown1;
+                TrackRegistry.leadTracks = TrackRegistry.leadTracksBreakdown1;
 
                 TurnOffAllTracks();
                 ClearTrackArrays();
                 break;
 
             case "Drop 1":
-                bassTracks = TrackRegistry.bassTracksDrop1;
-                percussionTracks = TrackRegistry.percussionTracksDrop1;
-                leadTracks = TrackRegistry.leadTracksDrop1;
+                TrackRegistry.bassTracks = TrackRegistry.bassTracksDrop1;
+                TrackRegistry.percussionTracks = TrackRegistry.percussionTracksDrop1;
+                TrackRegistry.leadTracks = TrackRegistry.leadTracksDrop1;
 
                 TurnOffAllTracks();
                 ClearTrackArrays();
                 break;
 
             case "Breakdown 2":
-                bassTracks = TrackRegistry.bassTracksBreakdown2;
-                percussionTracks = TrackRegistry.percussionTracksBreakdown2;
-                leadTracks = TrackRegistry.leadTracksBreakdown2;
+                TrackRegistry.bassTracks = TrackRegistry.bassTracksBreakdown2;
+                TrackRegistry.percussionTracks = TrackRegistry.percussionTracksBreakdown2;
+                TrackRegistry.leadTracks = TrackRegistry.leadTracksBreakdown2;
 
                 TurnOffAllTracks();
                 ClearTrackArrays();
                 break;
 
             case "Drop 2":
-                bassTracks = TrackRegistry.bassTracksDrop2;
-                percussionTracks = TrackRegistry.percussionTracksDrop2;
-                leadTracks = TrackRegistry.leadTracksDrop2;
+                TrackRegistry.bassTracks = TrackRegistry.bassTracksDrop2;
+                TrackRegistry.percussionTracks = TrackRegistry.percussionTracksDrop2;
+                TrackRegistry.leadTracks = TrackRegistry.leadTracksDrop2;
 
                 TurnOffAllTracks();
                 ClearTrackArrays();

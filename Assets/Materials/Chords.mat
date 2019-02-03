@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: percussion
+  m_Name: Chords
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION _GLOSSYREFLECTIONS_OFF _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
     _SPECULARHIGHLIGHTS_OFF
@@ -83,5 +83,5 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 2.5011876, g: 0.19102935, b: 2.699882, a: 0}
+    - _EmissionColor: {r: 1.6473631, g: 0.6318234, b: 3.4345272, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
