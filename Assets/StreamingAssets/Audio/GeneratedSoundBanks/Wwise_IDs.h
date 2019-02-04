@@ -22,9 +22,6 @@ namespace AK
         static const AkUniqueID HARPD = 1628890122U;
         static const AkUniqueID HARPD_PLAY = 917836371U;
         static const AkUniqueID HARPD_STOP = 47855161U;
-        static const AkUniqueID HARPD2 = 3775462284U;
-        static const AkUniqueID HARPD2_PLAY = 1871652333U;
-        static const AkUniqueID HARPD2_STOP = 2988949563U;
         static const AkUniqueID HARPE = 1628890123U;
         static const AkUniqueID HARPE_PLAY = 4127566364U;
         static const AkUniqueID HARPE_STOP = 2839797382U;
@@ -921,6 +918,7 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID HARP = 3599861402U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
 

@@ -308,6 +308,22 @@
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
+					</ChildrenList>
+				</Bus>
+				<Bus Name="Harp" ID="{B03B586A-2DEE-4F1C-B080-5E1867B70B77}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{7389F7E9-6154-4503-9183-57DF542D665D}" WorkUnitID="{C835EBFD-D777-44E8-9BC5-FB1D115CF88E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
 						<AuxBus Name="verb" ID="{3E550F7B-D3F9-4D52-80C7-2190DD9E39F0}">
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">

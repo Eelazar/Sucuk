@@ -21,7 +21,7 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6faef3859c315b48ac40ae404e146248
-    m_lastTime: -8586523831838386354
+    m_lastTime: -8586523226567532526
     List:
     - name: band1
       guid: 470fa168dc52584c8d2cec70a9b71e17
@@ -117,11 +117,11 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Master Audio Bus
+      - ElementName: Harp
         ObjectType: 2
       - ElementName: verb
         ObjectType: 1
-      Path: Default Work Unit\Master Audio Bus\verb
+      Path: Default Work Unit\Harp\verb
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -159,10 +159,10 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 87dd1b6c0986334194d4e602d0162b3c
-    m_lastTime: -8586523831838645985
+    m_lastTime: -8586523232267917764
     List:
     - name: HarpA
-      guid: fdf085fa57c08545adf9f952a168e225
+      guid: b57650bf820ef14da2215587aaa585ee
       id: 1628890127
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -173,8 +173,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: HarpA_play
+      guid: 590a28b509241a49a561a9958a616882
+      id: 2234699720
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpA_play
+        ObjectType: 3
+      Path: Default Work Unit\HarpA_play
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: HarpA_stop
-      guid: b3feec3a683fec458be09473ae292f1e
+      guid: e88200f01ebe7249a6cc5ab6b2cbda98
       id: 317402682
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -186,7 +198,7 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: HarpB
-      guid: c3aec11a60c3694badeff2f8ebdf1510
+      guid: 40d921e0f8b1b442b3f8538e9a7462bf
       id: 1628890124
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -197,8 +209,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: HarpB_play
+      guid: f9e6d6003228ff4aa84a79349fdd3c05
+      id: 2166538093
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpB_play
+        ObjectType: 3
+      Path: Default Work Unit\HarpB_play
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: HarpB_stop
-      guid: fa386683adff754695a61b4bcb4cfa1d
+      guid: 0ff5df0624847341999ec33fb41c7668
       id: 3283835323
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -210,7 +234,7 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: HarpD
-      guid: ea23baa03efa214ea0a1370d57d4339e
+      guid: c355b565cb19c842a2b125d747180336
       id: 1628890122
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -221,8 +245,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: HarpD_play
+      guid: 2596516125125040aea1e56884cb2691
+      id: 917836371
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpD_play
+        ObjectType: 3
+      Path: Default Work Unit\HarpD_play
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: HarpD_stop
-      guid: bf66e103ad021748bcaf848d552c9f36
+      guid: 692b4bebb4f0b049b6f9fe2ea77a7f07
       id: 47855161
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -233,32 +269,8 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: HarpD2
-      guid: d1f6d9350cd178428bff73fa05becbda
-      id: 3775462284
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: HarpD2
-        ObjectType: 3
-      Path: Default Work Unit\HarpD2
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: HarpD2_stop
-      guid: 1511e40110ad004cb5d02d66d1db17f0
-      id: 2988949563
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: HarpD2_stop
-        ObjectType: 3
-      Path: Default Work Unit\HarpD2_stop
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: HarpE
-      guid: e160054f4c53ce4da2f65ee5530df927
+      guid: c28a62bf983ca547bd78e6130cec217e
       id: 1628890123
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -269,8 +281,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: HarpE_play
+      guid: 9bff47dc84fc7745bdb937af22fe507b
+      id: 4127566364
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpE_play
+        ObjectType: 3
+      Path: Default Work Unit\HarpE_play
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: HarpE_stop
-      guid: 7852a233d6423f4dbf5002cf312880a7
+      guid: 3dac76122c0fdc44944d401c4058a8fc
       id: 2839797382
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -282,7 +306,7 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: HarpF
-      guid: c59bcc17f8087742bbba6ba1b56d994a
+      guid: 59c38a151bc26340b226302a48646268
       id: 1628890120
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -293,8 +317,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: HarpF_play
+      guid: a1a87f2adfd95543ab743cfc7166bcf6
+      id: 512677489
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpF_play
+        ObjectType: 3
+      Path: Default Work Unit\HarpF_play
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: HarpF_stop
-      guid: 43d25c4ae5f2d4488601949a1f936735
+      guid: 92c0cdde169ff645891f87b540fd2495
       id: 1805669159
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -2625,9 +2661,11 @@ MonoBehaviour:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 2192ea1d0a59de45a949d9f30609f853
-    m_lastTime: -8586524649219281974
+    m_lastTime: -8586523880115122273
     List: []
   ExpandedItems:
   - /Sucuk_WwiseProject
+  - /Sucuk_WwiseProject/Events
+  - /Sucuk_WwiseProject/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

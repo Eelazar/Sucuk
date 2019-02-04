@@ -3,252 +3,262 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Harp A" ID="{6D944DD2-C67F-43AC-B79E-61E90B5C81B6}" ShortID="872001267">
-					<PropertyList>
-						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="MaxSoundPerInstance" Type="int16">
-							<ValueList>
-								<Value>1</Value>
-							</ValueList>
-						</Property>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-96</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
-						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="verb" ID="{3E550F7B-D3F9-4D52-80C7-2190DD9E39F0}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
-						</Reference>
-					</ReferenceList>
+				<Folder Name="harps" ID="{AA29B4B3-B9B3-4E6D-95E0-F7B59F4866EA}" ShortID="110585196">
 					<ChildrenList>
-						<AudioFileSource Name="Harp A" ID="{A2DF8E50-98CA-4FB1-9170-7A15B521A4B8}" ShortID="811876483">
-							<Language>SFX</Language>
-							<AudioFile>Harp A.wav</AudioFile>
-						</AudioFileSource>
+						<Sound Name="Harp D2" ID="{32CE649D-55CE-430C-995E-D6DFE94225E0}" ShortID="588832658">
+							<PropertyList>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Harp" ID="{B03B586A-2DEE-4F1C-B080-5E1867B70B77}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="verb" ID="{3E550F7B-D3F9-4D52-80C7-2190DD9E39F0}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Harp D2" ID="{D2A4EED2-2F4B-4401-BA45-98A40EF83C98}" ShortID="215346674">
+									<Language>SFX</Language>
+									<AudioFile>Harp D2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Harp D2" ID="{D2A4EED2-2F4B-4401-BA45-98A40EF83C98}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Harp F#" ID="{AF66971D-164A-4CDE-B498-63BA4C5AA2B3}" ShortID="307937248">
+							<PropertyList>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Harp" ID="{B03B586A-2DEE-4F1C-B080-5E1867B70B77}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="verb" ID="{3E550F7B-D3F9-4D52-80C7-2190DD9E39F0}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Harp F#" ID="{E1E39E79-0DB2-4297-837D-F03A3C8192B3}" ShortID="359080389">
+									<Language>SFX</Language>
+									<AudioFile>Harp F#.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Harp F#" ID="{E1E39E79-0DB2-4297-837D-F03A3C8192B3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Harp D" ID="{3186EF26-DB73-44B9-997E-8AA862B960C0}" ShortID="236127840">
+							<PropertyList>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Harp" ID="{B03B586A-2DEE-4F1C-B080-5E1867B70B77}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="verb" ID="{3E550F7B-D3F9-4D52-80C7-2190DD9E39F0}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Harp D" ID="{14959C39-7553-477D-BAD9-BC471A1028F3}" ShortID="903304600">
+									<Language>SFX</Language>
+									<AudioFile>Harp D.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Harp D" ID="{14959C39-7553-477D-BAD9-BC471A1028F3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Harp B" ID="{F9932F5E-4066-49EB-954A-67223FC704EC}" ShortID="458022457">
+							<PropertyList>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Harp" ID="{B03B586A-2DEE-4F1C-B080-5E1867B70B77}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="verb" ID="{3E550F7B-D3F9-4D52-80C7-2190DD9E39F0}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Harp B" ID="{791B4FC8-AEFF-42FC-88D3-B30E61B9D02B}" ShortID="784407154">
+									<Language>SFX</Language>
+									<AudioFile>Harp B.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Harp B" ID="{791B4FC8-AEFF-42FC-88D3-B30E61B9D02B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Harp A" ID="{6D944DD2-C67F-43AC-B79E-61E90B5C81B6}" ShortID="872001267">
+							<PropertyList>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Harp" ID="{B03B586A-2DEE-4F1C-B080-5E1867B70B77}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="verb" ID="{3E550F7B-D3F9-4D52-80C7-2190DD9E39F0}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Harp A" ID="{A2DF8E50-98CA-4FB1-9170-7A15B521A4B8}" ShortID="811876483">
+									<Language>SFX</Language>
+									<AudioFile>Harp A.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Harp A" ID="{A2DF8E50-98CA-4FB1-9170-7A15B521A4B8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Harp E" ID="{57439879-49B9-41F1-B7BD-DC892D1123FB}" ShortID="220719756">
+							<PropertyList>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Harp" ID="{B03B586A-2DEE-4F1C-B080-5E1867B70B77}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="verb" ID="{3E550F7B-D3F9-4D52-80C7-2190DD9E39F0}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Harp E" ID="{09DA4D75-295E-4146-ACE0-935B51E516A7}" ShortID="1069933566">
+									<Language>SFX</Language>
+									<AudioFile>Harp E.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Harp E" ID="{09DA4D75-295E-4146-ACE0-935B51E516A7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Harp A" ID="{A2DF8E50-98CA-4FB1-9170-7A15B521A4B8}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Harp D2" ID="{32CE649D-55CE-430C-995E-D6DFE94225E0}" ShortID="588832658">
-					<PropertyList>
-						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="MaxSoundPerInstance" Type="int16">
-							<ValueList>
-								<Value>1</Value>
-							</ValueList>
-						</Property>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-96</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
-						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="verb" ID="{3E550F7B-D3F9-4D52-80C7-2190DD9E39F0}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Harp D2" ID="{D2A4EED2-2F4B-4401-BA45-98A40EF83C98}" ShortID="215346674">
-							<Language>SFX</Language>
-							<AudioFile>Harp D2.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Harp D2" ID="{D2A4EED2-2F4B-4401-BA45-98A40EF83C98}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Harp F#" ID="{AF66971D-164A-4CDE-B498-63BA4C5AA2B3}" ShortID="307937248">
-					<PropertyList>
-						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="MaxSoundPerInstance" Type="int16">
-							<ValueList>
-								<Value>1</Value>
-							</ValueList>
-						</Property>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-96</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
-						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="verb" ID="{3E550F7B-D3F9-4D52-80C7-2190DD9E39F0}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Harp F#" ID="{E1E39E79-0DB2-4297-837D-F03A3C8192B3}" ShortID="359080389">
-							<Language>SFX</Language>
-							<AudioFile>Harp F#.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Harp F#" ID="{E1E39E79-0DB2-4297-837D-F03A3C8192B3}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Harp D" ID="{3186EF26-DB73-44B9-997E-8AA862B960C0}" ShortID="236127840">
-					<PropertyList>
-						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="MaxSoundPerInstance" Type="int16">
-							<ValueList>
-								<Value>1</Value>
-							</ValueList>
-						</Property>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-96</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
-						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="verb" ID="{3E550F7B-D3F9-4D52-80C7-2190DD9E39F0}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Harp D" ID="{14959C39-7553-477D-BAD9-BC471A1028F3}" ShortID="903304600">
-							<Language>SFX</Language>
-							<AudioFile>Harp D.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Harp D" ID="{14959C39-7553-477D-BAD9-BC471A1028F3}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Harp E" ID="{57439879-49B9-41F1-B7BD-DC892D1123FB}" ShortID="220719756">
-					<PropertyList>
-						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="MaxSoundPerInstance" Type="int16">
-							<ValueList>
-								<Value>1</Value>
-							</ValueList>
-						</Property>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-96</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
-						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="verb" ID="{3E550F7B-D3F9-4D52-80C7-2190DD9E39F0}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Harp E" ID="{09DA4D75-295E-4146-ACE0-935B51E516A7}" ShortID="1069933566">
-							<Language>SFX</Language>
-							<AudioFile>Harp E.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Harp E" ID="{09DA4D75-295E-4146-ACE0-935B51E516A7}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Harp B" ID="{F9932F5E-4066-49EB-954A-67223FC704EC}" ShortID="458022457">
-					<PropertyList>
-						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="MaxSoundPerInstance" Type="int16">
-							<ValueList>
-								<Value>1</Value>
-							</ValueList>
-						</Property>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-96</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
-						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="verb" ID="{3E550F7B-D3F9-4D52-80C7-2190DD9E39F0}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Harp B" ID="{791B4FC8-AEFF-42FC-88D3-B30E61B9D02B}" ShortID="784407154">
-							<Language>SFX</Language>
-							<AudioFile>Harp B.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Harp B" ID="{791B4FC8-AEFF-42FC-88D3-B30E61B9D02B}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
