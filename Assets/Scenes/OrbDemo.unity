@@ -9474,7 +9474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &95404514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9568,7 +9568,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &388926340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9581,6 +9581,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackType: 1
+  selfDestructTime: 0
+  grabPinch: {fileID: 0}
+  inputSource: 0
+  owner: {fileID: 0}
+  activated: 0
 --- !u!54 &388926341
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14366,7 +14371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &854167459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14379,6 +14384,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackType: 2
+  selfDestructTime: 0
+  grabPinch: {fileID: 0}
+  inputSource: 0
+  owner: {fileID: 0}
+  activated: 0
 --- !u!54 &854167460
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14472,6 +14482,7 @@ GameObject:
   m_Component:
   - component: {fileID: 900880852}
   - component: {fileID: 900880851}
+  - component: {fileID: 900880853}
   m_Layer: 0
   m_Name: Master
   m_TagString: Untagged
@@ -14490,9 +14501,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85b4143dd7df6de47a1d8c8458d6e45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloomIntensity: 0.02
   profile: {fileID: 11400000, guid: d0363df716b75b74a93e3adb7b77ad1e, type: 2}
-  smoothTime: 0.1
+  bloomIntensity: 0.02
+  smoothBloomM: 0
+  bloomTimestamps: []
+  holoMaterial: {fileID: 0}
+  holoRimPowerM: 0
+  smoothRimPowermM: 0
+  rimPowerTimestamps: []
+  lights: []
+  spotAnglesM: []
+  minAngles: []
+  maxAngles: []
+  spotAnglesTimestamps: []
+  intensityM: []
+  minIntensity: []
+  maxIntensity: []
+  intensityTimestamps: []
+  smoothSpotAnglesM: 0
+  smoothIntensityM: 0
 --- !u!4 &900880852
 Transform:
   m_ObjectHideFlags: 0
@@ -14506,6 +14533,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &900880853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 900880850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30db350ab0d26934f82826a8783209e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lerpProfile: {fileID: 11400000, guid: f3e4ae558d913794fadf4b01727d978d, type: 2}
+  startProfile: {fileID: 11400000, guid: cab03dafc57e5e740b84ef7b1fa9eebd, type: 2}
+  profiles:
+  - {fileID: 11400000, guid: 385979dadf99a784a8189a3a1a939a27, type: 2}
+  timestamps:
+  - 2
+  lerpDuration: 3
 --- !u!1 &1026233786
 GameObject:
   m_ObjectHideFlags: 0
@@ -14623,7 +14668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: d0363df716b75b74a93e3adb7b77ad1e, type: 2}
+  profile: {fileID: 11400000, guid: f3e4ae558d913794fadf4b01727d978d, type: 2}
 --- !u!1 &1026522307
 GameObject:
   m_ObjectHideFlags: 0
@@ -14677,7 +14722,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &1090299842
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14759,6 +14804,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackType: 0
+  selfDestructTime: 0
+  grabPinch: {fileID: 0}
+  inputSource: 0
+  owner: {fileID: 0}
+  activated: 0
 --- !u!54 &1090299847
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14793,7 +14843,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1134480396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14806,6 +14856,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackType: 1
+  selfDestructTime: 0
+  grabPinch: {fileID: 0}
+  inputSource: 0
+  owner: {fileID: 0}
+  activated: 0
 --- !u!54 &1134480397
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19821,7 +19876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1627896826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19834,6 +19889,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackType: 0
+  selfDestructTime: 0
+  grabPinch: {fileID: 0}
+  inputSource: 0
+  owner: {fileID: 0}
+  activated: 0
 --- !u!54 &1627896827
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19948,6 +20008,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d8dd0e20996de499de50fb0cf2771c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  editorSpectrum:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
 --- !u!114 &1635203140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20051,7 +20121,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1683293375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20064,6 +20134,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackType: 2
+  selfDestructTime: 0
+  grabPinch: {fileID: 0}
+  inputSource: 0
+  owner: {fileID: 0}
+  activated: 0
 --- !u!54 &1683293376
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24796,6 +24871,7 @@ MonoBehaviour:
   baseScale: 0.03
   smoothTime: 0.1
   shape: 1
+  spectrumOrder: 0700000006000000050000000400000003000000020000000100000000000000
   distanceCircle: 10
   distanceLine: 0.5
 --- !u!4 &2106467294

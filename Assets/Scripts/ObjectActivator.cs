@@ -23,7 +23,7 @@ public class ObjectActivator : MonoBehaviour {
 	{
         if (counter < timestamps.Length && Time.time >= startTime + timestamps[counter])
         {
-            enabled = !enabled;
+            activated = !activated;
             activatedTrigger = true;
             counter++;
         }
