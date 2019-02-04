@@ -25,7 +25,7 @@ public class OrblingMaster : MonoBehaviour {
             {
                 foreach (OrblingSpawner spawner in spawners)
                 {
-                    spawner.Clear();
+                    spawner.Clear(breakdownCounter);
                 }
 
                 DeleteOrblings();
@@ -49,9 +49,19 @@ public class OrblingMaster : MonoBehaviour {
         {
             go.GetComponent<Orbling>().DeleteOrbling();
         }
+        foreach (GameObject go in TrackRegistry.kickOrblings)
+        {
+            go.GetComponent<Orbling>().DeleteOrbling();
+        }
+        foreach (GameObject go in TrackRegistry.chordOrblings)
+        {
+            go.GetComponent<Orbling>().DeleteOrbling();
+        }
 
         TrackRegistry.percussionOrblings.Clear();
         TrackRegistry.bassOrblings.Clear();
         TrackRegistry.leadOrblings.Clear();
+        TrackRegistry.kickOrblings.Clear();
+        TrackRegistry.chordOrblings.Clear();
     }
 }

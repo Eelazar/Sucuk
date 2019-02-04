@@ -54,10 +54,14 @@ public class Orb : MonoBehaviour
     private string[] currentPercussionTracks = new string[1];
     private string[] currentBassTracks = new string[1];
     private string[] currentLeadTracks = new string[1];
+    private string[] currentKickTracks = new string[1];
+    private string[] currentChordTracks = new string[1];
 
     private int bassTrackCounter;
     private int percussionTrackCounter;
     private int leadTrackCounter;
+    private int kickTrackCounter;
+    private int chordTrackCounter;
     #endregion Orbling Processing Variables
 
     #endregion Private Variables
@@ -113,6 +117,16 @@ public class Orb : MonoBehaviour
                 AkSoundEngine.SetState(currentLeadTracks[leadTrackCounter], "off");
                 IncreaseTrackCounter(leadTrackCounter, currentLeadTracks.Length);
                 AkSoundEngine.SetState(GetRandomTrack(TrackRegistry.leadTracks, currentLeadTracks, leadTrackCounter), "on");
+                break;
+            case Orbling.TrackType.Kick:
+                AkSoundEngine.SetState(currentLeadTracks[kickTrackCounter], "off");
+                IncreaseTrackCounter(kickTrackCounter, currentKickTracks.Length);
+                AkSoundEngine.SetState(GetRandomTrack(TrackRegistry.kickTracks, currentKickTracks, kickTrackCounter), "on");
+                break;
+            case Orbling.TrackType.Chord:
+                AkSoundEngine.SetState(currentChordTracks[chordTrackCounter], "off");
+                IncreaseTrackCounter(chordTrackCounter, currentChordTracks.Length);
+                AkSoundEngine.SetState(GetRandomTrack(TrackRegistry.chordTracks, currentChordTracks, chordTrackCounter), "on");
                 break;
             default:
                 break;
@@ -184,7 +198,7 @@ public class Orb : MonoBehaviour
     /// </summary>
     private void TurnOffAllTracks()
     {
-        List<List<string>> trackListList = new List<List<string>> { TrackRegistry.percussionTracks, TrackRegistry.bassTracks, TrackRegistry.leadTracks };
+        List<List<string>> trackListList = new List<List<string>> { TrackRegistry.percussionTracks, TrackRegistry.bassTracks, TrackRegistry.leadTracks, TrackRegistry.kickTracks, TrackRegistry.chordTracks };
 
         foreach(List<string> l in trackListList)
         {
@@ -203,6 +217,8 @@ public class Orb : MonoBehaviour
         Array.Clear(currentBassTracks, 0, currentBassTracks.Length);
         Array.Clear(currentPercussionTracks, 0, currentPercussionTracks.Length);
         Array.Clear(currentLeadTracks, 0, currentLeadTracks.Length);
+        Array.Clear(currentKickTracks, 0, currentKickTracks.Length);
+        Array.Clear(currentChordTracks, 0, currentChordTracks.Length);
     }
 
     /// <summary>
@@ -217,6 +233,8 @@ public class Orb : MonoBehaviour
                 TrackRegistry.bassTracks = TrackRegistry.bassTracksIntro;
                 TrackRegistry.percussionTracks = TrackRegistry.percussionTracksIntro;
                 TrackRegistry.leadTracks = TrackRegistry.leadTracksIntro;
+                TrackRegistry.kickTracks = TrackRegistry.kickTracksIntro;
+                TrackRegistry.chordTracks = TrackRegistry.chordTracksIntro;
 
                 TurnOffAllTracks();
                 ClearTrackArrays();
@@ -235,6 +253,8 @@ public class Orb : MonoBehaviour
                 TrackRegistry.bassTracks = TrackRegistry.bassTracksDrop1;
                 TrackRegistry.percussionTracks = TrackRegistry.percussionTracksDrop1;
                 TrackRegistry.leadTracks = TrackRegistry.leadTracksDrop1;
+                TrackRegistry.kickTracks = TrackRegistry.kickTracksDrop;
+                TrackRegistry.chordTracks = TrackRegistry.chordTracksDrop;
 
                 TurnOffAllTracks();
                 ClearTrackArrays();
@@ -253,6 +273,8 @@ public class Orb : MonoBehaviour
                 TrackRegistry.bassTracks = TrackRegistry.bassTracksDrop2;
                 TrackRegistry.percussionTracks = TrackRegistry.percussionTracksDrop2;
                 TrackRegistry.leadTracks = TrackRegistry.leadTracksDrop2;
+                TrackRegistry.kickTracks = TrackRegistry.kickTracksDrop2;
+                TrackRegistry.chordTracks = TrackRegistry.chordTracksDrop2;
 
                 TurnOffAllTracks();
                 ClearTrackArrays();

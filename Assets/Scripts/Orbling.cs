@@ -7,7 +7,7 @@ using Valve.VR.InteractionSystem;
 [RequireComponent(typeof(Rigidbody), typeof(SphereCollider))]
 public class Orbling : MonoBehaviour {
 
-    public enum TrackType { Percussion, Bass, Lead }
+    public enum TrackType { Percussion, Bass, Lead, Kick, Chord }
 
     [SerializeField]
     public TrackType trackType;

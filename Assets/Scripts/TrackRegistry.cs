@@ -7,9 +7,11 @@ public static class TrackRegistry {
     public static List<GameObject> percussionOrblings = new List<GameObject>();
     public static List<GameObject> bassOrblings = new List<GameObject>();
     public static List<GameObject> leadOrblings = new List<GameObject>();
+    public static List<GameObject> kickOrblings = new List<GameObject>();
+    public static List<GameObject> chordOrblings = new List<GameObject>();
 
     public static float[] destructionTimestamps = new float[] { 90F, 237F, 328F };
-    public static float[] spawnTimestamps = new float[] { 155F, 268F};
+    public static float[] spawnTimestamps = new float[] { 0F, 155F, 268F};
 
     public static int segment;
     

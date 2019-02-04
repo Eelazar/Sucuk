@@ -9,7 +9,7 @@ public class OrblingSpawner : MonoBehaviour {
     [SerializeField]
     private GameObject orblingPrefab;
     [SerializeField]
-    private float spawnTime;
+    private float originalSpawnTime;
     [SerializeField]
     private float respawnTime;
     [SerializeField]
@@ -23,11 +23,11 @@ public class OrblingSpawner : MonoBehaviour {
     private float spawnTimestamp;
 
 
-    private enum OrblingType { Percussion, Bass, Lead }
+    private enum OrblingType { Percussion, Bass, Lead, Kick, Chord }
 
     void Start () 
 	{
-        spawnTimestamp = Time.time + spawnTime;
+        spawnTimestamp = Time.time + originalSpawnTime;
 	}
 	
 	void Update () 
@@ -75,19 +75,36 @@ public class OrblingSpawner : MonoBehaviour {
                 occupied = true;
 
                 break;
+            case OrblingType.Kick:
+                orblingChild = GameObject.Instantiate<GameObject>(orblingPrefab, transform.position, transform.rotation);
+                orblingChild.GetComponent<Orbling>().owner = this.gameObject;
+                TrackRegistry.kickOrblings.Add(orblingChild);
+
+                occupied = true;
+
+                break;
+            case OrblingType.Chord:
+                orblingChild = GameObject.Instantiate<GameObject>(orblingPrefab, transform.position, transform.rotation);
+                orblingChild.GetComponent<Orbling>().owner = this.gameObject;
+                TrackRegistry.chordOrblings.Add(orblingChild);
+
+                occupied = true;
+
+                break;
             default:
                 break;
         }
     }
 
-    public void Clear()
+    public void Clear(int index)
     {
         if(orblingChild != null)
         {
-            Destroy(orblingChild, Random.Range(minDestroyDelay, maxDestroyDelay));
-            spawnTimestamp = Time.time + spawnTime;
-            occupied = false;
+            Destroy(orblingChild, Random.Range(minDestroyDelay, maxDestroyDelay));            
         }
+
+        spawnTimestamp = Time.time + TrackRegistry.spawnTimestamps[index + 1];
+        occupied = false;
     }
 
     private void OnDrawGizmos()
