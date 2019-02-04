@@ -56,7 +56,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BlendOp: 0
+    - _BlendOp: 2
     - _BumpScale: 1
     - _CameraFadingEnabled: 0
     - _CameraFarFadeDistance: 2
@@ -66,9 +66,9 @@ Material:
     - _DetailNormalMapScale: 1
     - _DistortionBlend: 0.674
     - _DistortionEnabled: 1
-    - _DistortionStrength: 1
-    - _DistortionStrengthScaled: 0.1
-    - _DstBlend: 10
+    - _DistortionStrength: 2
+    - _DistortionStrengthScaled: 0.2
+    - _DstBlend: 1
     - _EmissionEnabled: 1
     - _FlipbookMode: 1
     - _GlossMapScale: 1
@@ -76,7 +76,7 @@ Material:
     - _GlossyReflections: 1
     - _LightingEnabled: 1
     - _Metallic: 0
-    - _Mode: 2
+    - _Mode: 5
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
@@ -89,6 +89,6 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 0.019607842, g: 0.24705882, b: 0.110484466, a: 1}
+    - _Color: {r: 0.027729679, g: 0.34939393, b: 0.1552862, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}

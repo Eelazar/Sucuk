@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 114209493750524858}
   - component: {fileID: 114755748106001448}
   m_Layer: 0
-  m_Name: Orbling
+  m_Name: Orbling Lead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -167,8 +167,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1485504350233284}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -112.098595, y: 8.8, z: -22.442455}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalPosition: {x: 68.17887, y: -28.41, z: -61.65526}
+  m_LocalScale: {x: 4.5, y: 4.5, z: 4.5}
   m_Children:
   - {fileID: 4310237844270496}
   - {fileID: 4216308580753472}
@@ -193,7 +193,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: b03bf3585c84b7f4297e24b42c9a8630, type: 2}
-  - {fileID: 2100000, guid: 90a6b158d8a9af34f8b05e6c439f2842, type: 2}
+  - {fileID: 2100000, guid: e76ab68f065b53841acf391c44ab56a0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -345,9 +345,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9922d3c0ffeb59746bd420bc7573c0fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackType: 0
+  trackType: 2
   selfDestructTime: 10
-  grabPinch: {fileID: 11400000, guid: 38fd3e8f6fd6ac9488cf838a69f69250, type: 2}
+  grabPinch: {fileID: 0}
   inputSource: 0
   owner: {fileID: 0}
   activated: 0
@@ -487,7 +487,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reaktor:
     _mode: 2
-    _reference: {fileID: 0}
+    _reference: {fileID: 114827263433094270, guid: aed46b0e163649843b66566ccad0b64e,
+      type: 2}
     _name: 
     _forceUpdate: 1
   position:
