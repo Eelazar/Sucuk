@@ -3,30 +3,30 @@
 	<Platform GUID="{59052A65-B123-4394-BCCE-A22B4630E108}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Dynamic" Hash="2493955867" Timestamp="1549284240"/>
-				<File Name="Harp" Hash="1952520888" Timestamp="1549283665"/>
-				<File Name="Init" Hash="2707201843" Timestamp="1549284240"/>
-				<File Name="Music" Hash="3744264755" Timestamp="1549284239"/>
+				<File Name="Dynamic" Hash="2167866339" Timestamp="1549376844"/>
+				<File Name="Harp" Hash="1850597397" Timestamp="1549376845"/>
+				<File Name="Init" Hash="4051779192" Timestamp="1549376845"/>
+				<File Name="Music" Hash="889924096" Timestamp="1549376844"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1300317406" Timestamp="1549284240"/>
+				<File Name="" Hash="1763584511" Timestamp="1549376845"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{DB634F44-FCF3-4FF3-B854-65709F896FC1}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Dynamic" Hash="2493955867" Timestamp="1549284246"/>
-				<File Name="Harp" Hash="1952520888" Timestamp="1549283677"/>
-				<File Name="Init" Hash="394185797" Timestamp="1549284246"/>
-				<File Name="Music" Hash="3744264755" Timestamp="1549284242"/>
+				<File Name="Dynamic" Hash="2167866339" Timestamp="1549376851"/>
+				<File Name="Harp" Hash="1850597397" Timestamp="1549376858"/>
+				<File Name="Init" Hash="2519735334" Timestamp="1549376858"/>
+				<File Name="Music" Hash="889924096" Timestamp="1549376854"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1534355996" Timestamp="1549284246"/>
+				<File Name="" Hash="274503633" Timestamp="1549376858"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

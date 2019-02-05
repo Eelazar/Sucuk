@@ -347,7 +347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trackType: 3
   selfDestructTime: 10
-  grabPinch: {fileID: 0}
+  grabPinch: {fileID: 11400000, guid: 6370e47688686a24a87859b539cf13ef, type: 2}
   inputSource: 0
   owner: {fileID: 0}
   activated: 0

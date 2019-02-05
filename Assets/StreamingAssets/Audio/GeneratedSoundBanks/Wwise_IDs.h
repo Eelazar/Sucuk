@@ -28,6 +28,7 @@ namespace AK
         static const AkUniqueID HARPF = 1628890120U;
         static const AkUniqueID HARPF_PLAY = 512677489U;
         static const AkUniqueID HARPF_STOP = 1805669159U;
+        static const AkUniqueID ORBLING_HIT = 935976382U;
         static const AkUniqueID PLAY = 1256202815U;
         static const AkUniqueID PLAYDYNAMIC = 2328709346U;
     } // namespace EVENTS

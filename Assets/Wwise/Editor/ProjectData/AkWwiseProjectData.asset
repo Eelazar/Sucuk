@@ -21,7 +21,7 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6faef3859c315b48ac40ae404e146248
-    m_lastTime: -8586523226567532526
+    m_lastTime: -8586522334181898675
     List:
     - name: band1
       guid: 470fa168dc52584c8d2cec70a9b71e17
@@ -126,7 +126,7 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 8c9443e01b83094f875c5cda2d686dc8
-    m_lastTime: -8586523831830659102
+    m_lastTime: -8586522334181838690
     List:
     - name: Dynamic
       guid: e28314431cab634eb05ba7385ab18169
@@ -159,7 +159,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 87dd1b6c0986334194d4e602d0162b3c
-    m_lastTime: -8586523232267917764
+    m_lastTime: -8586522334181878673
     List:
     - name: HarpA
       guid: b57650bf820ef14da2215587aaa585ee
@@ -338,6 +338,18 @@ MonoBehaviour:
       - ElementName: HarpF_stop
         ObjectType: 3
       Path: Default Work Unit\HarpF_stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Orbling_hit
+      guid: 284e44921bac9e41b68786da49c94bf7
+      id: 935976382
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Orbling_hit
+        ObjectType: 3
+      Path: Default Work Unit\Orbling_hit
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
