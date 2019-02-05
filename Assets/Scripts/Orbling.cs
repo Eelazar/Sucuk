@@ -19,13 +19,23 @@ public class Orbling : MonoBehaviour {
 
     [Header("Destroy Animation")]
     [SerializeField]
-    private float upScale;
+    private float upScaleDestroy;
     [SerializeField]
-    private float downScale;
+    private float downScaleDestroy;
     [SerializeField]
-    private float upScaleDuration;
+    private float upScaleDurationDestroy;
     [SerializeField]
-    private float downScaleDuration;
+    private float downScaleDurationDestroy;
+
+    [Header("Destroy Animation")]
+    [SerializeField]
+    private float upScaleSpawn;
+    [SerializeField]
+    private float downScaleSpawn;
+    [SerializeField]
+    private float upScaleDurationSpawn;
+    [SerializeField]
+    private float downScaleDurationSpawn;
 
     [Header("Steam VR")]
     public SteamVR_Action_Boolean grabPinch;
@@ -45,7 +55,9 @@ public class Orbling : MonoBehaviour {
         transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
         transform.GetComponents<SphereCollider>()[1].isTrigger = true;
 
-        grabPinch.AddOnChangeListener(OnTriggerPressedOrReleased, inputSource);        
+        grabPinch.AddOnChangeListener(OnTriggerPressedOrReleased, inputSource);
+
+        StartCoroutine(SpawnOrblingAnimation());
     }
 
     void Update()
@@ -88,11 +100,11 @@ public class Orbling : MonoBehaviour {
         float t = 0.0F;
         lerpStartTime = Time.time;
         Vector3 oldScale = transform.localScale;
-        Vector3 newScale = new Vector3(upScale, upScale, upScale);
+        Vector3 newScale = new Vector3(upScaleDestroy, upScaleDestroy, upScaleDestroy);
 
         while (t <= 1F)
         {
-            t = (Time.time - lerpStartTime) / upScaleDuration;
+            t = (Time.time - lerpStartTime) / upScaleDurationDestroy;
 
             transform.localScale = Vector3.Lerp(oldScale, newScale, t);
 
@@ -102,11 +114,11 @@ public class Orbling : MonoBehaviour {
         t = 0.0F;
         lerpStartTime = Time.time;
         oldScale = transform.localScale;
-        newScale = new Vector3(downScale, downScale, downScale);
+        newScale = new Vector3(downScaleDestroy, downScaleDestroy, downScaleDestroy);
 
         while (t <= 1F)
         {
-            t = (Time.time - lerpStartTime) / upScaleDuration;
+            t = (Time.time - lerpStartTime) / downScaleDurationDestroy;
 
             transform.localScale = Vector3.Lerp(oldScale, newScale, t);
 
@@ -115,6 +127,37 @@ public class Orbling : MonoBehaviour {
 
         RemoveListener();
         Destroy(gameObject);
+    }
+
+    public IEnumerator SpawnOrblingAnimation()
+    {
+        float t = 0.0F;
+        lerpStartTime = Time.time;
+        Vector3 oldScale = transform.localScale;
+        Vector3 newScale = new Vector3(upScaleSpawn, upScaleSpawn, upScaleSpawn);
+
+        while (t <= 1F)
+        {
+            t = (Time.time - lerpStartTime) / upScaleDurationSpawn;
+
+            transform.localScale = Vector3.Lerp(oldScale, newScale, t);
+
+            yield return null;
+        }
+
+        t = 0.0F;
+        lerpStartTime = Time.time;
+        oldScale = transform.localScale;
+        newScale = new Vector3(downScaleSpawn, downScaleSpawn, downScaleSpawn);
+
+        while (t <= 1F)
+        {
+            t = (Time.time - lerpStartTime) / downScaleDurationSpawn;
+
+            transform.localScale = Vector3.Lerp(oldScale, newScale, t);
+
+            yield return null;
+        }
     }
 
     public void RemoveListener()
