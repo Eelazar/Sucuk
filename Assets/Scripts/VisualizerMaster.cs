@@ -20,13 +20,13 @@ public class VisualizerMaster : MonoBehaviour
 
     [Header("Materials")]
     [SerializeField]
-    private Material holoMaterial;
+    private Material[] holoMaterials;
     [SerializeField]
-    private float holoRimPowerM;
+    private float[] holoRimPowersM;
     [SerializeField]
-    private float smoothRimPowermM;
+    private float[] smoothRimPowersM;
     [SerializeField]
-    private float[] rimPowerTimestamps;
+    private MultiDimensionalFloat[] rimPowerTimestamps;
 
     [Header("Lights")]
     [SerializeField]
@@ -72,7 +72,7 @@ public class VisualizerMaster : MonoBehaviour
     private bool intensitySwitch;
 
     private int bloomCounter;
-    private int rimPowerCounter;
+    private int[] rimPowerCounters;
     private int[] spotAnglesCounters;
     private int[] intensityCounters;
 
@@ -103,10 +103,13 @@ public class VisualizerMaster : MonoBehaviour
             bloomCounter++;
         }
         //Materials
-        if (rimPowerCounter < rimPowerTimestamps.Length && Time.time >= startTime + rimPowerTimestamps[rimPowerCounter])
+        for (int i = 0; i < holoMaterials.Length; i++)
         {
-            rimPowerSwitch = !rimPowerSwitch;
-            rimPowerCounter++;
+            if (rimPowerCounters[i] < rimPowerTimestamps[i].nested.Length && Time.time >= startTime + rimPowerTimestamps[i].nested[rimPowerCounters[i]])
+            {
+                rimPowerSwitch = !rimPowerSwitch;
+                rimPowerCounters[i]++;
+            }
         }
         //Lights
         for (int i = 0; i < lights.Length; i++)
