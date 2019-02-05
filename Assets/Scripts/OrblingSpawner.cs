@@ -100,6 +100,7 @@ public class OrblingSpawner : MonoBehaviour {
     {
         if(orblingChild != null)
         {
+            orblingChild.GetComponent<Orbling>().RemoveListener();
             Destroy(orblingChild, Random.Range(minDestroyDelay, maxDestroyDelay));            
         }
 

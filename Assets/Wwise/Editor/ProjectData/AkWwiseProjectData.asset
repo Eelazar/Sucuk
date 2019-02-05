@@ -21,7 +21,7 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6faef3859c315b48ac40ae404e146248
-    m_lastTime: -8586522249984748981
+    m_lastTime: -8586522197046980007
     List:
     - name: band1
       guid: 470fa168dc52584c8d2cec70a9b71e17
@@ -374,7 +374,7 @@ MonoBehaviour:
       - ElementName: Orbling_hit
         ObjectType: 3
       Path: Default Work Unit\Orbling_hit
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 0
       minDuration: 0
     - name: Play
@@ -2701,7 +2701,12 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Sucuk_WwiseProject
+  - /Sucuk_WwiseProject/Auxiliary Busses
+  - /Sucuk_WwiseProject/Auxiliary Busses/Default Work Unit
+  - /Sucuk_WwiseProject/Auxiliary Busses/Default Work Unit/Master Audio Bus
   - /Sucuk_WwiseProject/Events
   - /Sucuk_WwiseProject/Events/Default Work Unit
+  - /Sucuk_WwiseProject/SoundBanks
+  - /Sucuk_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

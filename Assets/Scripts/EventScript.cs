@@ -7,20 +7,18 @@ public class EventScript : MonoBehaviour {
     [Tooltip("Reference to the orb script")]
     [SerializeField]
     private Orb orbScript;
-
-    [Tooltip("Array of all the timestamps / segment switches")]
-    [SerializeField]
-    private float[] timestamps = new float[6];
+    
 
     private int currentSegment;
 
     void Start () 
 	{
+        
 	}
 	
 	void Update () 
 	{
-        if (Time.timeSinceLevelLoad > timestamps[currentSegment])
+        if (Time.timeSinceLevelLoad > TrackRegistry.spawnTimestamps[currentSegment])
         {
             TriggerSegment();
         }
@@ -37,31 +35,15 @@ public class EventScript : MonoBehaviour {
                 break;
 
             case 1:
-                //Trigger Breakdown 1 
-                orbScript.SwitchSegment("Breakdown 1");
-                currentSegment++;
-                break;
-
-            case 2:
-                //Trigger Drop 1
+                //Trigger Drop 1 
                 orbScript.SwitchSegment("Drop 1");
                 currentSegment++;
                 break;
 
-            case 3:
-                //Trigger Breakdown 2
-                orbScript.SwitchSegment("Breakdown 2");
-                currentSegment++;
-                break;
-
-            case 4:
+            case 2:
                 //Trigger Drop 2
                 orbScript.SwitchSegment("Drop 2");
                 currentSegment++;
-                break;
-
-            case 5:
-                // IDK
                 break;
 
             default:

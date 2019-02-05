@@ -11,28 +11,23 @@
 						<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 							<ObjectRef Name="Bass_Remover_1" ID="{D313DB05-6B33-4C1F-8C2F-F989052E8120}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
-						<Reference Name="Effect1">
-							<Custom>
-								<Effect Name="Wwise Compressor (Custom)" ID="{00FAD9C6-6EF9-4A00-93C0-787DD91EB2D5}" ShortID="297299734" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
-									<PropertyList>
-										<Property Name="OutputGain" Type="Real32" Value="1"/>
-										<Property Name="Ratio" Type="Real32" Value="1"/>
-										<Property Name="Threshold" Type="Real32" Value="-12"/>
-									</PropertyList>
-								</Effect>
-							</Custom>
+						<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Hall_Large" ID="{6D154498-FF6D-4823-96FC-56841B70E079}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="Effect2">
 							<Custom>
 								<Effect Name="Wwise Peak Limiter (Custom)" ID="{F9EB15B6-F655-414E-AD7C-23247F682127}" ShortID="430961838" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
 									<PropertyList>
-										<Property Name="OutputGain" Type="Real32" Value="-0.5"/>
+										<Property Name="OutputGain" Type="Real32" Value="5"/>
+										<Property Name="Ratio" Type="Real32" Value="20"/>
 									</PropertyList>
 								</Effect>
 							</Custom>
 						</Reference>
-						<Reference Name="Effect3" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-							<ObjectRef Name="Hall_Large" ID="{6D154498-FF6D-4823-96FC-56841B70E079}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						<Reference Name="Effect3">
+							<Custom>
+								<Effect Name="Wwise Recorder (Custom)" ID="{DED91AA0-B09C-44E6-B2A8-10C35467E679}" ShortID="255030326" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3"/>
+							</Custom>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -314,6 +309,13 @@
 					</ChildrenList>
 				</Bus>
 				<Bus Name="Harp" ID="{B03B586A-2DEE-4F1C-B080-5E1867B70B77}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{7389F7E9-6154-4503-9183-57DF542D665D}" WorkUnitID="{C835EBFD-D777-44E8-9BC5-FB1D115CF88E}"/>

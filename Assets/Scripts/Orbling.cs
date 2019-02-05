@@ -113,8 +113,13 @@ public class Orbling : MonoBehaviour {
             yield return null;
         }
 
-        grabPinch.RemoveOnChangeListener(OnTriggerPressedOrReleased, inputSource);
+        RemoveListener();
         Destroy(gameObject);
+    }
+
+    public void RemoveListener()
+    {
+        grabPinch.RemoveOnChangeListener(OnTriggerPressedOrReleased, inputSource);
     }
 
 }

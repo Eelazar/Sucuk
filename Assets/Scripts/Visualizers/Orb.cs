@@ -132,8 +132,9 @@ public class Orb : MonoBehaviour
                 break;
         }
 
-        GameObject.Instantiate<GameObject>(o.particlePrefab);
+        GameObject.Instantiate<GameObject>(o.particlePrefab, o.transform.position, o.transform.rotation);
 
+        o.RemoveListener();
         Destroy(o.gameObject);
     }
 
@@ -242,30 +243,12 @@ public class Orb : MonoBehaviour
                 ClearTrackArrays();
                 break;
 
-            case "Breakdown 1":
-                //TrackRegistry.bassTracks = TrackRegistry.bassTracksBreakdown1;
-                //TrackRegistry.percussionTracks = TrackRegistry.percussionTracksBreakdown1;
-                //TrackRegistry.leadTracks = TrackRegistry.leadTracksBreakdown1;
-
-                TurnOffAllTracks();
-                ClearTrackArrays();
-                break;
-
             case "Drop 1":
                 TrackRegistry.bassTracks = TrackRegistry.bassTracksDrop1;
                 TrackRegistry.percussionTracks = TrackRegistry.percussionTracksDrop1;
                 TrackRegistry.leadTracks = TrackRegistry.leadTracksDrop1;
                 TrackRegistry.kickTracks = TrackRegistry.kickTracksDrop;
                 TrackRegistry.chordTracks = TrackRegistry.chordTracksDrop;
-
-                TurnOffAllTracks();
-                ClearTrackArrays();
-                break;
-
-            case "Breakdown 2":
-                //TrackRegistry.bassTracks = TrackRegistry.bassTracksBreakdown2;
-                //TrackRegistry.percussionTracks = TrackRegistry.percussionTracksBreakdown2;
-                //TrackRegistry.leadTracks = TrackRegistry.leadTracksBreakdown2;
 
                 TurnOffAllTracks();
                 ClearTrackArrays();
