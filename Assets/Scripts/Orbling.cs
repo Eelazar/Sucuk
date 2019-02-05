@@ -14,6 +14,8 @@ public class Orbling : MonoBehaviour {
     [Tooltip("The orbling will be destroyed after this amount of time, after being activated")]
     [SerializeField]
     private float selfDestructTime;
+    [SerializeField]
+    public GameObject particlePrefab;
 
     public SteamVR_Action_Boolean grabPinch;
     public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.Any;

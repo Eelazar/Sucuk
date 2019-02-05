@@ -16,22 +16,12 @@ public class LaserHarp : MonoBehaviour {
     private GameObject[] strings;
     private Vector3[] stringDirections;
     private Vector3[] stringEnds;
-    private bool[] notes = new bool[5];
-    private bool[] noteSwitches = new bool[5];
+    private bool[] notes = new bool[6];
+    private bool[] noteSwitches = new bool[6];
 
     void Start () 
 	{
         CreateHarp();
-
-        //AkSoundEngine.PostEvent("HarpD", gameObject);
-        //AkSoundEngine.PostEvent("HarpE_play", gameObject);
-        //AkSoundEngine.PostEvent("HarpF_play", gameObject);
-        //AkSoundEngine.PostEvent("HarpA_play", gameObject);
-        //AkSoundEngine.PostEvent("HarpB_play", gameObject);
-
-
-
-
     }
 	
 	void Update () 
@@ -176,6 +166,20 @@ public class LaserHarp : MonoBehaviour {
         {
             AkSoundEngine.PostEvent("HarpB_stop", gameObject);
             noteSwitches[4] = false;
+        }
+
+        if (notes[5] == true)
+        {
+            if (noteSwitches[5] == false)
+            {
+                AkSoundEngine.PostEvent("HarpD2", gameObject);
+                noteSwitches[5] = true;
+            }
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("HarpD2_stop", gameObject);
+            noteSwitches[5] = false;
         }
     }
 }

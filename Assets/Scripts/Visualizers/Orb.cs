@@ -132,6 +132,8 @@ public class Orb : MonoBehaviour
                 break;
         }
 
+        GameObject.Instantiate<GameObject>(o.particlePrefab);
+
         Destroy(o.gameObject);
     }
 
