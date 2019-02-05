@@ -111,8 +111,8 @@ public class PerlinGrid : MonoBehaviour {
                     node.AddComponent<LineRenderer>();
                     node.GetComponent<LineRenderer>().positionCount = gridSize;
                     node.GetComponent<LineRenderer>().material = lineM;
-                    node.GetComponent<LineRenderer>().startWidth = 3;
-                    node.GetComponent<LineRenderer>().endWidth = 3;
+                    node.GetComponent<LineRenderer>().startWidth = 5;
+                    node.GetComponent<LineRenderer>().endWidth = 5;
 
                     //Assign the node to the correct LineRenderer-node-rray
                     if (i == 0) lrArrayI[j] = node.GetComponent<LineRenderer>();
