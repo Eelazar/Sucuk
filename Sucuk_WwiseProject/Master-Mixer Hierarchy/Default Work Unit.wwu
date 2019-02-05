@@ -32,7 +32,7 @@
 							</Custom>
 						</Reference>
 						<Reference Name="Effect3" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-							<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+							<ObjectRef Name="Hall_Large" ID="{6D154498-FF6D-4823-96FC-56841B70E079}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -314,27 +314,25 @@
 					</ChildrenList>
 				</Bus>
 				<Bus Name="Harp" ID="{B03B586A-2DEE-4F1C-B080-5E1867B70B77}">
-					<PropertyList>
-						<Property Name="BusVolume" Type="Real64">
-							<ValueList>
-								<Value>-12</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{7389F7E9-6154-4503-9183-57DF542D665D}" WorkUnitID="{C835EBFD-D777-44E8-9BC5-FB1D115CF88E}"/>
 						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Wwise Parametric EQ (Custom)" ID="{04FA4943-EA92-4B51-AE3A-38939DF7DCD3}" ShortID="483248481" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<PropertyList>
+										<Property Name="FrequencyBand3" Type="Real32" Value="2364"/>
+										<Property Name="GainBand3" Type="Real32" Value="-4.5"/>
+										<Property Name="OnOffBand1" Type="bool" Value="False"/>
+										<Property Name="OnOffBand2" Type="bool" Value="False"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AuxBus Name="verb" ID="{3E550F7B-D3F9-4D52-80C7-2190DD9E39F0}">
-							<PropertyList>
-								<Property Name="BusVolume" Type="Real64">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>

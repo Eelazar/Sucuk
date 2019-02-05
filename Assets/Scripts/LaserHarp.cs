@@ -81,7 +81,7 @@ public class LaserHarp : MonoBehaviour {
     {
         for(int i = 0; i < strings.Length; i++)
         {
-            float length = Vector3.Distance(strings[i].transform.position, strings[i].GetComponent<LineRenderer>().GetPosition(1));
+            float length = Vector3.Distance(strings[i].transform.position, stringEnds[i]);
             RaycastHit hit;
             if (Physics.Raycast(strings[i].transform.position, stringDirections[i], out hit, length))
             {

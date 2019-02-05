@@ -305,6 +305,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="HarpD2" ID="{DE6B95D1-C285-4BD8-B33A-AEB144A79F9D}">
+					<ChildrenList>
+						<Action Name="" ID="{2843F6AA-ECED-4528-87DE-2EA420540A77}" ShortID="413904457">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp D2" ID="{32CE649D-55CE-430C-995E-D6DFE94225E0}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpD2_stop" ID="{2AB09A72-F41C-46F2-9CB8-25BAA9AC101C}">
+					<ChildrenList>
+						<Action Name="" ID="{34BF635B-685C-402C-A87B-A88106ACAE6C}" ShortID="983346890">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp D2" ID="{32CE649D-55CE-430C-995E-D6DFE94225E0}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

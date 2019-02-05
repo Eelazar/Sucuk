@@ -969,23 +969,6 @@ MonoBehaviour:
   respawnTime: 5
   minDestroyDelay: 0
   maxDestroyDelay: 0
---- !u!1 &232279908 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 160596, guid: dc06161b6d97feb419f45f03b62e14b9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1203150825}
---- !u!65 &232279909
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 232279908}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.15, z: 0.15}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &238113515
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,6 +2082,23 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &445042485 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 165334, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1203150825}
+--- !u!135 &445042486
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445042485}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &452459433
 GameObject:
   m_ObjectHideFlags: 0
@@ -21696,23 +21696,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4500498440315234, guid: 8f54b1e03708568469cbe2696a92251f,
     type: 2}
   m_PrefabInternal: {fileID: 1029608982}
---- !u!1 &674546717 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 144230, guid: dc06161b6d97feb419f45f03b62e14b9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1203150825}
---- !u!65 &674546718
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 674546717}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.15, z: 0.15}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &680576548
 GameObject:
   m_ObjectHideFlags: 0
@@ -22890,7 +22873,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 924390712}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.08645874
@@ -43483,6 +43466,23 @@ Transform:
   m_Father: {fileID: 1093863513}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 346.672, y: 90.00001, z: 90.00001}
+--- !u!1 &2122126151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013428287994, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1203150825}
+--- !u!135 &2122126152
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2122126151}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2133628552
 GameObject:
   m_ObjectHideFlags: 0

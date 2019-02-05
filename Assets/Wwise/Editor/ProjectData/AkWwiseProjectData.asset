@@ -21,7 +21,7 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6faef3859c315b48ac40ae404e146248
-    m_lastTime: -8586522334181898675
+    m_lastTime: -8586522249984748981
     List:
     - name: band1
       guid: 470fa168dc52584c8d2cec70a9b71e17
@@ -159,7 +159,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 87dd1b6c0986334194d4e602d0162b3c
-    m_lastTime: -8586522334181878673
+    m_lastTime: -8586522249984898948
     List:
     - name: HarpA
       guid: b57650bf820ef14da2215587aaa585ee
@@ -266,6 +266,30 @@ MonoBehaviour:
       - ElementName: HarpD_stop
         ObjectType: 3
       Path: Default Work Unit\HarpD_stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpD2
+      guid: d1956bde85c2d84bb33aaeb144a79f9d
+      id: 3775462284
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpD2
+        ObjectType: 3
+      Path: Default Work Unit\HarpD2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpD2_stop
+      guid: 729ab02a1cf4f2469cb825baa9ac101c
+      id: 2988949563
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpD2_stop
+        ObjectType: 3
+      Path: Default Work Unit\HarpD2_stop
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
