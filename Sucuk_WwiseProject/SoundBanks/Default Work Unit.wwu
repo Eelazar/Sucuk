@@ -8,6 +8,7 @@
 						<ObjectRef Name="Old" ID="{6E1F087E-C91A-4149-BBE1-3925F2B1FB67}" WorkUnitID="{22C8ACF3-30F8-48FA-9609-8E74E0F1CD53}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Master-Mixer Hierarchy" ID="{2388DAEA-9775-46C6-A2ED-C5222A397756}" WorkUnitID="{2388DAEA-9775-46C6-A2ED-C5222A397756}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Events" ID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" WorkUnitID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="FX" ID="{42FEAA0D-D87D-4AA3-9276-FC6C835F6B8D}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

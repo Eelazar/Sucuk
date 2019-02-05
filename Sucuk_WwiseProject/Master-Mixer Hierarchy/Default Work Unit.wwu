@@ -31,6 +31,9 @@
 								</Effect>
 							</Custom>
 						</Reference>
+						<Reference Name="Effect3" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AuxBus Name="band5" ID="{9EC936E9-BEFE-47FE-B9E5-F5DABEF34BE6}">
@@ -314,7 +317,7 @@
 					<PropertyList>
 						<Property Name="BusVolume" Type="Real64">
 							<ValueList>
-								<Value>-9</Value>
+								<Value>-12</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

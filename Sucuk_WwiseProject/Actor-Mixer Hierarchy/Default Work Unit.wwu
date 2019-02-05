@@ -30,6 +30,18 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
 								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Meter (Custom)" ID="{A0637E06-834D-4AF1-A2E6-D79F2E098439}" ShortID="434317927" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<PropertyList>
+												<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+											</PropertyList>
+											<PluginData>
+	<GameParameter Name="Mkick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}"/>
+</PluginData>
+										</Effect>
+									</Custom>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Harp" ID="{B03B586A-2DEE-4F1C-B080-5E1867B70B77}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 								</Reference>
@@ -71,6 +83,18 @@
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Meter (Custom)" ID="{3221F375-F9AA-40EA-9D3C-441A5CA6704A}" ShortID="142774423" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<PropertyList>
+												<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+											</PropertyList>
+											<PluginData>
+	<GameParameter Name="Mkick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}"/>
+</PluginData>
+										</Effect>
+									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Harp" ID="{B03B586A-2DEE-4F1C-B080-5E1867B70B77}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
@@ -114,6 +138,18 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
 								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Meter (Custom)" ID="{9625B42E-B66B-4A75-B817-AA8AD8666C5E}" ShortID="940680390" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<PropertyList>
+												<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+											</PropertyList>
+											<PluginData>
+	<GameParameter Name="Mkick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}"/>
+</PluginData>
+										</Effect>
+									</Custom>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Harp" ID="{B03B586A-2DEE-4F1C-B080-5E1867B70B77}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 								</Reference>
@@ -155,6 +191,18 @@
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Meter (Custom)" ID="{8B7C8FCE-3F00-4BD2-A809-A217D213A33A}" ShortID="823502522" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<PropertyList>
+												<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+											</PropertyList>
+											<PluginData>
+	<GameParameter Name="Mkick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}"/>
+</PluginData>
+										</Effect>
+									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Harp" ID="{B03B586A-2DEE-4F1C-B080-5E1867B70B77}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
@@ -198,6 +246,18 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
 								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Meter (Custom)" ID="{F87BB507-94B7-4736-BCFA-EAC70FCB91E6}" ShortID="435380640" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<PropertyList>
+												<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+											</PropertyList>
+											<PluginData>
+	<GameParameter Name="Mkick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}"/>
+</PluginData>
+										</Effect>
+									</Custom>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Harp" ID="{B03B586A-2DEE-4F1C-B080-5E1867B70B77}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 								</Reference>
@@ -240,6 +300,18 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
 								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Meter (Custom)" ID="{DC1E129C-F11D-4E46-9F7D-CCDD3D982799}" ShortID="362663601" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<PropertyList>
+												<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+											</PropertyList>
+											<PluginData>
+	<GameParameter Name="Mkick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}"/>
+</PluginData>
+										</Effect>
+									</Custom>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Harp" ID="{B03B586A-2DEE-4F1C-B080-5E1867B70B77}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 								</Reference>
@@ -255,6 +327,84 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Harp E" ID="{09DA4D75-295E-4146-ACE0-935B51E516A7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="FX" ID="{42FEAA0D-D87D-4AA3-9276-FC6C835F6B8D}" ShortID="386862633">
+					<ChildrenList>
+						<Sound Name="orbling_hit" ID="{8B1FA856-B92F-400F-ADB3-B1C6F9078A17}" ShortID="794931334">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{6699FE74-9ED4-4BB7-863F-B488C4C38091}" ShortID="712925744">
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{1ED5879B-31BA-46C2-AAEB-7D19700F13E0}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{35BC3CC9-4AC6-4FFE-AF86-A1A2D7EAB60D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="orbling_hit" ID="{C017AB70-4ACF-453E-8147-16480C5C2FCA}" ShortID="313259405">
+									<Language>SFX</Language>
+									<AudioFile>orbling_hit.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="orbling_hit" ID="{C017AB70-4ACF-453E-8147-16480C5C2FCA}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

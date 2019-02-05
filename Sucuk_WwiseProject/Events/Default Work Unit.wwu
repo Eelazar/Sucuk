@@ -291,6 +291,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Orbling_hit" ID="{92444E28-AC1B-419E-B687-86DA49C94BF7}">
+					<ChildrenList>
+						<Action Name="" ID="{5614314C-6EE2-417A-9EEE-8F12963BBC15}" ShortID="838968697">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="orbling_hit" ID="{8B1FA856-B92F-400F-ADB3-B1C6F9078A17}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
