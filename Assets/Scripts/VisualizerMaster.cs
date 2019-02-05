@@ -135,8 +135,11 @@ public class VisualizerMaster : MonoBehaviour
 
         //Materials
         if (rimPowerSwitch)
-        {
-            holoMaterial.SetFloat("_RimPower", Mathf.SmoothDamp(holoMaterial.GetFloat("_RimPower"), 1.3F + (spectrum[8] * holoRimPowerM), ref velocity, smoothRimPowermM));
+        {            
+            for (int i = 0; i < holoMaterials.Length; i++)
+            {
+                holoMaterials[i].SetFloat("_RimPower", Mathf.SmoothDamp(holoMaterials[i].GetFloat("_RimPower"), 1.3F + (spectrum[8] * holoRimPowersM[i]), ref velocity, smoothRimPowersM[i]));
+            }
         }
 
         //Lights
