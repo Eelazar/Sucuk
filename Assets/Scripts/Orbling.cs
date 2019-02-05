@@ -17,6 +17,17 @@ public class Orbling : MonoBehaviour {
     [SerializeField]
     public GameObject particlePrefab;
 
+    [Header("Destroy Animation")]
+    [SerializeField]
+    private float upScale;
+    [SerializeField]
+    private float downScale;
+    [SerializeField]
+    private float upScaleDuration;
+    [SerializeField]
+    private float downScaleDuration;
+
+    [Header("Steam VR")]
     public SteamVR_Action_Boolean grabPinch;
     public SteamVR_Input_Sources inputSource = SteamVR_Input_Sources.Any;
 
@@ -27,6 +38,7 @@ public class Orbling : MonoBehaviour {
 
     private bool activatedTrigger;
     private float destroyTimestamp;
+    private float lerpStartTime;
 
     void Start()
     {
@@ -71,8 +83,36 @@ public class Orbling : MonoBehaviour {
         }
     }
 
-    public void DeleteOrbling()
+    public IEnumerator DeleteOrbling()
     {
+        float t = 0.0F;
+        lerpStartTime = Time.time;
+        Vector3 oldScale = transform.localScale;
+        Vector3 newScale = new Vector3(upScale, upScale, upScale);
+
+        while (t <= 1F)
+        {
+            t = (Time.time - lerpStartTime) / upScaleDuration;
+
+            transform.localScale = Vector3.Lerp(oldScale, newScale, t);
+
+            yield return null;
+        }
+
+        t = 0.0F;
+        lerpStartTime = Time.time;
+        oldScale = transform.localScale;
+        newScale = new Vector3(downScale, downScale, downScale);
+
+        while (t <= 1F)
+        {
+            t = (Time.time - lerpStartTime) / upScaleDuration;
+
+            transform.localScale = Vector3.Lerp(oldScale, newScale, t);
+
+            yield return null;
+        }
+
         grabPinch.RemoveOnChangeListener(OnTriggerPressedOrReleased, inputSource);
         Destroy(gameObject);
     }
