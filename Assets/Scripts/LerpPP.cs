@@ -18,9 +18,9 @@ public class LerpPP : MonoBehaviour {
     [Tooltip("The times at which a new profile will be lerped to")]
     [SerializeField]
     private float[] timestamps;
-    [Tooltip("The duration of the lerp")]
+    [Tooltip("The durations of the lerp, corresponding to the timestamps")]
     [SerializeField]
-    private float lerpDuration;
+    private float[] lerpDurations;
     
 
     private int counter;
@@ -37,7 +37,7 @@ public class LerpPP : MonoBehaviour {
 	{
         if (counter < timestamps.Length && Time.time >= startTime + timestamps[counter])
         {
-            StartCoroutine(LerpToProfile(profiles[counter], lerpDuration));
+            StartCoroutine(LerpToProfile(profiles[counter], lerpDurations[counter]));
 
             counter++;
         }        
@@ -57,6 +57,7 @@ public class LerpPP : MonoBehaviour {
         float t = 0.0F;
         float lerpStart = Time.time;
 
+        #region Data
         /////////
         //Bloom//
         /////////
@@ -150,6 +151,9 @@ public class LerpPP : MonoBehaviour {
         tempcgSettings.curves = cgSettingsN.curves;
         tempcgSettings.channelMixer = cgSettingsC.channelMixer;
 
+        #endregion Data
+
+        #region Lerp
         //Lerp
         while (t <= 1F)
         {
@@ -196,6 +200,6 @@ public class LerpPP : MonoBehaviour {
             
             yield return null;
         }
-        
+        #endregion Lerp
     }
 }
