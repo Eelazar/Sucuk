@@ -339,11 +339,6 @@
 						<Sound Name="orbling_hit" ID="{8B1FA856-B92F-400F-ADB3-B1C6F9078A17}" ShortID="794931334">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">

@@ -18,7 +18,6 @@
 							<Custom>
 								<Effect Name="Wwise Peak Limiter (Custom)" ID="{F9EB15B6-F655-414E-AD7C-23247F682127}" ShortID="430961838" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
 									<PropertyList>
-										<Property Name="OutputGain" Type="Real32" Value="5"/>
 										<Property Name="Ratio" Type="Real32" Value="20"/>
 									</PropertyList>
 								</Effect>
@@ -26,7 +25,7 @@
 						</Reference>
 						<Reference Name="Effect3">
 							<Custom>
-								<Effect Name="Wwise Recorder (Custom)" ID="{DED91AA0-B09C-44E6-B2A8-10C35467E679}" ShortID="255030326" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3"/>
+								<Effect Name="Wwise Recorder (Custom)" ID="{D0BF3F09-4830-4110-A264-7CC19CE5E196}" ShortID="962819100" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3"/>
 							</Custom>
 						</Reference>
 					</ReferenceList>

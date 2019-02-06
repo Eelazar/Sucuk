@@ -39,23 +39,38 @@ public class OrblingMaster : MonoBehaviour {
     {
         foreach(GameObject go in TrackRegistry.percussionOrblings)
         {
-            go.GetComponent<Orbling>().DeleteOrbling();
+            if(go != null)
+            {
+                go.GetComponent<Orbling>().DeleteOrbling();
+            }            
         }
         foreach (GameObject go in TrackRegistry.bassOrblings)
         {
-            go.GetComponent<Orbling>().DeleteOrbling();
+            if (go != null)
+            {
+                go.GetComponent<Orbling>().DeleteOrbling();
+            }
         }
         foreach (GameObject go in TrackRegistry.leadOrblings)
         {
-            go.GetComponent<Orbling>().DeleteOrbling();
+            if (go != null)
+            {
+                go.GetComponent<Orbling>().DeleteOrbling();
+            }
         }
         foreach (GameObject go in TrackRegistry.kickOrblings)
         {
-            go.GetComponent<Orbling>().DeleteOrbling();
+            if (go != null)
+            {
+                go.GetComponent<Orbling>().DeleteOrbling();
+            }
         }
         foreach (GameObject go in TrackRegistry.chordOrblings)
         {
-            go.GetComponent<Orbling>().DeleteOrbling();
+            if (go != null)
+            {
+                go.GetComponent<Orbling>().DeleteOrbling();
+            }
         }
 
         TrackRegistry.percussionOrblings.Clear();

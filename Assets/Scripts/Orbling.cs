@@ -27,7 +27,7 @@ public class Orbling : MonoBehaviour {
     [SerializeField]
     private float downScaleDurationDestroy;
 
-    [Header("Destroy Animation")]
+    [Header("Spawn Animation")]
     [SerializeField]
     private float upScaleSpawn;
     [SerializeField]

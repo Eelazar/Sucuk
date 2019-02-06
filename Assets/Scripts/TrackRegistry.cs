@@ -23,8 +23,8 @@ public static class TrackRegistry {
 
 
     public static List<string> percussionTracksIntro = new List<string> { "intro_perc01", "intro_perc02", "intro_perc03" };
-    public static List<string> bassTracksIntro = new List<string> { "intro_bass01", "intro_bass02", "intro_bass03", "intro_bass04", "intro_bass05", "intro_bass06" };
-    public static List<string> leadTracksIntro = new List<string> { "intro_lead01", "intro_lead02", "intro_lead03", "intro_lead04", "intro_lead05" };
+    public static List<string> bassTracksIntro = new List<string> { "intro_bass01", "intro_bass02", "intro_bass03", "intro_bass04", "intro_bass05"};
+    public static List<string> leadTracksIntro = new List<string> { "intro_lead01", "intro_lead02", "intro_lead03", "intro_lead04"};
     public static List<string> kickTracksIntro = new List<string> { "I_kick01", "I_kick02"};
     public static List<string> chordTracksIntro = new List<string> { "intro_chords01", "intro_chords02", "intro_chords03", "intro_chords04" };
 
@@ -38,5 +38,5 @@ public static class TrackRegistry {
     public static List<string> bassTracksDrop2 = new List<string> { "d2_bass01", "d2_bass02", "d2_bass03", "d2_bass04" };
     public static List<string> leadTracksDrop2 = new List<string> { "d2_lead01", "d2_lead03", "d2_lead04", "d2_lead05" };
     public static List<string> kickTracksDrop2 = new List<string> { "d2_kick01", "d2_kick02" };
-    public static List<string> chordTracksDrop2 = new List<string> { "d2_chords01", "d2_chords02", "d2_chords03", "d2_chords04", "d2_chords05", "d2_chords06" };
+    public static List<string> chordTracksDrop2 = new List<string> { "d2_chords01", "d2_chords02", "d2_chords03", "d2_chords04" };
 }

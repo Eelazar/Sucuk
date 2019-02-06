@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 8e05fabea12468e4c9e552221f33feae, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: f531e09e2ad2fb440b4eed7605863143, type: 2}
   m_HaloStrength: 0.491
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 961681859}
-  m_IndirectSpecularColor: {r: 0.0004519968, g: 0.00038567866, b: 0.0036138864, a: 1}
+  m_IndirectSpecularColor: {r: 0.0047603846, g: 0.0033661316, b: 0.016318725, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -290,241 +290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 477890490}
   timestamps:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 235
 --- !u!4 &28683715
 Transform:
   m_ObjectHideFlags: 0
@@ -808,9 +574,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 385979dadf99a784a8189a3a1a939a27, type: 2}
   timestamps:
   - 15
-  - 180
-  - 187.5
-  - 188.5
+  - 174.9
+  - 183.5
+  - 184.5
   - 300
   - 310
   - 311.85
@@ -818,7 +584,7 @@ MonoBehaviour:
   lerpDurations:
   - 10
   - 8.5
-  - 0.7
+  - 0.2
   - 0.01
   - 8
   - 0.01
@@ -956,7 +722,6 @@ MonoBehaviour:
   trackType: 0
   orblingPrefab: {fileID: 1485504350233284, guid: fe831d112ab5c2a4c9a54a2ae733320e,
     type: 2}
-  originalSpawnTime: 0
   respawnTime: 5
   minDestroyDelay: 0
   maxDestroyDelay: 0
@@ -1065,216 +830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1079656158}
   timestamps:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 210
 --- !u!4 &127192620
 Transform:
   m_ObjectHideFlags: 0
@@ -1807,7 +1363,6 @@ MonoBehaviour:
   trackType: 4
   orblingPrefab: {fileID: 1485504350233284, guid: d743b0bdd7103334a9d2aef649008069,
     type: 2}
-  originalSpawnTime: 0
   respawnTime: 5
   minDestroyDelay: 0
   maxDestroyDelay: 0
@@ -1991,7 +1546,7 @@ Light:
   m_SpotAngle: 90.61502
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -2494,7 +2049,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 385174804}
   m_LocalRotation: {x: -0.058716025, y: -0.70466477, z: -0.70466477, w: -0.058716025}
-  m_LocalPosition: {x: 111, y: -177.54813, z: -138.2}
+  m_LocalPosition: {x: 105.9, y: -141.1, z: -138.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1489922884}
@@ -2530,7 +2085,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 83.81, y: 179.47372}
   m_BounceIntensity: 1
@@ -2651,7 +2206,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4792922526901896, guid: ee478c436663e364ebddc9b0f0d77d02, type: 2}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1603071716542692, guid: ee478c436663e364ebddc9b0f0d77d02, type: 2}
       propertyPath: m_IsActive
@@ -2946,7 +2501,6 @@ MonoBehaviour:
   trackType: 0
   orblingPrefab: {fileID: 1485504350233284, guid: fe831d112ab5c2a4c9a54a2ae733320e,
     type: 2}
-  originalSpawnTime: 0
   respawnTime: 5
   minDestroyDelay: 0
   maxDestroyDelay: 0
@@ -2965,7 +2519,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &427258691
 Transform:
   m_ObjectHideFlags: 0
@@ -3140,7 +2694,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 15.3
   m_Range: 275.08
-  m_SpotAngle: 60.7
+  m_SpotAngle: 50.68928
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -8059,7 +7613,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 15.3
   m_Range: 275.08
-  m_SpotAngle: 54.935986
+  m_SpotAngle: 48.96767
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -13842,7 +13396,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 15.3
   m_Range: 275.08
-  m_SpotAngle: 60.7
+  m_SpotAngle: 54.376484
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -13984,7 +13538,6 @@ MonoBehaviour:
   trackType: 2
   orblingPrefab: {fileID: 1485504350233284, guid: 080173f11de56664383186925ac3322b,
     type: 2}
-  originalSpawnTime: 0
   respawnTime: 5
   minDestroyDelay: 0
   maxDestroyDelay: 0
@@ -23951,7 +23504,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &779660850
 Transform:
   m_ObjectHideFlags: 0
@@ -23986,7 +23539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f6f3d960e4a9049aa3480de874d5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _source: {fileID: 0}
+  _source: {fileID: 485327621}
   _template: {fileID: 11400000, guid: a1c0dbc1e8b9d3b4f8a2691f638256de, type: 2}
   _speedLimit: 250
   _drag: 1
@@ -24836,7 +24389,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &924390712
 GameObject:
@@ -25010,7 +24563,7 @@ Light:
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
-    m_Resolution: -1
+    m_Resolution: 1
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -25150,7 +24703,6 @@ MonoBehaviour:
   trackType: 4
   orblingPrefab: {fileID: 1485504350233284, guid: d743b0bdd7103334a9d2aef649008069,
     type: 2}
-  originalSpawnTime: 0
   respawnTime: 5
   minDestroyDelay: 0
   maxDestroyDelay: 0
@@ -25723,7 +25275,7 @@ Light:
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
-    m_Resolution: -1
+    m_Resolution: 1
     m_CustomResolution: -1
     m_Strength: 0.82
     m_Bias: 0
@@ -26257,7 +25809,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 83.81, y: 179.47372}
   m_BounceIntensity: 1
@@ -26272,7 +25824,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1001652910}
   m_LocalRotation: {x: 0.060633697, y: -0.70450234, z: -0.70450234, w: 0.060633697}
-  m_LocalPosition: {x: -286.7, y: -177.54813, z: -137.9}
+  m_LocalPosition: {x: -286.7, y: -181.8, z: -137.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1957285071}
@@ -26423,7 +25975,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 83.81, y: 179.47372}
   m_BounceIntensity: 1
@@ -26438,7 +25990,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1024072397}
   m_LocalRotation: {x: 0.039847296, y: -0.70598316, z: -0.70598316, w: 0.039847296}
-  m_LocalPosition: {x: -301.7, y: -177.54813, z: 63}
+  m_LocalPosition: {x: -301.7, y: -164.1, z: 63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1203293192}
@@ -31510,7 +31062,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 15.3
   m_Range: 275.08
-  m_SpotAngle: 70.06741
+  m_SpotAngle: 62.13279
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -36347,221 +35899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1018079685}
   timestamps:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 215
 --- !u!4 &1134723045
 Transform:
   m_ObjectHideFlags: 0
@@ -37105,6 +36443,8 @@ Transform:
   - {fileID: 2098170582}
   - {fileID: 378554756}
   - {fileID: 986038944}
+  - {fileID: 2047122336}
+  - {fileID: 1213295322}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -37122,15 +36462,15 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1213295322
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1213295321}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.840538, y: -2.9247437, z: 65.73921}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.022652, y: -74.44336, z: 182.93921}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1862634265}
@@ -37139,8 +36479,8 @@ Transform:
   - {fileID: 2105449922}
   - {fileID: 1075330594}
   - {fileID: 785457260}
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 1213038378}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1213425101
 GameObject:
@@ -37168,7 +36508,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1213425101}
   m_LocalRotation: {x: -0.0076380763, y: 0.5825016, z: -0.8127862, w: 0.0034888128}
-  m_LocalPosition: {x: -98.8, y: 158.3, z: -101.4}
+  m_LocalPosition: {x: -98.8, y: 120.2, z: -101.4}
   m_LocalScale: {x: 1, y: 1.0000002, z: 1}
   m_Children: []
   m_Father: {fileID: 1093863513}
@@ -37220,8 +36560,8 @@ Light:
   m_Type: 0
   m_Color: {r: 0.12941177, g: 0.25522718, b: 0.30980393, a: 1}
   m_Intensity: 22.05
-  m_Range: 349.75467
-  m_SpotAngle: 95.63944
+  m_Range: 528.3
+  m_SpotAngle: 70.3
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -37282,7 +36622,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1219230741
 Transform:
   m_ObjectHideFlags: 0
@@ -37317,7 +36657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e96ab84e26758a4e98f38169db2ca72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _source: {fileID: 0}
+  _source: {fileID: 485327621}
   _template: {fileID: 11400000, guid: 41b19e2aafa959c4ba76d1d51b6ab130, type: 2}
   _speedLimit: 0.4
   _drag: 5
@@ -37857,7 +37197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1359650297
 Transform:
   m_ObjectHideFlags: 0
@@ -37892,7 +37232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b46f74429dd52a48a78ef8447c37e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _source: {fileID: 0}
+  _source: {fileID: 485327621}
   _historyLength: 761
   _velocityScale: 0.486
   _edgeThreshold: 29.13
@@ -37980,7 +37320,6 @@ MonoBehaviour:
   trackType: 3
   orblingPrefab: {fileID: 1485504350233284, guid: 2fd1f6e5a582bdb4ba3981b0a5d22b23,
     type: 2}
-  originalSpawnTime: 0
   respawnTime: 5
   minDestroyDelay: 0
   maxDestroyDelay: 0
@@ -38037,6 +37376,16 @@ Prefab:
       propertyPath: m_listeners.initialListenerList.Array.data[0]
       value: 
       objectReference: {fileID: 472088865}
+    - target: {fileID: 114462946279553480, guid: 9d8c21bb059be0844984c094080d2fc1,
+        type: 2}
+      propertyPath: stringAmount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114462946279553480, guid: 9d8c21bb059be0844984c094080d2fc1,
+        type: 2}
+      propertyPath: arcWidth
+      value: 180
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d8c21bb059be0844984c094080d2fc1, type: 2}
   m_IsPrefabAsset: 0
@@ -38258,7 +37607,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 83.81, y: 179.47372}
   m_BounceIntensity: 1
@@ -38273,7 +37622,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1403299837}
   m_LocalRotation: {x: 0.060633697, y: -0.70450234, z: -0.70450234, w: 0.060633697}
-  m_LocalPosition: {x: -286.7, y: -177.54813, z: -35.4}
+  m_LocalPosition: {x: -286.7, y: -173.5, z: -35.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1821521330}
@@ -38754,7 +38103,6 @@ MonoBehaviour:
   trackType: 0
   orblingPrefab: {fileID: 1485504350233284, guid: fe831d112ab5c2a4c9a54a2ae733320e,
     type: 2}
-  originalSpawnTime: 0
   respawnTime: 5
   minDestroyDelay: 0
   maxDestroyDelay: 0
@@ -43662,8 +43010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 246072563}
   timestamps:
-  - 5
-  - 5
+  - 343
 --- !u!4 &1496329603
 Transform:
   m_ObjectHideFlags: 0
@@ -44059,7 +43406,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1583550771}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.099998474, y: 22.10614, z: -3926}
+  m_LocalPosition: {x: 0.099998474, y: 22.10614, z: -2478}
   m_LocalScale: {x: 24, y: 24, z: 24}
   m_Children:
   - {fileID: 955330715}
@@ -44458,7 +43805,8 @@ MonoBehaviour:
   profile: {fileID: 11400000, guid: 385979dadf99a784a8189a3a1a939a27, type: 2}
   bloomIntensity: 1.9
   smoothBloomM: 0.15
-  bloomTimestamps: []
+  bloomTimestamps:
+  - 99999
   holoMaterials:
   - {fileID: 2100000, guid: 90a6b158d8a9af34f8b05e6c439f2842, type: 2}
   - {fileID: 2100000, guid: 1162e87669230ca4cb16a429d0c3d780, type: 2}
@@ -44677,7 +44025,6 @@ MonoBehaviour:
   trackType: 2
   orblingPrefab: {fileID: 1485504350233284, guid: 080173f11de56664383186925ac3322b,
     type: 2}
-  originalSpawnTime: 0
   respawnTime: 5
   minDestroyDelay: 0
   maxDestroyDelay: 0
@@ -44966,7 +44313,6 @@ MonoBehaviour:
   trackType: 1
   orblingPrefab: {fileID: 1485504350233284, guid: b1959b79931b0524ab4d901551ed8ae5,
     type: 2}
-  originalSpawnTime: 0
   respawnTime: 5
   minDestroyDelay: 0
   maxDestroyDelay: 0
@@ -45401,7 +44747,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1830086440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46845,6 +46191,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 65.51878, y: 378.50262, z: 32.947556}
   m_Center: {x: -11.43225, y: 32.063995, z: 1.8551692}
+--- !u!1 &2047122335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2047122336}
+  - component: {fileID: 2047122337}
+  m_Layer: 0
+  m_Name: OrbLightActivator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2047122336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2047122335}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -45.637817, y: -7.5559387, z: 71.84132}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1213038378}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2047122337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2047122335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffb69637e8b9e9a479ae5d6d09b6f06d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 1213295321}
+  timestamps:
+  - 0.1
+  - 26
 --- !u!1 &2055737846
 GameObject:
   m_ObjectHideFlags: 0
@@ -46888,7 +46278,6 @@ MonoBehaviour:
   trackType: 1
   orblingPrefab: {fileID: 1485504350233284, guid: b1959b79931b0524ab4d901551ed8ae5,
     type: 2}
-  originalSpawnTime: 0
   respawnTime: 5
   minDestroyDelay: 0
   maxDestroyDelay: 0

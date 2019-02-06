@@ -75,7 +75,6 @@ public class Orb : MonoBehaviour
         trigger = transform.GetComponent<SphereCollider>();
         trigger.isTrigger = true;
 
-        TurnOffAllTracks();
     }
 
     private void Update()
@@ -92,6 +91,7 @@ public class Orb : MonoBehaviour
         if (collider.GetComponent<Orbling>())
         {
             ProcessOrbling(collider.GetComponent<Orbling>());
+            AkSoundEngine.PostEvent("Orbling_hit", gameObject);
         }
     }
 
@@ -111,22 +111,54 @@ public class Orb : MonoBehaviour
             case Orbling.TrackType.Bass:
                 AkSoundEngine.SetState(currentBassTracks[bassTrackCounter], "off");
                 IncreaseTrackCounter(bassTrackCounter, currentBassTracks.Length);
-                AkSoundEngine.SetState(GetRandomTrack(TrackRegistry.bassTracks, currentBassTracks, bassTrackCounter), "on");
+                string bassTrack = GetRandomTrack(TrackRegistry.bassTracks, currentBassTracks, bassTrackCounter);
+                AkSoundEngine.SetState(bassTrack, "on");
+
+                //dynamic track conditions
+                if (bassTrack == "d1_bass02")
+                { 
+                    AkSoundEngine.SetState("d1_lead01", "off");
+                    AkSoundEngine.SetState("d1_lead03", "off");
+                }
+                else if (bassTrack == "d1_bass03")
+                      AkSoundEngine.SetState("d1_lead01", "off");
+                else if (bassTrack == "d1_bass04")
+                    AkSoundEngine.SetState("d1_lead01", "off");
+
+                if (bassTrack == "d2bass03")
+                {
+                    AkSoundEngine.SetState(currentPercussionTracks[percussionTrackCounter], "off");
+                    AkSoundEngine.SetState(currentKickTracks[kickTrackCounter], "off");
+                }
+
                 break;
             case Orbling.TrackType.Lead:
                 AkSoundEngine.SetState(currentLeadTracks[leadTrackCounter], "off");
                 IncreaseTrackCounter(leadTrackCounter, currentLeadTracks.Length);
-                AkSoundEngine.SetState(GetRandomTrack(TrackRegistry.leadTracks, currentLeadTracks, leadTrackCounter), "on");
+                string leadTrack = GetRandomTrack(TrackRegistry.leadTracks, currentLeadTracks, leadTrackCounter);
+                AkSoundEngine.SetState(leadTrack, "on");
+
+                //dynamic track conditions
+                if (leadTrack == "d1_lead01")
+                {
+                    AkSoundEngine.SetState(currentBassTracks[bassTrackCounter], "off");
+                    AkSoundEngine.SetState("d1_bass", "on");
+                }
+
                 break;
             case Orbling.TrackType.Kick:
-                AkSoundEngine.SetState(currentLeadTracks[kickTrackCounter], "off");
+                AkSoundEngine.SetState(currentKickTracks[kickTrackCounter], "off");
                 IncreaseTrackCounter(kickTrackCounter, currentKickTracks.Length);
                 AkSoundEngine.SetState(GetRandomTrack(TrackRegistry.kickTracks, currentKickTracks, kickTrackCounter), "on");
                 break;
             case Orbling.TrackType.Chord:
                 AkSoundEngine.SetState(currentChordTracks[chordTrackCounter], "off");
                 IncreaseTrackCounter(chordTrackCounter, currentChordTracks.Length);
-                AkSoundEngine.SetState(GetRandomTrack(TrackRegistry.chordTracks, currentChordTracks, chordTrackCounter), "on");
+                string chordTrack = (GetRandomTrack(TrackRegistry.chordTracks, currentChordTracks, chordTrackCounter));
+                AkSoundEngine.SetState(chordTrack, "on");
+
+                //dynamic track conditions
+     
                 break;
             default:
                 break;
@@ -199,18 +231,18 @@ public class Orb : MonoBehaviour
     /// <summary>
     /// Switches off every track, lists need to be manually added to trackListList
     /// </summary>
-    private void TurnOffAllTracks()
-    {
-        List<List<string>> trackListList = new List<List<string>> { TrackRegistry.percussionTracks, TrackRegistry.bassTracks, TrackRegistry.leadTracks, TrackRegistry.kickTracks, TrackRegistry.chordTracks };
+    //private void TurnOffAllTracks()
+    //{
+    //    List<List<string>> trackListList = new List<List<string>> { TrackRegistry.percussionTracks, TrackRegistry.bassTracks, TrackRegistry.leadTracks, TrackRegistry.kickTracks, TrackRegistry.chordTracks };
 
-        foreach(List<string> l in trackListList)
-        {
-            foreach(string s in l)
-            {
-                AkSoundEngine.SetState(s, "off");
-            }
-        }
-    }
+    //    foreach(List<string> l in trackListList)
+    //    {
+    //        foreach(string s in l)
+    //        {
+    //            AkSoundEngine.SetState(s, "off");
+    //        }
+    //    }
+    //}
 
     /// <summary>
     /// Clears all the "currently playing tracks" arrays
@@ -239,7 +271,7 @@ public class Orb : MonoBehaviour
                 TrackRegistry.kickTracks = TrackRegistry.kickTracksIntro;
                 TrackRegistry.chordTracks = TrackRegistry.chordTracksIntro;
 
-                TurnOffAllTracks();
+                
                 ClearTrackArrays();
                 break;
 
@@ -250,7 +282,7 @@ public class Orb : MonoBehaviour
                 TrackRegistry.kickTracks = TrackRegistry.kickTracksDrop;
                 TrackRegistry.chordTracks = TrackRegistry.chordTracksDrop;
 
-                TurnOffAllTracks();
+               
                 ClearTrackArrays();
                 break;
 
@@ -261,7 +293,7 @@ public class Orb : MonoBehaviour
                 TrackRegistry.kickTracks = TrackRegistry.kickTracksDrop2;
                 TrackRegistry.chordTracks = TrackRegistry.chordTracksDrop2;
 
-                TurnOffAllTracks();
+              
                 ClearTrackArrays();
                 break;
 
