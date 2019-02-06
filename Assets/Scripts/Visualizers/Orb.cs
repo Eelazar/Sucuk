@@ -93,6 +93,88 @@ public class Orb : MonoBehaviour
             ProcessOrbling(collider.GetComponent<Orbling>());
             AkSoundEngine.PostEvent("Orbling_hit", gameObject);
         }
+
+        //REMOVE ALL THIS STUFF
+        if (collider.GetComponent<OrblingPraesi>())
+        {
+            ProcessOrblingPraesi(collider.GetComponent<OrblingPraesi>());
+        }
+    }
+
+    //REMOVE!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    private void ProcessOrblingPraesi(OrblingPraesi o)
+    {
+        switch (o.trackType)
+        {
+            case OrblingPraesi.TrackType.Percussion:
+                AkSoundEngine.SetState(currentPercussionTracks[percussionTrackCounter], "off");
+                IncreaseTrackCounter(percussionTrackCounter, currentPercussionTracks.Length);
+                AkSoundEngine.SetState(GetRandomTrack(TrackRegistry.percussionTracks, currentPercussionTracks, percussionTrackCounter), "on");
+                break;
+            case OrblingPraesi.TrackType.Bass:
+                AkSoundEngine.SetState(currentBassTracks[bassTrackCounter], "off");
+                IncreaseTrackCounter(bassTrackCounter, currentBassTracks.Length);
+                string bassTrack = GetRandomTrack(TrackRegistry.bassTracks, currentBassTracks, bassTrackCounter);
+                AkSoundEngine.SetState(bassTrack, "on");
+
+                //dynamic track conditions
+                if (bassTrack == "d1_bass02")
+                {
+                    AkSoundEngine.SetState("d1_lead01", "off");
+                    AkSoundEngine.SetState("d1_lead03", "off");
+                }
+                else if (bassTrack == "d1_bass03")
+                    AkSoundEngine.SetState("d1_lead01", "off");
+                else if (bassTrack == "d1_bass04")
+                    AkSoundEngine.SetState("d1_lead01", "off");
+
+                if (bassTrack == "d2bass03")
+                {
+                    AkSoundEngine.SetState(currentPercussionTracks[percussionTrackCounter], "off");
+                    AkSoundEngine.SetState(currentKickTracks[kickTrackCounter], "off");
+                }
+
+                break;
+            case OrblingPraesi.TrackType.Lead:
+                AkSoundEngine.SetState(currentLeadTracks[leadTrackCounter], "off");
+                IncreaseTrackCounter(leadTrackCounter, currentLeadTracks.Length);
+                string leadTrack = GetRandomTrack(TrackRegistry.leadTracks, currentLeadTracks, leadTrackCounter);
+                AkSoundEngine.SetState(leadTrack, "on");
+
+                //dynamic track conditions
+                if (leadTrack == "d1_lead01")
+                {
+                    AkSoundEngine.SetState(currentBassTracks[bassTrackCounter], "off");
+                    AkSoundEngine.SetState("d1_bass01", "on");
+                }
+
+                break;
+            case OrblingPraesi.TrackType.Kick:
+                AkSoundEngine.SetState(currentKickTracks[kickTrackCounter], "off");
+                IncreaseTrackCounter(kickTrackCounter, currentKickTracks.Length);
+                AkSoundEngine.SetState(GetRandomTrack(TrackRegistry.kickTracks, currentKickTracks, kickTrackCounter), "on");
+                break;
+            case OrblingPraesi.TrackType.Chord:
+                AkSoundEngine.SetState(currentChordTracks[chordTrackCounter], "off");
+                IncreaseTrackCounter(chordTrackCounter, currentChordTracks.Length);
+                string chordTrack = (GetRandomTrack(TrackRegistry.chordTracks, currentChordTracks, chordTrackCounter));
+                AkSoundEngine.SetState(chordTrack, "on");
+
+                //dynamic track conditions
+                if (chordTrack == "intro_chords02")
+                {
+                    AkSoundEngine.SetState("intro_lead01", "off");
+                }
+
+                break;
+            default:
+                break;
+        }
+
+        GameObject go = GameObject.Instantiate<GameObject>(o.particlePrefab, o.transform.position, o.transform.rotation);
+        Destroy(go, o.particleDestroyTime);
+        
+        Destroy(o.gameObject);
     }
 
     /// <summary>

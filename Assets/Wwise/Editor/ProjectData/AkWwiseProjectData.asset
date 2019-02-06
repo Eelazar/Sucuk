@@ -168,7 +168,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 87dd1b6c0986334194d4e602d0162b3c
-    m_lastTime: -8586521361885055822
+    m_lastTime: -8586521241857874697
     List:
     - name: HarpA
       guid: b57650bf820ef14da2215587aaa585ee
@@ -419,6 +419,18 @@ MonoBehaviour:
       - ElementName: PlayDynamic
         ObjectType: 3
       Path: Default Work Unit\PlayDynamic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Volume_low
+      guid: 1dc8b52ce14f0b43921b9a0546ec33b4
+      id: 3796106584
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Volume_low
+        ObjectType: 3
+      Path: Default Work Unit\Volume_low
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -2722,12 +2734,7 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Sucuk_WwiseProject
-  - /Sucuk_WwiseProject/Auxiliary Busses
-  - /Sucuk_WwiseProject/Auxiliary Busses/Default Work Unit
-  - /Sucuk_WwiseProject/Auxiliary Busses/Default Work Unit/Master Audio Bus
   - /Sucuk_WwiseProject/Events
   - /Sucuk_WwiseProject/Events/Default Work Unit
-  - /Sucuk_WwiseProject/SoundBanks
-  - /Sucuk_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

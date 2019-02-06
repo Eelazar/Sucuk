@@ -34,6 +34,7 @@ namespace AK
         static const AkUniqueID ORBLING_HIT = 935976382U;
         static const AkUniqueID PLAY = 1256202815U;
         static const AkUniqueID PLAYDYNAMIC = 2328709346U;
+        static const AkUniqueID VOLUME_LOW = 3796106584U;
     } // namespace EVENTS
 
     namespace STATES
