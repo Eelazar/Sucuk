@@ -347,6 +347,22 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Volume_low" ID="{2CB5C81D-4FE1-430B-921B-9A0546EC33B4}">
+					<ChildrenList>
+						<Action Name="" ID="{CBDB0137-11BF-4593-ADED-65BFE49C6D2C}" ShortID="955956153">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Intro" ID="{93AF0E45-DB0E-4D7F-9190-E9B6B259FE0A}" WorkUnitID="{22C8ACF3-30F8-48FA-9609-8E74E0F1CD53}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

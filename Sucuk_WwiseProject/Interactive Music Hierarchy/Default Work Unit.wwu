@@ -1346,6 +1346,7 @@
 								</MusicTrack>
 								<MusicTrack Name="I bass03" ID="{1A343059-0821-4C53-811C-BB1CB178D301}" ShortID="125871308">
 									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-96</Value>
@@ -1353,6 +1354,18 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{96860308-ECE3-43E1-A034-B03D181E444F}" ShortID="47409996" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Fband2" ID="{22963AC1-EB15-4186-9473-6813D8AB0BDB}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
@@ -1440,7 +1453,7 @@
 														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
 													</PropertyList>
 													<PluginData>
-	<GameParameter Name="Fband1" ID="{1BD6B2F4-D42B-4B19-A141-C79053C24FA8}"/>
+	<GameParameter Name="Mkick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}"/>
 </PluginData>
 												</Effect>
 											</Custom>
@@ -8348,6 +8361,18 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="band5" ID="{9EC936E9-BEFE-47FE-B9E5-F5DABEF34BE6}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="band6" ID="{81EE1E20-A4C1-41E8-B124-6540B6B6557D}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+						</Reference>
+						<Reference Name="UserAuxSend2">
+							<ObjectRef Name="band7" ID="{FEF9BD51-F56A-4E55-AE25-7BBE0AAE063C}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+						</Reference>
+						<Reference Name="UserAuxSend3">
+							<ObjectRef Name="band8" ID="{50E3C743-EDA2-455D-B724-8E491F5577CA}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<MusicSegment Name="Intro" ID="{93AF0E45-DB0E-4D7F-9190-E9B6B259FE0A}" ShortID="1070819670">
@@ -9691,6 +9716,7 @@
 								</MusicTrack>
 								<MusicTrack Name="I bass03" ID="{15EC23E7-95FE-4E93-B22C-26AA60CAE64E}" ShortID="745172846">
 									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-96</Value>
@@ -9698,6 +9724,18 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{8C2BBCDC-2F18-42EA-8816-F49B84A65640}" ShortID="491249775" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Fband2" ID="{22963AC1-EB15-4186-9473-6813D8AB0BDB}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
@@ -9776,7 +9814,7 @@
 														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
 													</PropertyList>
 													<PluginData>
-	<GameParameter Name="Fband1" ID="{1BD6B2F4-D42B-4B19-A141-C79053C24FA8}"/>
+	<GameParameter Name="Mkick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}"/>
 </PluginData>
 												</Effect>
 											</Custom>
