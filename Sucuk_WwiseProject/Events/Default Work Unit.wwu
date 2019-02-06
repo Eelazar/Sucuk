@@ -333,6 +333,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Menu" ID="{9E6DA58C-6298-42F5-9982-47420B4A4C27}">
+					<ChildrenList>
+						<Action Name="" ID="{F813B276-6BF1-414B-96C8-8052ABA04CAE}" ShortID="541783760">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu" ID="{F963BA28-B9AD-4385-8466-48E43C7CF34D}" WorkUnitID="{22C8ACF3-30F8-48FA-9609-8E74E0F1CD53}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

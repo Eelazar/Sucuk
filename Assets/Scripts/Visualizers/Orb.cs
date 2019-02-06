@@ -158,7 +158,11 @@ public class Orb : MonoBehaviour
                 AkSoundEngine.SetState(chordTrack, "on");
 
                 //dynamic track conditions
-     
+                if (chordTrack == "intro_chords02")
+                {
+                    AkSoundEngine.SetState("intro_lead01", "off");
+                }
+
                 break;
             default:
                 break;

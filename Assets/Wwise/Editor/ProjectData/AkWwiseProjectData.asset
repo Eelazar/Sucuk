@@ -21,7 +21,7 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6faef3859c315b48ac40ae404e146248
-    m_lastTime: -8586521502005406675
+    m_lastTime: -8586521394856729734
     List:
     - name: band1
       guid: 470fa168dc52584c8d2cec70a9b71e17
@@ -159,7 +159,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 87dd1b6c0986334194d4e602d0162b3c
-    m_lastTime: -8586522249984898948
+    m_lastTime: -8586521395608124203
     List:
     - name: HarpA
       guid: b57650bf820ef14da2215587aaa585ee
@@ -362,6 +362,18 @@ MonoBehaviour:
       - ElementName: HarpF_stop
         ObjectType: 3
       Path: Default Work Unit\HarpF_stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Menu
+      guid: 8ca56d9e9862f542998247420b4a4c27
+      id: 2607556080
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 3
+      Path: Default Work Unit\Menu
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

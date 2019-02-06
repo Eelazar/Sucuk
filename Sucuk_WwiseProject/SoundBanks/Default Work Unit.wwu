@@ -30,6 +30,14 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Menu" ID="{1B8C5649-CDB3-49ED-9219-73FFA2F455B6}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Default Work Unit" ID="{6C1BDD87-8609-4133-94D4-E602D0162B3C}" WorkUnitID="{6C1BDD87-8609-4133-94D4-E602D0162B3C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Menu" ID="{F963BA28-B9AD-4385-8466-48E43C7CF34D}" WorkUnitID="{22C8ACF3-30F8-48FA-9609-8E74E0F1CD53}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>
