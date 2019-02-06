@@ -917,6 +917,7 @@ namespace AK
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID DYNAMIC = 2223635772U;
         static const AkUniqueID HARP = 3599861402U;
+        static const AkUniqueID MENU = 2607556080U;
         static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BANKS
 

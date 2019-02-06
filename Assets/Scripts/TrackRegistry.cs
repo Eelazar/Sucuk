@@ -32,7 +32,7 @@ public static class TrackRegistry {
     public static List<string> bassTracksDrop1 = new List<string> { "d1_bass01", "d1_bass02", "d1_bass03", "d1_bass04"};
     public static List<string> leadTracksDrop1 = new List<string> { "d1_lead01", "d1_lead02", "d1_lead03", "d1_lead04" };
     public static List<string> kickTracksDrop = new List<string> { "d1_kick01", "d1_kick02"};
-    public static List<string> chordTracksDrop = new List<string> { "d1_chords01", "d2_chords02"};
+    public static List<string> chordTracksDrop = new List<string> { "d1_chords02", "d2_chords03"};
 
     public static List<string> percussionTracksDrop2 = new List<string> { "d2_perc01", "d2_perc02", "d2_perc03", "d2_perc04" };
     public static List<string> bassTracksDrop2 = new List<string> { "d2_bass01", "d2_bass02", "d2_bass03", "d2_bass04" };

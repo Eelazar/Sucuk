@@ -136,13 +136,13 @@ public class VisualizerMaster : MonoBehaviour
         }
 
         //Materials
-        if (rimPowerSwitch)
-        {            
-            for (int i = 0; i < holoMaterials.Length; i++)
-            {
-                holoMaterials[i].SetFloat("_RimPower", Mathf.SmoothDamp(holoMaterials[i].GetFloat("_RimPower"), 1.3F + (spectrum[8] * holoRimPowersM[i]), ref velocity, smoothRimPowersM[i]));
-            }
-        }
+        //if (rimPowerSwitch)
+        //{            
+        //    for (int i = 0; i < holoMaterials.Length; i++)
+        //    {
+        //        holoMaterials[i].SetFloat("_RimPower", Mathf.SmoothDamp(holoMaterials[i].GetFloat("_RimPower"), 1.3F + (spectrum[8] * holoRimPowersM[i]), ref velocity, smoothRimPowersM[i]));
+        //    }
+        //}
 
         //Lights
         if (spotAnglesSwitch)

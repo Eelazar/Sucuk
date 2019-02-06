@@ -64,7 +64,7 @@ public class GridVisualizer : MonoBehaviour {
 
     private void Update()
     {
-        spectrum = AudioSpectrumListener.frequencyBand;
+        spectrum = WwiseListener.spectrum;
     }
 
     void FixedUpdate ()
@@ -93,8 +93,8 @@ public class GridVisualizer : MonoBehaviour {
                     node.AddComponent<LineRenderer>();
                     node.GetComponent<LineRenderer>().positionCount = gridSize;
                     node.GetComponent<LineRenderer>().material = lineM;
-                    node.GetComponent<LineRenderer>().startWidth = 0.1F;
-                    node.GetComponent<LineRenderer>().endWidth = 0.1F;
+                    node.GetComponent<LineRenderer>().startWidth = 0.4F;
+                    node.GetComponent<LineRenderer>().endWidth = 0.4F;
 
                     //Assign the node to the correct LineRenderer-node-rray
                     if (i == 0) lrArrayI[j] = node.GetComponent<LineRenderer>();

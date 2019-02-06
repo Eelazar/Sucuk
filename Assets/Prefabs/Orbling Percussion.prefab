@@ -346,9 +346,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackType: 0
-  selfDestructTime: 10
+  selfDestructTime: 8
   particlePrefab: {fileID: 1385299691967554, guid: 98e2ca18790ae4f41b18f3b96c432c05,
     type: 2}
+  particleDestroyTime: 0
   upScaleDestroy: 6
   downScaleDestroy: 0
   upScaleDurationDestroy: 0.1

@@ -142,7 +142,7 @@ public class Orb : MonoBehaviour
                 if (leadTrack == "d1_lead01")
                 {
                     AkSoundEngine.SetState(currentBassTracks[bassTrackCounter], "off");
-                    AkSoundEngine.SetState("d1_bass", "on");
+                    AkSoundEngine.SetState("d1_bass01", "on");
                 }
 
                 break;

@@ -7361,7 +7361,22 @@
 							</ReferenceList>
 							<ChildrenList>
 								<MusicTrack Name="break 02" ID="{219ED693-A340-4F0E-B23F-8E59DCC75D61}" ShortID="715060736">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{DCD0747E-CA47-4C9E-9F2E-29BABDAD17B6}" ShortID="167869640" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Mkick" ID="{68512B4F-40CE-438E-B553-CD18883FDC1D}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
 										</Reference>
@@ -7948,9 +7963,6 @@
 					</TransitionList>
 					<Playlist>
 						<MusicPlaylistItem Name="" ID="{A90B4B0B-8252-4660-B5C5-3E86022B18D8}" ShortID="918944794">
-							<PropertyList>
-								<Property Name="LoopCount" Type="int16" Value="0"/>
-							</PropertyList>
 							<ChildrenList>
 								<MusicPlaylistItem Name="" ID="{9FC7E4D7-74F1-4590-99BF-FB29AE412255}" ShortID="46841547">
 									<PropertyList>
@@ -8506,6 +8518,146 @@
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
 													<AudioSourceRef Name="I noise02" ID="{602F19AB-B185-4298-91EC-83744A9EF210}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="I bass01" ID="{A5F7C9E0-3CEE-48D3-A2BE-1A46C8FED251}" ShortID="480701105">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{F5460D4B-061B-44A9-90B3-9B7F58F156A0}" ShortID="282107804" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Fband2" ID="{22963AC1-EB15-4186-9473-6813D8AB0BDB}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise Gain (Custom)" ID="{65F6BE4C-6160-4EE9-818B-25ABFB9CB151}" ShortID="827431418" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+													<PropertyList>
+														<Property Name="FullBandGain" Type="Real32" Value="-96.3"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="band1" ID="{68A10F47-52DC-4C58-8D2C-EC70A9B71E17}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+										</Reference>
+										<Reference Name="UserAuxSend1">
+											<ObjectRef Name="band2" ID="{A49E38EE-18F0-4F59-B706-BE3804CA83EF}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+										</Reference>
+										<Reference Name="UserAuxSend2">
+											<ObjectRef Name="band3" ID="{B1449AFB-E58E-4CFC-995F-E861983F737B}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+										</Reference>
+										<Reference Name="UserAuxSend3">
+											<ObjectRef Name="band4" ID="{E7A26125-4437-40B9-BBA0-8A5FA877B3B2}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="I bass01" ID="{347406B3-4A00-41A6-AE37-60F550EC2E0A}" ShortID="889317959">
+											<Language>SFX</Language>
+											<AudioFile>I bass01.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="597074928"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{1752E397-D8C0-4752-8466-85D8FF681DF9}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{91F06BFB-CE0D-4836-935C-DC702517C4F8}">
+											<ClipList>
+												<MusicClip Name="I bass01" ID="{511CCD26-F5BF-4932-B24B-4366DE353E8C}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="15000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="I bass01" ID="{347406B3-4A00-41A6-AE37-60F550EC2E0A}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="I lead_04" ID="{C8A59974-656D-4FF3-9364-4C8BF727BE99}" ShortID="931934770">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{B7EADED5-1D6C-4FEE-81CB-F93CF0783C07}" ShortID="755768264" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">													<PluginData>
+	<GameParameter Name="Fband4" ID="{84994725-6A9D-4830-8666-01C0A5C8F22E}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{CCA8C553-DCD9-4AE9-BAC6-3E78F40804A1}" ShortID="564157010" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">													<PluginData>
+	<GameParameter Name="Fband3" ID="{05AF15D5-8514-4DA6-8B9D-67CA4FBA1F1B}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect2">
+											<Custom>
+												<Effect Name="Wwise Gain (Custom)" ID="{D1A75F96-314F-49C7-BB42-6165EF3D6FCE}" ShortID="13070734" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+													<PropertyList>
+														<Property Name="FullBandGain" Type="Real32" Value="-96.3"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{85F3AE6F-319C-485B-AC40-AE404E146248}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="I lead_mid05" ID="{D3B13ECD-7AE2-4524-BF6F-D09C921D781A}" ShortID="884222909">
+											<Language>SFX</Language>
+											<AudioFile>I lead_mid05.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="20686635"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{39423CDA-8C48-43F1-B4F8-4FF7FF27F61D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{793A94B6-7DAB-4468-A788-28D74E68CF6E}">
+											<ClipList>
+												<MusicClip Name="I lead_mid05" ID="{B1ABB3A5-7814-4D69-867B-CDF521C4A0B2}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="15000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="I lead_mid05" ID="{D3B13ECD-7AE2-4524-BF6F-D09C921D781A}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>

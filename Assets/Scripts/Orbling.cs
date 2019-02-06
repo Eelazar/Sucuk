@@ -128,6 +128,7 @@ public class Orbling : MonoBehaviour {
         }
 
         RemoveListener();
+        
         Destroy(gameObject);
     }
 
