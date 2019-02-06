@@ -9,8 +9,6 @@ public class OrblingSpawner : MonoBehaviour {
     [SerializeField]
     private GameObject orblingPrefab;
     [SerializeField]
-    private float originalSpawnTime;
-    [SerializeField]
     private float respawnTime;
     [SerializeField]
     private float minDestroyDelay;

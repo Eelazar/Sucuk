@@ -1,0 +1,239 @@
+fileFormatVersion: 2
+guid: 72953cafd41ec0f499e5f5d5568f59b7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: backwall_center
+    100002: backwall_extend
+    100004: blocks celing
+    100006: Cube.000
+    100008: Cube.001
+    100010: Cube.002
+    100012: Cube.003
+    100014: Cube.004
+    100016: Cube.010
+    100018: Cube.011
+    100020: Cube.014
+    100022: floor_center.low
+    100024: floor_center.low.002
+    100026: floor_center.low.004
+    100028: floor_center:low:003_Cube:003
+    100030: floor_Cube:020
+    100032: lines celing
+    100034: //RootNode
+    100036: pillars_left.001
+    100038: pillars_left.002
+    100040: pillars_left.003
+    100042: pillars_left.004
+    100044: pillars_left.007
+    100046: Plane
+    100048: Plane.000
+    100050: Plane.001
+    100052: Plane.005
+    100054: Plane.006
+    100056: visualizer
+    400000: backwall_center
+    400002: backwall_extend
+    400004: blocks celing
+    400006: Cube.000
+    400008: Cube.001
+    400010: Cube.002
+    400012: Cube.003
+    400014: Cube.004
+    400016: Cube.010
+    400018: Cube.011
+    400020: Cube.014
+    400022: floor_center.low
+    400024: floor_center.low.002
+    400026: floor_center.low.004
+    400028: floor_center:low:003_Cube:003
+    400030: floor_Cube:020
+    400032: lines celing
+    400034: //RootNode
+    400036: pillars_left.001
+    400038: pillars_left.002
+    400040: pillars_left.003
+    400042: pillars_left.004
+    400044: pillars_left.007
+    400046: Plane
+    400048: Plane.000
+    400050: Plane.001
+    400052: Plane.005
+    400054: Plane.006
+    400056: visualizer
+    2100000: None.002
+    2100002: None.001
+    2100004: No Name
+    2100006: Material.001
+    2100008: None
+    2100010: Material.006
+    2100012: Material.002
+    2100014: Material.005
+    2100016: Material.007
+    2100018: Material.010
+    2300000: backwall_center
+    2300002: backwall_extend
+    2300004: blocks celing
+    2300006: Cube.000
+    2300008: Cube.001
+    2300010: Cube.002
+    2300012: Cube.003
+    2300014: Cube.004
+    2300016: Cube.010
+    2300018: Cube.011
+    2300020: Cube.014
+    2300022: floor_center.low
+    2300024: floor_center.low.002
+    2300026: floor_center.low.004
+    2300028: floor_center:low:003_Cube:003
+    2300030: floor_Cube:020
+    2300032: lines celing
+    2300034: pillars_left.001
+    2300036: pillars_left.002
+    2300038: pillars_left.003
+    2300040: pillars_left.004
+    2300042: pillars_left.007
+    2300044: Plane
+    2300046: Plane.000
+    2300048: Plane.001
+    2300050: Plane.005
+    2300052: Plane.006
+    2300054: visualizer
+    3300000: backwall_center
+    3300002: backwall_extend
+    3300004: blocks celing
+    3300006: Cube.000
+    3300008: Cube.001
+    3300010: Cube.002
+    3300012: Cube.003
+    3300014: Cube.004
+    3300016: Cube.010
+    3300018: Cube.011
+    3300020: Cube.014
+    3300022: floor_center.low
+    3300024: floor_center.low.002
+    3300026: floor_center.low.004
+    3300028: floor_center:low:003_Cube:003
+    3300030: floor_Cube:020
+    3300032: lines celing
+    3300034: pillars_left.001
+    3300036: pillars_left.002
+    3300038: pillars_left.003
+    3300040: pillars_left.004
+    3300042: pillars_left.007
+    3300044: Plane
+    3300046: Plane.000
+    3300048: Plane.001
+    3300050: Plane.005
+    3300052: Plane.006
+    3300054: visualizer
+    4300000: floor_Cube:020
+    4300002: floor_center:low:003_Cube:003
+    4300004: floor_center.low.004
+    4300006: floor_center.low.002
+    4300008: lines celing
+    4300010: Cube.001
+    4300012: blocks celing
+    4300014: Plane
+    4300016: backwall_extend
+    4300018: backwall_center
+    4300020: visualizer
+    4300022: Cube.003
+    4300024: Plane.001
+    4300026: Cube.004
+    4300028: pillars_left.001
+    4300030: pillars_left.002
+    4300032: floor_center.low
+    4300034: Plane.000
+    4300036: pillars_left.004
+    4300038: Cube.002
+    4300040: Cube.010
+    4300042: Plane.005
+    4300044: Cube.014
+    4300046: Plane.006
+    4300048: Cube.011
+    4300050: Cube.000
+    4300052: pillars_left.003
+    4300054: pillars_left.007
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
