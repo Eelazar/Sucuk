@@ -29,6 +29,8 @@ public class LerpPP : MonoBehaviour {
 
     void Start () 
 	{
+        startTime = Time.time;
+
         //Kind bad way to set the lerpProfile to the startProfile
         StartCoroutine(LerpToProfile(startProfile, 0.01F));
     }

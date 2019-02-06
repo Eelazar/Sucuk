@@ -16,6 +16,8 @@ public class Orbling : MonoBehaviour {
     private float selfDestructTime;
     [SerializeField]
     public GameObject particlePrefab;
+    [SerializeField]
+    public float particleDestroyTime;
 
     [Header("Destroy Animation")]
     [SerializeField]
@@ -85,7 +87,7 @@ public class Orbling : MonoBehaviour {
 
     private void OnTriggerPressedOrReleased(SteamVR_Action_In action_In)
     {
-        if (transform != null)
+        if (transform != null && activated == false)
         {
             if (transform.GetComponent<Interactable>().wasHovering)
             {

@@ -21,13 +21,15 @@ public class OrblingSpawner : MonoBehaviour {
     private GameObject orblingChild;
     private bool occupied;
     private float spawnTimestamp;
+    private float startTime;
 
 
     private enum OrblingType { Percussion, Bass, Lead, Kick, Chord }
 
     void Start () 
 	{
-        spawnTimestamp = Time.time + originalSpawnTime;
+        startTime = Time.time;
+        spawnTimestamp = startTime + TrackRegistry.spawnTimestamps[0];
 	}
 	
 	void Update () 
@@ -104,7 +106,7 @@ public class OrblingSpawner : MonoBehaviour {
             Destroy(orblingChild, Random.Range(minDestroyDelay, maxDestroyDelay));            
         }
 
-        spawnTimestamp = Time.time + TrackRegistry.spawnTimestamps[index + 1];
+        spawnTimestamp = startTime + TrackRegistry.spawnTimestamps[index + 1];
         occupied = false;
     }
 

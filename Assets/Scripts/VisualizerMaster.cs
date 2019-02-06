@@ -88,6 +88,8 @@ public class VisualizerMaster : MonoBehaviour
 
         bloomSettings = profile.bloom.settings;
 
+        rimPowerCounters = new int[holoMaterials.Length];
+
         spotAnglesCounters = new int[lights.Length];
         intensityCounters = new int[lights.Length];
     }

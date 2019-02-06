@@ -164,7 +164,8 @@ public class Orb : MonoBehaviour
                 break;
         }
 
-        GameObject.Instantiate<GameObject>(o.particlePrefab, o.transform.position, o.transform.rotation);
+        GameObject go = GameObject.Instantiate<GameObject>(o.particlePrefab, o.transform.position, o.transform.rotation);
+        Destroy(go, o.particleDestroyTime);
 
         o.RemoveListener();
         Destroy(o.gameObject);

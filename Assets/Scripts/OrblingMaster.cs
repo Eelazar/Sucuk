@@ -11,17 +11,19 @@ public class OrblingMaster : MonoBehaviour {
 
     private OrblingSpawner[] spawners;
     private int breakdownCounter;
+    private float startTime;
 
-	void Start () 
+    void Start () 
 	{
         spawners = GetComponentsInChildren<OrblingSpawner>();
+        startTime = Time.time;
 	}
 	
 	void LateUpdate () 
 	{
         if (breakdownCounter < TrackRegistry.destructionTimestamps.Length)
         {
-            if (Time.timeSinceLevelLoad >= TrackRegistry.destructionTimestamps[breakdownCounter])
+            if (Time.time - startTime >= TrackRegistry.destructionTimestamps[breakdownCounter])
             {
                 foreach (OrblingSpawner spawner in spawners)
                 {
