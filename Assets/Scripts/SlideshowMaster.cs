@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PostProcessing;
 
 public class SlideshowMaster : MonoBehaviour {
 
@@ -9,12 +10,14 @@ public class SlideshowMaster : MonoBehaviour {
     [SerializeField]
     private Transform[] cameraPositions;
     [SerializeField]
-    private float cameraDistance;
-    [SerializeField]
     private float cameraMoveDuration;
     [SerializeField]
     private GameObject cam;
-
+    [SerializeField]
+    private GameObject[] activatorScripts;
+    [SerializeField]
+    private PostProcessingProfile[] lerpProfiles;
+    
     
     private int stepCounter;
 
@@ -46,8 +49,8 @@ public class SlideshowMaster : MonoBehaviour {
 
     private void PreviousStep()
     {
-        stepCounter--;
-        ShowStep(stepCounter);
+        stepCounter --;
+        ShowStep(stepCounter - 1);
     }
 
     private void ShowStep(int step)
@@ -55,16 +58,16 @@ public class SlideshowMaster : MonoBehaviour {
         switch (step)
         {
             case 0:
-                DisplaySlide(0, 0);
+                LerpSlide(0, 0);
                 break;
             case 1:
-                DisplaySlide(1, 1);
+                LerpSlide(1, 1);
                 break;
             case 2:
-                DisplaySlide(2, 2);
+                LerpSlide(2, 2);
                 break;
             case 3:
-                
+                LerpSlide(3, 3);
                 break;
             case 4:
 
@@ -123,15 +126,37 @@ public class SlideshowMaster : MonoBehaviour {
         }
     }
 
-    private void DisplaySlide(int slideIndex, int cameraIndex)
+    private void LerpSlide(int slideIndex, int cameraIndex)
     {
         slides[slideIndex].SetActive(true);
 
         StartCoroutine(LerpCamera(cameraPositions[cameraIndex]));
 
-        foreach(GameObject slide in slides)
+        StartCoroutine(DeactivateSlides(slides[slideIndex]));
+    }
+
+    private void TPSlide(int slideIndex, int cameraIndex)
+    {
+        foreach (GameObject slide in slides)
         {
             slide.SetActive(false);
+        }
+
+        slides[slideIndex].SetActive(true);
+
+        SetCamera(cameraPositions[cameraIndex]);
+    }
+
+    private IEnumerator DeactivateSlides(GameObject exception)
+    {
+        yield return new WaitForSeconds(cameraMoveDuration);
+
+        foreach (GameObject slide in slides)
+        {
+            if(slide != exception)
+            {
+                slide.SetActive(false);
+            }
         }
     }
 
@@ -154,5 +179,11 @@ public class SlideshowMaster : MonoBehaviour {
 
             yield return null;
         }
+    }
+
+    private void SetCamera(Transform target)
+    {
+        cam.transform.position = target.position;
+        cam.transform.rotation = target.rotation;
     }
 }
