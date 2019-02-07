@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
@@ -28,15 +29,20 @@ public class LerpPP : MonoBehaviour {
 
     //private float startTime;
     private Stopwatch timer = new Stopwatch();
-    
 
-    void Start () 
-	{
+
+    private void Awake()
+    {
         timer.Start();
         //startTime = Time.time;
 
         //Kind bad way to set the lerpProfile to the startProfile
         StartCoroutine(LerpToProfile(startProfile, 0.0F));
+    }
+
+    void Start () 
+	{
+        
     }
 	
 	void Update () 
@@ -47,8 +53,9 @@ public class LerpPP : MonoBehaviour {
 
         //    counter++;
         //}    
+        TimeSpan diff = DateTime.Now - TimeMaster.startTime;
 
-        if (counter < timestamps.Length && timer.ElapsedMilliseconds >= (long)(timestamps[counter] * 1000))
+        if (counter < timestamps.Length && diff.TotalSeconds >= timestamps[counter])
         {
             StartCoroutine(LerpToProfile(profiles[counter], lerpDurations[counter]));
 
