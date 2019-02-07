@@ -5,15 +5,15 @@ using UnityEngine;
 
 public class TimeMaster : MonoBehaviour {
 
-    public static DateTime startTime;
+    public DateTime startTime;
 
     void Awake()
     {
-        startTime = DateTime.Now;        
     }
 
     void Start () 
 	{
+        startTime = DateTime.Now;        
 		
 	}
 	

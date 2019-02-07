@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class ObjectActivator : MonoBehaviour {
@@ -8,20 +10,29 @@ public class ObjectActivator : MonoBehaviour {
     private GameObject targetObject;
     [SerializeField]
     private float[] timestamps;
+    [SerializeField]
+    private GameObject timeMaster;
 
     private int counter;
     private bool activated;
     private bool activatedTrigger;
     private float startTime;
 
-	void Start () 
+    private Stopwatch timer = new Stopwatch();
+
+    void Start () 
 	{
+        timer.Start();
+
         startTime = Time.time;
 	}
 	
 	void Update () 
 	{
-        if (counter < timestamps.Length && Time.time >= startTime + timestamps[counter])
+
+        TimeSpan diff = DateTime.Now - timeMaster.GetComponent<TimeMaster>().startTime;
+
+        if (counter < timestamps.Length && diff.TotalSeconds >= timestamps[counter])
         {
             activated = !activated;
             activatedTrigger = true;

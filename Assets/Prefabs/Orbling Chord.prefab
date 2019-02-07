@@ -358,7 +358,7 @@ MonoBehaviour:
   downScaleSpawn: 4.5
   upScaleDurationSpawn: 0.1
   downScaleDurationSpawn: 0.1
-  grabPinch: {fileID: 0}
+  grabPinch: {fileID: 11400000, guid: 5026a70b18236ad49a6a207202e98188, type: 2}
   inputSource: 0
   owner: {fileID: 0}
   activated: 0

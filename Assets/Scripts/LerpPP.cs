@@ -23,26 +23,32 @@ public class LerpPP : MonoBehaviour {
     [Tooltip("The durations of the lerp, corresponding to the timestamps")]
     [SerializeField]
     private float[] lerpDurations;
+    [SerializeField]
+    private GameObject timeMaster;
     
 
     private int counter;
 
     //private float startTime;
-    private Stopwatch timer = new Stopwatch();
+   // private Stopwatch timer = new Stopwatch();
 
 
-    private void Awake()
-    {
-        timer.Start();
+    //private void Awake()
+    //{
+    //    timer.Start();
+    //    //startTime = Time.time;
+
+    //    //Kind bad way to set the lerpProfile to the startProfile
+    //    StartCoroutine(LerpToProfile(startProfile, 0.1F));
+    //}
+
+    void Start () 
+	{
+        //timer.Start();
         //startTime = Time.time;
 
         //Kind bad way to set the lerpProfile to the startProfile
         StartCoroutine(LerpToProfile(startProfile, 0.1F));
-    }
-
-    void Start () 
-	{
-        
     }
 	
 	void Update () 
@@ -53,7 +59,7 @@ public class LerpPP : MonoBehaviour {
 
         //    counter++;
         //}    
-        TimeSpan diff = DateTime.Now - TimeMaster.startTime;
+        TimeSpan diff = DateTime.Now - timeMaster.GetComponent<TimeMaster>().startTime;
 
         if (counter < timestamps.Length && diff.TotalSeconds >= timestamps[counter])
         {

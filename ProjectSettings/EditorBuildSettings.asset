@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: "Assets/Scenes/Pr\xE4si Scene.unity"
     guid: f43f3238b95b8eb4eb29fc0f574b4201
+  - enabled: 0
+    path: Assets/Scenes/MainMenu.unity
+    guid: 721a3bb3163b86c478465d7f0e6de071
   - enabled: 1
     path: Assets/Scenes/Main_new.unity
     guid: c69e118546ecc8441a67ecd22a20a807
