@@ -37,7 +37,7 @@ public class LerpPP : MonoBehaviour {
         //startTime = Time.time;
 
         //Kind bad way to set the lerpProfile to the startProfile
-        StartCoroutine(LerpToProfile(startProfile, 0.0F));
+        StartCoroutine(LerpToProfile(startProfile, 0.1F));
     }
 
     void Start () 
@@ -75,7 +75,7 @@ public class LerpPP : MonoBehaviour {
         //In the following method "C" stands for "current" and "N" stands for "Next", as in "current profile" and "next profile"
 
         float t = 0.0F;
-        float lerpStart = Time.realtimeSinceStartup;
+        float lerpStart = Time.time;
 
         #region Data
         /////////

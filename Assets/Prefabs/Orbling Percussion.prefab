@@ -349,7 +349,7 @@ MonoBehaviour:
   selfDestructTime: 8
   particlePrefab: {fileID: 1385299691967554, guid: 98e2ca18790ae4f41b18f3b96c432c05,
     type: 2}
-  particleDestroyTime: 0
+  particleDestroyTime: 3
   upScaleDestroy: 6
   downScaleDestroy: 0
   upScaleDurationDestroy: 0.1
@@ -358,7 +358,7 @@ MonoBehaviour:
   downScaleSpawn: 4.5
   upScaleDurationSpawn: 0.1
   downScaleDurationSpawn: 0.1
-  grabPinch: {fileID: 11400000, guid: 6370e47688686a24a87859b539cf13ef, type: 2}
+  grabPinch: {fileID: 0}
   inputSource: 0
   owner: {fileID: 0}
   activated: 0
