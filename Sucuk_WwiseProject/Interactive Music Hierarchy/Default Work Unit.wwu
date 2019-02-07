@@ -3924,7 +3924,7 @@
 										</MusicTrackSequence>
 									</SequenceList>
 								</MusicTrack>
-								<MusicTrack Name="D lead_02" ID="{6C95B72D-AB81-4F41-8A23-629100018BD7}" ShortID="1027714520">
+								<MusicTrack Name="D lead02" ID="{6C95B72D-AB81-4F41-8A23-629100018BD7}" ShortID="1027714520">
 									<PropertyList>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
@@ -5354,11 +5354,7 @@
 											</CustomState>
 											<CustomState>
 												<StateRef Name="on" ID="{A7B1AFD4-DCAB-4E94-A444-A461CB123EE4}"/>
-												<State Name="" ID="{5889E50D-03CD-4A05-A4EA-67EC23753A6F}" ShortID="809933880">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="98"/>
-													</PropertyList>
-												</State>
+												<State Name="" ID="{5889E50D-03CD-4A05-A4EA-67EC23753A6F}" ShortID="809933880"/>
 											</CustomState>
 										</CustomStateList>
 									</StateInfo>
@@ -6822,7 +6818,7 @@
 												<StateRef Name="on" ID="{15B44A32-F63A-4970-BF7F-FB89B914590C}"/>
 												<State Name="" ID="{05526666-74AA-460B-B877-E00180D3A809}" ShortID="590706497">
 													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="96"/>
+														<Property Name="Volume" Type="Real64" Value="104"/>
 													</PropertyList>
 												</State>
 											</CustomState>
@@ -7360,7 +7356,7 @@
 								<Property Name="EndPosition" Type="Real64" Value="31875"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>2</Value>
+										<Value>-2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

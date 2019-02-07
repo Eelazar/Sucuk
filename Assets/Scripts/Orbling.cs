@@ -81,7 +81,9 @@ public class Orbling : MonoBehaviour {
     {
         if (activated == true && Time.time >= destroyTimestamp)
         {
-            DeleteOrbling();
+            //DeleteOrbling();
+            RemoveListener();
+            Destroy(gameObject);
         }
     }
 

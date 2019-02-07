@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/Pr\xE4si Scene.unity"
     guid: f43f3238b95b8eb4eb29fc0f574b4201
+  - enabled: 1
+    path: Assets/Scenes/Main_new.unity
+    guid: c69e118546ecc8441a67ecd22a20a807
   m_configObjects: {}

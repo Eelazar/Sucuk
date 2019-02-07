@@ -15,7 +15,7 @@
 					<TransitionList>
 						<Transition>
 							<StartState Name="off" ID="{7DCF7CD6-7F14-41F3-9703-0B80080F93CC}"/>
-							<EndState Name="None" ID="{5ADEB182-4476-4430-8D7D-B0FB59BB6808}"/>
+							<EndState Name="on" ID="{CDE1D24A-B96D-407E-8406-F00C76216FB7}"/>
 							<Time>0.1</Time>
 							<IsShared>true</IsShared>
 						</Transition>
@@ -178,7 +178,7 @@
 						<Transition>
 							<StartState Name="off" ID="{A35C8373-DDB9-469B-90B5-2E39B269C1ED}"/>
 							<EndState Name="on" ID="{4CC00490-FC15-446A-9321-DB57AA4BED5B}"/>
-							<Time>1</Time>
+							<Time>0.1</Time>
 							<IsShared>true</IsShared>
 						</Transition>
 					</TransitionList>
@@ -196,7 +196,7 @@
 						<Transition>
 							<StartState Name="off" ID="{A9AA8FF9-8D7B-412C-B7BD-FB131E7CB877}"/>
 							<EndState Name="on" ID="{F8FF0754-3B01-405C-847A-CB9E1AB1A63D}"/>
-							<Time>1</Time>
+							<Time>0.1</Time>
 							<IsShared>true</IsShared>
 						</Transition>
 					</TransitionList>
@@ -250,7 +250,7 @@
 						<Transition>
 							<StartState Name="off" ID="{D0FFC397-0BC0-46CD-BF0A-2F1223175548}"/>
 							<EndState Name="on" ID="{9E6A03CD-5F7D-4DD5-84AF-70BF290B6443}"/>
-							<Time>1</Time>
+							<Time>0.1</Time>
 							<IsShared>true</IsShared>
 						</Transition>
 					</TransitionList>
@@ -304,7 +304,7 @@
 						<Transition>
 							<StartState Name="off" ID="{0217B23C-954D-470D-8569-B9ED17B0C9AC}"/>
 							<EndState Name="on" ID="{CDA288A1-A23C-4517-AA2B-892DC40D5E41}"/>
-							<Time>1</Time>
+							<Time>0.1</Time>
 							<IsShared>true</IsShared>
 						</Transition>
 					</TransitionList>
@@ -322,7 +322,7 @@
 						<Transition>
 							<StartState Name="off" ID="{EEA15160-0C5B-4BE4-AF61-1ECB0BA232A2}"/>
 							<EndState Name="on" ID="{C2AE8A61-3F3A-4177-B47D-33BFB5AD76D0}"/>
-							<Time>1</Time>
+							<Time>0.1</Time>
 							<IsShared>true</IsShared>
 						</Transition>
 					</TransitionList>
@@ -340,7 +340,7 @@
 						<Transition>
 							<StartState Name="off" ID="{E9F12786-07D7-4F5C-BBF8-C0800E683C84}"/>
 							<EndState Name="on" ID="{DB1D8116-BE7C-4BDE-9D6A-7E500E67459F}"/>
-							<Time>0.2</Time>
+							<Time>0.1</Time>
 							<IsShared>true</IsShared>
 						</Transition>
 					</TransitionList>
@@ -358,7 +358,7 @@
 						<Transition>
 							<StartState Name="off" ID="{771A70D3-EF53-4724-8D4D-24087DBAE990}"/>
 							<EndState Name="on" ID="{0A846942-0593-4EAA-8D41-C58594C19633}"/>
-							<Time>0.2</Time>
+							<Time>0.1</Time>
 							<IsShared>true</IsShared>
 						</Transition>
 					</TransitionList>
@@ -376,7 +376,7 @@
 						<Transition>
 							<StartState Name="off" ID="{9C52FAA5-0CC8-4EC9-8423-90C34743F063}"/>
 							<EndState Name="on" ID="{A1F2922B-11F8-42AA-A88E-A5C05F7500B6}"/>
-							<Time>0.1</Time>
+							<Time>0</Time>
 							<IsShared>true</IsShared>
 						</Transition>
 					</TransitionList>
@@ -1042,7 +1042,7 @@
 						<Transition>
 							<StartState Name="off" ID="{AA2346D5-79B4-4FF8-ADDC-12229DBF07B6}"/>
 							<EndState Name="on" ID="{43A9E356-204E-481A-8CEE-F0F3C365A9BA}"/>
-							<Time>1</Time>
+							<Time>0.1</Time>
 							<IsShared>true</IsShared>
 						</Transition>
 					</TransitionList>
@@ -1060,7 +1060,7 @@
 						<Transition>
 							<StartState Name="off" ID="{B53F7147-3FA0-4A83-9BD9-E6CE2F315B95}"/>
 							<EndState Name="on" ID="{BF723277-D8A9-4F77-806F-AB9C2AD5B0DA}"/>
-							<Time>1</Time>
+							<Time>0.1</Time>
 							<IsShared>true</IsShared>
 						</Transition>
 					</TransitionList>
@@ -1096,7 +1096,7 @@
 						<Transition>
 							<StartState Name="off" ID="{DD607C4D-B8FF-4972-8BBD-16DBBDECB0E7}"/>
 							<EndState Name="on" ID="{9E77E2FE-6FF2-4066-AB4B-73A291AF352A}"/>
-							<Time>1</Time>
+							<Time>0.1</Time>
 							<IsShared>true</IsShared>
 						</Transition>
 					</TransitionList>
@@ -1114,7 +1114,7 @@
 						<Transition>
 							<StartState Name="off" ID="{4F624AE4-19CC-45CF-99C4-E16B6029E9F9}"/>
 							<EndState Name="on" ID="{755F796C-0632-4BAD-B7DB-143CDA1AAAF7}"/>
-							<Time>1</Time>
+							<Time>0.1</Time>
 							<IsShared>true</IsShared>
 						</Transition>
 					</TransitionList>
@@ -1380,6 +1380,14 @@
 						<State Name="on" ID="{F25E4450-55EE-40FA-994A-C25F0D9A95B9}"/>
 						<State Name="off" ID="{9401FC64-6730-4449-9797-AE42DB7A4939}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{9401FC64-6730-4449-9797-AE42DB7A4939}"/>
+							<EndState Name="on" ID="{F25E4450-55EE-40FA-994A-C25F0D9A95B9}"/>
+							<Time>0.1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 				<StateGroup Name="d2_chords06" ID="{5D429498-7F60-404D-9BAB-7A8E6E77598F}">
 					<PropertyList>
@@ -1390,6 +1398,14 @@
 						<State Name="on" ID="{0F86770F-6175-4BDC-8C93-89F40342B7A0}"/>
 						<State Name="off" ID="{2EA02F06-01DA-4EC1-8812-D4DBDF10CCC2}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="off" ID="{2EA02F06-01DA-4EC1-8812-D4DBDF10CCC2}"/>
+							<EndState Name="on" ID="{0F86770F-6175-4BDC-8C93-89F40342B7A0}"/>
+							<Time>0.1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>

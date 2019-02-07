@@ -16,14 +16,14 @@ public class OrblingMaster : MonoBehaviour {
     void Start () 
 	{
         spawners = GetComponentsInChildren<OrblingSpawner>();
-        startTime = Time.time;
+        startTime = Time.realtimeSinceStartup;
 	}
 	
 	void LateUpdate () 
 	{
         if (breakdownCounter < TrackRegistry.destructionTimestamps.Length)
         {
-            if (Time.time - startTime >= TrackRegistry.destructionTimestamps[breakdownCounter])
+            if (Time.realtimeSinceStartup - startTime >= TrackRegistry.destructionTimestamps[breakdownCounter])
             {
                 foreach (OrblingSpawner spawner in spawners)
                 {
@@ -43,35 +43,45 @@ public class OrblingMaster : MonoBehaviour {
         {
             if(go != null)
             {
-                go.GetComponent<Orbling>().DeleteOrbling();
+                //go.GetComponent<Orbling>().DeleteOrbling();
+                go.GetComponent<Orbling>().RemoveListener();
+                Destroy(go); 
             }            
         }
         foreach (GameObject go in TrackRegistry.bassOrblings)
         {
             if (go != null)
             {
-                go.GetComponent<Orbling>().DeleteOrbling();
+                //go.GetComponent<Orbling>().DeleteOrbling();
+                go.GetComponent<Orbling>().RemoveListener();
+                Destroy(go);
             }
         }
         foreach (GameObject go in TrackRegistry.leadOrblings)
         {
             if (go != null)
             {
-                go.GetComponent<Orbling>().DeleteOrbling();
+                //go.GetComponent<Orbling>().DeleteOrbling();
+                go.GetComponent<Orbling>().RemoveListener();
+                Destroy(go);
             }
         }
         foreach (GameObject go in TrackRegistry.kickOrblings)
         {
             if (go != null)
             {
-                go.GetComponent<Orbling>().DeleteOrbling();
+                //go.GetComponent<Orbling>().DeleteOrbling();
+                go.GetComponent<Orbling>().RemoveListener();
+                Destroy(go);
             }
         }
         foreach (GameObject go in TrackRegistry.chordOrblings)
         {
             if (go != null)
             {
-                go.GetComponent<Orbling>().DeleteOrbling();
+                //go.GetComponent<Orbling>().DeleteOrbling();
+                go.GetComponent<Orbling>().RemoveListener();
+                Destroy(go);
             }
         }
 

@@ -26,7 +26,7 @@ public class OrblingSpawner : MonoBehaviour {
 
     void Start () 
 	{
-        startTime = Time.time;
+        startTime = Time.realtimeSinceStartup;
         spawnTimestamp = startTime + TrackRegistry.spawnTimestamps[0];
 	}
 	
@@ -42,7 +42,7 @@ public class OrblingSpawner : MonoBehaviour {
             if (orblingChild.GetComponent<Orbling>().activated == true)
             {
                 occupied = false;
-                spawnTimestamp = Time.time + respawnTime;
+                spawnTimestamp = Time.realtimeSinceStartup + respawnTime;
             }
         }
 	}

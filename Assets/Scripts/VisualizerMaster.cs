@@ -84,7 +84,7 @@ public class VisualizerMaster : MonoBehaviour
 
     void Start()
     {
-        startTime = Time.time;
+        startTime = Time.realtimeSinceStartup;
 
         bloomSettings = profile.bloom.settings;
 
@@ -99,7 +99,7 @@ public class VisualizerMaster : MonoBehaviour
         spectrum = WwiseListener.spectrum;
 
         //Post-processing
-        if (bloomCounter < bloomTimestamps.Length && Time.time >= startTime + bloomTimestamps[bloomCounter])
+        if (bloomCounter < bloomTimestamps.Length && Time.realtimeSinceStartup >= startTime + bloomTimestamps[bloomCounter])
         {
             bloomSwitch = !bloomSwitch;
             bloomCounter++;
@@ -107,7 +107,7 @@ public class VisualizerMaster : MonoBehaviour
         //Materials
         for (int i = 0; i < holoMaterials.Length; i++)
         {
-            if (rimPowerCounters[i] < rimPowerTimestamps[i].nested.Length && Time.time >= startTime + rimPowerTimestamps[i].nested[rimPowerCounters[i]])
+            if (rimPowerCounters[i] < rimPowerTimestamps[i].nested.Length && Time.realtimeSinceStartup >= startTime + rimPowerTimestamps[i].nested[rimPowerCounters[i]])
             {
                 rimPowerSwitch = !rimPowerSwitch;
                 rimPowerCounters[i]++;
@@ -116,12 +116,12 @@ public class VisualizerMaster : MonoBehaviour
         //Lights
         for (int i = 0; i < lights.Length; i++)
         {
-            if (spotAnglesCounters[i] < spotAnglesTimestamps[i].nested.Length && Time.time >= startTime + spotAnglesTimestamps[i].nested[spotAnglesCounters[i]])
+            if (spotAnglesCounters[i] < spotAnglesTimestamps[i].nested.Length && Time.realtimeSinceStartup >= startTime + spotAnglesTimestamps[i].nested[spotAnglesCounters[i]])
             {
                 spotAnglesSwitch = !spotAnglesSwitch;
                 spotAnglesCounters[i]++;
             }
-            if (intensityCounters[i] < intensityTimestamps[i].nested.Length && Time.time >= startTime + intensityTimestamps[i].nested[intensityCounters[i]])
+            if (intensityCounters[i] < intensityTimestamps[i].nested.Length && Time.realtimeSinceStartup >= startTime + intensityTimestamps[i].nested[intensityCounters[i]])
             {
                 intensitySwitch = !intensitySwitch;
                 intensityCounters[i]++;

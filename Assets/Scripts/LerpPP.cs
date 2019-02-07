@@ -27,7 +27,7 @@ public class LerpPP : MonoBehaviour {
     private int counter;
 
     //private float startTime;
-    private Stopwatch timer;
+    private Stopwatch timer = new Stopwatch();
     
 
     void Start () 
@@ -36,7 +36,7 @@ public class LerpPP : MonoBehaviour {
         //startTime = Time.time;
 
         //Kind bad way to set the lerpProfile to the startProfile
-        StartCoroutine(LerpToProfile(startProfile, 0.01F));
+        StartCoroutine(LerpToProfile(startProfile, 0.0F));
     }
 	
 	void Update () 
@@ -48,7 +48,7 @@ public class LerpPP : MonoBehaviour {
         //    counter++;
         //}    
 
-        if (counter < timestamps.Length && timer.ElapsedMilliseconds >= (long)(timestamps[counter] / 1000))
+        if (counter < timestamps.Length && timer.ElapsedMilliseconds >= (long)(timestamps[counter] * 1000))
         {
             StartCoroutine(LerpToProfile(profiles[counter], lerpDurations[counter]));
 
@@ -68,7 +68,7 @@ public class LerpPP : MonoBehaviour {
         //In the following method "C" stands for "current" and "N" stands for "Next", as in "current profile" and "next profile"
 
         float t = 0.0F;
-        float lerpStart = Time.time;
+        float lerpStart = Time.realtimeSinceStartup;
 
         #region Data
         /////////

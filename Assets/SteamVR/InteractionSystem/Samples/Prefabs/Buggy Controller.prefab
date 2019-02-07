@@ -977,11 +977,11 @@ MonoBehaviour:
   ui_steerangle: 60
   ui_fillAngles: {x: 0.29, y: 0.7}
   resetToPoint: {fileID: 0}
-  actionSet: {fileID: 11400000, guid: 70eb4ed7ff1d016458c0f82b38ecf1e8, type: 2}
-  a_steering: {fileID: 11400000, guid: 0e59ed598cae7ff4c908b240aff57967, type: 2}
-  a_trigger: {fileID: 11400000, guid: c3161ddac0edc4847a99a3c15da9c860, type: 2}
-  a_brake: {fileID: 11400000, guid: bd118132c5b48664ca9e9f67cd14b4bf, type: 2}
-  a_reset: {fileID: 11400000, guid: 46a66aeddd3cfd941a93116d378a5053, type: 2}
+  actionSet: {fileID: 11400000, guid: 8455cb8c0132f27469823d33d156b5ae, type: 2}
+  a_steering: {fileID: 11400000, guid: e1dcb967cf06ef7468c12929765bac64, type: 2}
+  a_trigger: {fileID: 11400000, guid: 7009a91d591c4d046be98927486ef3c7, type: 2}
+  a_brake: {fileID: 11400000, guid: 144c0a6d70355214ea7e126279b1042d, type: 2}
+  a_reset: {fileID: 11400000, guid: 96f95920f2815e94a9ea0d802b197336, type: 2}
 --- !u!114 &114379823079474456
 MonoBehaviour:
   m_ObjectHideFlags: 1

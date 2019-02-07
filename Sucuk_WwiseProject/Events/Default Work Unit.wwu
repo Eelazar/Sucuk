@@ -363,6 +363,62 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="HarpC" ID="{8A433FD8-6054-436D-9071-589F766215D7}">
+					<ChildrenList>
+						<Action Name="" ID="{F7EB4D61-0DB5-433B-A80C-8A58511A5D64}" ShortID="381628311">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp C#" ID="{7DA57340-C3D0-449D-8B6B-2D0A5005840C}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpC_stop" ID="{D8B31C8C-9D54-49F9-9AFD-80C695BC0842}">
+					<ChildrenList>
+						<Action Name="" ID="{E5EEEB03-2D7F-4C47-B14D-94215A8CB60B}" ShortID="384253264">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp C#" ID="{7DA57340-C3D0-449D-8B6B-2D0A5005840C}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpG_stop" ID="{415D49E6-51CD-4BDE-8139-21C8417470ED}">
+					<ChildrenList>
+						<Action Name="" ID="{3EF652E8-D23B-4DCD-B993-8D961ADE63AA}" ShortID="29159306">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp G" ID="{106E1640-0264-41F7-A143-94D4A2787EA3}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HarpG" ID="{6BB56607-1374-4B83-B8C4-D09B36FA4D3B}">
+					<ChildrenList>
+						<Action Name="" ID="{BF418CCD-3CC7-4825-907C-6496A6E5EC30}" ShortID="770381940">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Harp G" ID="{106E1640-0264-41F7-A143-94D4A2787EA3}" WorkUnitID="{261483DB-1F37-48B3-8D3E-FA7C1025669F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

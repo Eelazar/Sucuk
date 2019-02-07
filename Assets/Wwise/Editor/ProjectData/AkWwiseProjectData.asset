@@ -168,7 +168,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 87dd1b6c0986334194d4e602d0162b3c
-    m_lastTime: -8586521241857874697
+    m_lastTime: -8586521208242258012
     List:
     - name: HarpA
       guid: b57650bf820ef14da2215587aaa585ee
@@ -239,6 +239,30 @@ MonoBehaviour:
       - ElementName: HarpB_stop
         ObjectType: 3
       Path: Default Work Unit\HarpB_stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpC
+      guid: d83f438a54606d439071589f766215d7
+      id: 1628890125
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpC
+        ObjectType: 3
+      Path: Default Work Unit\HarpC
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpC_stop
+      guid: 8c1cb3d8549df9499afd80c695bc0842
+      id: 2732299264
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpC_stop
+        ObjectType: 3
+      Path: Default Work Unit\HarpC_stop
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -371,6 +395,30 @@ MonoBehaviour:
       - ElementName: HarpF_stop
         ObjectType: 3
       Path: Default Work Unit\HarpF_stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpG
+      guid: 0766b56b7413834bb8c4d09b36fa4d3b
+      id: 1628890121
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpG
+        ObjectType: 3
+      Path: Default Work Unit\HarpG
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpG_stop
+      guid: e6495d41cd51de4b813921c8417470ed
+      id: 672426428
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HarpG_stop
+        ObjectType: 3
+      Path: Default Work Unit\HarpG_stop
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -534,7 +582,7 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: f7edd226412a334195eceacd717a2334
-    m_lastTime: -8586523831830629476
+    m_lastTime: -8586521160310024915
     List:
     - name: d1_bass01
       guid: 7230688452c0c9458342a4dce4cb1108

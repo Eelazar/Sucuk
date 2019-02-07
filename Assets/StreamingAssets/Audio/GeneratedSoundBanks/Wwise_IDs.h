@@ -19,6 +19,8 @@ namespace AK
         static const AkUniqueID HARPB = 1628890124U;
         static const AkUniqueID HARPB_PLAY = 2166538093U;
         static const AkUniqueID HARPB_STOP = 3283835323U;
+        static const AkUniqueID HARPC = 1628890125U;
+        static const AkUniqueID HARPC_STOP = 2732299264U;
         static const AkUniqueID HARPD = 1628890122U;
         static const AkUniqueID HARPD_PLAY = 917836371U;
         static const AkUniqueID HARPD_STOP = 47855161U;
@@ -30,6 +32,8 @@ namespace AK
         static const AkUniqueID HARPF = 1628890120U;
         static const AkUniqueID HARPF_PLAY = 512677489U;
         static const AkUniqueID HARPF_STOP = 1805669159U;
+        static const AkUniqueID HARPG = 1628890121U;
+        static const AkUniqueID HARPG_STOP = 672426428U;
         static const AkUniqueID MENU = 2607556080U;
         static const AkUniqueID ORBLING_HIT = 935976382U;
         static const AkUniqueID PLAY = 1256202815U;
